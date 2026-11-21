@@ -1,0 +1,283 @@
+{
+  "format_version": 1,
+  "reference": "https://zenodo.org/records/24326452",
+  "environment": {
+    "python": "3.11.4",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "cpu": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "versions": {
+      "bascd": "0.1.0",
+      "numpy": "2.4.6",
+      "stim": "1.16.0",
+      "pymatching": "2.4.0",
+      "scipy": "1.17.1",
+      "matplotlib": "3.11.2",
+      "jsonschema": "4.26.0",
+      "filelock": "3.32.7"
+    },
+    "source_sha256": {
+      "__init__.py": "9235e7c0985999fadf9ef28b62ccee567e3e65e6f826aa8a91902f1462bf65d1",
+      "__main__.py": "9b5d207d459ace9cbb231c2a80a4786e06afb74097448a22d373c02880bcfc06",
+      "adaptive.py": "cd7861e13297a33ea01ec151980f529181c5f9dfb975c147f253099eb749f04c",
+      "adaptive_experiment.py": "30914f7e791e4ac65521b05c14136ad116c2fc58a054390ba9481bd2685b6d2e",
+      "bath.py": "32d9b52c97b9fa85b0689c950f679944845cfb8b279d7bf6f62c4784eeb757b2",
+      "bath_initialize.py": "2a88622c216ce5d5419d31de843a8094ad4e72e19ed3a26b46f2620dcac4057c",
+      "benchmark.py": "302218eb9fb855143d2edb81f95e7e4359b411360b3929f70904ab761fe88b08",
+      "circuits.py": "489d71d19e1f4560e05d904c44c6a8c4a97393da6d960ae7d71db58aac222408",
+      "decoders.py": "944512dfef26b8c387df85a249347d0d741fe1e26fd601fcadce826bdd5c47cf",
+      "experiment.py": "ec7b4ed03c194a64a5727c912dc96c117d5b5d14d6ba0ba10aeb4ca92d400053",
+      "measure.py": "c817d33d1d675b403295374504c458784d786818319f5ccd24fbc62795ec84ba",
+      "records.py": "d1d605054fca606691ae2f65026287049f5eb594cf9ea2f5a326ee62fa29a2bc",
+      "schemas/feedback.json": "7efa915b809bab5e5a0b2de851ec3373672e3f48fb6d12abe44bd758448ea6d1",
+      "schemas/proposal.json": "2d4f92c011739579a30eab2f9cfaffde3bfe387fe0f4fb5a301d37c8eee0c1f1",
+      "search.py": "cf34230e645e95d9767f6ba13956e7212719dd2120b3cc028ef0f3868b9f1e91",
+      "stats.py": "fb47e42ea092e75305e23d84c1552a313de9804ba826940efdad57bd853f3475",
+      "sweep.py": "ceb950caed692ad18298d86f25fc3471c19f819ebc8f5eec007abfca140095fe"
+    }
+  },
+  "model": "layered dual rail with vacuum loss and no thermal absorption",
+  "attachment": "split",
+  "time_unit": "dimensionless source model time",
+  "calibration_source": "exact synthetic traces",
+  "trace_sha256": "b7430de5296142121ca188f5558f792b85d92487d7a64b32ef453ac772a21af8",
+  "calibration_span": [
+    0.0,
+    100.0
+  ],
+  "training_points": 257,
+  "held_out_points": 64,
+  "holdout_method": "every fifth time sample of this record",
+  "fit": {
+    "parameters": {
+      "j_sb": 0.4380299171191627,
+      "j_l1": 0.5788768146728629,
+      "j_l12": 0.32309781894627576,
+      "j_l2": 0.6803591714154944,
+      "gamma_l1": 0.0005083897307682179,
+      "gamma_l2": 0.0008330656714191716
+    },
+    "rmse": 2.952470332375395e-14,
+    "optimizer_converged": true,
+    "starts_run": 1,
+    "evaluations": 17
+  },
+  "held_out_trace_rmse": 2.9562189864003036e-14,
+  "fit_seed": 17,
+  "fit_starts_budget": 6,
+  "fit_max_evaluations_per_stage": 100,
+  "initial_estimate": null,
+  "check_window": [
+    4,
+    10.0
+  ],
+  "check_grid_points": 151,
+  "erasure_penalty": 0.125,
+  "extrapolates_beyond_calibration": false,
+  "clock": {
+    "time": 4.0,
+    "erasure_probability": 0.6057344594364422,
+    "near_field_probability": 0.6046399967311636,
+    "far_field_loss_probability": 0.001094462705278909,
+    "worst_case_rail_return": 0.05553137984125472,
+    "conditional_paulis": {
+      "I": 0.7558599525033196,
+      "X": 0.19339266581575576,
+      "Y": 0.00968400083078564,
+      "Z": 0.04106338085013903
+    },
+    "unflagged_pauli_probability": 0.09625600779949138,
+    "balanced_cost": 0.3198568549262357,
+    "decoder_priors_given_pass": {
+      "bit_flip": 0.2030766666465414,
+      "phase_flip": 0.05074738168092467
+    },
+    "frame_correction": {
+      "real": [
+        [
+          -0.648517395396441,
+          0.15270481272371908
+        ],
+        [
+          0.15270481272371964,
+          -0.4522745572264965
+        ]
+      ],
+      "imag": [
+        [
+          -0.31136729380961164,
+          0.6776111247499629
+        ],
+        [
+          0.6776111247499628,
+          0.5594391197187422
+        ]
+      ]
+    }
+  },
+  "selected": {
+    "time": 8.08,
+    "erasure_probability": 0.23542354398307053,
+    "near_field_probability": 0.23314996263445123,
+    "far_field_loss_probability": 0.0022735813486192136,
+    "worst_case_rail_return": 0.6753462381970569,
+    "conditional_paulis": {
+      "I": 0.9965832872025969,
+      "X": 0.0005267069171548028,
+      "Y": 0.0004361147327998166,
+      "Z": 0.002453891147448478
+    },
+    "unflagged_pauli_probability": 0.002612338161866149,
+    "balanced_cost": 0.03284465579528691,
+    "decoder_priors_given_pass": {
+      "bit_flip": 0.0009628216499546194,
+      "phase_flip": 0.0028900058802482946
+    },
+    "frame_correction": {
+      "real": [
+        [
+          0.3945561753213508,
+          0.2542893666423811
+        ],
+        [
+          0.2542893666423812,
+          0.8532480519527036
+        ]
+      ],
+      "imag": [
+        [
+          0.7586382473026172,
+          -0.4518078709562478
+        ],
+        [
+          -0.4518078709562476,
+          -0.05634117138927541
+        ]
+      ]
+    }
+  },
+  "synthetic_check": {
+    "clock_oracle_frame": {
+      "time": 4.0,
+      "erasure_probability": 0.6057344594364447,
+      "near_field_probability": 0.6046399967311634,
+      "far_field_loss_probability": 0.0010944627052810185,
+      "worst_case_rail_return": 0.05553137984125417,
+      "conditional_paulis": {
+        "I": 0.7558599525033189,
+        "X": 0.19339266581575715,
+        "Y": 0.009684000830785348,
+        "Z": 0.0410633808501386
+      },
+      "unflagged_pauli_probability": 0.09625600779949105,
+      "balanced_cost": 0.3198568549262367,
+      "decoder_priors_given_pass": {
+        "bit_flip": 0.2030766666465425,
+        "phase_flip": 0.05074738168092395
+      },
+      "frame_correction": {
+        "real": [
+          [
+            -0.6485173953964398,
+            0.1527048127237123
+          ],
+          [
+            0.1527048127237122,
+            -0.45227455722650556
+          ]
+        ],
+        "imag": [
+          [
+            -0.3113672938096147,
+            0.6776111247499632
+          ],
+          [
+            0.6776111247499632,
+            0.5594391197187354
+          ]
+        ]
+      }
+    },
+    "oracle_selected": {
+      "time": 8.08,
+      "erasure_probability": 0.2354235439830734,
+      "near_field_probability": 0.2331499626344522,
+      "far_field_loss_probability": 0.002273581348621767,
+      "worst_case_rail_return": 0.6753462381970609,
+      "conditional_paulis": {
+        "I": 0.9965832872025974,
+        "X": 0.0005267069171545659,
+        "Y": 0.00043611473279984547,
+        "Z": 0.002453891147448179
+      },
+      "unflagged_pauli_probability": 0.0026123381618657518,
+      "balanced_cost": 0.03284465579528677,
+      "decoder_priors_given_pass": {
+        "bit_flip": 0.0009628216499544114,
+        "phase_flip": 0.0028900058802480244
+      },
+      "frame_correction": {
+        "real": [
+          [
+            0.3945561753213423,
+            0.25428936664238677
+          ],
+          [
+            0.2542893666423872,
+            0.853248051952704
+          ]
+        ],
+        "imag": [
+          [
+            0.7586382473026211,
+            -0.4518078709562457
+          ],
+          [
+            -0.4518078709562455,
+            -0.056341171389264755
+          ]
+        ]
+      }
+    },
+    "selected_time_on_true_model_with_fitted_frame": {
+      "time": 8.08,
+      "erasure_probability": 0.23542354398307352,
+      "near_field_probability": 0.2331499626344522,
+      "far_field_loss_probability": 0.002273581348621767,
+      "worst_case_rail_return": 0.6753462381970609,
+      "conditional_paulis": {
+        "I": 0.9965832872025974,
+        "X": 0.0005267069171545645,
+        "Y": 0.00043611473279984146,
+        "Z": 0.0024538911474482044
+      },
+      "unflagged_pauli_probability": 0.0026123381618657665,
+      "balanced_cost": 0.0328446557952868,
+      "decoder_priors_given_pass": {
+        "bit_flip": 0.0009628216499544059,
+        "phase_flip": 0.0028900058802480456
+      },
+      "frame_correction": {
+        "real": [
+          [
+            0.3945561753213508,
+            0.2542893666423811
+          ],
+          [
+            0.2542893666423812,
+            0.8532480519527036
+          ]
+        ],
+        "imag": [
+          [
+            0.7586382473026172,
+            -0.4518078709562478
+          ],
+          [
+            -0.4518078709562476,
+            -0.05634117138927541
+          ]
+        ]
+      }
+    }
+  }
+}

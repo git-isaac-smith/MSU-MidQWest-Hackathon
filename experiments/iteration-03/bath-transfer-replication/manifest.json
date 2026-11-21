@@ -1,0 +1,221 @@
+{
+  "format_version": 1,
+  "command": [
+    "python",
+    "-m",
+    "bascd.bath_transfer",
+    "--profile",
+    "experiments/iteration-03/bath-calibration/bath-profile.json",
+    "--out",
+    "experiments/iteration-03/bath-transfer-replication",
+    "--shots",
+    "10000",
+    "--seed",
+    "602712",
+    "--repeats",
+    "3",
+    "--latency-shots",
+    "64"
+  ],
+  "root_seed": 602712,
+  "shots_per_scenario": 10000,
+  "timing_repeats": 3,
+  "rounds": "distance",
+  "environment": {
+    "python": "3.11.4",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "cpu": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "versions": {
+      "bascd": "0.1.0",
+      "numpy": "2.4.6",
+      "stim": "1.16.0",
+      "pymatching": "2.4.0",
+      "scipy": "1.17.1",
+      "matplotlib": "3.11.2",
+      "jsonschema": "4.26.0",
+      "filelock": "3.32.7"
+    },
+    "source_sha256": {
+      "__init__.py": "9235e7c0985999fadf9ef28b62ccee567e3e65e6f826aa8a91902f1462bf65d1",
+      "__main__.py": "9b5d207d459ace9cbb231c2a80a4786e06afb74097448a22d373c02880bcfc06",
+      "adaptive.py": "cd7861e13297a33ea01ec151980f529181c5f9dfb975c147f253099eb749f04c",
+      "adaptive_experiment.py": "6fcd97b97e2feee021cc908b3c843e100ec22bd0ea3bca674e55620246228baf",
+      "bath.py": "32d9b52c97b9fa85b0689c950f679944845cfb8b279d7bf6f62c4784eeb757b2",
+      "bath_erasure.py": "2357c30e33ee7fbe892313b01fe204b6008f06fa2ba84103d6d7576a281041c4",
+      "bath_initialize.py": "2a88622c216ce5d5419d31de843a8094ad4e72e19ed3a26b46f2620dcac4057c",
+      "bath_prior.py": "01573bb02c4baa010d20a91bd4073af2b329258b2ea9ef489b2478e02a3e8294",
+      "bath_transfer.py": "221d4647037b4d61929121ec072605d5e8111699d997ae0554631b172f3f117c",
+      "benchmark.py": "302218eb9fb855143d2edb81f95e7e4359b411360b3929f70904ab761fe88b08",
+      "circuits.py": "489d71d19e1f4560e05d904c44c6a8c4a97393da6d960ae7d71db58aac222408",
+      "decoders.py": "944512dfef26b8c387df85a249347d0d741fe1e26fd601fcadce826bdd5c47cf",
+      "experiment.py": "ec7b4ed03c194a64a5727c912dc96c117d5b5d14d6ba0ba10aeb4ca92d400053",
+      "measure.py": "c817d33d1d675b403295374504c458784d786818319f5ccd24fbc62795ec84ba",
+      "records.py": "d1d605054fca606691ae2f65026287049f5eb594cf9ea2f5a326ee62fa29a2bc",
+      "schemas/feedback.json": "7efa915b809bab5e5a0b2de851ec3373672e3f48fb6d12abe44bd758448ea6d1",
+      "schemas/proposal.json": "2d4f92c011739579a30eab2f9cfaffde3bfe387fe0f4fb5a301d37c8eee0c1f1",
+      "search.py": "cf34230e645e95d9767f6ba13956e7212719dd2120b3cc028ef0f3868b9f1e91",
+      "stats.py": "d96e4c4ec6c66f15c359772687d2e34d7b2263ae92027e6f8b02a47cbce2942e",
+      "sweep.py": "ceb950caed692ad18298d86f25fc3471c19f819ebc8f5eec007abfca140095fe"
+    }
+  },
+  "noise": {
+    "name": "simple_uniform",
+    "status": "provisional",
+    "generator": "Stim rotated memory",
+    "after_clifford_depolarization": "p",
+    "after_reset_flip_probability": "p",
+    "before_measure_flip_probability": "p",
+    "before_round_data_depolarization": "p"
+  },
+  "scenarios": [
+    {
+      "distance": 3,
+      "p": 0.001,
+      "basis": "x"
+    },
+    {
+      "distance": 3,
+      "p": 0.001,
+      "basis": "z"
+    },
+    {
+      "distance": 3,
+      "p": 0.003,
+      "basis": "x"
+    },
+    {
+      "distance": 3,
+      "p": 0.003,
+      "basis": "z"
+    },
+    {
+      "distance": 3,
+      "p": 0.005,
+      "basis": "x"
+    },
+    {
+      "distance": 3,
+      "p": 0.005,
+      "basis": "z"
+    },
+    {
+      "distance": 3,
+      "p": 0.01,
+      "basis": "x"
+    },
+    {
+      "distance": 3,
+      "p": 0.01,
+      "basis": "z"
+    },
+    {
+      "distance": 5,
+      "p": 0.001,
+      "basis": "x"
+    },
+    {
+      "distance": 5,
+      "p": 0.001,
+      "basis": "z"
+    },
+    {
+      "distance": 5,
+      "p": 0.003,
+      "basis": "x"
+    },
+    {
+      "distance": 5,
+      "p": 0.003,
+      "basis": "z"
+    },
+    {
+      "distance": 5,
+      "p": 0.005,
+      "basis": "x"
+    },
+    {
+      "distance": 5,
+      "p": 0.005,
+      "basis": "z"
+    },
+    {
+      "distance": 5,
+      "p": 0.01,
+      "basis": "x"
+    },
+    {
+      "distance": 5,
+      "p": 0.01,
+      "basis": "z"
+    },
+    {
+      "distance": 7,
+      "p": 0.001,
+      "basis": "x"
+    },
+    {
+      "distance": 7,
+      "p": 0.001,
+      "basis": "z"
+    },
+    {
+      "distance": 7,
+      "p": 0.003,
+      "basis": "x"
+    },
+    {
+      "distance": 7,
+      "p": 0.003,
+      "basis": "z"
+    },
+    {
+      "distance": 7,
+      "p": 0.005,
+      "basis": "x"
+    },
+    {
+      "distance": 7,
+      "p": 0.005,
+      "basis": "z"
+    },
+    {
+      "distance": 7,
+      "p": 0.01,
+      "basis": "x"
+    },
+    {
+      "distance": 7,
+      "p": 0.01,
+      "basis": "z"
+    }
+  ],
+  "split": "sweep",
+  "latency_shots": 64,
+  "profile": "experiments\\iteration-03\\bath-calibration\\bath-profile.json",
+  "profile_sha256": "e649d17ea6be5823bafb39fc6fb31474ee294880760e6aa70ecf7801cb487589",
+  "calibration_source": "exact synthetic traces",
+  "primary_contrast": "clock vs native within matcher",
+  "secondary_contrast": "selected vs native within matcher, using an offline alternative prior",
+  "representation_control": "expanded_uniform uses three independent Pauli errors encoding the original uniform distribution. Compare each bath profile with both native and expanded_uniform.",
+  "decoder_order": "rotate the eight configurations by one position per scenario",
+  "bath_priors": {
+    "clock": {
+      "time": 4.0,
+      "xyz": [
+        0.792138232947568,
+        0.03966576123041556,
+        0.16819600582201646
+      ]
+    },
+    "selected": {
+      "time": 8.08,
+      "xyz": [
+        0.1541560407287177,
+        0.12764161305313382,
+        0.7182023462181485
+      ]
+    }
+  },
+  "mapping": "Only the relative X/Y/Z mixture of pre-round data errors enters the matching model. Every matcher receives the same fixed-clock detector samples. All shots count.",
+  "interval": "Unadjusted paired, stratified normal approximation for the difference in LER, omitted below 30 discordant shots. Per-scenario LER intervals use Wilson 95%."
+}

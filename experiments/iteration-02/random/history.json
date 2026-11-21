@@ -1,0 +1,324 @@
+[
+  {
+    "trial": 1,
+    "proposal": {
+      "by_distance": {
+        "3": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 1.0,
+          "boundary_scale": 0.75
+        },
+        "5": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 0.75,
+          "boundary_scale": 1.0
+        },
+        "7": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 0.75,
+          "boundary_scale": 1.25
+        }
+      }
+    },
+    "status": "ok",
+    "error": null,
+    "policy_id": "8965d391f04aa4d5d876bda8d459a1aa5b6f0f3c5d560e597d40692562f245da",
+    "train": {
+      "shots": 240000,
+      "failures": 7534,
+      "ler": 0.031391666666666665,
+      "ler95_low": 0.02861945355627922,
+      "ler95_high": 0.03416387977705411,
+      "batch_us_per_shot": 7.7415175
+    },
+    "validation": {
+      "shots": 240000,
+      "failures": 7495,
+      "ler": 0.031229166666666665,
+      "ler95_low": 0.02845695355627922,
+      "ler95_high": 0.034001379777054114,
+      "batch_us_per_shot": 7.5874958333333336
+    }
+  },
+  {
+    "trial": 2,
+    "proposal": {
+      "by_distance": {
+        "3": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 0.75,
+          "boundary_scale": 1.25
+        },
+        "5": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 0.75,
+          "boundary_scale": 0.75
+        },
+        "7": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 0.75,
+          "boundary_scale": 1.25
+        }
+      }
+    },
+    "status": "ok",
+    "error": null,
+    "policy_id": "7993e7c17a4488f890b0908e8c45789e3a5974e0f236f0ad5b95451c0ecbd0fe",
+    "train": {
+      "shots": 240000,
+      "failures": 7315,
+      "ler": 0.03047916666666667,
+      "ler95_low": 0.027706953556279224,
+      "ler95_high": 0.03325137977705411,
+      "batch_us_per_shot": 7.523117083333334
+    },
+    "validation": {
+      "shots": 240000,
+      "failures": 7364,
+      "ler": 0.030683333333333333,
+      "ler95_low": 0.02791112022294589,
+      "ler95_high": 0.03345554644372078,
+      "batch_us_per_shot": 7.426396666666666
+    }
+  },
+  {
+    "trial": 3,
+    "proposal": {
+      "by_distance": {
+        "3": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 1.25,
+          "boundary_scale": 1.0
+        },
+        "5": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 0.75,
+          "boundary_scale": 0.75
+        },
+        "7": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 1.0,
+          "boundary_scale": 1.25
+        }
+      }
+    },
+    "status": "ok",
+    "error": null,
+    "policy_id": "371c27a6b96e0685e970b1fd6fff84f8f567744b5f36a4c1e76ae3ba84c1fd8b",
+    "train": {
+      "shots": 240000,
+      "failures": 7259,
+      "ler": 0.030245833333333333,
+      "ler95_low": 0.027473620222945888,
+      "ler95_high": 0.03301804644372078,
+      "batch_us_per_shot": 6.44522625
+    },
+    "validation": {
+      "shots": 240000,
+      "failures": 7239,
+      "ler": 0.0301625,
+      "ler95_low": 0.027390286889612554,
+      "ler95_high": 0.03293471311038745,
+      "batch_us_per_shot": 6.408569166666667
+    }
+  },
+  {
+    "trial": 4,
+    "proposal": {
+      "by_distance": {
+        "3": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 0.75,
+          "boundary_scale": 1.0
+        },
+        "5": {
+          "decoder_type": "correlated_mwpm"
+        },
+        "7": {
+          "decoder_type": "mwpm"
+        }
+      }
+    },
+    "status": "ok",
+    "error": null,
+    "policy_id": "8e64a8899de37c035cf7c381d162a2cebe0678ec8e6c9d0ad5a667b0e5fa2e6e",
+    "train": {
+      "shots": 240000,
+      "failures": 6166,
+      "ler": 0.025691666666666668,
+      "ler95_low": 0.022919453556279223,
+      "ler95_high": 0.028463879777054113,
+      "batch_us_per_shot": 7.823914583333333
+    },
+    "validation": {
+      "shots": 240000,
+      "failures": 6260,
+      "ler": 0.026083333333333333,
+      "ler95_low": 0.02331112022294589,
+      "ler95_high": 0.028855546443720778,
+      "batch_us_per_shot": 7.5590262500000005
+    }
+  },
+  {
+    "trial": 5,
+    "proposal": {
+      "by_distance": {
+        "3": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 1.25,
+          "boundary_scale": 1.25
+        },
+        "5": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 1.25,
+          "boundary_scale": 1.0
+        },
+        "7": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 0.75,
+          "boundary_scale": 1.0
+        }
+      }
+    },
+    "status": "ok",
+    "error": null,
+    "policy_id": "4564b2689cf99efdd1abb478fc6b653bc83309cda86bf0744263c3ebe9110bb1",
+    "train": {
+      "shots": 240000,
+      "failures": 6940,
+      "ler": 0.028916666666666667,
+      "ler95_low": 0.026144453556279222,
+      "ler95_high": 0.03168887977705411,
+      "batch_us_per_shot": 6.734414583333334
+    },
+    "validation": {
+      "shots": 240000,
+      "failures": 6949,
+      "ler": 0.028954166666666666,
+      "ler95_low": 0.02618195355627922,
+      "ler95_high": 0.031726379777054114,
+      "batch_us_per_shot": 6.572987500000001
+    }
+  },
+  {
+    "trial": 6,
+    "proposal": {
+      "by_distance": {
+        "3": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 0.75,
+          "boundary_scale": 1.0
+        },
+        "5": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 1.25,
+          "boundary_scale": 0.75
+        },
+        "7": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 0.75,
+          "boundary_scale": 1.25
+        }
+      }
+    },
+    "status": "ok",
+    "error": null,
+    "policy_id": "4f8388d70befda3ec75674b148f1e59ead04cea3e242b5221f2dea103f619af1",
+    "train": {
+      "shots": 240000,
+      "failures": 7600,
+      "ler": 0.03166666666666667,
+      "ler95_low": 0.028894453556279225,
+      "ler95_high": 0.034438879777054114,
+      "batch_us_per_shot": 7.479481666666666
+    },
+    "validation": {
+      "shots": 240000,
+      "failures": 7551,
+      "ler": 0.0314625,
+      "ler95_low": 0.028690286889612553,
+      "ler95_high": 0.03423471311038744,
+      "batch_us_per_shot": 7.2517604166666665
+    }
+  },
+  {
+    "trial": 7,
+    "proposal": {
+      "by_distance": {
+        "3": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 0.75,
+          "boundary_scale": 0.75
+        },
+        "5": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 1.25,
+          "boundary_scale": 1.25
+        },
+        "7": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 1.0,
+          "boundary_scale": 1.25
+        }
+      }
+    },
+    "status": "ok",
+    "error": null,
+    "policy_id": "6722851eb9b0e00223e27e9014eb6e09ccae2afaaac85cf5f02a3694ffd6757f",
+    "train": {
+      "shots": 240000,
+      "failures": 7336,
+      "ler": 0.030566666666666666,
+      "ler95_low": 0.02779445355627922,
+      "ler95_high": 0.03333887977705411,
+      "batch_us_per_shot": 6.8206508333333336
+    },
+    "validation": {
+      "shots": 240000,
+      "failures": 7352,
+      "ler": 0.030633333333333332,
+      "ler95_low": 0.027861120222945887,
+      "ler95_high": 0.03340554644372078,
+      "batch_us_per_shot": 6.500560416666667
+    }
+  },
+  {
+    "trial": 8,
+    "proposal": {
+      "by_distance": {
+        "3": {
+          "decoder_type": "correlated_mwpm"
+        },
+        "5": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 1.25,
+          "boundary_scale": 0.75
+        },
+        "7": {
+          "decoder_type": "weighted_mwpm",
+          "temporal_scale": 1.25,
+          "boundary_scale": 1.0
+        }
+      }
+    },
+    "status": "ok",
+    "error": null,
+    "policy_id": "54ee972a31c93c8b1e8e00d4be4d7c6811b29a368ce5fe94957f0f571a9b5fd3",
+    "train": {
+      "shots": 240000,
+      "failures": 7619,
+      "ler": 0.031745833333333334,
+      "ler95_low": 0.02897362022294589,
+      "ler95_high": 0.03451804644372078,
+      "batch_us_per_shot": 5.813373333333333
+    },
+    "validation": {
+      "shots": 240000,
+      "failures": 7492,
+      "ler": 0.031216666666666667,
+      "ler95_low": 0.028444453556279222,
+      "ler95_high": 0.033988879777054115,
+      "batch_us_per_shot": 5.711766249999999
+    }
+  }
+]

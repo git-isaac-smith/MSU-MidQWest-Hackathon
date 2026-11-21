@@ -1,0 +1,1367 @@
+{
+  "format_version": 1,
+  "root_seed": 954131,
+  "split": "final_test",
+  "policy_sha256": "bb93772f361c4cd515c8973aee3599e6ca4cd9884b2eefb6b2aa634d8d6853c6",
+  "replay_environment": {
+    "python": "3.11.4",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "versions": {
+      "stim": "1.16.0",
+      "numpy": "2.4.6",
+      "pymatching": "2.4.0",
+      "stabilizer-qec": "2.1.0"
+    }
+  },
+  "verification": {
+    "case_file_hashes_checked": 144,
+    "seeded_samples_matched": 24,
+    "decoder_prediction_files_matched": 72,
+    "scoring_rows_matched": 72,
+    "paired_rows_matched": 48,
+    "summary_scoring_matched": true
+  },
+  "pooled": {
+    "shots": 240000,
+    "detector_events": 2579147,
+    "shots_with_events": 187099,
+    "observable_flips": 46383,
+    "scenario_count": 24,
+    "methods": {
+      "native": {
+        "failures": 5411,
+        "ler": 0.022545833333333334
+      },
+      "bath_clock": {
+        "failures": 5362,
+        "ler": 0.022341666666666666
+      },
+      "frozen": {
+        "failures": 4660,
+        "ler": 0.019416666666666665
+      }
+    },
+    "paired": {
+      "native": {
+        "recovered": 1597,
+        "lost": 846,
+        "both_failed": 3814,
+        "both_correct": 233743,
+        "ler_difference": -0.003129166666666667,
+        "approximate_95_ci": [
+          -0.003532308985151654,
+          -0.0027260243481816797
+        ]
+      },
+      "bath_clock": {
+        "recovered": 1520,
+        "lost": 818,
+        "both_failed": 3842,
+        "both_correct": 233820,
+        "ler_difference": -0.002925,
+        "approximate_95_ci": [
+          -0.003319406140796727,
+          -0.002530593859203273
+        ]
+      }
+    }
+  },
+  "scenarios": [
+    {
+      "case": "d3-x-p0.001",
+      "distance": 3,
+      "p": 0.001,
+      "basis": "x",
+      "rounds": 3,
+      "seed": 16206702520245069703,
+      "shots": 10000,
+      "num_detectors": 24,
+      "detector_events": 3183,
+      "shots_with_events": 1650,
+      "observable_flips": 231,
+      "frozen_decoder": "exact_small",
+      "methods": {
+        "native": {
+          "failures": 10,
+          "ler": 0.001,
+          "wilson95": [
+            0.0005432859864972464,
+            0.0018399443874379958
+          ]
+        },
+        "bath_clock": {
+          "failures": 10,
+          "ler": 0.001,
+          "wilson95": [
+            0.0005432859864972464,
+            0.0018399443874379958
+          ]
+        },
+        "frozen": {
+          "failures": 5,
+          "ler": 0.0005,
+          "wilson95": [
+            0.0002135884261638257,
+            0.0011700259461420934
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 6,
+          "lost": 1,
+          "both_failed": 4,
+          "both_correct": 9989
+        },
+        "bath_clock": {
+          "recovered": 6,
+          "lost": 1,
+          "both_failed": 4,
+          "both_correct": 9989
+        }
+      }
+    },
+    {
+      "case": "d3-z-p0.001",
+      "distance": 3,
+      "p": 0.001,
+      "basis": "z",
+      "rounds": 3,
+      "seed": 16256788797345054185,
+      "shots": 10000,
+      "num_detectors": 24,
+      "detector_events": 3030,
+      "shots_with_events": 1604,
+      "observable_flips": 224,
+      "frozen_decoder": "exact_small",
+      "methods": {
+        "native": {
+          "failures": 10,
+          "ler": 0.001,
+          "wilson95": [
+            0.0005432859864972464,
+            0.0018399443874379958
+          ]
+        },
+        "bath_clock": {
+          "failures": 10,
+          "ler": 0.001,
+          "wilson95": [
+            0.0005432859864972464,
+            0.0018399443874379958
+          ]
+        },
+        "frozen": {
+          "failures": 7,
+          "ler": 0.0007,
+          "wilson95": [
+            0.0003391263316879597,
+            0.0014443344412696886
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 3,
+          "lost": 0,
+          "both_failed": 7,
+          "both_correct": 9990
+        },
+        "bath_clock": {
+          "recovered": 3,
+          "lost": 0,
+          "both_failed": 7,
+          "both_correct": 9990
+        }
+      }
+    },
+    {
+      "case": "d3-x-p0.003",
+      "distance": 3,
+      "p": 0.003,
+      "basis": "x",
+      "rounds": 3,
+      "seed": 14302303324723371405,
+      "shots": 10000,
+      "num_detectors": 24,
+      "detector_events": 8961,
+      "shots_with_events": 3973,
+      "observable_flips": 643,
+      "frozen_decoder": "exact_small",
+      "methods": {
+        "native": {
+          "failures": 70,
+          "ler": 0.007,
+          "wilson95": [
+            0.005544619309554507,
+            0.008834003083932618
+          ]
+        },
+        "bath_clock": {
+          "failures": 62,
+          "ler": 0.0062,
+          "wilson95": [
+            0.004839784811884964,
+            0.007939451978995243
+          ]
+        },
+        "frozen": {
+          "failures": 50,
+          "ler": 0.005,
+          "wilson95": [
+            0.003794901070838226,
+            0.006585257316131604
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 24,
+          "lost": 4,
+          "both_failed": 46,
+          "both_correct": 9926
+        },
+        "bath_clock": {
+          "recovered": 15,
+          "lost": 3,
+          "both_failed": 47,
+          "both_correct": 9935
+        }
+      }
+    },
+    {
+      "case": "d3-z-p0.003",
+      "distance": 3,
+      "p": 0.003,
+      "basis": "z",
+      "rounds": 3,
+      "seed": 15004347052755416161,
+      "shots": 10000,
+      "num_detectors": 24,
+      "detector_events": 8637,
+      "shots_with_events": 4045,
+      "observable_flips": 718,
+      "frozen_decoder": "exact_small",
+      "methods": {
+        "native": {
+          "failures": 67,
+          "ler": 0.0067,
+          "wilson95": [
+            0.00527963331754198,
+            0.00849921947496755
+          ]
+        },
+        "bath_clock": {
+          "failures": 65,
+          "ler": 0.0065,
+          "wilson95": [
+            0.00510341462983177,
+            0.008275591762026031
+          ]
+        },
+        "frozen": {
+          "failures": 51,
+          "ler": 0.0051,
+          "wilson95": [
+            0.0038813110835616144,
+            0.00669877050373408
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 23,
+          "lost": 7,
+          "both_failed": 44,
+          "both_correct": 9926
+        },
+        "bath_clock": {
+          "recovered": 21,
+          "lost": 7,
+          "both_failed": 44,
+          "both_correct": 9928
+        }
+      }
+    },
+    {
+      "case": "d3-x-p0.005",
+      "distance": 3,
+      "p": 0.005,
+      "basis": "x",
+      "rounds": 3,
+      "seed": 18176694074670363694,
+      "shots": 10000,
+      "num_detectors": 24,
+      "detector_events": 14495,
+      "shots_with_events": 5766,
+      "observable_flips": 1029,
+      "frozen_decoder": "exact_small",
+      "methods": {
+        "native": {
+          "failures": 165,
+          "ler": 0.0165,
+          "wilson95": [
+            0.014182485154608222,
+            0.019188841269836047
+          ]
+        },
+        "bath_clock": {
+          "failures": 167,
+          "ler": 0.0167,
+          "wilson95": [
+            0.014367626563538571,
+            0.01940354626155743
+          ]
+        },
+        "frozen": {
+          "failures": 152,
+          "ler": 0.0152,
+          "wilson95": [
+            0.012981435254342082,
+            0.017790889565865945
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 44,
+          "lost": 31,
+          "both_failed": 121,
+          "both_correct": 9804
+        },
+        "bath_clock": {
+          "recovered": 39,
+          "lost": 24,
+          "both_failed": 128,
+          "both_correct": 9809
+        }
+      }
+    },
+    {
+      "case": "d3-z-p0.005",
+      "distance": 3,
+      "p": 0.005,
+      "basis": "z",
+      "rounds": 3,
+      "seed": 18381771303431988587,
+      "shots": 10000,
+      "num_detectors": 24,
+      "detector_events": 13943,
+      "shots_with_events": 5742,
+      "observable_flips": 1013,
+      "frozen_decoder": "exact_small",
+      "methods": {
+        "native": {
+          "failures": 143,
+          "ler": 0.0143,
+          "wilson95": [
+            0.012152533263456854,
+            0.01682048275381839
+          ]
+        },
+        "bath_clock": {
+          "failures": 135,
+          "ler": 0.0135,
+          "wilson95": [
+            0.011417697708664352,
+            0.015955932706003973
+          ]
+        },
+        "frozen": {
+          "failures": 114,
+          "ler": 0.0114,
+          "wilson95": [
+            0.009498871053053342,
+            0.013676372154771826
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 39,
+          "lost": 10,
+          "both_failed": 104,
+          "both_correct": 9847
+        },
+        "bath_clock": {
+          "recovered": 31,
+          "lost": 10,
+          "both_failed": 104,
+          "both_correct": 9855
+        }
+      }
+    },
+    {
+      "case": "d3-x-p0.01",
+      "distance": 3,
+      "p": 0.01,
+      "basis": "x",
+      "rounds": 3,
+      "seed": 16620346631456646404,
+      "shots": 10000,
+      "num_detectors": 24,
+      "detector_events": 27103,
+      "shots_with_events": 8188,
+      "observable_flips": 1888,
+      "frozen_decoder": "exact_small",
+      "methods": {
+        "native": {
+          "failures": 609,
+          "ler": 0.0609,
+          "wilson95": [
+            0.056379290241712454,
+            0.06575793712741572
+          ]
+        },
+        "bath_clock": {
+          "failures": 583,
+          "ler": 0.0583,
+          "wilson95": [
+            0.05387497335175193,
+            0.06306425080890377
+          ]
+        },
+        "frozen": {
+          "failures": 528,
+          "ler": 0.0528,
+          "wilson95": [
+            0.048586056834707604,
+            0.057357391308025536
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 169,
+          "lost": 88,
+          "both_failed": 440,
+          "both_correct": 9303
+        },
+        "bath_clock": {
+          "recovered": 140,
+          "lost": 85,
+          "both_failed": 443,
+          "both_correct": 9332
+        }
+      }
+    },
+    {
+      "case": "d3-z-p0.01",
+      "distance": 3,
+      "p": 0.01,
+      "basis": "z",
+      "rounds": 3,
+      "seed": 17090139707176525592,
+      "shots": 10000,
+      "num_detectors": 24,
+      "detector_events": 26426,
+      "shots_with_events": 8153,
+      "observable_flips": 1876,
+      "frozen_decoder": "exact_small",
+      "methods": {
+        "native": {
+          "failures": 549,
+          "ler": 0.0549,
+          "wilson95": [
+            0.05060400056424119,
+            0.0595378347853351
+          ]
+        },
+        "bath_clock": {
+          "failures": 544,
+          "ler": 0.0544,
+          "wilson95": [
+            0.05012336862181132,
+            0.059018850726135656
+          ]
+        },
+        "frozen": {
+          "failures": 463,
+          "ler": 0.0463,
+          "wilson95": [
+            0.04235277568717739,
+            0.050595664434374556
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 145,
+          "lost": 59,
+          "both_failed": 404,
+          "both_correct": 9392
+        },
+        "bath_clock": {
+          "recovered": 133,
+          "lost": 52,
+          "both_failed": 411,
+          "both_correct": 9404
+        }
+      }
+    },
+    {
+      "case": "d5-x-p0.001",
+      "distance": 5,
+      "p": 0.001,
+      "basis": "x",
+      "rounds": 5,
+      "seed": 17411897346147043676,
+      "shots": 10000,
+      "num_detectors": 120,
+      "detector_events": 18086,
+      "shots_with_events": 5847,
+      "observable_flips": 535,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 0,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            0.00038399837067659557
+          ]
+        },
+        "bath_clock": {
+          "failures": 0,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            0.00038399837067659557
+          ]
+        },
+        "frozen": {
+          "failures": 0,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            0.00038399837067659557
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 0,
+          "lost": 0,
+          "both_failed": 0,
+          "both_correct": 10000
+        },
+        "bath_clock": {
+          "recovered": 0,
+          "lost": 0,
+          "both_failed": 0,
+          "both_correct": 10000
+        }
+      }
+    },
+    {
+      "case": "d5-z-p0.001",
+      "distance": 5,
+      "p": 0.001,
+      "basis": "z",
+      "rounds": 5,
+      "seed": 15153688259012961773,
+      "shots": 10000,
+      "num_detectors": 120,
+      "detector_events": 17337,
+      "shots_with_events": 5709,
+      "observable_flips": 595,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 2,
+          "ler": 0.0002,
+          "wilson95": [
+            5.484892732085772e-05,
+            0.0007289958440074672
+          ]
+        },
+        "bath_clock": {
+          "failures": 1,
+          "ler": 0.0001,
+          "wilson95": [
+            1.7652673601122255e-05,
+            0.0005662688974013379
+          ]
+        },
+        "frozen": {
+          "failures": 0,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            0.00038399837067659557
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 2,
+          "lost": 0,
+          "both_failed": 0,
+          "both_correct": 9998
+        },
+        "bath_clock": {
+          "recovered": 1,
+          "lost": 0,
+          "both_failed": 0,
+          "both_correct": 9999
+        }
+      }
+    },
+    {
+      "case": "d5-x-p0.003",
+      "distance": 5,
+      "p": 0.003,
+      "basis": "x",
+      "rounds": 5,
+      "seed": 14070207872505012381,
+      "shots": 10000,
+      "num_detectors": 120,
+      "detector_events": 52007,
+      "shots_with_events": 9207,
+      "observable_flips": 1494,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 24,
+          "ler": 0.0024,
+          "wilson95": [
+            0.001613378809397836,
+            0.003568776369099512
+          ]
+        },
+        "bath_clock": {
+          "failures": 21,
+          "ler": 0.0021,
+          "wilson95": [
+            0.001373991704983835,
+            0.003208393872535919
+          ]
+        },
+        "frozen": {
+          "failures": 20,
+          "ler": 0.002,
+          "wilson95": [
+            0.001295111712543285,
+            0.003087350664650604
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 7,
+          "lost": 3,
+          "both_failed": 17,
+          "both_correct": 9973
+        },
+        "bath_clock": {
+          "recovered": 4,
+          "lost": 3,
+          "both_failed": 17,
+          "both_correct": 9976
+        }
+      }
+    },
+    {
+      "case": "d5-z-p0.003",
+      "distance": 5,
+      "p": 0.003,
+      "basis": "z",
+      "rounds": 5,
+      "seed": 15048907517452529719,
+      "shots": 10000,
+      "num_detectors": 120,
+      "detector_events": 51606,
+      "shots_with_events": 9259,
+      "observable_flips": 1490,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 37,
+          "ler": 0.0037,
+          "wilson95": [
+            0.002685648037750953,
+            0.005095508744982636
+          ]
+        },
+        "bath_clock": {
+          "failures": 37,
+          "ler": 0.0037,
+          "wilson95": [
+            0.002685648037750953,
+            0.005095508744982636
+          ]
+        },
+        "frozen": {
+          "failures": 31,
+          "ler": 0.0031,
+          "wilson95": [
+            0.002184864524503693,
+            0.004396753056274708
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 9,
+          "lost": 3,
+          "both_failed": 28,
+          "both_correct": 9960
+        },
+        "bath_clock": {
+          "recovered": 9,
+          "lost": 3,
+          "both_failed": 28,
+          "both_correct": 9960
+        }
+      }
+    },
+    {
+      "case": "d5-x-p0.005",
+      "distance": 5,
+      "p": 0.005,
+      "basis": "x",
+      "rounds": 5,
+      "seed": 15789018223975595456,
+      "shots": 10000,
+      "num_detectors": 120,
+      "detector_events": 85425,
+      "shots_with_events": 9869,
+      "observable_flips": 2334,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 125,
+          "ler": 0.0125,
+          "wilson95": [
+            0.01050201650609921,
+            0.01487238190531047
+          ]
+        },
+        "bath_clock": {
+          "failures": 119,
+          "ler": 0.0119,
+          "wilson95": [
+            0.009954278775904261,
+            0.01422058043355023
+          ]
+        },
+        "frozen": {
+          "failures": 104,
+          "ler": 0.0104,
+          "wilson95": [
+            0.008591159114003778,
+            0.012584852090562744
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 40,
+          "lost": 19,
+          "both_failed": 85,
+          "both_correct": 9856
+        },
+        "bath_clock": {
+          "recovered": 32,
+          "lost": 17,
+          "both_failed": 87,
+          "both_correct": 9864
+        }
+      }
+    },
+    {
+      "case": "d5-z-p0.005",
+      "distance": 5,
+      "p": 0.005,
+      "basis": "z",
+      "rounds": 5,
+      "seed": 14056779594774355240,
+      "shots": 10000,
+      "num_detectors": 120,
+      "detector_events": 83025,
+      "shots_with_events": 9890,
+      "observable_flips": 2265,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 94,
+          "ler": 0.0094,
+          "wilson95": [
+            0.007688088248246492,
+            0.011488690953061383
+          ]
+        },
+        "bath_clock": {
+          "failures": 99,
+          "ler": 0.0099,
+          "wilson95": [
+            0.008139001221781109,
+            0.012037393981156089
+          ]
+        },
+        "frozen": {
+          "failures": 79,
+          "ler": 0.0079,
+          "wilson95": [
+            0.006343878268779695,
+            0.009834052927640209
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 29,
+          "lost": 14,
+          "both_failed": 65,
+          "both_correct": 9892
+        },
+        "bath_clock": {
+          "recovered": 33,
+          "lost": 13,
+          "both_failed": 66,
+          "both_correct": 9888
+        }
+      }
+    },
+    {
+      "case": "d5-x-p0.01",
+      "distance": 5,
+      "p": 0.01,
+      "basis": "x",
+      "rounds": 5,
+      "seed": 15548144801568227267,
+      "shots": 10000,
+      "num_detectors": 120,
+      "detector_events": 157044,
+      "shots_with_events": 9997,
+      "observable_flips": 3526,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 854,
+          "ler": 0.0854,
+          "wilson95": [
+            0.08008031480008865,
+            0.09103809664887638
+          ]
+        },
+        "bath_clock": {
+          "failures": 850,
+          "ler": 0.085,
+          "wilson95": [
+            0.07969210510681618,
+            0.09062661354084539
+          ]
+        },
+        "frozen": {
+          "failures": 727,
+          "ler": 0.0727,
+          "wilson95": [
+            0.06777349689232208,
+            0.07795466811525813
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 225,
+          "lost": 98,
+          "both_failed": 629,
+          "both_correct": 9048
+        },
+        "bath_clock": {
+          "recovered": 217,
+          "lost": 94,
+          "both_failed": 633,
+          "both_correct": 9056
+        }
+      }
+    },
+    {
+      "case": "d5-z-p0.01",
+      "distance": 5,
+      "p": 0.01,
+      "basis": "z",
+      "rounds": 5,
+      "seed": 17108988167487216711,
+      "shots": 10000,
+      "num_detectors": 120,
+      "detector_events": 155055,
+      "shots_with_events": 9998,
+      "observable_flips": 3481,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 750,
+          "ler": 0.075,
+          "wilson95": [
+            0.06999923561869643,
+            0.08032716299637867
+          ]
+        },
+        "bath_clock": {
+          "failures": 770,
+          "ler": 0.077,
+          "wilson95": [
+            0.07193581365373697,
+            0.08238904896785543
+          ]
+        },
+        "frozen": {
+          "failures": 664,
+          "ler": 0.0664,
+          "wilson95": [
+            0.061684680192231556,
+            0.07144832319481917
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 173,
+          "lost": 87,
+          "both_failed": 577,
+          "both_correct": 9163
+        },
+        "bath_clock": {
+          "recovered": 186,
+          "lost": 80,
+          "both_failed": 584,
+          "both_correct": 9150
+        }
+      }
+    },
+    {
+      "case": "d7-x-p0.001",
+      "distance": 7,
+      "p": 0.001,
+      "basis": "x",
+      "rounds": 7,
+      "seed": 18116357747418388966,
+      "shots": 10000,
+      "num_detectors": 336,
+      "detector_events": 54093,
+      "shots_with_events": 9122,
+      "observable_flips": 1035,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 0,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            0.00038399837067659557
+          ]
+        },
+        "bath_clock": {
+          "failures": 0,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            0.00038399837067659557
+          ]
+        },
+        "frozen": {
+          "failures": 0,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            0.00038399837067659557
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 0,
+          "lost": 0,
+          "both_failed": 0,
+          "both_correct": 10000
+        },
+        "bath_clock": {
+          "recovered": 0,
+          "lost": 0,
+          "both_failed": 0,
+          "both_correct": 10000
+        }
+      }
+    },
+    {
+      "case": "d7-z-p0.001",
+      "distance": 7,
+      "p": 0.001,
+      "basis": "z",
+      "rounds": 7,
+      "seed": 15485810923898692891,
+      "shots": 10000,
+      "num_detectors": 336,
+      "detector_events": 53218,
+      "shots_with_events": 9093,
+      "observable_flips": 984,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 0,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            0.00038399837067659557
+          ]
+        },
+        "bath_clock": {
+          "failures": 0,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            0.00038399837067659557
+          ]
+        },
+        "frozen": {
+          "failures": 0,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            0.00038399837067659557
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 0,
+          "lost": 0,
+          "both_failed": 0,
+          "both_correct": 10000
+        },
+        "bath_clock": {
+          "recovered": 0,
+          "lost": 0,
+          "both_failed": 0,
+          "both_correct": 10000
+        }
+      }
+    },
+    {
+      "case": "d7-x-p0.003",
+      "distance": 7,
+      "p": 0.003,
+      "basis": "x",
+      "rounds": 7,
+      "seed": 15202769411206389457,
+      "shots": 10000,
+      "num_detectors": 336,
+      "detector_events": 156215,
+      "shots_with_events": 9993,
+      "observable_flips": 2555,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 7,
+          "ler": 0.0007,
+          "wilson95": [
+            0.0003391263316879597,
+            0.0014443344412696886
+          ]
+        },
+        "bath_clock": {
+          "failures": 7,
+          "ler": 0.0007,
+          "wilson95": [
+            0.0003391263316879597,
+            0.0014443344412696886
+          ]
+        },
+        "frozen": {
+          "failures": 6,
+          "ler": 0.0006,
+          "wilson95": [
+            0.0002750134763309978,
+            0.0013085240963007859
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 2,
+          "lost": 1,
+          "both_failed": 5,
+          "both_correct": 9992
+        },
+        "bath_clock": {
+          "recovered": 2,
+          "lost": 1,
+          "both_failed": 5,
+          "both_correct": 9992
+        }
+      }
+    },
+    {
+      "case": "d7-z-p0.003",
+      "distance": 7,
+      "p": 0.003,
+      "basis": "z",
+      "rounds": 7,
+      "seed": 15017728314285410824,
+      "shots": 10000,
+      "num_detectors": 336,
+      "detector_events": 155784,
+      "shots_with_events": 9994,
+      "observable_flips": 2527,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 6,
+          "ler": 0.0006,
+          "wilson95": [
+            0.0002750134763309978,
+            0.0013085240963007859
+          ]
+        },
+        "bath_clock": {
+          "failures": 5,
+          "ler": 0.0005,
+          "wilson95": [
+            0.0002135884261638257,
+            0.0011700259461420934
+          ]
+        },
+        "frozen": {
+          "failures": 3,
+          "ler": 0.0003,
+          "wilson95": [
+            0.00010203219941781012,
+            0.0008817357722363795
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 4,
+          "lost": 1,
+          "both_failed": 2,
+          "both_correct": 9993
+        },
+        "bath_clock": {
+          "recovered": 3,
+          "lost": 1,
+          "both_failed": 2,
+          "both_correct": 9994
+        }
+      }
+    },
+    {
+      "case": "d7-x-p0.005",
+      "distance": 7,
+      "p": 0.005,
+      "basis": "x",
+      "rounds": 7,
+      "seed": 16646080865151314698,
+      "shots": 10000,
+      "num_detectors": 336,
+      "detector_events": 253618,
+      "shots_with_events": 10000,
+      "observable_flips": 3453,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 65,
+          "ler": 0.0065,
+          "wilson95": [
+            0.00510341462983177,
+            0.008275591762026031
+          ]
+        },
+        "bath_clock": {
+          "failures": 67,
+          "ler": 0.0067,
+          "wilson95": [
+            0.00527963331754198,
+            0.00849921947496755
+          ]
+        },
+        "frozen": {
+          "failures": 58,
+          "ler": 0.0058,
+          "wilson95": [
+            0.004489676579576178,
+            0.00748986741000057
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 21,
+          "lost": 14,
+          "both_failed": 44,
+          "both_correct": 9921
+        },
+        "bath_clock": {
+          "recovered": 25,
+          "lost": 16,
+          "both_failed": 42,
+          "both_correct": 9917
+        }
+      }
+    },
+    {
+      "case": "d7-z-p0.005",
+      "distance": 7,
+      "p": 0.005,
+      "basis": "z",
+      "rounds": 7,
+      "seed": 17902881282273773391,
+      "shots": 10000,
+      "num_detectors": 336,
+      "detector_events": 249819,
+      "shots_with_events": 10000,
+      "observable_flips": 3507,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 54,
+          "ler": 0.0054,
+          "wilson95": [
+            0.004141317455103578,
+            0.00703853373316971
+          ]
+        },
+        "bath_clock": {
+          "failures": 54,
+          "ler": 0.0054,
+          "wilson95": [
+            0.004141317455103578,
+            0.00703853373316971
+          ]
+        },
+        "frozen": {
+          "failures": 46,
+          "ler": 0.0046,
+          "wilson95": [
+            0.0034506598701977897,
+            0.006129805715468581
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 16,
+          "lost": 8,
+          "both_failed": 38,
+          "both_correct": 9938
+        },
+        "bath_clock": {
+          "recovered": 16,
+          "lost": 8,
+          "both_failed": 38,
+          "both_correct": 9938
+        }
+      }
+    },
+    {
+      "case": "d7-x-p0.01",
+      "distance": 7,
+      "p": 0.01,
+      "basis": "x",
+      "rounds": 7,
+      "seed": 16469178933675238723,
+      "shots": 10000,
+      "num_detectors": 336,
+      "detector_events": 468476,
+      "shots_with_events": 10000,
+      "observable_flips": 4513,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 993,
+          "ler": 0.0993,
+          "wilson95": [
+            0.09359141972340693,
+            0.10531631657085327
+          ]
+        },
+        "bath_clock": {
+          "failures": 973,
+          "ler": 0.0973,
+          "wilson95": [
+            0.09164502945588462,
+            0.10326424283185828
+          ]
+        },
+        "frozen": {
+          "failures": 873,
+          "ler": 0.0873,
+          "wilson95": [
+            0.0819247965650606,
+            0.09299215569009583
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 334,
+          "lost": 214,
+          "both_failed": 659,
+          "both_correct": 8793
+        },
+        "bath_clock": {
+          "recovered": 320,
+          "lost": 220,
+          "both_failed": 653,
+          "both_correct": 8807
+        }
+      }
+    },
+    {
+      "case": "d7-z-p0.01",
+      "distance": 7,
+      "p": 0.01,
+      "basis": "z",
+      "rounds": 7,
+      "seed": 14174702932994009690,
+      "shots": 10000,
+      "num_detectors": 336,
+      "detector_events": 462561,
+      "shots_with_events": 10000,
+      "observable_flips": 4467,
+      "frozen_decoder": "dispute",
+      "methods": {
+        "native": {
+          "failures": 777,
+          "ler": 0.0777,
+          "wilson95": [
+            0.0726138617813624,
+            0.08311046324251103
+          ]
+        },
+        "bath_clock": {
+          "failures": 783,
+          "ler": 0.0783,
+          "wilson95": [
+            0.07319514536363607,
+            0.08372871886219256
+          ]
+        },
+        "frozen": {
+          "failures": 679,
+          "ler": 0.0679,
+          "wilson95": [
+            0.0631333167739715,
+            0.0729985346179672
+          ]
+        }
+      },
+      "paired": {
+        "native": {
+          "recovered": 282,
+          "lost": 184,
+          "both_failed": 495,
+          "both_correct": 9039
+        },
+        "bath_clock": {
+          "recovered": 284,
+          "lost": 180,
+          "both_failed": 499,
+          "both_correct": 9037
+        }
+      }
+    }
+  ]
+}

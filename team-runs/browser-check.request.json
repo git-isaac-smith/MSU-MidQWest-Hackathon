@@ -1,0 +1,8 @@
+{
+  "mode": "baseline",
+  "basis": "both",
+  "distance": 3,
+  "p": 0.001,
+  "shots": 1000,
+  "seed": 101
+}

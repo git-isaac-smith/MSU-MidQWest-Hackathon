@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "settings": {
+    "mode": "baseline",
+    "basis": "both",
+    "distance": 3,
+    "p": 0.001,
+    "shots": 1000,
+    "seed": 101
+  },
+  "outputs": "team-runs/browser-check.out",
+  "rows": [
+    {
+      "basis": "x",
+      "decoder": "mwpm",
+      "shots": 1000,
+      "failures": 1,
+      "ler": 0.001
+    },
+    {
+      "basis": "x",
+      "decoder": "correlated_mwpm",
+      "shots": 1000,
+      "failures": 2,
+      "ler": 0.002
+    },
+    {
+      "basis": "z",
+      "decoder": "mwpm",
+      "shots": 1000,
+      "failures": 1,
+      "ler": 0.001
+    },
+    {
+      "basis": "z",
+      "decoder": "correlated_mwpm",
+      "shots": 1000,
+      "failures": 1,
+      "ler": 0.001
+    }
+  ]
+}

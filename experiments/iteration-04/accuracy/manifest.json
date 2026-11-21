@@ -1,0 +1,322 @@
+{
+  "format_version": 1,
+  "command": [
+    "python",
+    "-m",
+    "bascd.accuracy_campaign",
+    "--profile",
+    "experiments/iteration-03/bath-calibration/bath-profile.json",
+    "--out",
+    "experiments/iteration-04/accuracy",
+    "--seed",
+    "44712030",
+    "--validation-shots",
+    "10000",
+    "--test-shots",
+    "20000",
+    "--repeats",
+    "1",
+    "--latency-shots",
+    "32"
+  ],
+  "root_seed": 44712030,
+  "shots_per_scenario": 20000,
+  "timing_repeats": 1,
+  "rounds": "distance",
+  "environment": {
+    "python": "3.11.4",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "cpu": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "versions": {
+      "bascd": "0.1.0",
+      "numpy": "2.4.6",
+      "stim": "1.16.0",
+      "pymatching": "2.4.0",
+      "scipy": "1.17.1",
+      "matplotlib": "3.11.2",
+      "jsonschema": "4.26.0",
+      "filelock": "3.32.7"
+    },
+    "source_sha256": {
+      "__init__.py": "9235e7c0985999fadf9ef28b62ccee567e3e65e6f826aa8a91902f1462bf65d1",
+      "__main__.py": "9b5d207d459ace9cbb231c2a80a4786e06afb74097448a22d373c02880bcfc06",
+      "accuracy_campaign.py": "a8bf75afe9defc58372a85833c6459bd43143d4d14e8057f5f67e291ac93d809",
+      "accuracy_decoders.py": "968b1e5d857422af5c65ff2e59908cf243d04c02b0053f9fc3aa007c70476c8e",
+      "adaptive.py": "cd7861e13297a33ea01ec151980f529181c5f9dfb975c147f253099eb749f04c",
+      "adaptive_experiment.py": "6fcd97b97e2feee021cc908b3c843e100ec22bd0ea3bca674e55620246228baf",
+      "bath.py": "32d9b52c97b9fa85b0689c950f679944845cfb8b279d7bf6f62c4784eeb757b2",
+      "bath_erasure.py": "2357c30e33ee7fbe892313b01fe204b6008f06fa2ba84103d6d7576a281041c4",
+      "bath_initialize.py": "2a88622c216ce5d5419d31de843a8094ad4e72e19ed3a26b46f2620dcac4057c",
+      "bath_prior.py": "01573bb02c4baa010d20a91bd4073af2b329258b2ea9ef489b2478e02a3e8294",
+      "bath_transfer.py": "221d4647037b4d61929121ec072605d5e8111699d997ae0554631b172f3f117c",
+      "benchmark.py": "302218eb9fb855143d2edb81f95e7e4359b411360b3929f70904ab761fe88b08",
+      "circuits.py": "489d71d19e1f4560e05d904c44c6a8c4a97393da6d960ae7d71db58aac222408",
+      "decoders.py": "944512dfef26b8c387df85a249347d0d741fe1e26fd601fcadce826bdd5c47cf",
+      "ensemble.py": "519b44f01176afb736f94857cae5d71bc96986a0f6bc22a91b6d75c7ac8eefdd",
+      "exact_small.py": "2f6d7df28dd36df2cd68b607a9e64442947793856d99d87348847f0f9b41af90",
+      "experiment.py": "ec7b4ed03c194a64a5727c912dc96c117d5b5d14d6ba0ba10aeb4ca92d400053",
+      "hypergraph.py": "2d4d619bba2fd5b851855d63dec68f87fadf215461010c06836ae4c40a325e66",
+      "measure.py": "c817d33d1d675b403295374504c458784d786818319f5ccd24fbc62795ec84ba",
+      "records.py": "d1d605054fca606691ae2f65026287049f5eb594cf9ea2f5a326ee62fa29a2bc",
+      "schemas/feedback.json": "7efa915b809bab5e5a0b2de851ec3373672e3f48fb6d12abe44bd758448ea6d1",
+      "schemas/proposal.json": "2d4f92c011739579a30eab2f9cfaffde3bfe387fe0f4fb5a301d37c8eee0c1f1",
+      "search.py": "cf34230e645e95d9767f6ba13956e7212719dd2120b3cc028ef0f3868b9f1e91",
+      "stats.py": "d96e4c4ec6c66f15c359772687d2e34d7b2263ae92027e6f8b02a47cbce2942e",
+      "sweep.py": "ceb950caed692ad18298d86f25fc3471c19f819ebc8f5eec007abfca140095fe"
+    }
+  },
+  "noise": {
+    "name": "simple_uniform",
+    "status": "provisional",
+    "generator": "Stim rotated memory",
+    "after_clifford_depolarization": "p",
+    "after_reset_flip_probability": "p",
+    "before_measure_flip_probability": "p",
+    "before_round_data_depolarization": "p"
+  },
+  "validation_shots": 10000,
+  "latency_shots": 32,
+  "scenarios": [
+    {
+      "distance": 3,
+      "p": 0.001,
+      "basis": "x"
+    },
+    {
+      "distance": 3,
+      "p": 0.001,
+      "basis": "z"
+    },
+    {
+      "distance": 3,
+      "p": 0.003,
+      "basis": "x"
+    },
+    {
+      "distance": 3,
+      "p": 0.003,
+      "basis": "z"
+    },
+    {
+      "distance": 3,
+      "p": 0.005,
+      "basis": "x"
+    },
+    {
+      "distance": 3,
+      "p": 0.005,
+      "basis": "z"
+    },
+    {
+      "distance": 3,
+      "p": 0.01,
+      "basis": "x"
+    },
+    {
+      "distance": 3,
+      "p": 0.01,
+      "basis": "z"
+    },
+    {
+      "distance": 5,
+      "p": 0.001,
+      "basis": "x"
+    },
+    {
+      "distance": 5,
+      "p": 0.001,
+      "basis": "z"
+    },
+    {
+      "distance": 5,
+      "p": 0.003,
+      "basis": "x"
+    },
+    {
+      "distance": 5,
+      "p": 0.003,
+      "basis": "z"
+    },
+    {
+      "distance": 5,
+      "p": 0.005,
+      "basis": "x"
+    },
+    {
+      "distance": 5,
+      "p": 0.005,
+      "basis": "z"
+    },
+    {
+      "distance": 5,
+      "p": 0.01,
+      "basis": "x"
+    },
+    {
+      "distance": 5,
+      "p": 0.01,
+      "basis": "z"
+    },
+    {
+      "distance": 7,
+      "p": 0.001,
+      "basis": "x"
+    },
+    {
+      "distance": 7,
+      "p": 0.001,
+      "basis": "z"
+    },
+    {
+      "distance": 7,
+      "p": 0.003,
+      "basis": "x"
+    },
+    {
+      "distance": 7,
+      "p": 0.003,
+      "basis": "z"
+    },
+    {
+      "distance": 7,
+      "p": 0.005,
+      "basis": "x"
+    },
+    {
+      "distance": 7,
+      "p": 0.005,
+      "basis": "z"
+    },
+    {
+      "distance": 7,
+      "p": 0.01,
+      "basis": "x"
+    },
+    {
+      "distance": 7,
+      "p": 0.01,
+      "basis": "z"
+    }
+  ],
+  "recipe": {
+    "bath_xyz": {
+      "clock": [
+        0.792138232947568,
+        0.03966576123041556,
+        0.16819600582201646
+      ],
+      "selected": [
+        0.1541560407287177,
+        0.12764161305313382,
+        0.7182023462181485
+      ]
+    },
+    "ensemble3": {
+      "members": [
+        {
+          "source": "native",
+          "jitter": 0.0,
+          "seed": 0,
+          "correlated": false
+        },
+        {
+          "source": "native",
+          "jitter": 0.0,
+          "seed": 0,
+          "correlated": true
+        },
+        {
+          "source": "selected",
+          "jitter": 0.0,
+          "seed": 0,
+          "correlated": true
+        }
+      ]
+    },
+    "ensemble5": {
+      "members": [
+        {
+          "source": "native",
+          "jitter": 0.0,
+          "seed": 0,
+          "correlated": true
+        },
+        {
+          "source": "clock",
+          "jitter": 0.0,
+          "seed": 0,
+          "correlated": true
+        },
+        {
+          "source": "selected",
+          "jitter": 0.0,
+          "seed": 0,
+          "correlated": true
+        },
+        {
+          "source": "native",
+          "jitter": 1.1,
+          "seed": 11,
+          "correlated": true
+        },
+        {
+          "source": "native",
+          "jitter": 1.1,
+          "seed": 29,
+          "correlated": true
+        }
+      ]
+    },
+    "belief": {
+      "iterations": 12,
+      "threads": 4
+    },
+    "search": {
+      "beam": 5,
+      "num_det_orders": 2,
+      "pqlimit": 5000,
+      "threads": 4
+    }
+  },
+  "search_backend": {
+    "decoder_type": "hypergraph_search",
+    "backend": "stabilizer-qec",
+    "backend_version": "2.1.0",
+    "single_shot_threads": 1,
+    "det_order_method": "index",
+    "seed": 2384753,
+    "beam_climbing": false,
+    "no_revisit_dets": true,
+    "det_penalty": 0.0,
+    "merge_errors": true,
+    "fallback": "correlated_mwpm",
+    "beam": 5,
+    "num_det_orders": 2,
+    "pqlimit": 5000,
+    "threads": 4
+  },
+  "belief_method": "product_sum",
+  "backend_version": "2.1.0",
+  "profile_sha256": "e649d17ea6be5823bafb39fc6fb31474ee294880760e6aa70ecf7801cb487589",
+  "profile": "experiments\\iteration-03\\bath-calibration\\bath-profile.json",
+  "selection": "minimum validation failures pooled by distance; ties use candidate order",
+  "candidate_order": [
+    "exact_small",
+    "native",
+    "bath_clock",
+    "ensemble3",
+    "ensemble5",
+    "belief",
+    "bath_belief",
+    "search_native",
+    "search_belief",
+    "dispute",
+    "belief_pair"
+  ],
+  "final_references": [
+    "native",
+    "bath_clock",
+    "belief"
+  ],
+  "paired_intervals": "95% stratified paired normal approximation across fixed scenarios"
+}

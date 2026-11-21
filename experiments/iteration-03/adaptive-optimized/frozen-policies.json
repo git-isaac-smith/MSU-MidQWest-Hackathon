@@ -1,0 +1,1562 @@
+{
+  "validation_choices_by_runtime_multiple": {
+    "1.5": "spacetime-75",
+    "2.0": "count-75"
+  },
+  "adaptive_finalists": [
+    "count-75",
+    "spacetime-75"
+  ],
+  "scenarios": [
+    {
+      "train_sample": {
+        "distance": 3,
+        "p": 0.001,
+        "basis": "x",
+        "rounds": 3,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 6704094859408759443,
+        "circuit_sha256": "9dd6e84ab040958f016fde97edc83f9f069e48c5e9b31960a6f662bcbed1e310",
+        "sample_sha256": "3ca2fb10b8a7984014745861de4cf1b04758879b3de7217fee0819fe99f09be7",
+        "num_detectors": 24,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0008728,
+        "sampling_s": 0.001828
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "d8378b4a421373b2e9b578420d0e4cbeffb62f59b57bf594e2509ab540152a69",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-50": {
+          "dem_sha256": "d8378b4a421373b2e9b578420d0e4cbeffb62f59b57bf594e2509ab540152a69",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-75": {
+          "dem_sha256": "d8378b4a421373b2e9b578420d0e4cbeffb62f59b57bf594e2509ab540152a69",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "spacetime-25": {
+          "dem_sha256": "d8378b4a421373b2e9b578420d0e4cbeffb62f59b57bf594e2509ab540152a69",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "d8378b4a421373b2e9b578420d0e4cbeffb62f59b57bf594e2509ab540152a69",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "d8378b4a421373b2e9b578420d0e4cbeffb62f59b57bf594e2509ab540152a69",
+          "feature": "spacetime",
+          "correlated_bins": []
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 3,
+        "p": 0.001,
+        "basis": "z",
+        "rounds": 3,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 6200192010329354763,
+        "circuit_sha256": "434e204bfbaaf708a0e174a7ab0963c21139601c3ec89f83475f05fc51e67e96",
+        "sample_sha256": "e7f4f8c3019a675f76bf17128a1b15d9899fc7e6867b817edc95823a1ba8df6b",
+        "num_detectors": 24,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0008681,
+        "sampling_s": 0.001468
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "5d1cc5e6a50fe8f3bc9616a673765d43b634384c60c4c03b8ef560643eecdfbc",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-50": {
+          "dem_sha256": "5d1cc5e6a50fe8f3bc9616a673765d43b634384c60c4c03b8ef560643eecdfbc",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-75": {
+          "dem_sha256": "5d1cc5e6a50fe8f3bc9616a673765d43b634384c60c4c03b8ef560643eecdfbc",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "spacetime-25": {
+          "dem_sha256": "5d1cc5e6a50fe8f3bc9616a673765d43b634384c60c4c03b8ef560643eecdfbc",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "5d1cc5e6a50fe8f3bc9616a673765d43b634384c60c4c03b8ef560643eecdfbc",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "5d1cc5e6a50fe8f3bc9616a673765d43b634384c60c4c03b8ef560643eecdfbc",
+          "feature": "spacetime",
+          "correlated_bins": []
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 3,
+        "p": 0.003,
+        "basis": "x",
+        "rounds": 3,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 6326053057479868480,
+        "circuit_sha256": "01d7f85eecf96125d6313d7026aff7df51edb222f2a79b24b69651eb7890f41e",
+        "sample_sha256": "9edb52081cac55f0e3a74f7d4fe8dc2a28533c73aa2051cc863858a132ddeb8b",
+        "num_detectors": 24,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0007951,
+        "sampling_s": 0.0015327
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "d20c98effce66b3096059c2eb3cb7a7caf41f0bf019123a6caa72c3368ad8641",
+          "feature": "count",
+          "correlated_bins": [
+            5
+          ]
+        },
+        "count-50": {
+          "dem_sha256": "d20c98effce66b3096059c2eb3cb7a7caf41f0bf019123a6caa72c3368ad8641",
+          "feature": "count",
+          "correlated_bins": [
+            5
+          ]
+        },
+        "count-75": {
+          "dem_sha256": "d20c98effce66b3096059c2eb3cb7a7caf41f0bf019123a6caa72c3368ad8641",
+          "feature": "count",
+          "correlated_bins": [
+            5
+          ]
+        },
+        "spacetime-25": {
+          "dem_sha256": "d20c98effce66b3096059c2eb3cb7a7caf41f0bf019123a6caa72c3368ad8641",
+          "feature": "spacetime",
+          "correlated_bins": [
+            21
+          ]
+        },
+        "spacetime-50": {
+          "dem_sha256": "d20c98effce66b3096059c2eb3cb7a7caf41f0bf019123a6caa72c3368ad8641",
+          "feature": "spacetime",
+          "correlated_bins": [
+            21
+          ]
+        },
+        "spacetime-75": {
+          "dem_sha256": "d20c98effce66b3096059c2eb3cb7a7caf41f0bf019123a6caa72c3368ad8641",
+          "feature": "spacetime",
+          "correlated_bins": [
+            21
+          ]
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 3,
+        "p": 0.003,
+        "basis": "z",
+        "rounds": 3,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 6609515218561115164,
+        "circuit_sha256": "a74ee70bbaa6e5ec78b52caebc43b5433708f49b0a31ae1ae56d2ea34867ab61",
+        "sample_sha256": "55f2cdeba0128cbdd008e509f696ce9296d65e5ce1def8a79666e28b584a01a4",
+        "num_detectors": 24,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0008434,
+        "sampling_s": 0.001948
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "649ca414f6aaab5acfe6f57b4fb35787d628f019031830b420e574b240775518",
+          "feature": "count",
+          "correlated_bins": [
+            6
+          ]
+        },
+        "count-50": {
+          "dem_sha256": "649ca414f6aaab5acfe6f57b4fb35787d628f019031830b420e574b240775518",
+          "feature": "count",
+          "correlated_bins": [
+            6
+          ]
+        },
+        "count-75": {
+          "dem_sha256": "649ca414f6aaab5acfe6f57b4fb35787d628f019031830b420e574b240775518",
+          "feature": "count",
+          "correlated_bins": [
+            6
+          ]
+        },
+        "spacetime-25": {
+          "dem_sha256": "649ca414f6aaab5acfe6f57b4fb35787d628f019031830b420e574b240775518",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "649ca414f6aaab5acfe6f57b4fb35787d628f019031830b420e574b240775518",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "649ca414f6aaab5acfe6f57b4fb35787d628f019031830b420e574b240775518",
+          "feature": "spacetime",
+          "correlated_bins": []
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 3,
+        "p": 0.005,
+        "basis": "x",
+        "rounds": 3,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 7881926533939304323,
+        "circuit_sha256": "895d2f27caf82f0928533c072b5a55330304ebb0d0dbb8a03252205419a8b8f7",
+        "sample_sha256": "bae6b6542c0f83cf8bdbc0a46fdbb4b7872393b503394dbb4a5fbff9f90296db",
+        "num_detectors": 24,
+        "num_observables": 1,
+        "simulation_setup_s": 0.000812,
+        "sampling_s": 0.0017099
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "d10b06fef24751b7838d2c72cefd7460ea9b3b58d835f38c61f6384e00dd9ee3",
+          "feature": "count",
+          "correlated_bins": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "count-50": {
+          "dem_sha256": "d10b06fef24751b7838d2c72cefd7460ea9b3b58d835f38c61f6384e00dd9ee3",
+          "feature": "count",
+          "correlated_bins": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "count-75": {
+          "dem_sha256": "d10b06fef24751b7838d2c72cefd7460ea9b3b58d835f38c61f6384e00dd9ee3",
+          "feature": "count",
+          "correlated_bins": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "spacetime-25": {
+          "dem_sha256": "d10b06fef24751b7838d2c72cefd7460ea9b3b58d835f38c61f6384e00dd9ee3",
+          "feature": "spacetime",
+          "correlated_bins": [
+            13,
+            17,
+            21,
+            26,
+            27,
+            30
+          ]
+        },
+        "spacetime-50": {
+          "dem_sha256": "d10b06fef24751b7838d2c72cefd7460ea9b3b58d835f38c61f6384e00dd9ee3",
+          "feature": "spacetime",
+          "correlated_bins": [
+            13,
+            17,
+            21,
+            26,
+            27,
+            30
+          ]
+        },
+        "spacetime-75": {
+          "dem_sha256": "d10b06fef24751b7838d2c72cefd7460ea9b3b58d835f38c61f6384e00dd9ee3",
+          "feature": "spacetime",
+          "correlated_bins": [
+            13,
+            17,
+            21,
+            26,
+            27,
+            30
+          ]
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 3,
+        "p": 0.005,
+        "basis": "z",
+        "rounds": 3,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 7908494273330523504,
+        "circuit_sha256": "0670b3c37962732e37e0765b2c3f564fd0bd4ae3dea45dd8cea08b65ef495f91",
+        "sample_sha256": "07b86c03ec2493b343e6fc2863a6a52331659c32da5362c7d3819fe2718ad574",
+        "num_detectors": 24,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0008355,
+        "sampling_s": 0.0017494
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "04451e5e6c93c03e6f8fe12cb904f7a42bc941bfc82e9c09bb929564e39e63c1",
+          "feature": "count",
+          "correlated_bins": [
+            5,
+            7
+          ]
+        },
+        "count-50": {
+          "dem_sha256": "04451e5e6c93c03e6f8fe12cb904f7a42bc941bfc82e9c09bb929564e39e63c1",
+          "feature": "count",
+          "correlated_bins": [
+            5,
+            7
+          ]
+        },
+        "count-75": {
+          "dem_sha256": "04451e5e6c93c03e6f8fe12cb904f7a42bc941bfc82e9c09bb929564e39e63c1",
+          "feature": "count",
+          "correlated_bins": [
+            5,
+            7
+          ]
+        },
+        "spacetime-25": {
+          "dem_sha256": "04451e5e6c93c03e6f8fe12cb904f7a42bc941bfc82e9c09bb929564e39e63c1",
+          "feature": "spacetime",
+          "correlated_bins": [
+            21,
+            22,
+            26,
+            30
+          ]
+        },
+        "spacetime-50": {
+          "dem_sha256": "04451e5e6c93c03e6f8fe12cb904f7a42bc941bfc82e9c09bb929564e39e63c1",
+          "feature": "spacetime",
+          "correlated_bins": [
+            21,
+            22,
+            26,
+            30
+          ]
+        },
+        "spacetime-75": {
+          "dem_sha256": "04451e5e6c93c03e6f8fe12cb904f7a42bc941bfc82e9c09bb929564e39e63c1",
+          "feature": "spacetime",
+          "correlated_bins": [
+            21,
+            22,
+            26,
+            30
+          ]
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 3,
+        "p": 0.01,
+        "basis": "x",
+        "rounds": 3,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 7711067219132237627,
+        "circuit_sha256": "156938c69ea77a0053ce60d953a75718fe72eddfb652794b5b2249143203bee2",
+        "sample_sha256": "6dfc2c523dc7c65568298c7d9790ed42506d41d3fc56dc36cba6e24d380575d5",
+        "num_detectors": 24,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0008083,
+        "sampling_s": 0.0024443
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "66a22f27bd8e8d3ebbb2e5b292b8af5dab0dfd76a11bcf6b10e1707dda06a4b5",
+          "feature": "count",
+          "correlated_bins": [
+            5,
+            7,
+            8,
+            9
+          ]
+        },
+        "count-50": {
+          "dem_sha256": "66a22f27bd8e8d3ebbb2e5b292b8af5dab0dfd76a11bcf6b10e1707dda06a4b5",
+          "feature": "count",
+          "correlated_bins": [
+            3,
+            5,
+            7,
+            8,
+            9
+          ]
+        },
+        "count-75": {
+          "dem_sha256": "66a22f27bd8e8d3ebbb2e5b292b8af5dab0dfd76a11bcf6b10e1707dda06a4b5",
+          "feature": "count",
+          "correlated_bins": [
+            3,
+            5,
+            7,
+            8,
+            9
+          ]
+        },
+        "spacetime-25": {
+          "dem_sha256": "66a22f27bd8e8d3ebbb2e5b292b8af5dab0dfd76a11bcf6b10e1707dda06a4b5",
+          "feature": "spacetime",
+          "correlated_bins": [
+            13,
+            21,
+            22,
+            25,
+            27,
+            29,
+            30,
+            34,
+            35
+          ]
+        },
+        "spacetime-50": {
+          "dem_sha256": "66a22f27bd8e8d3ebbb2e5b292b8af5dab0dfd76a11bcf6b10e1707dda06a4b5",
+          "feature": "spacetime",
+          "correlated_bins": [
+            13,
+            18,
+            21,
+            22,
+            25,
+            27,
+            29,
+            30,
+            34,
+            35
+          ]
+        },
+        "spacetime-75": {
+          "dem_sha256": "66a22f27bd8e8d3ebbb2e5b292b8af5dab0dfd76a11bcf6b10e1707dda06a4b5",
+          "feature": "spacetime",
+          "correlated_bins": [
+            13,
+            18,
+            21,
+            22,
+            25,
+            27,
+            29,
+            30,
+            34,
+            35
+          ]
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 3,
+        "p": 0.01,
+        "basis": "z",
+        "rounds": 3,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 5650068998561112780,
+        "circuit_sha256": "0ce98c7da3f5cc62f8277bda02dfb065d78d418b5285df7bb9d14a5c7fd7dd99",
+        "sample_sha256": "5a77e9f894aa942e0a40092a791627942eac759a1f518ecae52ca749c7313caa",
+        "num_detectors": 24,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0009,
+        "sampling_s": 0.0023115
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "46b3fe8ff1a03a2834371112edd64087d3c4d96e1904a849f4a4be0cedcd1f59",
+          "feature": "count",
+          "correlated_bins": [
+            5,
+            6,
+            9
+          ]
+        },
+        "count-50": {
+          "dem_sha256": "46b3fe8ff1a03a2834371112edd64087d3c4d96e1904a849f4a4be0cedcd1f59",
+          "feature": "count",
+          "correlated_bins": [
+            5,
+            6,
+            9
+          ]
+        },
+        "count-75": {
+          "dem_sha256": "46b3fe8ff1a03a2834371112edd64087d3c4d96e1904a849f4a4be0cedcd1f59",
+          "feature": "count",
+          "correlated_bins": [
+            5,
+            6,
+            9
+          ]
+        },
+        "spacetime-25": {
+          "dem_sha256": "46b3fe8ff1a03a2834371112edd64087d3c4d96e1904a849f4a4be0cedcd1f59",
+          "feature": "spacetime",
+          "correlated_bins": [
+            17,
+            22,
+            25,
+            26,
+            38
+          ]
+        },
+        "spacetime-50": {
+          "dem_sha256": "46b3fe8ff1a03a2834371112edd64087d3c4d96e1904a849f4a4be0cedcd1f59",
+          "feature": "spacetime",
+          "correlated_bins": [
+            17,
+            22,
+            25,
+            26,
+            38
+          ]
+        },
+        "spacetime-75": {
+          "dem_sha256": "46b3fe8ff1a03a2834371112edd64087d3c4d96e1904a849f4a4be0cedcd1f59",
+          "feature": "spacetime",
+          "correlated_bins": [
+            17,
+            22,
+            25,
+            26,
+            38
+          ]
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 5,
+        "p": 0.001,
+        "basis": "x",
+        "rounds": 5,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 8997649475775857047,
+        "circuit_sha256": "d50a533f90eae47ab70b1ee86689d7f2739305563b864cf66243c79b03f6471c",
+        "sample_sha256": "a5c12ee776633be1ff6ccf5450847b26832a8e372b91dac51fbcdcd8f6913b4d",
+        "num_detectors": 120,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0118988,
+        "sampling_s": 0.0291647
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "daf1be20e523df3ad30ee91129f2a8ad4f5a0fc3b933095f91c67a83e17defbc",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-50": {
+          "dem_sha256": "daf1be20e523df3ad30ee91129f2a8ad4f5a0fc3b933095f91c67a83e17defbc",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-75": {
+          "dem_sha256": "daf1be20e523df3ad30ee91129f2a8ad4f5a0fc3b933095f91c67a83e17defbc",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "spacetime-25": {
+          "dem_sha256": "daf1be20e523df3ad30ee91129f2a8ad4f5a0fc3b933095f91c67a83e17defbc",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "daf1be20e523df3ad30ee91129f2a8ad4f5a0fc3b933095f91c67a83e17defbc",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "daf1be20e523df3ad30ee91129f2a8ad4f5a0fc3b933095f91c67a83e17defbc",
+          "feature": "spacetime",
+          "correlated_bins": []
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 5,
+        "p": 0.001,
+        "basis": "z",
+        "rounds": 5,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 4908197014896495268,
+        "circuit_sha256": "340de2731f9148b8da891541644047f316658f0df4ba6067cf99b4f9b90fa380",
+        "sample_sha256": "a36b0a88c6dd00099a48694a4c8f146c0edfacc8ae745a0e7a1387e12a847b20",
+        "num_detectors": 120,
+        "num_observables": 1,
+        "simulation_setup_s": 0.026601,
+        "sampling_s": 0.0580832
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "12d22993c3c2629d43179416ee4f8b97e40a3115185e5ced27d54f1f46f0f8cb",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-50": {
+          "dem_sha256": "12d22993c3c2629d43179416ee4f8b97e40a3115185e5ced27d54f1f46f0f8cb",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-75": {
+          "dem_sha256": "12d22993c3c2629d43179416ee4f8b97e40a3115185e5ced27d54f1f46f0f8cb",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "spacetime-25": {
+          "dem_sha256": "12d22993c3c2629d43179416ee4f8b97e40a3115185e5ced27d54f1f46f0f8cb",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "12d22993c3c2629d43179416ee4f8b97e40a3115185e5ced27d54f1f46f0f8cb",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "12d22993c3c2629d43179416ee4f8b97e40a3115185e5ced27d54f1f46f0f8cb",
+          "feature": "spacetime",
+          "correlated_bins": []
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 5,
+        "p": 0.003,
+        "basis": "x",
+        "rounds": 5,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 7454960969603600098,
+        "circuit_sha256": "dc53f69ca5df78e40e10c7c3612f657ccf29248a1026d70e59531e3dd45ce118",
+        "sample_sha256": "f8d1d460d6ea001a6005f6cbe243e2afe75af14536d183c58f06b678bd249503",
+        "num_detectors": 120,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0100044,
+        "sampling_s": 0.0362279
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "f4c9b305a3b0b837774e70eb30b8ea64f05d66b6e13cdb98522038a470b8849a",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-50": {
+          "dem_sha256": "f4c9b305a3b0b837774e70eb30b8ea64f05d66b6e13cdb98522038a470b8849a",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-75": {
+          "dem_sha256": "f4c9b305a3b0b837774e70eb30b8ea64f05d66b6e13cdb98522038a470b8849a",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "spacetime-25": {
+          "dem_sha256": "f4c9b305a3b0b837774e70eb30b8ea64f05d66b6e13cdb98522038a470b8849a",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "f4c9b305a3b0b837774e70eb30b8ea64f05d66b6e13cdb98522038a470b8849a",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "f4c9b305a3b0b837774e70eb30b8ea64f05d66b6e13cdb98522038a470b8849a",
+          "feature": "spacetime",
+          "correlated_bins": []
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 5,
+        "p": 0.003,
+        "basis": "z",
+        "rounds": 5,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 4765087041614996451,
+        "circuit_sha256": "735e2258df24a60b4e7c88790fb76910eb8b6cb463c6b831e9a3f973cf17d815",
+        "sample_sha256": "82b74bd561a857c7f388da4b32fd3b74eb23ad82356042bf4cb7d9393557d53f",
+        "num_detectors": 120,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0117953,
+        "sampling_s": 0.0371859
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "30c79259731668e89b9bb130f67f0d5e024020b159939f67d22919d6656b9162",
+          "feature": "count",
+          "correlated_bins": [
+            13
+          ]
+        },
+        "count-50": {
+          "dem_sha256": "30c79259731668e89b9bb130f67f0d5e024020b159939f67d22919d6656b9162",
+          "feature": "count",
+          "correlated_bins": [
+            13
+          ]
+        },
+        "count-75": {
+          "dem_sha256": "30c79259731668e89b9bb130f67f0d5e024020b159939f67d22919d6656b9162",
+          "feature": "count",
+          "correlated_bins": [
+            13
+          ]
+        },
+        "spacetime-25": {
+          "dem_sha256": "30c79259731668e89b9bb130f67f0d5e024020b159939f67d22919d6656b9162",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "30c79259731668e89b9bb130f67f0d5e024020b159939f67d22919d6656b9162",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "30c79259731668e89b9bb130f67f0d5e024020b159939f67d22919d6656b9162",
+          "feature": "spacetime",
+          "correlated_bins": []
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 5,
+        "p": 0.005,
+        "basis": "x",
+        "rounds": 5,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 8756737076161834189,
+        "circuit_sha256": "bd5f4b3be41b86ae40d1eb86a33a7436d86c3da48331b2c0e764922f8dfefbe5",
+        "sample_sha256": "5018b5577703ba0b950ef9514076d2ba9343d41f265007e2c191310df976eb59",
+        "num_detectors": 120,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0153218,
+        "sampling_s": 0.0521311
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "fbb0afccc3cee36c6aa70633ce1aeb9f938baa30ef5b704feb825875611d5f35",
+          "feature": "count",
+          "correlated_bins": [
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "count-50": {
+          "dem_sha256": "fbb0afccc3cee36c6aa70633ce1aeb9f938baa30ef5b704feb825875611d5f35",
+          "feature": "count",
+          "correlated_bins": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "count-75": {
+          "dem_sha256": "fbb0afccc3cee36c6aa70633ce1aeb9f938baa30ef5b704feb825875611d5f35",
+          "feature": "count",
+          "correlated_bins": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "spacetime-25": {
+          "dem_sha256": "fbb0afccc3cee36c6aa70633ce1aeb9f938baa30ef5b704feb825875611d5f35",
+          "feature": "spacetime",
+          "correlated_bins": [
+            47,
+            51,
+            59,
+            63
+          ]
+        },
+        "spacetime-50": {
+          "dem_sha256": "fbb0afccc3cee36c6aa70633ce1aeb9f938baa30ef5b704feb825875611d5f35",
+          "feature": "spacetime",
+          "correlated_bins": [
+            39,
+            47,
+            51,
+            55,
+            59,
+            63
+          ]
+        },
+        "spacetime-75": {
+          "dem_sha256": "fbb0afccc3cee36c6aa70633ce1aeb9f938baa30ef5b704feb825875611d5f35",
+          "feature": "spacetime",
+          "correlated_bins": [
+            39,
+            47,
+            51,
+            55,
+            59,
+            63
+          ]
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 5,
+        "p": 0.005,
+        "basis": "z",
+        "rounds": 5,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 5329324231143040403,
+        "circuit_sha256": "25c753d013b1e496d894ff07f15ac5c1602d3d12624da0bf1588652acce47e5f",
+        "sample_sha256": "5ad02d54d16415472bcf9952e7b1a08a4d63793d88f9469edfa1d459c23f6d10",
+        "num_detectors": 120,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0177654,
+        "sampling_s": 0.0584383
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "e352b292cce7cc75f4ef342a97b04f7ad0679b37244961fe7dd9d29ffa37f9a3",
+          "feature": "count",
+          "correlated_bins": [
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "count-50": {
+          "dem_sha256": "e352b292cce7cc75f4ef342a97b04f7ad0679b37244961fe7dd9d29ffa37f9a3",
+          "feature": "count",
+          "correlated_bins": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "count-75": {
+          "dem_sha256": "e352b292cce7cc75f4ef342a97b04f7ad0679b37244961fe7dd9d29ffa37f9a3",
+          "feature": "count",
+          "correlated_bins": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "spacetime-25": {
+          "dem_sha256": "e352b292cce7cc75f4ef342a97b04f7ad0679b37244961fe7dd9d29ffa37f9a3",
+          "feature": "spacetime",
+          "correlated_bins": [
+            47,
+            51,
+            55,
+            59,
+            63
+          ]
+        },
+        "spacetime-50": {
+          "dem_sha256": "e352b292cce7cc75f4ef342a97b04f7ad0679b37244961fe7dd9d29ffa37f9a3",
+          "feature": "spacetime",
+          "correlated_bins": [
+            43,
+            47,
+            51,
+            55,
+            59,
+            63
+          ]
+        },
+        "spacetime-75": {
+          "dem_sha256": "e352b292cce7cc75f4ef342a97b04f7ad0679b37244961fe7dd9d29ffa37f9a3",
+          "feature": "spacetime",
+          "correlated_bins": [
+            43,
+            47,
+            51,
+            55,
+            59,
+            63
+          ]
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 5,
+        "p": 0.01,
+        "basis": "x",
+        "rounds": 5,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 7781380711900744255,
+        "circuit_sha256": "f9637e501067ea5fc104888885d9f94784f2bf7f118605d76ff0672ff8290ce4",
+        "sample_sha256": "7db6fb0b8c03dd286bd20e9f141c5fc93793efdf628fbc0da07f523e965222c3",
+        "num_detectors": 120,
+        "num_observables": 1,
+        "simulation_setup_s": 0.016205,
+        "sampling_s": 0.0616938
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "f2e9b6ff78b7b0a71d3b35c60777a3f09412c2b35d72b506afc10ef5ddabe906",
+          "feature": "count",
+          "correlated_bins": [
+            9,
+            12,
+            13,
+            14
+          ]
+        },
+        "count-50": {
+          "dem_sha256": "f2e9b6ff78b7b0a71d3b35c60777a3f09412c2b35d72b506afc10ef5ddabe906",
+          "feature": "count",
+          "correlated_bins": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        "count-75": {
+          "dem_sha256": "f2e9b6ff78b7b0a71d3b35c60777a3f09412c2b35d72b506afc10ef5ddabe906",
+          "feature": "count",
+          "correlated_bins": [
+            9,
+            12,
+            14,
+            15
+          ]
+        },
+        "spacetime-25": {
+          "dem_sha256": "f2e9b6ff78b7b0a71d3b35c60777a3f09412c2b35d72b506afc10ef5ddabe906",
+          "feature": "spacetime",
+          "correlated_bins": [
+            47,
+            50,
+            51,
+            59,
+            62
+          ]
+        },
+        "spacetime-50": {
+          "dem_sha256": "f2e9b6ff78b7b0a71d3b35c60777a3f09412c2b35d72b506afc10ef5ddabe906",
+          "feature": "spacetime",
+          "correlated_bins": [
+            47,
+            50,
+            51,
+            55,
+            59,
+            62
+          ]
+        },
+        "spacetime-75": {
+          "dem_sha256": "f2e9b6ff78b7b0a71d3b35c60777a3f09412c2b35d72b506afc10ef5ddabe906",
+          "feature": "spacetime",
+          "correlated_bins": [
+            47,
+            50,
+            51,
+            59,
+            62,
+            63
+          ]
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 5,
+        "p": 0.01,
+        "basis": "z",
+        "rounds": 5,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 6443202194288611021,
+        "circuit_sha256": "e459a9e41b11923ada45ab44f7a84621956cf24a4b188a6b00401b5869d8efe0",
+        "sample_sha256": "72e9685d8ee52ac3ba77511cb2e7c9a144748300d4097d20c277c4f06a908bb7",
+        "num_detectors": 120,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0122226,
+        "sampling_s": 0.0472713
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "9fa480655f492a37fa180ef36080cd4bfe3cf01a91a39266ee7ede83698465a6",
+          "feature": "count",
+          "correlated_bins": [
+            12,
+            13,
+            14
+          ]
+        },
+        "count-50": {
+          "dem_sha256": "9fa480655f492a37fa180ef36080cd4bfe3cf01a91a39266ee7ede83698465a6",
+          "feature": "count",
+          "correlated_bins": [
+            10,
+            12,
+            13,
+            14
+          ]
+        },
+        "count-75": {
+          "dem_sha256": "9fa480655f492a37fa180ef36080cd4bfe3cf01a91a39266ee7ede83698465a6",
+          "feature": "count",
+          "correlated_bins": [
+            10,
+            12,
+            14,
+            15
+          ]
+        },
+        "spacetime-25": {
+          "dem_sha256": "9fa480655f492a37fa180ef36080cd4bfe3cf01a91a39266ee7ede83698465a6",
+          "feature": "spacetime",
+          "correlated_bins": [
+            47,
+            51,
+            55,
+            59,
+            62
+          ]
+        },
+        "spacetime-50": {
+          "dem_sha256": "9fa480655f492a37fa180ef36080cd4bfe3cf01a91a39266ee7ede83698465a6",
+          "feature": "spacetime",
+          "correlated_bins": [
+            47,
+            51,
+            55,
+            59,
+            62
+          ]
+        },
+        "spacetime-75": {
+          "dem_sha256": "9fa480655f492a37fa180ef36080cd4bfe3cf01a91a39266ee7ede83698465a6",
+          "feature": "spacetime",
+          "correlated_bins": [
+            51,
+            55,
+            59,
+            62,
+            63
+          ]
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 7,
+        "p": 0.001,
+        "basis": "x",
+        "rounds": 7,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 9221425898165305747,
+        "circuit_sha256": "6e311e046a995de22cb43db662a15b7d336a7338f9579357c3e61fc7360d3daf",
+        "sample_sha256": "41ab1857ea6661092a3b777b7956c6a8313cf94bab5d7c31e9f500a975466a36",
+        "num_detectors": 336,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0222106,
+        "sampling_s": 0.0941257
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "ced6e28cabd0edba1b2e69b697b5382aaf327ef9364c010acbd9f1eff9e123cc",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-50": {
+          "dem_sha256": "ced6e28cabd0edba1b2e69b697b5382aaf327ef9364c010acbd9f1eff9e123cc",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-75": {
+          "dem_sha256": "ced6e28cabd0edba1b2e69b697b5382aaf327ef9364c010acbd9f1eff9e123cc",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "spacetime-25": {
+          "dem_sha256": "ced6e28cabd0edba1b2e69b697b5382aaf327ef9364c010acbd9f1eff9e123cc",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "ced6e28cabd0edba1b2e69b697b5382aaf327ef9364c010acbd9f1eff9e123cc",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "ced6e28cabd0edba1b2e69b697b5382aaf327ef9364c010acbd9f1eff9e123cc",
+          "feature": "spacetime",
+          "correlated_bins": []
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 7,
+        "p": 0.001,
+        "basis": "z",
+        "rounds": 7,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 6213245758479029568,
+        "circuit_sha256": "3fbd12597e83b09a18df9939abcc8804ad2be30761a9d75dbd8ee94878ac56f5",
+        "sample_sha256": "e1bd912d50cef0c484030dc023435cc24f44ee367d6e70504f07a18ed41e87e8",
+        "num_detectors": 336,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0328529,
+        "sampling_s": 0.1228682
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "90060ce5e5ab6abbe314f20915850e6ded62055d2651ce2dabb9b80954a5ee64",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-50": {
+          "dem_sha256": "90060ce5e5ab6abbe314f20915850e6ded62055d2651ce2dabb9b80954a5ee64",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-75": {
+          "dem_sha256": "90060ce5e5ab6abbe314f20915850e6ded62055d2651ce2dabb9b80954a5ee64",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "spacetime-25": {
+          "dem_sha256": "90060ce5e5ab6abbe314f20915850e6ded62055d2651ce2dabb9b80954a5ee64",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "90060ce5e5ab6abbe314f20915850e6ded62055d2651ce2dabb9b80954a5ee64",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "90060ce5e5ab6abbe314f20915850e6ded62055d2651ce2dabb9b80954a5ee64",
+          "feature": "spacetime",
+          "correlated_bins": []
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 7,
+        "p": 0.003,
+        "basis": "x",
+        "rounds": 7,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 5119690110069708521,
+        "circuit_sha256": "2916d5399d174764dcec91112bcddee72b8f845b3e854d06f91b01f793005485",
+        "sample_sha256": "e2e8e4a9b0e61c76ac17f56e6e9b49f15751998617f5f5111bf9ae58f425b2f0",
+        "num_detectors": 336,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0261308,
+        "sampling_s": 0.1081783
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "44442f614741480970fb0a88c28b47cc597a728fc6cf95513f3f593df1a126de",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-50": {
+          "dem_sha256": "44442f614741480970fb0a88c28b47cc597a728fc6cf95513f3f593df1a126de",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-75": {
+          "dem_sha256": "44442f614741480970fb0a88c28b47cc597a728fc6cf95513f3f593df1a126de",
+          "feature": "count",
+          "correlated_bins": [
+            15
+          ]
+        },
+        "spacetime-25": {
+          "dem_sha256": "44442f614741480970fb0a88c28b47cc597a728fc6cf95513f3f593df1a126de",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "44442f614741480970fb0a88c28b47cc597a728fc6cf95513f3f593df1a126de",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "44442f614741480970fb0a88c28b47cc597a728fc6cf95513f3f593df1a126de",
+          "feature": "spacetime",
+          "correlated_bins": [
+            63
+          ]
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 7,
+        "p": 0.003,
+        "basis": "z",
+        "rounds": 7,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 7295234541079043964,
+        "circuit_sha256": "423a2a32f028fda5e55666b53ccc145d5dba3fa4bd67f5f9c6becae7f4039c75",
+        "sample_sha256": "8d172ce37bc8c58dc1cb282a09d6aec1716ef379262b7d5c4f7dc98867eceb42",
+        "num_detectors": 336,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0409634,
+        "sampling_s": 0.1048124
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "84bfd1ba1125fee907ccddea57ca5ec79804b1d58cc2f47369852465ec5b2486",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-50": {
+          "dem_sha256": "84bfd1ba1125fee907ccddea57ca5ec79804b1d58cc2f47369852465ec5b2486",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-75": {
+          "dem_sha256": "84bfd1ba1125fee907ccddea57ca5ec79804b1d58cc2f47369852465ec5b2486",
+          "feature": "count",
+          "correlated_bins": [
+            15
+          ]
+        },
+        "spacetime-25": {
+          "dem_sha256": "84bfd1ba1125fee907ccddea57ca5ec79804b1d58cc2f47369852465ec5b2486",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "84bfd1ba1125fee907ccddea57ca5ec79804b1d58cc2f47369852465ec5b2486",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "84bfd1ba1125fee907ccddea57ca5ec79804b1d58cc2f47369852465ec5b2486",
+          "feature": "spacetime",
+          "correlated_bins": [
+            63
+          ]
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 7,
+        "p": 0.005,
+        "basis": "x",
+        "rounds": 7,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 4757123078573838264,
+        "circuit_sha256": "8459284cbec4f6ba57fa0ec5f0d6256456c440aa0c6ca6068256bb7a1cbabe67",
+        "sample_sha256": "53533c48adc37ade9df5bd44454342fcf461c577d6077a2ac6d76100daa17ac3",
+        "num_detectors": 336,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0189665,
+        "sampling_s": 0.1303748
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "d4ebf37be8130ab4378224fcbe8753654544343a0c4e653cc89416aeb5cca738",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-50": {
+          "dem_sha256": "d4ebf37be8130ab4378224fcbe8753654544343a0c4e653cc89416aeb5cca738",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-75": {
+          "dem_sha256": "d4ebf37be8130ab4378224fcbe8753654544343a0c4e653cc89416aeb5cca738",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "spacetime-25": {
+          "dem_sha256": "d4ebf37be8130ab4378224fcbe8753654544343a0c4e653cc89416aeb5cca738",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "d4ebf37be8130ab4378224fcbe8753654544343a0c4e653cc89416aeb5cca738",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "d4ebf37be8130ab4378224fcbe8753654544343a0c4e653cc89416aeb5cca738",
+          "feature": "spacetime",
+          "correlated_bins": []
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 7,
+        "p": 0.005,
+        "basis": "z",
+        "rounds": 7,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 8784448836409376844,
+        "circuit_sha256": "9358c1990989cb0f21b7f1fae86e8c9b5dcb78d42580bce1e65bec9a90096a2d",
+        "sample_sha256": "b8c142ff4d926c9831696d75dd2152950a895a440e19c68064b17dd8a5a78ece",
+        "num_detectors": 336,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0212532,
+        "sampling_s": 0.107875
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "b21f53725f57fed70af087250c3b0024781426dbf8a89e475dfd250aaa0ed98a",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-50": {
+          "dem_sha256": "b21f53725f57fed70af087250c3b0024781426dbf8a89e475dfd250aaa0ed98a",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-75": {
+          "dem_sha256": "b21f53725f57fed70af087250c3b0024781426dbf8a89e475dfd250aaa0ed98a",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "spacetime-25": {
+          "dem_sha256": "b21f53725f57fed70af087250c3b0024781426dbf8a89e475dfd250aaa0ed98a",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "b21f53725f57fed70af087250c3b0024781426dbf8a89e475dfd250aaa0ed98a",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "b21f53725f57fed70af087250c3b0024781426dbf8a89e475dfd250aaa0ed98a",
+          "feature": "spacetime",
+          "correlated_bins": []
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 7,
+        "p": 0.01,
+        "basis": "x",
+        "rounds": 7,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 8925677482212801940,
+        "circuit_sha256": "af463c7fcee07452296fbe7e93a29806acbc36cbc214b61688003db5392ebec5",
+        "sample_sha256": "2cda70b70b36f4cccd23fa329310179726eea47de28fa049a49f35c70c211473",
+        "num_detectors": 336,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0215,
+        "sampling_s": 0.1090826
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "54801580014210192a722adfdd946d8b9870872b1a520db1c89ed8b8e2ad2721",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-50": {
+          "dem_sha256": "54801580014210192a722adfdd946d8b9870872b1a520db1c89ed8b8e2ad2721",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-75": {
+          "dem_sha256": "54801580014210192a722adfdd946d8b9870872b1a520db1c89ed8b8e2ad2721",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "spacetime-25": {
+          "dem_sha256": "54801580014210192a722adfdd946d8b9870872b1a520db1c89ed8b8e2ad2721",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "54801580014210192a722adfdd946d8b9870872b1a520db1c89ed8b8e2ad2721",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "54801580014210192a722adfdd946d8b9870872b1a520db1c89ed8b8e2ad2721",
+          "feature": "spacetime",
+          "correlated_bins": []
+        }
+      }
+    },
+    {
+      "train_sample": {
+        "distance": 7,
+        "p": 0.01,
+        "basis": "z",
+        "rounds": 7,
+        "noise_model": "simple_uniform",
+        "shots": 30000,
+        "batch_size": 30000,
+        "split": "train",
+        "seed": 8868634982443918716,
+        "circuit_sha256": "a30a6f40e2a87f64362a8e84ace59e0f26154a3a64fb3925753e2c0e227a2823",
+        "sample_sha256": "c2731168ec6698d6eea01d409340698e3f8c39da2f164c404c3f050ce1fe4ebd",
+        "num_detectors": 336,
+        "num_observables": 1,
+        "simulation_setup_s": 0.0181104,
+        "sampling_s": 0.1179283
+      },
+      "policies": {
+        "count-25": {
+          "dem_sha256": "1919556f3da59d60c0eab13ba2a342bcbd6bdfff42dbfc0dbe5da383c1a6fbde",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-50": {
+          "dem_sha256": "1919556f3da59d60c0eab13ba2a342bcbd6bdfff42dbfc0dbe5da383c1a6fbde",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "count-75": {
+          "dem_sha256": "1919556f3da59d60c0eab13ba2a342bcbd6bdfff42dbfc0dbe5da383c1a6fbde",
+          "feature": "count",
+          "correlated_bins": []
+        },
+        "spacetime-25": {
+          "dem_sha256": "1919556f3da59d60c0eab13ba2a342bcbd6bdfff42dbfc0dbe5da383c1a6fbde",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-50": {
+          "dem_sha256": "1919556f3da59d60c0eab13ba2a342bcbd6bdfff42dbfc0dbe5da383c1a6fbde",
+          "feature": "spacetime",
+          "correlated_bins": []
+        },
+        "spacetime-75": {
+          "dem_sha256": "1919556f3da59d60c0eab13ba2a342bcbd6bdfff42dbfc0dbe5da383c1a6fbde",
+          "feature": "spacetime",
+          "correlated_bins": []
+        }
+      }
+    }
+  ]
+}

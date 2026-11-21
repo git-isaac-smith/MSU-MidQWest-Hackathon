@@ -1,0 +1,53 @@
+{
+  "native": {
+    "shots": 480000,
+    "failures": 10982,
+    "ler": 0.022879166666666666,
+    "batch_us_per_shot": 15.03019875
+  },
+  "bath_clock": {
+    "shots": 480000,
+    "failures": 10781,
+    "ler": 0.022460416666666667,
+    "batch_us_per_shot": 14.866091458333335
+  },
+  "belief": {
+    "shots": 480000,
+    "failures": 9866,
+    "ler": 0.020554166666666665,
+    "batch_us_per_shot": 314.74448250000006
+  },
+  "frozen": {
+    "shots": 480000,
+    "failures": 9460,
+    "ler": 0.019708333333333335,
+    "batch_us_per_shot": 364.343774375,
+    "paired_vs_native": {
+      "recovered": 3235,
+      "lost": 1713,
+      "ler_difference": -0.0031708333333333332,
+      "approximate_95_ci": [
+        -0.0034577030185668103,
+        -0.002883963648099856
+      ]
+    },
+    "paired_vs_bath_clock": {
+      "recovered": 3012,
+      "lost": 1691,
+      "ler_difference": -0.0027520833333333334,
+      "approximate_95_ci": [
+        -0.003031820695907744,
+        -0.002472345970758923
+      ]
+    },
+    "paired_vs_belief": {
+      "recovered": 1257,
+      "lost": 851,
+      "ler_difference": -0.0008458333333333333,
+      "approximate_95_ci": [
+        -0.0010332768124535704,
+        -0.0006583898542130961
+      ]
+    }
+  }
+}

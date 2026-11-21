@@ -7,7 +7,7 @@ import pymatching
 import stim
 
 from .circuits import memory_circuit
-from .stats import shot_failures, wilson95
+from .stats import paired_counts, shot_failures, wilson95
 
 
 def run_case(*, basis: str, distance: int, rounds: int, p: float, shots: int, seed: int):
@@ -56,11 +56,4 @@ def run_case(*, basis: str, distance: int, rounds: int, p: float, shots: int, se
             decode_s=decode_s, batch_us_per_shot=1e6 * decode_s / shots,
         ))
 
-    baseline_failed, correlated_failed = masks
-    paired = dict(
-        both_correct=int((~baseline_failed & ~correlated_failed).sum()),
-        mwpm_only_failed=int((baseline_failed & ~correlated_failed).sum()),
-        correlated_only_failed=int((~baseline_failed & correlated_failed).sum()),
-        both_failed=int((baseline_failed & correlated_failed).sum()),
-    )
-    return {"results": rows, "paired": paired}
+    return {"results": rows, "paired": paired_counts(*masks)}

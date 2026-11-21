@@ -1,0 +1,150 @@
+[
+  {
+    "distance": 5,
+    "p": 0.001,
+    "basis": "z",
+    "rounds": 5,
+    "noise_model": "simple_uniform",
+    "noise_status": "provisional",
+    "shots": 2048,
+    "batch_size": 2048,
+    "split": "validation",
+    "seed": 9836226141743439587,
+    "circuit_sha256": "340de2731f9148b8da891541644047f316658f0df4ba6067cf99b4f9b90fa380",
+    "sample_sha256": "f118d925cb38ddf5ba6b09507f579288058a854f66df523db8af1fe9892aee0a",
+    "num_detectors": 120,
+    "num_observables": 1,
+    "simulation_setup_s": 0.0051758,
+    "sampling_s": 0.0010078,
+    "unique_syndromes": 834,
+    "prediction_sha256": "50534fd4719420a01195c64b299d6750558df132fec73ca1dbb908b6a275ecde",
+    "batch_times_s": {
+      "direct": [
+        0.13134839999838732,
+        0.09808799999882467,
+        0.09751610000967048
+      ],
+      "deduplicated": [
+        0.0856521999812685,
+        0.08399660000577569,
+        0.08133660000748932
+      ]
+    },
+    "mismatching_predictions": 0,
+    "median_us_per_shot": {
+      "direct": 47.89453124942611,
+      "deduplicated": 41.01396484657016
+    }
+  },
+  {
+    "distance": 5,
+    "p": 0.01,
+    "basis": "z",
+    "rounds": 5,
+    "noise_model": "simple_uniform",
+    "noise_status": "provisional",
+    "shots": 2048,
+    "batch_size": 2048,
+    "split": "validation",
+    "seed": 10949795907060149820,
+    "circuit_sha256": "e459a9e41b11923ada45ab44f7a84621956cf24a4b188a6b00401b5869d8efe0",
+    "sample_sha256": "ff2d206f476c11b812f191919da2ff110d1ce520b6ecef290fff66e3696dbda5",
+    "num_detectors": 120,
+    "num_observables": 1,
+    "simulation_setup_s": 0.0055143,
+    "sampling_s": 0.0008567,
+    "unique_syndromes": 2048,
+    "prediction_sha256": "5de2278ff66a36f4afb59d0e081a90a58c6b540bf5a6ef82d7871e79fb064ef1",
+    "batch_times_s": {
+      "direct": [
+        0.8526010999921709,
+        0.8033056000131182,
+        0.8052474999858532
+      ],
+      "deduplicated": [
+        0.8286213999963365,
+        0.8019643999869004,
+        0.7981447000056505
+      ]
+    },
+    "mismatching_predictions": 0,
+    "median_us_per_shot": {
+      "direct": 393.1872558524674,
+      "deduplicated": 391.5841796811037
+    }
+  },
+  {
+    "distance": 7,
+    "p": 0.001,
+    "basis": "z",
+    "rounds": 7,
+    "noise_model": "simple_uniform",
+    "noise_status": "provisional",
+    "shots": 2048,
+    "batch_size": 2048,
+    "split": "validation",
+    "seed": 10932659482095063209,
+    "circuit_sha256": "3fbd12597e83b09a18df9939abcc8804ad2be30761a9d75dbd8ee94878ac56f5",
+    "sample_sha256": "f3c92e6be28b3ba1b127ebdcf2815ebcfa669878e5d63a54258ba1852eb12ade",
+    "num_detectors": 336,
+    "num_observables": 1,
+    "simulation_setup_s": 0.0103872,
+    "sampling_s": 0.0012885,
+    "unique_syndromes": 1801,
+    "prediction_sha256": "04ea3bc67f35b1f76d259226c77a516803c7e4fa00f2910c7dd84f6ad4fb684b",
+    "batch_times_s": {
+      "direct": [
+        0.6519668000109959,
+        0.6429631000210065,
+        0.6524548000015784
+      ],
+      "deduplicated": [
+        0.6621303000138141,
+        0.6575349000049755,
+        0.6373242000117898
+      ]
+    },
+    "mismatching_predictions": 0,
+    "median_us_per_shot": {
+      "direct": 318.3431640678691,
+      "deduplicated": 321.06196289305444
+    }
+  },
+  {
+    "distance": 7,
+    "p": 0.01,
+    "basis": "z",
+    "rounds": 7,
+    "noise_model": "simple_uniform",
+    "noise_status": "provisional",
+    "shots": 2048,
+    "batch_size": 2048,
+    "split": "validation",
+    "seed": 13083032670700362639,
+    "circuit_sha256": "a30a6f40e2a87f64362a8e84ace59e0f26154a3a64fb3925753e2c0e227a2823",
+    "sample_sha256": "27225b296aec49769a0996397b93743570072727884dc4383309a613d08eba5e",
+    "num_detectors": 336,
+    "num_observables": 1,
+    "simulation_setup_s": 0.0105604,
+    "sampling_s": 0.0025057,
+    "unique_syndromes": 2048,
+    "prediction_sha256": "cd9e3ea268a0a935d90f173bb355665d84cebadfaea04584daa9bd3c7c1ccf27",
+    "batch_times_s": {
+      "direct": [
+        3.186027300020214,
+        3.22080520002055,
+        3.364212199987378
+      ],
+      "deduplicated": [
+        3.241030800010776,
+        3.245517400006065,
+        3.2713822000077926
+      ]
+    },
+    "mismatching_predictions": 0,
+    "median_us_per_shot": {
+      "direct": 1572.658789072534,
+      "deduplicated": 1584.7252929717115
+    }
+  }
+]

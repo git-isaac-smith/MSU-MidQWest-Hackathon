@@ -1,0 +1,3418 @@
+[
+  {
+    "metadata": {
+      "distance": 3,
+      "p": 0.001,
+      "basis": "x",
+      "rounds": 3,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 11375202039718430836,
+      "circuit_sha256": "9dd6e84ab040958f016fde97edc83f9f069e48c5e9b31960a6f662bcbed1e310",
+      "sample_sha256": "1a6c3376480b9cdcc70ca2040155836e96b1ce2625d0a5a961b648a173bddea5",
+      "num_detectors": 24,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0008863,
+      "sampling_s": 0.0010649
+    },
+    "failures": {
+      "native": {
+        "failures": 12,
+        "ler": 0.0012,
+        "wilson95": [
+          0.0006866043187699608,
+          0.0020964724558170107
+        ]
+      },
+      "bath_clock": {
+        "failures": 10,
+        "ler": 0.001,
+        "wilson95": [
+          0.0005432859864972466,
+          0.001839944387437996
+        ]
+      },
+      "belief": {
+        "failures": 8,
+        "ler": 0.0008,
+        "wilson95": [
+          0.0004054337198968799,
+          0.001577950253386633
+        ]
+      },
+      "ensemble3": {
+        "failures": 12,
+        "ler": 0.0012,
+        "wilson95": [
+          0.0006866043187699608,
+          0.0020964724558170107
+        ]
+      },
+      "ensemble5": {
+        "failures": 12,
+        "ler": 0.0012,
+        "wilson95": [
+          0.0006866043187699608,
+          0.0020964724558170107
+        ]
+      },
+      "bath_belief": {
+        "failures": 8,
+        "ler": 0.0008,
+        "wilson95": [
+          0.0004054337198968799,
+          0.001577950253386633
+        ]
+      },
+      "exact_small": {
+        "failures": 7,
+        "ler": 0.0007,
+        "wilson95": [
+          0.0003391263316879598,
+          0.0014443344412696883
+        ]
+      },
+      "search_native": {
+        "failures": 7,
+        "ler": 0.0007,
+        "wilson95": [
+          0.0003391263316879598,
+          0.0014443344412696883
+        ]
+      },
+      "search_belief": {
+        "failures": 7,
+        "ler": 0.0007,
+        "wilson95": [
+          0.0003391263316879598,
+          0.0014443344412696883
+        ]
+      },
+      "dispute": {
+        "failures": 8,
+        "ler": 0.0008,
+        "wilson95": [
+          0.0004054337198968799,
+          0.001577950253386633
+        ]
+      },
+      "belief_pair": {
+        "failures": 8,
+        "ler": 0.0008,
+        "wilson95": [
+          0.0004054337198968799,
+          0.001577950253386633
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.0019346000044606626,
+        "validation_batch_s": 0.0035096000065095723
+      },
+      "bath_clock": {
+        "setup_s": 0.008527600002707914,
+        "validation_batch_s": 0.0031162999803200364
+      },
+      "belief": {
+        "setup_s": 0.03646410000510514,
+        "validation_batch_s": 0.01214170001912862
+      },
+      "ensemble3": {
+        "setup_s": 0.010098099999595433,
+        "validation_batch_s": 0.004677999997511506
+      },
+      "ensemble5": {
+        "setup_s": 0.02327749997493811,
+        "validation_batch_s": 0.00975340002332814
+      },
+      "bath_belief": {
+        "setup_s": 0.00855180001235567,
+        "validation_batch_s": 0.012406499998178333
+      },
+      "exact_small": {
+        "setup_s": 1.4648638000071514,
+        "validation_batch_s": 0.00036929998896084726
+      },
+      "bounded_search": {
+        "setup_s": 0.0025594999897293746,
+        "validation_batch_s": 0.015310000017052516
+      }
+    },
+    "diagnostics": {
+      "exact_small": {
+        "estimated_optimal_ler": 0.00062621427614587,
+        "numerical_excess_ler_bound": 2.4351714027897507e-08
+      },
+      "exhausted_searches": 0,
+      "dispute_disputed_shots": 4,
+      "belief_pair_disputed_shots": 0
+    }
+  },
+  {
+    "metadata": {
+      "distance": 3,
+      "p": 0.001,
+      "basis": "z",
+      "rounds": 3,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 12171550496474660742,
+      "circuit_sha256": "434e204bfbaaf708a0e174a7ab0963c21139601c3ec89f83475f05fc51e67e96",
+      "sample_sha256": "235805481f0cfbdac0bc9c73b929c69c156870cfbf1f0c3dcb1f8ab1e54b76c2",
+      "num_detectors": 24,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0008819,
+      "sampling_s": 0.0004346
+    },
+    "failures": {
+      "native": {
+        "failures": 10,
+        "ler": 0.001,
+        "wilson95": [
+          0.0005432859864972466,
+          0.001839944387437996
+        ]
+      },
+      "bath_clock": {
+        "failures": 10,
+        "ler": 0.001,
+        "wilson95": [
+          0.0005432859864972466,
+          0.001839944387437996
+        ]
+      },
+      "belief": {
+        "failures": 6,
+        "ler": 0.0006,
+        "wilson95": [
+          0.0002750134763309977,
+          0.0013085240963007856
+        ]
+      },
+      "ensemble3": {
+        "failures": 11,
+        "ler": 0.0011,
+        "wilson95": [
+          0.0006143506542303222,
+          0.001968802920030785
+        ]
+      },
+      "ensemble5": {
+        "failures": 10,
+        "ler": 0.001,
+        "wilson95": [
+          0.0005432859864972466,
+          0.001839944387437996
+        ]
+      },
+      "bath_belief": {
+        "failures": 8,
+        "ler": 0.0008,
+        "wilson95": [
+          0.0004054337198968799,
+          0.001577950253386633
+        ]
+      },
+      "exact_small": {
+        "failures": 7,
+        "ler": 0.0007,
+        "wilson95": [
+          0.0003391263316879598,
+          0.0014443344412696883
+        ]
+      },
+      "search_native": {
+        "failures": 6,
+        "ler": 0.0006,
+        "wilson95": [
+          0.0002750134763309977,
+          0.0013085240963007856
+        ]
+      },
+      "search_belief": {
+        "failures": 6,
+        "ler": 0.0006,
+        "wilson95": [
+          0.0002750134763309977,
+          0.0013085240963007856
+        ]
+      },
+      "dispute": {
+        "failures": 6,
+        "ler": 0.0006,
+        "wilson95": [
+          0.0002750134763309977,
+          0.0013085240963007856
+        ]
+      },
+      "belief_pair": {
+        "failures": 6,
+        "ler": 0.0006,
+        "wilson95": [
+          0.0002750134763309977,
+          0.0013085240963007856
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.001819099998101592,
+        "validation_batch_s": 0.0030175999854691327
+      },
+      "bath_clock": {
+        "setup_s": 0.007328900013817474,
+        "validation_batch_s": 0.0027817999944090843
+      },
+      "belief": {
+        "setup_s": 0.0019119999778922647,
+        "validation_batch_s": 0.012302500021178275
+      },
+      "ensemble3": {
+        "setup_s": 0.010891599988099188,
+        "validation_batch_s": 0.004632099997252226
+      },
+      "ensemble5": {
+        "setup_s": 0.02390549998381175,
+        "validation_batch_s": 0.009561900020344183
+      },
+      "bath_belief": {
+        "setup_s": 0.00812220000079833,
+        "validation_batch_s": 0.011469599994597957
+      },
+      "exact_small": {
+        "setup_s": 1.453927599999588,
+        "validation_batch_s": 0.00033719997736625373
+      },
+      "bounded_search": {
+        "setup_s": 0.002501600014511496,
+        "validation_batch_s": 0.015598199999658391
+      }
+    },
+    "diagnostics": {
+      "exact_small": {
+        "estimated_optimal_ler": 0.0006100982090517515,
+        "numerical_excess_ler_bound": 2.4638754349692117e-08
+      },
+      "exhausted_searches": 0,
+      "dispute_disputed_shots": 4,
+      "belief_pair_disputed_shots": 2
+    }
+  },
+  {
+    "metadata": {
+      "distance": 3,
+      "p": 0.003,
+      "basis": "x",
+      "rounds": 3,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 10024374474535898544,
+      "circuit_sha256": "01d7f85eecf96125d6313d7026aff7df51edb222f2a79b24b69651eb7890f41e",
+      "sample_sha256": "250bad7fe7fe52650152996164608a260d9c18189f5237744672766e63eaa852",
+      "num_detectors": 24,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0008837,
+      "sampling_s": 0.0004921
+    },
+    "failures": {
+      "native": {
+        "failures": 65,
+        "ler": 0.0065,
+        "wilson95": [
+          0.005103414629831769,
+          0.00827559176202603
+        ]
+      },
+      "bath_clock": {
+        "failures": 57,
+        "ler": 0.0057,
+        "wilson95": [
+          0.004402415829723049,
+          0.007377204959527834
+        ]
+      },
+      "belief": {
+        "failures": 56,
+        "ler": 0.0056,
+        "wilson95": [
+          0.004315267073552004,
+          0.007264430515373014
+        ]
+      },
+      "ensemble3": {
+        "failures": 65,
+        "ler": 0.0065,
+        "wilson95": [
+          0.005103414629831769,
+          0.00827559176202603
+        ]
+      },
+      "ensemble5": {
+        "failures": 62,
+        "ler": 0.0062,
+        "wilson95": [
+          0.0048397848118849635,
+          0.007939451978995241
+        ]
+      },
+      "bath_belief": {
+        "failures": 55,
+        "ler": 0.0055,
+        "wilson95": [
+          0.004228233256266612,
+          0.00715154113233254
+        ]
+      },
+      "exact_small": {
+        "failures": 50,
+        "ler": 0.005,
+        "wilson95": [
+          0.0037949010708382266,
+          0.006585257316131603
+        ]
+      },
+      "search_native": {
+        "failures": 54,
+        "ler": 0.0054,
+        "wilson95": [
+          0.004141317455103578,
+          0.00703853373316971
+        ]
+      },
+      "search_belief": {
+        "failures": 54,
+        "ler": 0.0054,
+        "wilson95": [
+          0.004141317455103578,
+          0.00703853373316971
+        ]
+      },
+      "dispute": {
+        "failures": 55,
+        "ler": 0.0055,
+        "wilson95": [
+          0.004228233256266612,
+          0.00715154113233254
+        ]
+      },
+      "belief_pair": {
+        "failures": 56,
+        "ler": 0.0056,
+        "wilson95": [
+          0.004315267073552004,
+          0.007264430515373014
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.001909299986436963,
+        "validation_batch_s": 0.007817800011252984
+      },
+      "bath_clock": {
+        "setup_s": 0.007770399999571964,
+        "validation_batch_s": 0.008269100013421848
+      },
+      "belief": {
+        "setup_s": 0.0019527999975252897,
+        "validation_batch_s": 0.03538040001876652
+      },
+      "ensemble3": {
+        "setup_s": 0.0095564000075683,
+        "validation_batch_s": 0.011352200002875179
+      },
+      "ensemble5": {
+        "setup_s": 0.024227499990956858,
+        "validation_batch_s": 0.024386000004597008
+      },
+      "bath_belief": {
+        "setup_s": 0.0077077999885659665,
+        "validation_batch_s": 0.034732300002360716
+      },
+      "exact_small": {
+        "setup_s": 1.46008509999956,
+        "validation_batch_s": 0.00037480000173673034
+      },
+      "bounded_search": {
+        "setup_s": 0.0024876999959815294,
+        "validation_batch_s": 0.04373279999708757
+      }
+    },
+    "diagnostics": {
+      "exact_small": {
+        "estimated_optimal_ler": 0.00554767126883407,
+        "numerical_excess_ler_bound": 3.733947056705437e-08
+      },
+      "exhausted_searches": 0,
+      "dispute_disputed_shots": 20,
+      "belief_pair_disputed_shots": 7
+    }
+  },
+  {
+    "metadata": {
+      "distance": 3,
+      "p": 0.003,
+      "basis": "z",
+      "rounds": 3,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 13396547366629018684,
+      "circuit_sha256": "a74ee70bbaa6e5ec78b52caebc43b5433708f49b0a31ae1ae56d2ea34867ab61",
+      "sample_sha256": "493eb7a0864908a1b56b742da6944d3f47c8fb851a4914396bcca9e23dc77a82",
+      "num_detectors": 24,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0009509,
+      "sampling_s": 0.0007069
+    },
+    "failures": {
+      "native": {
+        "failures": 63,
+        "ler": 0.0063,
+        "wilson95": [
+          0.004927565458326495,
+          0.008051594532879576
+        ]
+      },
+      "bath_clock": {
+        "failures": 60,
+        "ler": 0.006,
+        "wilson95": [
+          0.0046645228934497195,
+          0.007714867496778757
+        ]
+      },
+      "belief": {
+        "failures": 51,
+        "ler": 0.0051,
+        "wilson95": [
+          0.0038813110835616144,
+          0.00669877050373408
+        ]
+      },
+      "ensemble3": {
+        "failures": 61,
+        "ler": 0.0061,
+        "wilson95": [
+          0.004752103159871511,
+          0.00782721043068283
+        ]
+      },
+      "ensemble5": {
+        "failures": 59,
+        "ler": 0.0059,
+        "wilson95": [
+          0.004577046502138716,
+          0.0076024206877638965
+        ]
+      },
+      "bath_belief": {
+        "failures": 79,
+        "ler": 0.0079,
+        "wilson95": [
+          0.006343878268779698,
+          0.00983405292764021
+        ]
+      },
+      "exact_small": {
+        "failures": 46,
+        "ler": 0.0046,
+        "wilson95": [
+          0.0034506598701977897,
+          0.006129805715468581
+        ]
+      },
+      "search_native": {
+        "failures": 47,
+        "ler": 0.0047,
+        "wilson95": [
+          0.003536501767139378,
+          0.006243887018852858
+        ]
+      },
+      "search_belief": {
+        "failures": 47,
+        "ler": 0.0047,
+        "wilson95": [
+          0.003536501767139378,
+          0.006243887018852858
+        ]
+      },
+      "dispute": {
+        "failures": 48,
+        "ler": 0.0048,
+        "wilson95": [
+          0.0036224922338521153,
+          0.006357819752465983
+        ]
+      },
+      "belief_pair": {
+        "failures": 51,
+        "ler": 0.0051,
+        "wilson95": [
+          0.0038813110835616144,
+          0.00669877050373408
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.001878199982456863,
+        "validation_batch_s": 0.0074705000151880085
+      },
+      "bath_clock": {
+        "setup_s": 0.007609799999045208,
+        "validation_batch_s": 0.007285300001967698
+      },
+      "belief": {
+        "setup_s": 0.001953500002855435,
+        "validation_batch_s": 0.035338299989234656
+      },
+      "ensemble3": {
+        "setup_s": 0.009277400007704273,
+        "validation_batch_s": 0.010537699999986216
+      },
+      "ensemble5": {
+        "setup_s": 0.02248169999802485,
+        "validation_batch_s": 0.022783199994591996
+      },
+      "bath_belief": {
+        "setup_s": 0.007520100014517084,
+        "validation_batch_s": 0.034279299987247214
+      },
+      "exact_small": {
+        "setup_s": 1.4574053999967873,
+        "validation_batch_s": 0.00033749997965060174
+      },
+      "bounded_search": {
+        "setup_s": 0.0025024999922607094,
+        "validation_batch_s": 0.04287589999148622
+      }
+    },
+    "diagnostics": {
+      "exact_small": {
+        "estimated_optimal_ler": 0.005365050151951184,
+        "numerical_excess_ler_bound": 3.83346772911862e-08
+      },
+      "exhausted_searches": 0,
+      "dispute_disputed_shots": 22,
+      "belief_pair_disputed_shots": 32
+    }
+  },
+  {
+    "metadata": {
+      "distance": 3,
+      "p": 0.005,
+      "basis": "x",
+      "rounds": 3,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 13517522548655696400,
+      "circuit_sha256": "895d2f27caf82f0928533c072b5a55330304ebb0d0dbb8a03252205419a8b8f7",
+      "sample_sha256": "b99ee73f320470c4e85b38f291326d11f98f2132c50e1550b86d0b607558834e",
+      "num_detectors": 24,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0008805,
+      "sampling_s": 0.0006551
+    },
+    "failures": {
+      "native": {
+        "failures": 180,
+        "ler": 0.018,
+        "wilson95": [
+          0.015573227249600538,
+          0.020796947179731694
+        ]
+      },
+      "bath_clock": {
+        "failures": 180,
+        "ler": 0.018,
+        "wilson95": [
+          0.015573227249600538,
+          0.020796947179731694
+        ]
+      },
+      "belief": {
+        "failures": 164,
+        "ler": 0.0164,
+        "wilson95": [
+          0.014089949587910894,
+          0.019081453636207512
+        ]
+      },
+      "ensemble3": {
+        "failures": 183,
+        "ler": 0.0183,
+        "wilson95": [
+          0.015851953288404896,
+          0.021117990741904933
+        ]
+      },
+      "ensemble5": {
+        "failures": 183,
+        "ler": 0.0183,
+        "wilson95": [
+          0.015851953288404896,
+          0.021117990741904933
+        ]
+      },
+      "bath_belief": {
+        "failures": 164,
+        "ler": 0.0164,
+        "wilson95": [
+          0.014089949587910894,
+          0.019081453636207512
+        ]
+      },
+      "exact_small": {
+        "failures": 164,
+        "ler": 0.0164,
+        "wilson95": [
+          0.014089949587910894,
+          0.019081453636207512
+        ]
+      },
+      "search_native": {
+        "failures": 162,
+        "ler": 0.0162,
+        "wilson95": [
+          0.01390494978185447,
+          0.0188666070416122
+        ]
+      },
+      "search_belief": {
+        "failures": 162,
+        "ler": 0.0162,
+        "wilson95": [
+          0.01390494978185447,
+          0.0188666070416122
+        ]
+      },
+      "dispute": {
+        "failures": 165,
+        "ler": 0.0165,
+        "wilson95": [
+          0.014182485154608222,
+          0.019188841269836047
+        ]
+      },
+      "belief_pair": {
+        "failures": 161,
+        "ler": 0.0161,
+        "wilson95": [
+          0.01381248597286477,
+          0.018759147650276035
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.0018136000144295394,
+        "validation_batch_s": 0.01260990000446327
+      },
+      "bath_clock": {
+        "setup_s": 0.0073247000109404325,
+        "validation_batch_s": 0.01331360000767745
+      },
+      "belief": {
+        "setup_s": 0.0019364999898243695,
+        "validation_batch_s": 0.055667600012384355
+      },
+      "ensemble3": {
+        "setup_s": 0.010547900019446388,
+        "validation_batch_s": 0.019425599981332198
+      },
+      "ensemble5": {
+        "setup_s": 0.024585099978139624,
+        "validation_batch_s": 0.04305850001401268
+      },
+      "bath_belief": {
+        "setup_s": 0.007748700008960441,
+        "validation_batch_s": 0.058804300002520904
+      },
+      "exact_small": {
+        "setup_s": 1.5246018000179902,
+        "validation_batch_s": 0.00036059998092241585
+      },
+      "bounded_search": {
+        "setup_s": 0.0024634000146761537,
+        "validation_batch_s": 0.07065839998540469
+      }
+    },
+    "diagnostics": {
+      "exact_small": {
+        "estimated_optimal_ler": 0.015005925897026984,
+        "numerical_excess_ler_bound": 3.1424931857120514e-08
+      },
+      "exhausted_searches": 0,
+      "dispute_disputed_shots": 55,
+      "belief_pair_disputed_shots": 24
+    }
+  },
+  {
+    "metadata": {
+      "distance": 3,
+      "p": 0.005,
+      "basis": "z",
+      "rounds": 3,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 9451534201939888847,
+      "circuit_sha256": "0670b3c37962732e37e0765b2c3f564fd0bd4ae3dea45dd8cea08b65ef495f91",
+      "sample_sha256": "ec3d06a6dd18619d23773e55039605baa92502245ac52163c9dea4f83c23a4f5",
+      "num_detectors": 24,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0007982,
+      "sampling_s": 0.0005775
+    },
+    "failures": {
+      "native": {
+        "failures": 172,
+        "ler": 0.0172,
+        "wilson95": [
+          0.014830880567997445,
+          0.01993990825872787
+        ]
+      },
+      "bath_clock": {
+        "failures": 165,
+        "ler": 0.0165,
+        "wilson95": [
+          0.014182485154608222,
+          0.019188841269836047
+        ]
+      },
+      "belief": {
+        "failures": 162,
+        "ler": 0.0162,
+        "wilson95": [
+          0.01390494978185447,
+          0.0188666070416122
+        ]
+      },
+      "ensemble3": {
+        "failures": 172,
+        "ler": 0.0172,
+        "wilson95": [
+          0.014830880567997445,
+          0.01993990825872787
+        ]
+      },
+      "ensemble5": {
+        "failures": 162,
+        "ler": 0.0162,
+        "wilson95": [
+          0.01390494978185447,
+          0.0188666070416122
+        ]
+      },
+      "bath_belief": {
+        "failures": 165,
+        "ler": 0.0165,
+        "wilson95": [
+          0.014182485154608222,
+          0.019188841269836047
+        ]
+      },
+      "exact_small": {
+        "failures": 152,
+        "ler": 0.0152,
+        "wilson95": [
+          0.012981435254342082,
+          0.017790889565865945
+        ]
+      },
+      "search_native": {
+        "failures": 155,
+        "ler": 0.0155,
+        "wilson95": [
+          0.013258222525509154,
+          0.018113871895676464
+        ]
+      },
+      "search_belief": {
+        "failures": 155,
+        "ler": 0.0155,
+        "wilson95": [
+          0.013258222525509154,
+          0.018113871895676464
+        ]
+      },
+      "dispute": {
+        "failures": 154,
+        "ler": 0.0154,
+        "wilson95": [
+          0.013165934022359625,
+          0.01800623719850013
+        ]
+      },
+      "belief_pair": {
+        "failures": 160,
+        "ler": 0.016,
+        "wilson95": [
+          0.013720046519002556,
+          0.018651663903812385
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.0017866000125650316,
+        "validation_batch_s": 0.012270500010345131
+      },
+      "bath_clock": {
+        "setup_s": 0.0073050000064540654,
+        "validation_batch_s": 0.012234199995873496
+      },
+      "belief": {
+        "setup_s": 0.0019643999985419214,
+        "validation_batch_s": 0.05549480000627227
+      },
+      "ensemble3": {
+        "setup_s": 0.00901110001723282,
+        "validation_batch_s": 0.017391899978974834
+      },
+      "ensemble5": {
+        "setup_s": 0.02230979999876581,
+        "validation_batch_s": 0.03948889998719096
+      },
+      "bath_belief": {
+        "setup_s": 0.007758499996270984,
+        "validation_batch_s": 0.055402199999662116
+      },
+      "exact_small": {
+        "setup_s": 1.4805603999993764,
+        "validation_batch_s": 0.0003667999990284443
+      },
+      "bounded_search": {
+        "setup_s": 0.0028267000161577016,
+        "validation_batch_s": 0.07027589998324402
+      }
+    },
+    "diagnostics": {
+      "exact_small": {
+        "estimated_optimal_ler": 0.014442668619773558,
+        "numerical_excess_ler_bound": 3.270490328141681e-08
+      },
+      "exhausted_searches": 0,
+      "dispute_disputed_shots": 50,
+      "belief_pair_disputed_shots": 21
+    }
+  },
+  {
+    "metadata": {
+      "distance": 3,
+      "p": 0.01,
+      "basis": "x",
+      "rounds": 3,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 12646626335159726993,
+      "circuit_sha256": "156938c69ea77a0053ce60d953a75718fe72eddfb652794b5b2249143203bee2",
+      "sample_sha256": "0d510de50596f590345d63219993ca30cc7950f01e6ff2f1033459566e3b2dc9",
+      "num_detectors": 24,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0011157,
+      "sampling_s": 0.0009328
+    },
+    "failures": {
+      "native": {
+        "failures": 608,
+        "ler": 0.0608,
+        "wilson95": [
+          0.05628292474217007,
+          0.06565437942663223
+        ]
+      },
+      "bath_clock": {
+        "failures": 590,
+        "ler": 0.059,
+        "wilson95": [
+          0.05454896638249439,
+          0.06378972018044235
+        ]
+      },
+      "belief": {
+        "failures": 598,
+        "ler": 0.0598,
+        "wilson95": [
+          0.05531946812109357,
+          0.06461860404445009
+        ]
+      },
+      "ensemble3": {
+        "failures": 608,
+        "ler": 0.0608,
+        "wilson95": [
+          0.05628292474217007,
+          0.06565437942663223
+        ]
+      },
+      "ensemble5": {
+        "failures": 601,
+        "ler": 0.0601,
+        "wilson95": [
+          0.05560846700111595,
+          0.0649293747654053
+        ]
+      },
+      "bath_belief": {
+        "failures": 600,
+        "ler": 0.06,
+        "wilson95": [
+          0.05551213038936487,
+          0.06482578817683052
+        ]
+      },
+      "exact_small": {
+        "failures": 549,
+        "ler": 0.0549,
+        "wilson95": [
+          0.05060400056424119,
+          0.0595378347853351
+        ]
+      },
+      "search_native": {
+        "failures": 566,
+        "ler": 0.0566,
+        "wilson95": [
+          0.05223891451718412,
+          0.061301615237931865
+        ]
+      },
+      "search_belief": {
+        "failures": 566,
+        "ler": 0.0566,
+        "wilson95": [
+          0.05223891451718412,
+          0.061301615237931865
+        ]
+      },
+      "dispute": {
+        "failures": 589,
+        "ler": 0.0589,
+        "wilson95": [
+          0.05445267038436707,
+          0.0636860929782438
+        ]
+      },
+      "belief_pair": {
+        "failures": 586,
+        "ler": 0.0586,
+        "wilson95": [
+          0.054163804894883746,
+          0.06337518886674953
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.001956599997356534,
+        "validation_batch_s": 0.030429700011154637
+      },
+      "bath_clock": {
+        "setup_s": 0.010694500000681728,
+        "validation_batch_s": 0.03380830000969581
+      },
+      "belief": {
+        "setup_s": 0.002406999992672354,
+        "validation_batch_s": 0.14531970000825822
+      },
+      "ensemble3": {
+        "setup_s": 0.009878799988655373,
+        "validation_batch_s": 0.03986530000111088
+      },
+      "ensemble5": {
+        "setup_s": 0.023144499980844557,
+        "validation_batch_s": 0.08574599999701604
+      },
+      "bath_belief": {
+        "setup_s": 0.008454900002107024,
+        "validation_batch_s": 0.13645449999603443
+      },
+      "exact_small": {
+        "setup_s": 1.544132000009995,
+        "validation_batch_s": 0.000450999999884516
+      },
+      "bounded_search": {
+        "setup_s": 0.0027979000005871058,
+        "validation_batch_s": 0.1489677999925334
+      }
+    },
+    "diagnostics": {
+      "exact_small": {
+        "estimated_optimal_ler": 0.054452104137092006,
+        "numerical_excess_ler_bound": 1.0438815278344755e-08
+      },
+      "exhausted_searches": 0,
+      "dispute_disputed_shots": 153,
+      "belief_pair_disputed_shots": 70
+    }
+  },
+  {
+    "metadata": {
+      "distance": 3,
+      "p": 0.01,
+      "basis": "z",
+      "rounds": 3,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 13095817171138677839,
+      "circuit_sha256": "0ce98c7da3f5cc62f8277bda02dfb065d78d418b5285df7bb9d14a5c7fd7dd99",
+      "sample_sha256": "af092d0f580e92d5aa4add7a860dba67bbd4ed4138915f6649cae685f6dd1914",
+      "num_detectors": 24,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0008956,
+      "sampling_s": 0.000841
+    },
+    "failures": {
+      "native": {
+        "failures": 528,
+        "ler": 0.0528,
+        "wilson95": [
+          0.048586056834707604,
+          0.057357391308025536
+        ]
+      },
+      "bath_clock": {
+        "failures": 533,
+        "ler": 0.0533,
+        "wilson95": [
+          0.04906634884357678,
+          0.057876715300785676
+        ]
+      },
+      "belief": {
+        "failures": 513,
+        "ler": 0.0513,
+        "wilson95": [
+          0.047145842042160484,
+          0.05579875809568468
+        ]
+      },
+      "ensemble3": {
+        "failures": 521,
+        "ler": 0.0521,
+        "wilson95": [
+          0.04791383183117402,
+          0.05663015390927806
+        ]
+      },
+      "ensemble5": {
+        "failures": 521,
+        "ler": 0.0521,
+        "wilson95": [
+          0.04791383183117402,
+          0.05663015390927806
+        ]
+      },
+      "bath_belief": {
+        "failures": 511,
+        "ler": 0.0511,
+        "wilson95": [
+          0.046953889848712696,
+          0.05559086388848074
+        ]
+      },
+      "exact_small": {
+        "failures": 472,
+        "ler": 0.0472,
+        "wilson95": [
+          0.04321461148733595,
+          0.051533137437148754
+        ]
+      },
+      "search_native": {
+        "failures": 479,
+        "ler": 0.0479,
+        "wilson95": [
+          0.04388521561706396,
+          0.0522619957097018
+        ]
+      },
+      "search_belief": {
+        "failures": 479,
+        "ler": 0.0479,
+        "wilson95": [
+          0.04388521561706396,
+          0.0522619957097018
+        ]
+      },
+      "dispute": {
+        "failures": 499,
+        "ler": 0.0499,
+        "wilson95": [
+          0.04580256463405874,
+          0.05434311069922432
+        ]
+      },
+      "belief_pair": {
+        "failures": 506,
+        "ler": 0.0506,
+        "wilson95": [
+          0.04647408965973442,
+          0.05507104807582968
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.001936800021212548,
+        "validation_batch_s": 0.024365599994780496
+      },
+      "bath_clock": {
+        "setup_s": 0.008051200013142079,
+        "validation_batch_s": 0.024740399996517226
+      },
+      "belief": {
+        "setup_s": 0.0019995000038761646,
+        "validation_batch_s": 0.12152699998114258
+      },
+      "ensemble3": {
+        "setup_s": 0.00958149999496527,
+        "validation_batch_s": 0.034611199982464314
+      },
+      "ensemble5": {
+        "setup_s": 0.02286409999942407,
+        "validation_batch_s": 0.07565750001231208
+      },
+      "bath_belief": {
+        "setup_s": 0.008304899994982406,
+        "validation_batch_s": 0.11917940000421368
+      },
+      "exact_small": {
+        "setup_s": 1.5489469000021927,
+        "validation_batch_s": 0.0003659999929368496
+      },
+      "bounded_search": {
+        "setup_s": 0.0024455999955534935,
+        "validation_batch_s": 0.13085439999122173
+      }
+    },
+    "diagnostics": {
+      "exact_small": {
+        "estimated_optimal_ler": 0.05206841651445343,
+        "numerical_excess_ler_bound": 1.1524369000887467e-08
+      },
+      "exhausted_searches": 0,
+      "dispute_disputed_shots": 132,
+      "belief_pair_disputed_shots": 60
+    }
+  },
+  {
+    "metadata": {
+      "distance": 5,
+      "p": 0.001,
+      "basis": "x",
+      "rounds": 5,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 10013996940855163526,
+      "circuit_sha256": "d50a533f90eae47ab70b1ee86689d7f2739305563b864cf66243c79b03f6471c",
+      "sample_sha256": "2fb47f48f38c2ee0c9d29f1c75d5715c88fdb2c6d2efa00b419f65932f828087",
+      "num_detectors": 120,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0052365,
+      "sampling_s": 0.0025472
+    },
+    "failures": {
+      "native": {
+        "failures": 1,
+        "ler": 0.0001,
+        "wilson95": [
+          1.7652673601122363e-05,
+          0.0005662688974013379
+        ]
+      },
+      "bath_clock": {
+        "failures": 2,
+        "ler": 0.0002,
+        "wilson95": [
+          5.4848927320857825e-05,
+          0.0007289958440074671
+        ]
+      },
+      "belief": {
+        "failures": 2,
+        "ler": 0.0002,
+        "wilson95": [
+          5.4848927320857825e-05,
+          0.0007289958440074671
+        ]
+      },
+      "ensemble3": {
+        "failures": 1,
+        "ler": 0.0001,
+        "wilson95": [
+          1.7652673601122363e-05,
+          0.0005662688974013379
+        ]
+      },
+      "ensemble5": {
+        "failures": 1,
+        "ler": 0.0001,
+        "wilson95": [
+          1.7652673601122363e-05,
+          0.0005662688974013379
+        ]
+      },
+      "bath_belief": {
+        "failures": 3,
+        "ler": 0.0003,
+        "wilson95": [
+          0.00010203219941781017,
+          0.0008817357722363795
+        ]
+      },
+      "search_native": {
+        "failures": 3,
+        "ler": 0.0003,
+        "wilson95": [
+          0.00010203219941781017,
+          0.0008817357722363795
+        ]
+      },
+      "search_belief": {
+        "failures": 3,
+        "ler": 0.0003,
+        "wilson95": [
+          0.00010203219941781017,
+          0.0008817357722363795
+        ]
+      },
+      "dispute": {
+        "failures": 2,
+        "ler": 0.0002,
+        "wilson95": [
+          5.4848927320857825e-05,
+          0.0007289958440074671
+        ]
+      },
+      "belief_pair": {
+        "failures": 3,
+        "ler": 0.0003,
+        "wilson95": [
+          0.00010203219941781017,
+          0.0008817357722363795
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.012117000005673617,
+        "validation_batch_s": 0.019748799997614697
+      },
+      "bath_clock": {
+        "setup_s": 0.027324700000463054,
+        "validation_batch_s": 0.019655700016301125
+      },
+      "belief": {
+        "setup_s": 0.012117100006435066,
+        "validation_batch_s": 0.4098989999911282
+      },
+      "ensemble3": {
+        "setup_s": 0.03849630002514459,
+        "validation_batch_s": 0.028121099981945008
+      },
+      "ensemble5": {
+        "setup_s": 0.10473890000139363,
+        "validation_batch_s": 0.061817899986635894
+      },
+      "bath_belief": {
+        "setup_s": 0.027708600013284013,
+        "validation_batch_s": 0.41148350000730716
+      },
+      "bounded_search": {
+        "setup_s": 0.015333399991504848,
+        "validation_batch_s": 0.19711300000199117
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 0,
+      "dispute_disputed_shots": 1,
+      "belief_pair_disputed_shots": 1
+    }
+  },
+  {
+    "metadata": {
+      "distance": 5,
+      "p": 0.001,
+      "basis": "z",
+      "rounds": 5,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 10819227908101480706,
+      "circuit_sha256": "340de2731f9148b8da891541644047f316658f0df4ba6067cf99b4f9b90fa380",
+      "sample_sha256": "2e9029860a7c53f94a786078c0bee6d721a036f399016e2f50156b2bc4e71fe0",
+      "num_detectors": 120,
+      "num_observables": 1,
+      "simulation_setup_s": 0.005855,
+      "sampling_s": 0.002585
+    },
+    "failures": {
+      "native": {
+        "failures": 4,
+        "ler": 0.0004,
+        "wilson95": [
+          0.0001555628366230749,
+          0.0010281283353569793
+        ]
+      },
+      "bath_clock": {
+        "failures": 4,
+        "ler": 0.0004,
+        "wilson95": [
+          0.0001555628366230749,
+          0.0010281283353569793
+        ]
+      },
+      "belief": {
+        "failures": 2,
+        "ler": 0.0002,
+        "wilson95": [
+          5.4848927320857825e-05,
+          0.0007289958440074671
+        ]
+      },
+      "ensemble3": {
+        "failures": 4,
+        "ler": 0.0004,
+        "wilson95": [
+          0.0001555628366230749,
+          0.0010281283353569793
+        ]
+      },
+      "ensemble5": {
+        "failures": 4,
+        "ler": 0.0004,
+        "wilson95": [
+          0.0001555628366230749,
+          0.0010281283353569793
+        ]
+      },
+      "bath_belief": {
+        "failures": 2,
+        "ler": 0.0002,
+        "wilson95": [
+          5.4848927320857825e-05,
+          0.0007289958440074671
+        ]
+      },
+      "search_native": {
+        "failures": 4,
+        "ler": 0.0004,
+        "wilson95": [
+          0.0001555628366230749,
+          0.0010281283353569793
+        ]
+      },
+      "search_belief": {
+        "failures": 4,
+        "ler": 0.0004,
+        "wilson95": [
+          0.0001555628366230749,
+          0.0010281283353569793
+        ]
+      },
+      "dispute": {
+        "failures": 4,
+        "ler": 0.0004,
+        "wilson95": [
+          0.0001555628366230749,
+          0.0010281283353569793
+        ]
+      },
+      "belief_pair": {
+        "failures": 2,
+        "ler": 0.0002,
+        "wilson95": [
+          5.4848927320857825e-05,
+          0.0007289958440074671
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.012240200012456626,
+        "validation_batch_s": 0.019337099976837635
+      },
+      "bath_clock": {
+        "setup_s": 0.026805899979081005,
+        "validation_batch_s": 0.018815800023730844
+      },
+      "belief": {
+        "setup_s": 0.012332699989201501,
+        "validation_batch_s": 0.41338110002106987
+      },
+      "ensemble3": {
+        "setup_s": 0.03812280000420287,
+        "validation_batch_s": 0.027990200003841892
+      },
+      "ensemble5": {
+        "setup_s": 0.10222630001953803,
+        "validation_batch_s": 0.05761479999637231
+      },
+      "bath_belief": {
+        "setup_s": 0.027460500015877187,
+        "validation_batch_s": 0.4089234999846667
+      },
+      "bounded_search": {
+        "setup_s": 0.015276600024662912,
+        "validation_batch_s": 0.20620089999283664
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 0,
+      "dispute_disputed_shots": 2,
+      "belief_pair_disputed_shots": 0
+    }
+  },
+  {
+    "metadata": {
+      "distance": 5,
+      "p": 0.003,
+      "basis": "x",
+      "rounds": 5,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 13092771418098535385,
+      "circuit_sha256": "dc53f69ca5df78e40e10c7c3612f657ccf29248a1026d70e59531e3dd45ce118",
+      "sample_sha256": "7f2a2924129f2359e6ab5fd3e91c4f12f2156d4cc6ce535775fed1ba8b3a6e5c",
+      "num_detectors": 120,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0054775,
+      "sampling_s": 0.00295
+    },
+    "failures": {
+      "native": {
+        "failures": 25,
+        "ler": 0.0025,
+        "wilson95": [
+          0.0016939976111583197,
+          0.003688080767664892
+        ]
+      },
+      "bath_clock": {
+        "failures": 23,
+        "ler": 0.0023,
+        "wilson95": [
+          0.0015331544958828505,
+          0.003449077482288632
+        ]
+      },
+      "belief": {
+        "failures": 21,
+        "ler": 0.0021,
+        "wilson95": [
+          0.0013739917049838345,
+          0.0032083938725359184
+        ]
+      },
+      "ensemble3": {
+        "failures": 24,
+        "ler": 0.0024,
+        "wilson95": [
+          0.0016133788093978358,
+          0.0035687763690995114
+        ]
+      },
+      "ensemble5": {
+        "failures": 25,
+        "ler": 0.0025,
+        "wilson95": [
+          0.0016939976111583197,
+          0.003688080767664892
+        ]
+      },
+      "bath_belief": {
+        "failures": 26,
+        "ler": 0.0026,
+        "wilson95": [
+          0.0017749883701664525,
+          0.003807013208982624
+        ]
+      },
+      "search_native": {
+        "failures": 16,
+        "ler": 0.0016,
+        "wilson95": [
+          0.000985132659693478,
+          0.0025976369161969525
+        ]
+      },
+      "search_belief": {
+        "failures": 16,
+        "ler": 0.0016,
+        "wilson95": [
+          0.000985132659693478,
+          0.0025976369161969525
+        ]
+      },
+      "dispute": {
+        "failures": 18,
+        "ler": 0.0018,
+        "wilson95": [
+          0.0011389279915130562,
+          0.0028436879850291027
+        ]
+      },
+      "belief_pair": {
+        "failures": 21,
+        "ler": 0.0021,
+        "wilson95": [
+          0.0013739917049838345,
+          0.0032083938725359184
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.011633300018729642,
+        "validation_batch_s": 0.0586124999972526
+      },
+      "bath_clock": {
+        "setup_s": 0.03978059999644756,
+        "validation_batch_s": 0.06589650001842529
+      },
+      "belief": {
+        "setup_s": 0.01219219999620691,
+        "validation_batch_s": 1.030972099979408
+      },
+      "ensemble3": {
+        "setup_s": 0.03865189998759888,
+        "validation_batch_s": 0.08481729999766685
+      },
+      "ensemble5": {
+        "setup_s": 0.10605769997346215,
+        "validation_batch_s": 0.1759611000015866
+      },
+      "bath_belief": {
+        "setup_s": 0.02846760000102222,
+        "validation_batch_s": 1.0439512000011746
+      },
+      "bounded_search": {
+        "setup_s": 0.016065700008766726,
+        "validation_batch_s": 0.6466714999987744
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 0,
+      "dispute_disputed_shots": 12,
+      "belief_pair_disputed_shots": 5
+    }
+  },
+  {
+    "metadata": {
+      "distance": 5,
+      "p": 0.003,
+      "basis": "z",
+      "rounds": 5,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 12503410900633480633,
+      "circuit_sha256": "735e2258df24a60b4e7c88790fb76910eb8b6cb463c6b831e9a3f973cf17d815",
+      "sample_sha256": "3953c2e5ac178bf32ce67bad3b30bd8dfc7f008eeb5cd90998df5501141ee5a4",
+      "num_detectors": 120,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0058805,
+      "sampling_s": 0.0033462
+    },
+    "failures": {
+      "native": {
+        "failures": 26,
+        "ler": 0.0026,
+        "wilson95": [
+          0.0017749883701664525,
+          0.003807013208982624
+        ]
+      },
+      "bath_clock": {
+        "failures": 24,
+        "ler": 0.0024,
+        "wilson95": [
+          0.0016133788093978358,
+          0.0035687763690995114
+        ]
+      },
+      "belief": {
+        "failures": 23,
+        "ler": 0.0023,
+        "wilson95": [
+          0.0015331544958828505,
+          0.003449077482288632
+        ]
+      },
+      "ensemble3": {
+        "failures": 25,
+        "ler": 0.0025,
+        "wilson95": [
+          0.0016939976111583197,
+          0.003688080767664892
+        ]
+      },
+      "ensemble5": {
+        "failures": 25,
+        "ler": 0.0025,
+        "wilson95": [
+          0.0016939976111583197,
+          0.003688080767664892
+        ]
+      },
+      "bath_belief": {
+        "failures": 23,
+        "ler": 0.0023,
+        "wilson95": [
+          0.0015331544958828505,
+          0.003449077482288632
+        ]
+      },
+      "search_native": {
+        "failures": 20,
+        "ler": 0.002,
+        "wilson95": [
+          0.0012951117125432855,
+          0.0030873506646506036
+        ]
+      },
+      "search_belief": {
+        "failures": 20,
+        "ler": 0.002,
+        "wilson95": [
+          0.0012951117125432855,
+          0.0030873506646506036
+        ]
+      },
+      "dispute": {
+        "failures": 21,
+        "ler": 0.0021,
+        "wilson95": [
+          0.0013739917049838345,
+          0.0032083938725359184
+        ]
+      },
+      "belief_pair": {
+        "failures": 23,
+        "ler": 0.0023,
+        "wilson95": [
+          0.0015331544958828505,
+          0.003449077482288632
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.011750799982110038,
+        "validation_batch_s": 0.057513900013873354
+      },
+      "bath_clock": {
+        "setup_s": 0.02637109998613596,
+        "validation_batch_s": 0.05642970002372749
+      },
+      "belief": {
+        "setup_s": 0.012147400004323572,
+        "validation_batch_s": 1.105766599997878
+      },
+      "ensemble3": {
+        "setup_s": 0.037411299999803305,
+        "validation_batch_s": 0.07948370001395233
+      },
+      "ensemble5": {
+        "setup_s": 0.10465389999444596,
+        "validation_batch_s": 0.18187940001371317
+      },
+      "bath_belief": {
+        "setup_s": 0.02879050001502037,
+        "validation_batch_s": 1.1417350999836344
+      },
+      "bounded_search": {
+        "setup_s": 0.015250600001309067,
+        "validation_batch_s": 0.6916557000076864
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 0,
+      "dispute_disputed_shots": 10,
+      "belief_pair_disputed_shots": 0
+    }
+  },
+  {
+    "metadata": {
+      "distance": 5,
+      "p": 0.005,
+      "basis": "x",
+      "rounds": 5,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 11982651255091389521,
+      "circuit_sha256": "bd5f4b3be41b86ae40d1eb86a33a7436d86c3da48331b2c0e764922f8dfefbe5",
+      "sample_sha256": "cfab6e2fd395d4e67b3d2aae65d72b4f20d49f22d9ee7b5efb5237e1b3548172",
+      "num_detectors": 120,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0055956,
+      "sampling_s": 0.0033893
+    },
+    "failures": {
+      "native": {
+        "failures": 113,
+        "ler": 0.0113,
+        "wilson95": [
+          0.009407908789373,
+          0.013567411218126303
+        ]
+      },
+      "bath_clock": {
+        "failures": 115,
+        "ler": 0.0115,
+        "wilson95": [
+          0.009589873754053874,
+          0.01378529265409716
+        ]
+      },
+      "belief": {
+        "failures": 99,
+        "ler": 0.0099,
+        "wilson95": [
+          0.00813900122178111,
+          0.01203739398115609
+        ]
+      },
+      "ensemble3": {
+        "failures": 112,
+        "ler": 0.0112,
+        "wilson95": [
+          0.009316987490236139,
+          0.0134584093169373
+        ]
+      },
+      "ensemble5": {
+        "failures": 111,
+        "ler": 0.0111,
+        "wilson95": [
+          0.009226107694534672,
+          0.013349365912312902
+        ]
+      },
+      "bath_belief": {
+        "failures": 97,
+        "ler": 0.0097,
+        "wilson95": [
+          0.007958481396960246,
+          0.011818067405325223
+        ]
+      },
+      "search_native": {
+        "failures": 86,
+        "ler": 0.0086,
+        "wilson95": [
+          0.006969468405110603,
+          0.010607925193590355
+        ]
+      },
+      "search_belief": {
+        "failures": 86,
+        "ler": 0.0086,
+        "wilson95": [
+          0.006969468405110603,
+          0.010607925193590355
+        ]
+      },
+      "dispute": {
+        "failures": 90,
+        "ler": 0.009,
+        "wilson95": [
+          0.007328320093401382,
+          0.011048766306603034
+        ]
+      },
+      "belief_pair": {
+        "failures": 91,
+        "ler": 0.0091,
+        "wilson95": [
+          0.007418178537780261,
+          0.011158831062550018
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.011611800000537187,
+        "validation_batch_s": 0.0987821000162512
+      },
+      "bath_clock": {
+        "setup_s": 0.02793999999994412,
+        "validation_batch_s": 0.09910890000173822
+      },
+      "belief": {
+        "setup_s": 0.012448299996322021,
+        "validation_batch_s": 1.6387370000011288
+      },
+      "ensemble3": {
+        "setup_s": 0.044620699976803735,
+        "validation_batch_s": 0.18199660000391304
+      },
+      "ensemble5": {
+        "setup_s": 0.12394760001916438,
+        "validation_batch_s": 0.3292041999811772
+      },
+      "bath_belief": {
+        "setup_s": 0.02982149997842498,
+        "validation_batch_s": 1.7988342000171542
+      },
+      "bounded_search": {
+        "setup_s": 0.015729499980807304,
+        "validation_batch_s": 1.327420500019798
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 1,
+      "dispute_disputed_shots": 70,
+      "belief_pair_disputed_shots": 26
+    }
+  },
+  {
+    "metadata": {
+      "distance": 5,
+      "p": 0.005,
+      "basis": "z",
+      "rounds": 5,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 12962139496321902700,
+      "circuit_sha256": "25c753d013b1e496d894ff07f15ac5c1602d3d12624da0bf1588652acce47e5f",
+      "sample_sha256": "93126df24ddc1c4f6f530f45cdd228883f041821824f93171e6f79b299967b3c",
+      "num_detectors": 120,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0054837,
+      "sampling_s": 0.0033369
+    },
+    "failures": {
+      "native": {
+        "failures": 100,
+        "ler": 0.01,
+        "wilson95": [
+          0.008229336148148417,
+          0.012146982255114645
+        ]
+      },
+      "bath_clock": {
+        "failures": 101,
+        "ler": 0.0101,
+        "wilson95": [
+          0.008319720104246149,
+          0.012256521499342778
+        ]
+      },
+      "belief": {
+        "failures": 106,
+        "ler": 0.0106,
+        "wilson95": [
+          0.008772350992874956,
+          0.012803506612343295
+        ]
+      },
+      "ensemble3": {
+        "failures": 97,
+        "ler": 0.0097,
+        "wilson95": [
+          0.007958481396960246,
+          0.011818067405325223
+        ]
+      },
+      "ensemble5": {
+        "failures": 94,
+        "ler": 0.0094,
+        "wilson95": [
+          0.007688088248246492,
+          0.011488690953061383
+        ]
+      },
+      "bath_belief": {
+        "failures": 106,
+        "ler": 0.0106,
+        "wilson95": [
+          0.008772350992874956,
+          0.012803506612343295
+        ]
+      },
+      "search_native": {
+        "failures": 83,
+        "ler": 0.0083,
+        "wilson95": [
+          0.0067009689409357415,
+          0.010276655056787622
+        ]
+      },
+      "search_belief": {
+        "failures": 84,
+        "ler": 0.0084,
+        "wilson95": [
+          0.006790405766700768,
+          0.01038714143134846
+        ]
+      },
+      "dispute": {
+        "failures": 88,
+        "ler": 0.0088,
+        "wilson95": [
+          0.007148775894213397,
+          0.010828464105139289
+        ]
+      },
+      "belief_pair": {
+        "failures": 101,
+        "ler": 0.0101,
+        "wilson95": [
+          0.008319720104246149,
+          0.012256521499342778
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.01155809999909252,
+        "validation_batch_s": 0.09666330000618473
+      },
+      "bath_clock": {
+        "setup_s": 0.027620399981969967,
+        "validation_batch_s": 0.09720080002443865
+      },
+      "belief": {
+        "setup_s": 0.012565299984999001,
+        "validation_batch_s": 1.6182317000057083
+      },
+      "ensemble3": {
+        "setup_s": 0.03887390001909807,
+        "validation_batch_s": 0.13843469999847002
+      },
+      "ensemble5": {
+        "setup_s": 0.10460910000256263,
+        "validation_batch_s": 0.2988726999901701
+      },
+      "bath_belief": {
+        "setup_s": 0.02788829998462461,
+        "validation_batch_s": 1.9263491000165232
+      },
+      "bounded_search": {
+        "setup_s": 0.016469800000777468,
+        "validation_batch_s": 1.4228797999967355
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 2,
+      "dispute_disputed_shots": 54,
+      "belief_pair_disputed_shots": 20
+    }
+  },
+  {
+    "metadata": {
+      "distance": 5,
+      "p": 0.01,
+      "basis": "x",
+      "rounds": 5,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 12139964540493212202,
+      "circuit_sha256": "f9637e501067ea5fc104888885d9f94784f2bf7f118605d76ff0672ff8290ce4",
+      "sample_sha256": "9aaee4f20a3646ab1a4c7e776270baf0ade05bc0dfa1b42e00cd7d21b16e4093",
+      "num_detectors": 120,
+      "num_observables": 1,
+      "simulation_setup_s": 0.005617,
+      "sampling_s": 0.0043503
+    },
+    "failures": {
+      "native": {
+        "failures": 833,
+        "ler": 0.0833,
+        "wilson95": [
+          0.07804261923315418,
+          0.0888774050089677
+        ]
+      },
+      "bath_clock": {
+        "failures": 823,
+        "ler": 0.0823,
+        "wilson95": [
+          0.0770726451510133,
+          0.08784814708784992
+        ]
+      },
+      "belief": {
+        "failures": 733,
+        "ler": 0.0733,
+        "wilson95": [
+          0.0683539844864231,
+          0.0785737197231123
+        ]
+      },
+      "ensemble3": {
+        "failures": 836,
+        "ler": 0.0836,
+        "wilson95": [
+          0.07833365682721548,
+          0.08918613701588397
+        ]
+      },
+      "ensemble5": {
+        "failures": 810,
+        "ler": 0.081,
+        "wilson95": [
+          0.07581203169800813,
+          0.08650975893661886
+        ]
+      },
+      "bath_belief": {
+        "failures": 743,
+        "ler": 0.0743,
+        "wilson95": [
+          0.0693216842138415,
+          0.07960525199895258
+        ]
+      },
+      "search_native": {
+        "failures": 736,
+        "ler": 0.0736,
+        "wilson95": [
+          0.068644265639401,
+          0.07888320817111201
+        ]
+      },
+      "search_belief": {
+        "failures": 728,
+        "ler": 0.0728,
+        "wilson95": [
+          0.06787023787202281,
+          0.07805785033588328
+        ]
+      },
+      "dispute": {
+        "failures": 712,
+        "ler": 0.0712,
+        "wilson95": [
+          0.06632272041029459,
+          0.07640659659239767
+        ]
+      },
+      "belief_pair": {
+        "failures": 718,
+        "ler": 0.0718,
+        "wilson95": [
+          0.0669029544182109,
+          0.07702590178643653
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.011969000013777986,
+        "validation_batch_s": 0.21771510000689887
+      },
+      "bath_clock": {
+        "setup_s": 0.02725579999969341,
+        "validation_batch_s": 0.22034879997954704
+      },
+      "belief": {
+        "setup_s": 0.012249800027348101,
+        "validation_batch_s": 2.925262799981283
+      },
+      "ensemble3": {
+        "setup_s": 0.03915459997369908,
+        "validation_batch_s": 0.3209934000042267
+      },
+      "ensemble5": {
+        "setup_s": 0.10295359999872744,
+        "validation_batch_s": 0.6834359999920707
+      },
+      "bath_belief": {
+        "setup_s": 0.02922480000415817,
+        "validation_batch_s": 2.954041799996048
+      },
+      "bounded_search": {
+        "setup_s": 0.016907299985177815,
+        "validation_batch_s": 4.270152400014922
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 64,
+      "dispute_disputed_shots": 421,
+      "belief_pair_disputed_shots": 158
+    }
+  },
+  {
+    "metadata": {
+      "distance": 5,
+      "p": 0.01,
+      "basis": "z",
+      "rounds": 5,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 13011010583308394932,
+      "circuit_sha256": "e459a9e41b11923ada45ab44f7a84621956cf24a4b188a6b00401b5869d8efe0",
+      "sample_sha256": "385900550ad4f0f3f528141bd61be95602fceb114406536e6bd60ae719505a01",
+      "num_detectors": 120,
+      "num_observables": 1,
+      "simulation_setup_s": 0.00571,
+      "sampling_s": 0.0044272
+    },
+    "failures": {
+      "native": {
+        "failures": 718,
+        "ler": 0.0718,
+        "wilson95": [
+          0.0669029544182109,
+          0.07702590178643653
+        ]
+      },
+      "bath_clock": {
+        "failures": 703,
+        "ler": 0.0703,
+        "wilson95": [
+          0.06545256384549218,
+          0.07547744435426727
+        ]
+      },
+      "belief": {
+        "failures": 626,
+        "ler": 0.0626,
+        "wilson95": [
+          0.058018043897642826,
+          0.06751787787702505
+        ]
+      },
+      "ensemble3": {
+        "failures": 697,
+        "ler": 0.0697,
+        "wilson95": [
+          0.06487259088742876,
+          0.07485787811037552
+        ]
+      },
+      "ensemble5": {
+        "failures": 697,
+        "ler": 0.0697,
+        "wilson95": [
+          0.06487259088742876,
+          0.07485787811037552
+        ]
+      },
+      "bath_belief": {
+        "failures": 644,
+        "ler": 0.0644,
+        "wilson95": [
+          0.05975427740497836,
+          0.06938026197555511
+        ]
+      },
+      "search_native": {
+        "failures": 622,
+        "ler": 0.0622,
+        "wilson95": [
+          0.05763236397801853,
+          0.06710386499534587
+        ]
+      },
+      "search_belief": {
+        "failures": 618,
+        "ler": 0.0618,
+        "wilson95": [
+          0.05724673957088127,
+          0.06668979660117968
+        ]
+      },
+      "dispute": {
+        "failures": 618,
+        "ler": 0.0618,
+        "wilson95": [
+          0.05724673957088127,
+          0.06668979660117968
+        ]
+      },
+      "belief_pair": {
+        "failures": 623,
+        "ler": 0.0623,
+        "wilson95": [
+          0.05772877877310782,
+          0.06720737340058246
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.011865499982377514,
+        "validation_batch_s": 0.20923060001223348
+      },
+      "bath_clock": {
+        "setup_s": 0.027409300004364923,
+        "validation_batch_s": 0.20598070000414737
+      },
+      "belief": {
+        "setup_s": 0.012503699981607497,
+        "validation_batch_s": 2.782001100014895
+      },
+      "ensemble3": {
+        "setup_s": 0.039035299996612594,
+        "validation_batch_s": 0.31011980000766926
+      },
+      "ensemble5": {
+        "setup_s": 0.10463259997777641,
+        "validation_batch_s": 0.648704799998086
+      },
+      "bath_belief": {
+        "setup_s": 0.027973299991572276,
+        "validation_batch_s": 2.801186900003813
+      },
+      "bounded_search": {
+        "setup_s": 0.015551999997114763,
+        "validation_batch_s": 4.151012000016635
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 53,
+      "dispute_disputed_shots": 353,
+      "belief_pair_disputed_shots": 116
+    }
+  },
+  {
+    "metadata": {
+      "distance": 7,
+      "p": 0.001,
+      "basis": "x",
+      "rounds": 7,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 13526578335826310139,
+      "circuit_sha256": "6e311e046a995de22cb43db662a15b7d336a7338f9579357c3e61fc7360d3daf",
+      "sample_sha256": "d3b01ecea491b3ff3148dd2896264aac0ece461816d02b07b1576302bafcb5b7",
+      "num_detectors": 336,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0110191,
+      "sampling_s": 0.0069221
+    },
+    "failures": {
+      "native": {
+        "failures": 0,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          0.00038399837067659557
+        ]
+      },
+      "bath_clock": {
+        "failures": 0,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          0.00038399837067659557
+        ]
+      },
+      "belief": {
+        "failures": 1,
+        "ler": 0.0001,
+        "wilson95": [
+          1.7652673601122363e-05,
+          0.0005662688974013379
+        ]
+      },
+      "ensemble3": {
+        "failures": 0,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          0.00038399837067659557
+        ]
+      },
+      "ensemble5": {
+        "failures": 0,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          0.00038399837067659557
+        ]
+      },
+      "bath_belief": {
+        "failures": 1,
+        "ler": 0.0001,
+        "wilson95": [
+          1.7652673601122363e-05,
+          0.0005662688974013379
+        ]
+      },
+      "search_native": {
+        "failures": 0,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          0.00038399837067659557
+        ]
+      },
+      "search_belief": {
+        "failures": 0,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          0.00038399837067659557
+        ]
+      },
+      "dispute": {
+        "failures": 0,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          0.00038399837067659557
+        ]
+      },
+      "belief_pair": {
+        "failures": 1,
+        "ler": 0.0001,
+        "wilson95": [
+          1.7652673601122363e-05,
+          0.0005662688974013379
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.027774899994255975,
+        "validation_batch_s": 0.059525799995753914
+      },
+      "bath_clock": {
+        "setup_s": 0.05583460000343621,
+        "validation_batch_s": 0.05738099999143742
+      },
+      "belief": {
+        "setup_s": 0.030233299999963492,
+        "validation_batch_s": 2.99097260000417
+      },
+      "ensemble3": {
+        "setup_s": 0.08790089999092743,
+        "validation_batch_s": 0.0813888999982737
+      },
+      "ensemble5": {
+        "setup_s": 0.28345750001608394,
+        "validation_batch_s": 0.17748119999305345
+      },
+      "bath_belief": {
+        "setup_s": 0.05892380001023412,
+        "validation_batch_s": 3.0688987000030465
+      },
+      "bounded_search": {
+        "setup_s": 0.0440396000049077,
+        "validation_batch_s": 0.8850290999980643
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 0,
+      "dispute_disputed_shots": 1,
+      "belief_pair_disputed_shots": 0
+    }
+  },
+  {
+    "metadata": {
+      "distance": 7,
+      "p": 0.001,
+      "basis": "z",
+      "rounds": 7,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 11006732613915183772,
+      "circuit_sha256": "3fbd12597e83b09a18df9939abcc8804ad2be30761a9d75dbd8ee94878ac56f5",
+      "sample_sha256": "bf5d791ce03f111a6f4d48615ef0fadaac55f54e5efa32938f23a59100871880",
+      "num_detectors": 336,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0110287,
+      "sampling_s": 0.0066501
+    },
+    "failures": {
+      "native": {
+        "failures": 0,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          0.00038399837067659557
+        ]
+      },
+      "bath_clock": {
+        "failures": 1,
+        "ler": 0.0001,
+        "wilson95": [
+          1.7652673601122363e-05,
+          0.0005662688974013379
+        ]
+      },
+      "belief": {
+        "failures": 0,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          0.00038399837067659557
+        ]
+      },
+      "ensemble3": {
+        "failures": 0,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          0.00038399837067659557
+        ]
+      },
+      "ensemble5": {
+        "failures": 0,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          0.00038399837067659557
+        ]
+      },
+      "bath_belief": {
+        "failures": 0,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          0.00038399837067659557
+        ]
+      },
+      "search_native": {
+        "failures": 1,
+        "ler": 0.0001,
+        "wilson95": [
+          1.7652673601122363e-05,
+          0.0005662688974013379
+        ]
+      },
+      "search_belief": {
+        "failures": 1,
+        "ler": 0.0001,
+        "wilson95": [
+          1.7652673601122363e-05,
+          0.0005662688974013379
+        ]
+      },
+      "dispute": {
+        "failures": 0,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          0.00038399837067659557
+        ]
+      },
+      "belief_pair": {
+        "failures": 0,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          0.00038399837067659557
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.02697239999542944,
+        "validation_batch_s": 0.059808599995449185
+      },
+      "bath_clock": {
+        "setup_s": 0.05650530001730658,
+        "validation_batch_s": 0.057590599986724555
+      },
+      "belief": {
+        "setup_s": 0.030495200015138835,
+        "validation_batch_s": 3.0602761000045575
+      },
+      "ensemble3": {
+        "setup_s": 0.08694559999275953,
+        "validation_batch_s": 0.08123830001568422
+      },
+      "ensemble5": {
+        "setup_s": 0.28455989999929443,
+        "validation_batch_s": 0.19025340001098812
+      },
+      "bath_belief": {
+        "setup_s": 0.06181360001210123,
+        "validation_batch_s": 3.028055899980245
+      },
+      "bounded_search": {
+        "setup_s": 0.043359999981475994,
+        "validation_batch_s": 0.873404500016477
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 0,
+      "dispute_disputed_shots": 0,
+      "belief_pair_disputed_shots": 0
+    }
+  },
+  {
+    "metadata": {
+      "distance": 7,
+      "p": 0.003,
+      "basis": "x",
+      "rounds": 7,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 11680854803853420758,
+      "circuit_sha256": "2916d5399d174764dcec91112bcddee72b8f845b3e854d06f91b01f793005485",
+      "sample_sha256": "a3db0c40f9ac4d27783c32c0f3a0e947a41d7c3f34301ac6c6258d0e35baa428",
+      "num_detectors": 336,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0109048,
+      "sampling_s": 0.0079245
+    },
+    "failures": {
+      "native": {
+        "failures": 21,
+        "ler": 0.0021,
+        "wilson95": [
+          0.0013739917049838345,
+          0.0032083938725359184
+        ]
+      },
+      "bath_clock": {
+        "failures": 18,
+        "ler": 0.0018,
+        "wilson95": [
+          0.0011389279915130562,
+          0.0028436879850291027
+        ]
+      },
+      "belief": {
+        "failures": 17,
+        "ler": 0.0017,
+        "wilson95": [
+          0.0010617073611205118,
+          0.0027209854150957833
+        ]
+      },
+      "ensemble3": {
+        "failures": 19,
+        "ler": 0.0019,
+        "wilson95": [
+          0.0012167441596287057,
+          0.0029657950172393187
+        ]
+      },
+      "ensemble5": {
+        "failures": 17,
+        "ler": 0.0017,
+        "wilson95": [
+          0.0010617073611205118,
+          0.0027209854150957833
+        ]
+      },
+      "bath_belief": {
+        "failures": 18,
+        "ler": 0.0018,
+        "wilson95": [
+          0.0011389279915130562,
+          0.0028436879850291027
+        ]
+      },
+      "search_native": {
+        "failures": 13,
+        "ler": 0.0013,
+        "wilson95": [
+          0.0007599118725796529,
+          0.0022230881023331834
+        ]
+      },
+      "search_belief": {
+        "failures": 12,
+        "ler": 0.0012,
+        "wilson95": [
+          0.0006866043187699608,
+          0.0020964724558170107
+        ]
+      },
+      "dispute": {
+        "failures": 13,
+        "ler": 0.0013,
+        "wilson95": [
+          0.0007599118725796529,
+          0.0022230881023331834
+        ]
+      },
+      "belief_pair": {
+        "failures": 17,
+        "ler": 0.0017,
+        "wilson95": [
+          0.0010617073611205118,
+          0.0027209854150957833
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.026900400000158697,
+        "validation_batch_s": 0.1911270999989938
+      },
+      "bath_clock": {
+        "setup_s": 0.05572159998700954,
+        "validation_batch_s": 0.177341400005389
+      },
+      "belief": {
+        "setup_s": 0.030397099995752797,
+        "validation_batch_s": 6.6667966000095475
+      },
+      "ensemble3": {
+        "setup_s": 0.08678930002497509,
+        "validation_batch_s": 0.2472068999777548
+      },
+      "ensemble5": {
+        "setup_s": 0.28200439998181537,
+        "validation_batch_s": 0.5645394000166561
+      },
+      "bath_belief": {
+        "setup_s": 0.06684429998858832,
+        "validation_batch_s": 7.17791749999742
+      },
+      "bounded_search": {
+        "setup_s": 0.04554779999307357,
+        "validation_batch_s": 3.1865691999846604
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 10,
+      "dispute_disputed_shots": 16,
+      "belief_pair_disputed_shots": 1
+    }
+  },
+  {
+    "metadata": {
+      "distance": 7,
+      "p": 0.003,
+      "basis": "z",
+      "rounds": 7,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 10505512854887254786,
+      "circuit_sha256": "423a2a32f028fda5e55666b53ccc145d5dba3fa4bd67f5f9c6becae7f4039c75",
+      "sample_sha256": "c7ebb0c719eeb77210d93ed7f338bab5acf84c1b61b02e037b80428df8406258",
+      "num_detectors": 336,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0127287,
+      "sampling_s": 0.0088952
+    },
+    "failures": {
+      "native": {
+        "failures": 4,
+        "ler": 0.0004,
+        "wilson95": [
+          0.0001555628366230749,
+          0.0010281283353569793
+        ]
+      },
+      "bath_clock": {
+        "failures": 3,
+        "ler": 0.0003,
+        "wilson95": [
+          0.00010203219941781017,
+          0.0008817357722363795
+        ]
+      },
+      "belief": {
+        "failures": 6,
+        "ler": 0.0006,
+        "wilson95": [
+          0.0002750134763309977,
+          0.0013085240963007856
+        ]
+      },
+      "ensemble3": {
+        "failures": 3,
+        "ler": 0.0003,
+        "wilson95": [
+          0.00010203219941781017,
+          0.0008817357722363795
+        ]
+      },
+      "ensemble5": {
+        "failures": 3,
+        "ler": 0.0003,
+        "wilson95": [
+          0.00010203219941781017,
+          0.0008817357722363795
+        ]
+      },
+      "bath_belief": {
+        "failures": 7,
+        "ler": 0.0007,
+        "wilson95": [
+          0.0003391263316879598,
+          0.0014443344412696883
+        ]
+      },
+      "search_native": {
+        "failures": 4,
+        "ler": 0.0004,
+        "wilson95": [
+          0.0001555628366230749,
+          0.0010281283353569793
+        ]
+      },
+      "search_belief": {
+        "failures": 4,
+        "ler": 0.0004,
+        "wilson95": [
+          0.0001555628366230749,
+          0.0010281283353569793
+        ]
+      },
+      "dispute": {
+        "failures": 5,
+        "ler": 0.0005,
+        "wilson95": [
+          0.00021358842616382576,
+          0.0011700259461420932
+        ]
+      },
+      "belief_pair": {
+        "failures": 6,
+        "ler": 0.0006,
+        "wilson95": [
+          0.0002750134763309977,
+          0.0013085240963007856
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.04659690000698902,
+        "validation_batch_s": 0.27534969997941516
+      },
+      "bath_clock": {
+        "setup_s": 0.06655390001833439,
+        "validation_batch_s": 0.2768502999970224
+      },
+      "belief": {
+        "setup_s": 0.03163499999209307,
+        "validation_batch_s": 6.8908671000099275
+      },
+      "ensemble3": {
+        "setup_s": 0.08627780000097118,
+        "validation_batch_s": 0.2469015000096988
+      },
+      "ensemble5": {
+        "setup_s": 0.2819621999806259,
+        "validation_batch_s": 0.5347461000201292
+      },
+      "bath_belief": {
+        "setup_s": 0.05878819999634288,
+        "validation_batch_s": 7.017825200018706
+      },
+      "bounded_search": {
+        "setup_s": 0.04900949998409487,
+        "validation_batch_s": 3.1685150999983307
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 14,
+      "dispute_disputed_shots": 3,
+      "belief_pair_disputed_shots": 1
+    }
+  },
+  {
+    "metadata": {
+      "distance": 7,
+      "p": 0.005,
+      "basis": "x",
+      "rounds": 7,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 12614959346216141720,
+      "circuit_sha256": "8459284cbec4f6ba57fa0ec5f0d6256456c440aa0c6ca6068256bb7a1cbabe67",
+      "sample_sha256": "2e0b60e217dc3ca067d5b610f47619f81128d50945b9cd8bad353db4d3605d65",
+      "num_detectors": 336,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0122884,
+      "sampling_s": 0.0095206
+    },
+    "failures": {
+      "native": {
+        "failures": 72,
+        "ler": 0.0072,
+        "wilson95": [
+          0.005721693857721179,
+          0.009056774936417673
+        ]
+      },
+      "bath_clock": {
+        "failures": 74,
+        "ler": 0.0074,
+        "wilson95": [
+          0.005899086359582839,
+          0.009279228835207744
+        ]
+      },
+      "belief": {
+        "failures": 76,
+        "ler": 0.0076,
+        "wilson95": [
+          0.006076784264021833,
+          0.009501377331420478
+        ]
+      },
+      "ensemble3": {
+        "failures": 76,
+        "ler": 0.0076,
+        "wilson95": [
+          0.006076784264021833,
+          0.009501377331420478
+        ]
+      },
+      "ensemble5": {
+        "failures": 75,
+        "ler": 0.0075,
+        "wilson95": [
+          0.005987897888436751,
+          0.009390340506679695
+        ]
+      },
+      "bath_belief": {
+        "failures": 79,
+        "ler": 0.0079,
+        "wilson95": [
+          0.006343878268779698,
+          0.00983405292764021
+        ]
+      },
+      "search_native": {
+        "failures": 86,
+        "ler": 0.0086,
+        "wilson95": [
+          0.006969468405110603,
+          0.010607925193590355
+        ]
+      },
+      "search_belief": {
+        "failures": 85,
+        "ler": 0.0085,
+        "wilson95": [
+          0.006879905952442007,
+          0.01049756444593309
+        ]
+      },
+      "dispute": {
+        "failures": 73,
+        "ler": 0.0073,
+        "wilson95": [
+          0.005810351168746255,
+          0.009168040825718463
+        ]
+      },
+      "belief_pair": {
+        "failures": 76,
+        "ler": 0.0076,
+        "wilson95": [
+          0.006076784264021833,
+          0.009501377331420478
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.027525799989234656,
+        "validation_batch_s": 0.32416710001416504
+      },
+      "bath_clock": {
+        "setup_s": 0.054803699982585385,
+        "validation_batch_s": 0.32390200000372715
+      },
+      "belief": {
+        "setup_s": 0.02875520000816323,
+        "validation_batch_s": 9.282812299992656
+      },
+      "ensemble3": {
+        "setup_s": 0.08750460000010207,
+        "validation_batch_s": 0.47330670000519603
+      },
+      "ensemble5": {
+        "setup_s": 0.2816150000144262,
+        "validation_batch_s": 1.0413517999986652
+      },
+      "bath_belief": {
+        "setup_s": 0.05937260002247058,
+        "validation_batch_s": 9.494757399981609
+      },
+      "bounded_search": {
+        "setup_s": 0.050495200004661456,
+        "validation_batch_s": 6.643562000012025
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 97,
+      "dispute_disputed_shots": 51,
+      "belief_pair_disputed_shots": 17
+    }
+  },
+  {
+    "metadata": {
+      "distance": 7,
+      "p": 0.005,
+      "basis": "z",
+      "rounds": 7,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 10822220372726551177,
+      "circuit_sha256": "9358c1990989cb0f21b7f1fae86e8c9b5dcb78d42580bce1e65bec9a90096a2d",
+      "sample_sha256": "a8a7f67d4ca978a6b10e0146a59db8f5708ce819519b0e67bad0103a778fbab3",
+      "num_detectors": 336,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0109931,
+      "sampling_s": 0.0094014
+    },
+    "failures": {
+      "native": {
+        "failures": 63,
+        "ler": 0.0063,
+        "wilson95": [
+          0.004927565458326495,
+          0.008051594532879576
+        ]
+      },
+      "bath_clock": {
+        "failures": 65,
+        "ler": 0.0065,
+        "wilson95": [
+          0.005103414629831769,
+          0.00827559176202603
+        ]
+      },
+      "belief": {
+        "failures": 46,
+        "ler": 0.0046,
+        "wilson95": [
+          0.0034506598701977897,
+          0.006129805715468581
+        ]
+      },
+      "ensemble3": {
+        "failures": 63,
+        "ler": 0.0063,
+        "wilson95": [
+          0.004927565458326495,
+          0.008051594532879576
+        ]
+      },
+      "ensemble5": {
+        "failures": 63,
+        "ler": 0.0063,
+        "wilson95": [
+          0.004927565458326495,
+          0.008051594532879576
+        ]
+      },
+      "bath_belief": {
+        "failures": 47,
+        "ler": 0.0047,
+        "wilson95": [
+          0.003536501767139378,
+          0.006243887018852858
+        ]
+      },
+      "search_native": {
+        "failures": 60,
+        "ler": 0.006,
+        "wilson95": [
+          0.0046645228934497195,
+          0.007714867496778757
+        ]
+      },
+      "search_belief": {
+        "failures": 57,
+        "ler": 0.0057,
+        "wilson95": [
+          0.004402415829723049,
+          0.007377204959527834
+        ]
+      },
+      "dispute": {
+        "failures": 39,
+        "ler": 0.0039,
+        "wilson95": [
+          0.0028543608687738777,
+          0.0053266423146114406
+        ]
+      },
+      "belief_pair": {
+        "failures": 44,
+        "ler": 0.0044,
+        "wilson95": [
+          0.0032794410394017762,
+          0.0059011781456128655
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.02763480000430718,
+        "validation_batch_s": 0.37159750002319925
+      },
+      "bath_clock": {
+        "setup_s": 0.07263080001575872,
+        "validation_batch_s": 0.3456733000057284
+      },
+      "belief": {
+        "setup_s": 0.030706799996551126,
+        "validation_batch_s": 9.464841700013494
+      },
+      "ensemble3": {
+        "setup_s": 0.08597400001599453,
+        "validation_batch_s": 0.4550604999822099
+      },
+      "ensemble5": {
+        "setup_s": 0.2834746000007726,
+        "validation_batch_s": 0.9711003999982495
+      },
+      "bath_belief": {
+        "setup_s": 0.058774300006916746,
+        "validation_batch_s": 9.502427100000205
+      },
+      "bounded_search": {
+        "setup_s": 0.04303450000588782,
+        "validation_batch_s": 6.818931399990106
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 111,
+      "dispute_disputed_shots": 57,
+      "belief_pair_disputed_shots": 19
+    }
+  },
+  {
+    "metadata": {
+      "distance": 7,
+      "p": 0.01,
+      "basis": "x",
+      "rounds": 7,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 12258413614390954566,
+      "circuit_sha256": "af463c7fcee07452296fbe7e93a29806acbc36cbc214b61688003db5392ebec5",
+      "sample_sha256": "ab700d5687cb5ef78c45761e86d0d55efb9e995c6dceb2d213ef27e5cffda18e",
+      "num_detectors": 336,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0109205,
+      "sampling_s": 0.0120036
+    },
+    "failures": {
+      "native": {
+        "failures": 884,
+        "ler": 0.0884,
+        "wilson95": [
+          0.08299301476799524,
+          0.09412309269074574
+        ]
+      },
+      "bath_clock": {
+        "failures": 895,
+        "ler": 0.0895,
+        "wilson95": [
+          0.08406149169178567,
+          0.0952537709705398
+        ]
+      },
+      "belief": {
+        "failures": 818,
+        "ler": 0.0818,
+        "wilson95": [
+          0.07658774622559791,
+          0.08733343001163599
+        ]
+      },
+      "ensemble3": {
+        "failures": 895,
+        "ler": 0.0895,
+        "wilson95": [
+          0.08406149169178567,
+          0.0952537709705398
+        ]
+      },
+      "ensemble5": {
+        "failures": 876,
+        "ler": 0.0876,
+        "wilson95": [
+          0.08221610289384985,
+          0.09330061896228418
+        ]
+      },
+      "bath_belief": {
+        "failures": 841,
+        "ler": 0.0841,
+        "wilson95": [
+          0.07881876556228841,
+          0.08970064428244036
+        ]
+      },
+      "search_native": {
+        "failures": 930,
+        "ler": 0.093,
+        "wilson95": [
+          0.08746286373620066,
+          0.09884971093753009
+        ]
+      },
+      "search_belief": {
+        "failures": 917,
+        "ler": 0.0917,
+        "wilson95": [
+          0.0861992046706181,
+          0.09751436839887641
+        ]
+      },
+      "dispute": {
+        "failures": 793,
+        "ler": 0.0793,
+        "wilson95": [
+          0.07416415265319184,
+          0.08475894357589542
+        ]
+      },
+      "belief_pair": {
+        "failures": 810,
+        "ler": 0.081,
+        "wilson95": [
+          0.07581203169800813,
+          0.08650975893661886
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.02772230000118725,
+        "validation_batch_s": 0.807780900009675
+      },
+      "bath_clock": {
+        "setup_s": 0.05486780000501312,
+        "validation_batch_s": 0.8220093999989331
+      },
+      "belief": {
+        "setup_s": 0.031105400004889816,
+        "validation_batch_s": 11.737951099989004
+      },
+      "ensemble3": {
+        "setup_s": 0.08461000001989305,
+        "validation_batch_s": 1.1813627000083216
+      },
+      "ensemble5": {
+        "setup_s": 0.2809636000019964,
+        "validation_batch_s": 2.479201499983901
+      },
+      "bath_belief": {
+        "setup_s": 0.058641199982957914,
+        "validation_batch_s": 28.056519200006733
+      },
+      "bounded_search": {
+        "setup_s": 0.04252779998932965,
+        "validation_batch_s": 25.193584299995564
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 2578,
+      "dispute_disputed_shots": 586,
+      "belief_pair_disputed_shots": 197
+    }
+  },
+  {
+    "metadata": {
+      "distance": 7,
+      "p": 0.01,
+      "basis": "z",
+      "rounds": 7,
+      "noise_model": "simple_uniform",
+      "noise_status": "provisional",
+      "shots": 10000,
+      "batch_size": 10000,
+      "split": "validation",
+      "seed": 12003483938155393411,
+      "circuit_sha256": "a30a6f40e2a87f64362a8e84ace59e0f26154a3a64fb3925753e2c0e227a2823",
+      "sample_sha256": "807f64af1a11b22df838e694662b391f8825d01927e63b3c9b20a1e7b0f3d45a",
+      "num_detectors": 336,
+      "num_observables": 1,
+      "simulation_setup_s": 0.0115612,
+      "sampling_s": 0.013625
+    },
+    "failures": {
+      "native": {
+        "failures": 807,
+        "ler": 0.0807,
+        "wilson95": [
+          0.0755211783704851,
+          0.08620084266316429
+        ]
+      },
+      "bath_clock": {
+        "failures": 827,
+        "ler": 0.0827,
+        "wilson95": [
+          0.07746060672647537,
+          0.08825987831369131
+        ]
+      },
+      "belief": {
+        "failures": 707,
+        "ler": 0.0707,
+        "wilson95": [
+          0.0658392710833381,
+          0.07589042991772481
+        ]
+      },
+      "ensemble3": {
+        "failures": 795,
+        "ler": 0.0795,
+        "wilson95": [
+          0.0743579839949972,
+          0.08496495863474181
+        ]
+      },
+      "ensemble5": {
+        "failures": 810,
+        "ler": 0.081,
+        "wilson95": [
+          0.07581203169800813,
+          0.08650975893661886
+        ]
+      },
+      "bath_belief": {
+        "failures": 758,
+        "ler": 0.0758,
+        "wilson95": [
+          0.07077374054640673,
+          0.08115204367127532
+        ]
+      },
+      "search_native": {
+        "failures": 858,
+        "ler": 0.0858,
+        "wilson95": [
+          0.08046856034232881,
+          0.09144954390793968
+        ]
+      },
+      "search_belief": {
+        "failures": 789,
+        "ler": 0.0789,
+        "wilson95": [
+          0.07377651974980219,
+          0.08434688367798164
+        ]
+      },
+      "dispute": {
+        "failures": 688,
+        "ler": 0.0688,
+        "wilson95": [
+          0.06400283172344769,
+          0.07392832847142382
+        ]
+      },
+      "belief_pair": {
+        "failures": 707,
+        "ler": 0.0707,
+        "wilson95": [
+          0.0658392710833381,
+          0.07589042991772481
+        ]
+      }
+    },
+    "component_timings": {
+      "native": {
+        "setup_s": 0.029333899990888312,
+        "validation_batch_s": 0.8655693000182509
+      },
+      "bath_clock": {
+        "setup_s": 0.05486539998673834,
+        "validation_batch_s": 0.859565000020666
+      },
+      "belief": {
+        "setup_s": 0.032055299991043285,
+        "validation_batch_s": 12.626788699999452
+      },
+      "ensemble3": {
+        "setup_s": 0.09046380000654608,
+        "validation_batch_s": 1.23984379999456
+      },
+      "ensemble5": {
+        "setup_s": 0.3318479000008665,
+        "validation_batch_s": 2.616962300002342
+      },
+      "bath_belief": {
+        "setup_s": 0.06102529997588135,
+        "validation_batch_s": 12.583799900021404
+      },
+      "bounded_search": {
+        "setup_s": 0.042869299999438226,
+        "validation_batch_s": 23.20977519999724
+      }
+    },
+    "diagnostics": {
+      "exhausted_searches": 2624,
+      "dispute_disputed_shots": 511,
+      "belief_pair_disputed_shots": 185
+    }
+  }
+]

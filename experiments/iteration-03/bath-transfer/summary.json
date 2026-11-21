@@ -1,0 +1,156 @@
+[
+  {
+    "prior": "clock",
+    "decoder": "correlated_mwpm",
+    "shots": 240000,
+    "failures": 5489,
+    "ler": 0.022870833333333333,
+    "batch_us_per_shot": 14.389930833333331,
+    "paired_vs_expanded_uniform": {
+      "recovered": 615,
+      "lost": 595,
+      "ler_difference": -8.333333333333333e-05,
+      "approximate_95_ci": [
+        -0.00036739631940470335,
+        0.0002007296527380367
+      ]
+    },
+    "paired_vs_native": {
+      "recovered": 628,
+      "lost": 587,
+      "ler_difference": -0.00017083333333333333,
+      "approximate_95_ci": [
+        -0.0004554799413790379,
+        0.00011381327471237122
+      ]
+    }
+  },
+  {
+    "prior": "clock",
+    "decoder": "mwpm",
+    "shots": 240000,
+    "failures": 6470,
+    "ler": 0.026958333333333334,
+    "batch_us_per_shot": 5.529948750000001,
+    "paired_vs_expanded_uniform": {
+      "recovered": 359,
+      "lost": 404,
+      "ler_difference": 0.0001875,
+      "approximate_95_ci": [
+        -3.808098446689894e-05,
+        0.000413080984466899
+      ]
+    },
+    "paired_vs_native": {
+      "recovered": 279,
+      "lost": 288,
+      "ler_difference": 3.75e-05,
+      "approximate_95_ci": [
+        -0.00015695850239210915,
+        0.00023195850239210913
+      ]
+    }
+  },
+  {
+    "prior": "expanded_uniform",
+    "decoder": "correlated_mwpm",
+    "shots": 240000,
+    "failures": 5509,
+    "ler": 0.022954166666666668,
+    "batch_us_per_shot": 14.564320833333333,
+    "paired_vs_native": {
+      "recovered": 257,
+      "lost": 236,
+      "ler_difference": -8.75e-05,
+      "approximate_95_ci": [
+        -0.0002688288384883787,
+        9.382883848837869e-05
+      ]
+    }
+  },
+  {
+    "prior": "expanded_uniform",
+    "decoder": "mwpm",
+    "shots": 240000,
+    "failures": 6425,
+    "ler": 0.026770833333333334,
+    "batch_us_per_shot": 5.495095,
+    "paired_vs_native": {
+      "recovered": 188,
+      "lost": 152,
+      "ler_difference": -0.00015,
+      "approximate_95_ci": [
+        -0.0003005862028629166,
+        5.862028629166616e-07
+      ]
+    }
+  },
+  {
+    "prior": "native",
+    "decoder": "correlated_mwpm",
+    "shots": 240000,
+    "failures": 5530,
+    "ler": 0.023041666666666665,
+    "batch_us_per_shot": 14.326583333333334
+  },
+  {
+    "prior": "native",
+    "decoder": "mwpm",
+    "shots": 240000,
+    "failures": 6461,
+    "ler": 0.026920833333333335,
+    "batch_us_per_shot": 5.428146666666666
+  },
+  {
+    "prior": "selected",
+    "decoder": "correlated_mwpm",
+    "shots": 240000,
+    "failures": 5459,
+    "ler": 0.022745833333333333,
+    "batch_us_per_shot": 14.381156666666667,
+    "paired_vs_expanded_uniform": {
+      "recovered": 514,
+      "lost": 464,
+      "ler_difference": -0.00020833333333333335,
+      "approximate_95_ci": [
+        -0.00046372123014262333,
+        4.705456347595661e-05
+      ]
+    },
+    "paired_vs_native": {
+      "recovered": 523,
+      "lost": 452,
+      "ler_difference": -0.00029583333333333333,
+      "approximate_95_ci": [
+        -0.0005508344363660878,
+        -4.083223030057888e-05
+      ]
+    }
+  },
+  {
+    "prior": "selected",
+    "decoder": "mwpm",
+    "shots": 240000,
+    "failures": 6457,
+    "ler": 0.026904166666666667,
+    "batch_us_per_shot": 5.482894583333334,
+    "paired_vs_expanded_uniform": {
+      "recovered": 284,
+      "lost": 316,
+      "ler_difference": 0.00013333333333333334,
+      "approximate_95_ci": [
+        -6.670572817536199e-05,
+        0.00033337239484202867
+      ]
+    },
+    "paired_vs_native": {
+      "recovered": 215,
+      "lost": 211,
+      "ler_difference": -1.6666666666666667e-05,
+      "approximate_95_ci": [
+        -0.00018522706256754898,
+        0.00015189372923421563
+      ]
+    }
+  }
+]

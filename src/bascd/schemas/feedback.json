@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BASCD offline proposer feedback v1",
+  "type": "object", "additionalProperties": false,
+  "required": ["version", "strategy", "budget", "used", "trials"],
+  "properties": {
+    "version": {"const": 1}, "strategy": {"enum": ["random", "guided"]},
+    "budget": {"type": "integer", "minimum": 1, "maximum": 1000},
+    "used": {"type": "integer", "minimum": 0, "maximum": 1000},
+    "trials": {"type": "array", "items": {"$ref": "#/$defs/trial"}}
+  },
+  "$defs": {
+    "rate": {"type": "number", "minimum": 0, "maximum": 1},
+    "summary": {
+      "type": "object", "additionalProperties": false,
+      "required": ["shots", "failures", "ler", "ler95_low", "ler95_high", "batch_us_per_shot"],
+      "properties": {
+        "shots": {"type": "integer", "minimum": 1}, "failures": {"type": "integer", "minimum": 0},
+        "ler": {"$ref": "#/$defs/rate"}, "ler95_low": {"$ref": "#/$defs/rate"},
+        "ler95_high": {"$ref": "#/$defs/rate"}, "batch_us_per_shot": {"type": "number", "minimum": 0}
+      }
+    },
+    "trial": {
+      "type": "object", "additionalProperties": false,
+      "required": ["trial", "status", "policy_id", "proposal", "error", "train"],
+      "properties": {
+        "trial": {"type": "integer", "minimum": 1},
+        "status": {"enum": ["running", "invalid", "failed", "trained", "ok"]},
+        "policy_id": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+        "proposal": {}, "error": {"type": ["string", "null"]},
+        "train": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/summary"}]}
+      }
+    }
+  }
+}

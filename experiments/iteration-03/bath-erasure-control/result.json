@@ -1,0 +1,108 @@
+{
+  "format_version": 1,
+  "experiment": "research-only location-heralded bath erasure control",
+  "profile_sha256": "e649d17ea6be5823bafb39fc6fb31474ee294880760e6aa70ecf7801cb487589",
+  "profile_reference": "https://zenodo.org/records/24326452",
+  "time_unit": "dimensionless source model time",
+  "versions": {
+    "numpy": "2.4.6",
+    "stim": "1.16.0",
+    "pymatching": "2.4.0"
+  },
+  "distance": 3,
+  "basis": "Z memory, tracking X or Y data faults",
+  "data_sites": 9,
+  "syndrome_bits": 4,
+  "assumptions": [
+    "Independent copies of the effective Pauli-twirled bath channel act on individual data sites.",
+    "Each data site has one bath opportunity followed by one ideal syndrome measurement.",
+    "A flag identifies the erased data location, which is replaced by a uniform random Pauli in the model.",
+    "The archived channel assumes a free clock-specific frame correction on pass.",
+    "Preparation, checks, and final measurements are ideal.",
+    "The two clocks define separate physical models, each with its own paired decoder comparison."
+  ],
+  "clocks": {
+    "fixed": {
+      "time": 4.0,
+      "seed": 31,
+      "shots": 20000,
+      "erasure_probability": 0.6057344594364422,
+      "conditional_paulis": {
+        "I": 0.7558599525033196,
+        "X": 0.19339266581575576,
+        "Y": 0.00968400083078564,
+        "Z": 0.04106338085013903
+      },
+      "bit_flip_probability_given_pass": 0.2030766666465414,
+      "bit_flip_probability_marginal": 0.38293336146946516,
+      "sampled_flags": 108751,
+      "shots_with_flags": 19993,
+      "blind": {
+        "failures": 9829,
+        "logical_failure_fraction": 0.49145,
+        "wilson_95": [
+          0.4845238010897975,
+          0.49837948272676186
+        ]
+      },
+      "heralded": {
+        "failures": 9497,
+        "logical_failure_fraction": 0.47485,
+        "wilson_95": [
+          0.46793474515343114,
+          0.4817749142601909
+        ]
+      },
+      "paired": {
+        "both_correct": 7886,
+        "blind_only_failed": 2617,
+        "heralded_only_failed": 2285,
+        "both_failed": 7212,
+        "blind_minus_heralded_failure_fraction": 0.0166,
+        "exact_two_sided_log10_p_value": -5.647302329895549
+      },
+      "elapsed_seconds": 0.07979260000865906
+    },
+    "selected": {
+      "time": 8.08,
+      "seed": 32,
+      "shots": 20000,
+      "erasure_probability": 0.23542354398307053,
+      "conditional_paulis": {
+        "I": 0.9965832872025969,
+        "X": 0.0005267069171548028,
+        "Y": 0.0004361147327998166,
+        "Z": 0.002453891147448478
+      },
+      "bit_flip_probability_given_pass": 0.0009628216499546194,
+      "bit_flip_probability_marginal": 0.11844792275643394,
+      "sampled_flags": 42076,
+      "shots_with_flags": 18207,
+      "blind": {
+        "failures": 3150,
+        "logical_failure_fraction": 0.1575,
+        "wilson_95": [
+          0.1525173755322397,
+          0.16261416916619192
+        ]
+      },
+      "heralded": {
+        "failures": 885,
+        "logical_failure_fraction": 0.04425,
+        "wilson_95": [
+          0.04148633879881842,
+          0.04718870206632094
+        ]
+      },
+      "paired": {
+        "both_correct": 16736,
+        "blind_only_failed": 2379,
+        "heralded_only_failed": 114,
+        "both_failed": 771,
+        "blind_minus_heralded_failure_fraction": 0.11325,
+        "exact_two_sided_log10_p_value": -550.4640291847172
+      },
+      "elapsed_seconds": 0.06632009998429567
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BASCD distance-dependent decoder proposal v1",
+  "type": "object", "additionalProperties": false, "required": ["by_distance"],
+  "properties": {
+    "by_distance": {
+      "type": "object", "required": ["3", "5", "7"], "additionalProperties": false,
+      "properties": {
+        "3": {"$ref": "#/$defs/decoder"}, "5": {"$ref": "#/$defs/decoder"},
+        "7": {"$ref": "#/$defs/decoder"}
+      }
+    }
+  },
+  "$defs": {
+    "scale": {"enum": [0.75, 1, 1.25]},
+    "decoder": {"oneOf": [
+      {
+        "type": "object", "additionalProperties": false, "required": ["decoder_type"],
+        "properties": {"decoder_type": {"enum": ["mwpm", "correlated_mwpm"]}}
+      },
+      {
+        "type": "object", "additionalProperties": false,
+        "required": ["decoder_type", "temporal_scale", "boundary_scale"],
+        "properties": {
+          "decoder_type": {"const": "weighted_mwpm"},
+          "temporal_scale": {"$ref": "#/$defs/scale"}, "boundary_scale": {"$ref": "#/$defs/scale"}
+        },
+        "not": {"properties": {"temporal_scale": {"const": 1}, "boundary_scale": {"const": 1}}}
+      }
+    ]}
+  }
+}

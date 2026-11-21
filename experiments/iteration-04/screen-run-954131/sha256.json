@@ -1,0 +1,194 @@
+{
+  "d3-x-p0.001": {
+    "bath_clock.b8": "e59dce9309a13d27afc31a375995eca56cc4646a6faad37b6219efeb9a90abe6",
+    "circuit.stim": "ac821480afda352e4d0e49817b128853402a3ff209d21e56102e78456af67fa6",
+    "detectors.b8": "7ed5f542150ec241aef55fe12b69f60bd96e2543e7816bd1fd6357cad1f5ff56",
+    "frozen.b8": "e029a35cd79ea8b5d25748242648f9b476a8d0bcb7ee4a790ef83de74afc35a3",
+    "native.b8": "e59dce9309a13d27afc31a375995eca56cc4646a6faad37b6219efeb9a90abe6",
+    "observables.b8": "95de0c29dcf6ff6c9edc51fa2e3a178bfd240805860dfe6ba88f9e60de077b9d"
+  },
+  "d3-z-p0.001": {
+    "bath_clock.b8": "bfac80d60a5ccb10ce36b703ff46b57a9a5ae613d6838828f6602c5dbe5ffc20",
+    "circuit.stim": "2d74c36d08ff9125f68bf4300d5503a0374a727e3054a6df9711e5bf7e44f2a9",
+    "detectors.b8": "98f77636cea10d1f4a3dbaeec2ed6ff6631a1bb5d0c5ad75aa2bd547fe844c98",
+    "frozen.b8": "713271f0dfb8e84b3f906d11866a75b3b1f290b4584613d7128f2741c8bf678b",
+    "native.b8": "bfac80d60a5ccb10ce36b703ff46b57a9a5ae613d6838828f6602c5dbe5ffc20",
+    "observables.b8": "01a50f50d52299816a258bfa13dcccc650cb9963b3fbdd6a80798519f0751836"
+  },
+  "d3-x-p0.003": {
+    "bath_clock.b8": "7231de7dcfcaed5b52080ad8a66f010012deb64b94c9c17b7b166147c40442b8",
+    "circuit.stim": "22dac5ed5c1d574573c409f1c24dae13dc79f1799c30f0ed3490fe2db7effa70",
+    "detectors.b8": "b418973fe7c41e41abf6e28052bf87f6b241f00bf13ee2d55310a7c8cc365daf",
+    "frozen.b8": "7ba2e6b86e0e8b4c7c4f6c06a640d8d2e5754e74681229d650c7e1e8b5174013",
+    "native.b8": "eba15786135393200dce7dcc993c1b41cb1f03dbf510a83896fa68334d1a2730",
+    "observables.b8": "abe0089399457dcfa6aefa1d37770c18f7db36f9d2c8a7ef710773ccfc28cae7"
+  },
+  "d3-z-p0.003": {
+    "bath_clock.b8": "ec520d5418e7075370e25f783c2ccb911424f520ef566467544a85f54fb3efcd",
+    "circuit.stim": "8299e106987148443086fd39e2617eb7c3450ebb24e3410c1582af8947060a0a",
+    "detectors.b8": "bd2e7aeaf942b7c93e9ee76fa6010cede08cf7783813cce3157f373e7ec890f1",
+    "frozen.b8": "1cdca60d582992ee1d65925d3ed7134873bf65d869f41d32da3d586d941433b4",
+    "native.b8": "bcd76f8f795d36cc41e8c8c169341092103672d74eed63e12185113888c2cfef",
+    "observables.b8": "b7087e6653b6654033e8d84337b36bfe8bf2ede0e0ffddd725ddd4b270011e4d"
+  },
+  "d3-x-p0.005": {
+    "bath_clock.b8": "bd77fd9dd015f1d9adf614384fe8e15e2d93ec322482ba7540bc18a2ab92256f",
+    "circuit.stim": "eb342144f0f9f5874156a24a7268ce04e5b87234f0050f5b4159c6376f996a6d",
+    "detectors.b8": "ab3f1aa0fc9214d967e5104fce46b4a8caf1d23b00776f58d68281cb029ff521",
+    "frozen.b8": "c6ccd468c2e4262bdd3244a7ee9a0b6934c242b3b5cbdc98887579c9fe60109b",
+    "native.b8": "52b802b38e711f228047f23ff418ed967dc626b89b89da6b1b9ffcda3a953366",
+    "observables.b8": "e5ab89b421807ed5577ebb8c3e7c8eecf985b99edce1e4bf3c431b05da845354"
+  },
+  "d3-z-p0.005": {
+    "bath_clock.b8": "5cf44b46b5cfafaae205a2bfa6c8dfb7b4b03af73fb0daaaf52d981ff6c32e27",
+    "circuit.stim": "30920f820545d33855c912688251afd53b51154498e1dd5231542cb1fd66a258",
+    "detectors.b8": "fd613662a68fee7392e6b3a386472ac1a707f68ffaab33dc1d6e51b719dff980",
+    "frozen.b8": "f33a0bcdc83f6aa6143e6105b5021822855754d906ff40dab7ab120a3eb6f0c8",
+    "native.b8": "dd6b514daac10c7edb8b3761acec7529d492fb3ba357d6b076770bab8bda8aef",
+    "observables.b8": "742b4a4f679b77f57a5f056634a55b711477ba0c67f8d18c25f6cf5ab86e31d7"
+  },
+  "d3-x-p0.01": {
+    "bath_clock.b8": "a3da5f9d0719c5e73f56a632f0d05454e0a4168f2444debfd9a8094a052e861f",
+    "circuit.stim": "068a99fcbff23de2582527f46955e1e65a93a6f1afa4e9d022d5ccef41c5a688",
+    "detectors.b8": "51ea3a9ac573ae2b8d678d8ec7fc9050e62e44391e5ea6f57082a26f7f2b7e05",
+    "frozen.b8": "68947aebf897a025ce53f3d22b64eb4996d72478e565f5904b7b17eea3b1854a",
+    "native.b8": "7476c615c2d7ae07f51bc01523f7946a3439363351665e6096508692edf2e033",
+    "observables.b8": "7c7b5e1114f76b1ef4c1d8d282c792a908e1f58a5d6357a549ed6fd399f69f75"
+  },
+  "d3-z-p0.01": {
+    "bath_clock.b8": "7676dba5c066f9d53224ffd6bcb6274f35d4371322dd895402e17a3c2afad308",
+    "circuit.stim": "2f14f0cf480ce05822a8f6b02cb4b15460ac9a34da7e2857cf482488b66a9659",
+    "detectors.b8": "9c9860e7d63ab981f07a35926b836dc6cb96530e96b54a1437917b0fb467bed7",
+    "frozen.b8": "7d6cd1b8c5e5333ae79a36fbfab769973c477581a3a4aeebe8edaae6e34bc3ed",
+    "native.b8": "5abb72607e3abb24a754155ff29723510b1c1fe98e5911e88f1b4a24f654f23b",
+    "observables.b8": "e3e5aadf76b060f1116316f421328507ffa58db64c6ab7054d8b9083e16ba493"
+  },
+  "d5-x-p0.001": {
+    "bath_clock.b8": "ac393231447047a6fbfebb86a313818480b0b84b4d10fedc33b35d2db3fa774b",
+    "circuit.stim": "60a36b0857cffb106d0550c4fc4b56057e988bf0a180060cb89d3af58549f3d4",
+    "detectors.b8": "2d53036a72378153b2fa5ce2e95aced436b6139fc23fc0bca6133bb3829ddd5d",
+    "frozen.b8": "ac393231447047a6fbfebb86a313818480b0b84b4d10fedc33b35d2db3fa774b",
+    "native.b8": "ac393231447047a6fbfebb86a313818480b0b84b4d10fedc33b35d2db3fa774b",
+    "observables.b8": "ac393231447047a6fbfebb86a313818480b0b84b4d10fedc33b35d2db3fa774b"
+  },
+  "d5-z-p0.001": {
+    "bath_clock.b8": "4e113ae0ca5c22d96805fcf86770e73daf995d149be545cae43f29bc395bd336",
+    "circuit.stim": "d6c3081e5c6c1439807ca1d282e40cefbb2233f4f3ee5cc03bac998e5ef225c1",
+    "detectors.b8": "1f543246341dfaeca17010255c68fd62947236c0173de6534a7cb8eb10e9820e",
+    "frozen.b8": "d76e8c454473c0ac74247eeb2b3b1bc6f5efc4cd3707577f4697aa06195a53b7",
+    "native.b8": "af2c75d8048909e38ae47f4d2422e213e4a2f913f54963d8236f34aed62707cb",
+    "observables.b8": "d76e8c454473c0ac74247eeb2b3b1bc6f5efc4cd3707577f4697aa06195a53b7"
+  },
+  "d5-x-p0.003": {
+    "bath_clock.b8": "bdb982e1a160fba209cfc199035d24d74c746afc8f64edd6d15d8c08e8a041a8",
+    "circuit.stim": "9ece7ab559105583835c3f5b6a13e70326f6fabf1e5c220402b1cd245061e9aa",
+    "detectors.b8": "b6408ed7e42587ae0a8d18576a2915f8203c86196135b93fa4c72c7f88723880",
+    "frozen.b8": "cb925a3de4bcff5f956ff5f3df57726c64b067a65aebf93d8944d9315ade4650",
+    "native.b8": "a014af5b6b8af098ea4ec59768dc3a9be887968b51e5080a266ad121643e160c",
+    "observables.b8": "b8c993f2b5bd346e9b50b0d176a3e716b1b56ac8b4622ae0025ed887bdf756f6"
+  },
+  "d5-z-p0.003": {
+    "bath_clock.b8": "395dfcc148abca6361156cb8c3da94b1b47f3b324d8b985e5abf7f6c0d1b726b",
+    "circuit.stim": "a332299574cc8fabe8b166aa0a6eb7d455eabaac61fd7dde605354b259da11c9",
+    "detectors.b8": "8ffcb110498ccbfb261cbb0ae238b86bf23ca399427d06b98c35de76aed97264",
+    "frozen.b8": "b5aefd190ff1bebe751959a01e57b040135eb564c08836f95399c03ea9360e1f",
+    "native.b8": "36d827f18d15ac68bd260ae8d1ed0c731ceb126366bb1626759c39db5f7a0a8b",
+    "observables.b8": "e62847bcc1bd566e02f005efff69a5b0a2f9432c13ddd6fc5edb61183867f678"
+  },
+  "d5-x-p0.005": {
+    "bath_clock.b8": "40e738e585fe173fc53d1696e1b2aa7eb65b20c5c28907392d8df2dba6f00b6f",
+    "circuit.stim": "4cd48051deb8ebba4ae5ab9203b6eb93435887828fd9ba0231884345029ec0bd",
+    "detectors.b8": "0089f371c762969654932a15160c513194de3c8ddffd6ec1cff25109c9a7baf0",
+    "frozen.b8": "1ff59e0f21b0594209924b4ed8d3976208b1d4f5f95b641236d7eb7c7b91f173",
+    "native.b8": "d5a07980efcfb0711e92a6311af8351e902840c55d8e92b5e216b69289f3c6ab",
+    "observables.b8": "3cc4c8cc0a70e8d52cdecffa38afd4551b96146858ffdfd82d329c105ceb9958"
+  },
+  "d5-z-p0.005": {
+    "bath_clock.b8": "c58dfd9e20db31415d8b7c2ae651867401f41845fae48c4e0d296ca9c6f1aa80",
+    "circuit.stim": "97a883aefc976558f9e23e5a4e5aef18d420e494511bb0b31a033df9d64d0f3c",
+    "detectors.b8": "d478b5cb185148f6ecf69d7efbf5a16840edbfb226e5ce1d4e655ba6d6ffafef",
+    "frozen.b8": "36b50f4daba0646b4b75084f141cb59096bd162b193a70f661c05186ecbbf1e8",
+    "native.b8": "a2e0d51d424e1f908b8d6df52e89b1f156e539a63b27439d803530955855c19b",
+    "observables.b8": "cb124dfb0e414cd0dc376e9fd47b4a63b5bd69cb4c0ad5bedcb4bba449610295"
+  },
+  "d5-x-p0.01": {
+    "bath_clock.b8": "3cf6d75c9f1c8c2a1093615d843766a4d4321f530baa9780b3c5bf77e3263e5a",
+    "circuit.stim": "15c31fc07ddeea808ef4aceb47791241bd8e8ecb10f96fcf626af5cafcdd0dbf",
+    "detectors.b8": "6ea988ae029880a6a6c3a022f92710e2c7ecc444604cc13075be6ce44421c045",
+    "frozen.b8": "f764691e78925277af375ea5a5e725038c061758d235212043518c6c3a821091",
+    "native.b8": "df38832e6c3183841c3adee398afd3afb46de33f6090d1ca768238adb1d77a71",
+    "observables.b8": "9b549f66215bd816d983b1c66d4c4e6cf06b5402f3ac12b901888f9bd4880a06"
+  },
+  "d5-z-p0.01": {
+    "bath_clock.b8": "0fb613b37e05e5516f1786a24b6a231a6b17a5f689c88352962fa5f94bc52a3b",
+    "circuit.stim": "e1a5dd1872c8eb069518e3900bcc418af26028b2e53f0952b1921372a862ee32",
+    "detectors.b8": "ddae176ed82ac1c331d23f17dc06c27ef11dafb92af8aeffb1eddf2c21862be5",
+    "frozen.b8": "011ff29ae9f4f506ae343afe5e5bff123d034a8f7303b782aadc4c7c38b9b444",
+    "native.b8": "fea6e5d928b5936f692f9a75862816229c99f982c8307db91dc4f8664b8b2c26",
+    "observables.b8": "8e41c3b69cadd65ad4f90fa1e8ff9e3faaf9ae445c1c4102a79a6e381146ec43"
+  },
+  "d7-x-p0.001": {
+    "bath_clock.b8": "56ee0258e39fbfe3f2c5199b2654a8c1f615df65194a0472d9a2aae1d73a4f31",
+    "circuit.stim": "2e9080a4a00dc2dfdbe89a379f07400aac0f81c4d39a63393b913fb9c47f59d5",
+    "detectors.b8": "074a32dc76f7da8e878db85e45c1c453ed7c1008d168f2036bf2309ff960c5f4",
+    "frozen.b8": "56ee0258e39fbfe3f2c5199b2654a8c1f615df65194a0472d9a2aae1d73a4f31",
+    "native.b8": "56ee0258e39fbfe3f2c5199b2654a8c1f615df65194a0472d9a2aae1d73a4f31",
+    "observables.b8": "56ee0258e39fbfe3f2c5199b2654a8c1f615df65194a0472d9a2aae1d73a4f31"
+  },
+  "d7-z-p0.001": {
+    "bath_clock.b8": "e3455f4489b8fb5c7ba9dd687bc856975992b036142cdd6da733aa649f1ee1b6",
+    "circuit.stim": "197eaf685baaac7fdba10c8ea036b88893211cbc6578ca45cd64ebc92228129d",
+    "detectors.b8": "f1c1cc4a3fdf80def34a3b3949bd7919140940fd7798061b122ad6f69fe382a4",
+    "frozen.b8": "e3455f4489b8fb5c7ba9dd687bc856975992b036142cdd6da733aa649f1ee1b6",
+    "native.b8": "e3455f4489b8fb5c7ba9dd687bc856975992b036142cdd6da733aa649f1ee1b6",
+    "observables.b8": "e3455f4489b8fb5c7ba9dd687bc856975992b036142cdd6da733aa649f1ee1b6"
+  },
+  "d7-x-p0.003": {
+    "bath_clock.b8": "44a78b345fccc01c379c7acd240f8779ef6c0d8d89b4a1cb6dab105e0df26ae3",
+    "circuit.stim": "ff9512246201735d863d181f9187735cbf646c2fc2d856efdf82bff962b001f9",
+    "detectors.b8": "7c3df34f521137938c809ce3b9d2bd606ee6ee0f76b8c0f8698b90f462cf9c42",
+    "frozen.b8": "dd7bb68540b93027c91daae4d8131fb894d6936f9e1f98f8a6f545534e12f1cc",
+    "native.b8": "36745a70ec4781c96ee896c4a17d5d103b21209b6fc982159c549af08371c34f",
+    "observables.b8": "85a5d21364465962e484ad13b842086a2ab0aedceb7aa67a67742ebaaeecf4f1"
+  },
+  "d7-z-p0.003": {
+    "bath_clock.b8": "6b57ba1e317328944e5e65ded399c8e9b1dee5422ac3e102ff980755c6584111",
+    "circuit.stim": "23fedd541e9ce0d2dc156df29f2c68aee25429dc9e25f92668eca0df202fffbd",
+    "detectors.b8": "dcb7f1c8329087ac42dc6ffa48c3f121f9074bf3331c6e4186e46e3a0be69419",
+    "frozen.b8": "6e7168c6fac9cf31d573ddc67f15b79fb6377dcd979705cf3e78c298fdb8fbe8",
+    "native.b8": "13eed951a5d04b893afe0b92d50ba77e84435fc2a665a76e8f050b0b825ab902",
+    "observables.b8": "15ab8905c907e807b3d1e52fb1c4ebd2f718193c4b0b5cd042c27f7701bc8265"
+  },
+  "d7-x-p0.005": {
+    "bath_clock.b8": "e2595ded210704ead7e785397b9f83292bc3d6e2675e7673322f4440d82f2761",
+    "circuit.stim": "88434a3e79e0704ea134d5d7cd140ec4e6f76ecf3cc840df1507f40f946a034d",
+    "detectors.b8": "56ed4c18608557f7452a49dc857e8d4a74d667c65be529bbfc14aa823f044e72",
+    "frozen.b8": "7a297d2a1ae11a3785c014a221e1e22d99538b8ab9f633b9c599495b79cf93a1",
+    "native.b8": "27e0d9141b278b5ebd3ac06334dea4f252fcb7121b2a7cf1625fd41f01951b36",
+    "observables.b8": "2a335483bcdcfac8ae2d2fe96a1ca00243b65466af067b258281a63097ab4d21"
+  },
+  "d7-z-p0.005": {
+    "bath_clock.b8": "89f79f51b14339cb06186517fca479321615f8d4459f4d8c763cb2eb38c7714d",
+    "circuit.stim": "b04c57aab3cd51aa3564fb16293af12de17f549e50564ecb5d14ccd69f5e8e57",
+    "detectors.b8": "ccc6533bfb327e9da711f5e9efa63815c058df8a8ae5be5078cec6222b4a09a8",
+    "frozen.b8": "9e39fa6cff88d713322ebc8be189e972ae64f3d05b5af64af4baddcdc2c33f6e",
+    "native.b8": "2bd379e3afc64069a9ff29c4dc2f636973eb479caaf83418be110391aec24c0b",
+    "observables.b8": "c2e232952346333ccc3f0a150de909a9e8b0a0d750d321212f04a0e4a25bad92"
+  },
+  "d7-x-p0.01": {
+    "bath_clock.b8": "4bf337a3faf9c677672f011757ccae867b3ab90f98c19f1e52da3db38129769f",
+    "circuit.stim": "52e1382f6cafb26427ab9680ba0c529e15715d06dc149f3b2d4650fe90deb35c",
+    "detectors.b8": "c74031ed92650aa20c9668f59f6b8433b018d9b460a0012a51a8ef28c734da0f",
+    "frozen.b8": "b316e777e7f70177494fec292f1a47715373592f4a587781350629b88ca8a2fd",
+    "native.b8": "c161e2fb73fc239f8d4473f22056200e7c6023d03a10bf77b5cfd0b592f31afc",
+    "observables.b8": "0768d4f5bed0503d27f17247cd7e3098c56990f141fed6e65899ed101425dea1"
+  },
+  "d7-z-p0.01": {
+    "bath_clock.b8": "33de3b3e505779c40a1e60a9e59bb1fc66af1fa12a6264ed2c6613520dfa4aa4",
+    "circuit.stim": "0df23117d9e38df32732b9c0fd6f31bf4e523574a4d25f4134d05d4542844706",
+    "detectors.b8": "4b13167762eac1499418311efce24c770ca3399b2c0569b06a05716792f3539c",
+    "frozen.b8": "6952b7b32aa129545ae681604284fd33e446877e28f0adfab2bc62682607bf20",
+    "native.b8": "13f77f81cd6b5085284dbeffaa897d31362e94dae8822defa2b4d9fe70ce338c",
+    "observables.b8": "7074b1e1d1356afc11a762d3d0489f70563c65f7048d0a19e3a7b2e99a1a5022"
+  }
+}

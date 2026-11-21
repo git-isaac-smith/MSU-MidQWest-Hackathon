@@ -1,0 +1,256 @@
+{
+  "format_version": 1,
+  "command": "python -m bascd.experiment search --out experiments/iteration-02/random --strategy random --budget 8 --shots 10000 --seed 2026 --search-seed 17 --repeats 3",
+  "root_seed": 2026,
+  "shots_per_scenario": 10000,
+  "timing_repeats": 3,
+  "rounds": "distance",
+  "environment": {
+    "python": "3.11.4",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "cpu": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "versions": {
+      "bascd": "0.1.0",
+      "numpy": "2.4.6",
+      "stim": "1.16.0",
+      "pymatching": "2.4.0",
+      "scipy": "1.17.1",
+      "matplotlib": "3.11.2",
+      "jsonschema": "4.26.0",
+      "filelock": "3.32.7"
+    },
+    "source_sha256": {
+      "__init__.py": "9235e7c0985999fadf9ef28b62ccee567e3e65e6f826aa8a91902f1462bf65d1",
+      "__main__.py": "9b5d207d459ace9cbb231c2a80a4786e06afb74097448a22d373c02880bcfc06",
+      "benchmark.py": "302218eb9fb855143d2edb81f95e7e4359b411360b3929f70904ab761fe88b08",
+      "circuits.py": "489d71d19e1f4560e05d904c44c6a8c4a97393da6d960ae7d71db58aac222408",
+      "decoders.py": "944512dfef26b8c387df85a249347d0d741fe1e26fd601fcadce826bdd5c47cf",
+      "experiment.py": "ec7b4ed03c194a64a5727c912dc96c117d5b5d14d6ba0ba10aeb4ca92d400053",
+      "measure.py": "84168dc5bdd6bfde35765a71e7cae8c1aaeba503563d038425c1044573fb586a",
+      "records.py": "d1d605054fca606691ae2f65026287049f5eb594cf9ea2f5a326ee62fa29a2bc",
+      "schemas/feedback.json": "7efa915b809bab5e5a0b2de851ec3373672e3f48fb6d12abe44bd758448ea6d1",
+      "schemas/proposal.json": "2d4f92c011739579a30eab2f9cfaffde3bfe387fe0f4fb5a301d37c8eee0c1f1",
+      "search.py": "cf34230e645e95d9767f6ba13956e7212719dd2120b3cc028ef0f3868b9f1e91",
+      "stats.py": "fb47e42ea092e75305e23d84c1552a313de9804ba826940efdad57bd853f3475",
+      "sweep.py": "ceb950caed692ad18298d86f25fc3471c19f819ebc8f5eec007abfca140095fe"
+    }
+  },
+  "noise": {
+    "name": "simple_uniform",
+    "status": "provisional",
+    "generator": "Stim rotated memory",
+    "after_clifford_depolarization": "p",
+    "after_reset_flip_probability": "p",
+    "before_measure_flip_probability": "p",
+    "before_round_data_depolarization": "p"
+  },
+  "strategy": "random",
+  "candidate_budget": 8,
+  "search_seed": 17,
+  "scenarios": [
+    {
+      "distance": 3,
+      "p": 0.001,
+      "basis": "x"
+    },
+    {
+      "distance": 3,
+      "p": 0.001,
+      "basis": "z"
+    },
+    {
+      "distance": 3,
+      "p": 0.003,
+      "basis": "x"
+    },
+    {
+      "distance": 3,
+      "p": 0.003,
+      "basis": "z"
+    },
+    {
+      "distance": 3,
+      "p": 0.005,
+      "basis": "x"
+    },
+    {
+      "distance": 3,
+      "p": 0.005,
+      "basis": "z"
+    },
+    {
+      "distance": 3,
+      "p": 0.01,
+      "basis": "x"
+    },
+    {
+      "distance": 3,
+      "p": 0.01,
+      "basis": "z"
+    },
+    {
+      "distance": 5,
+      "p": 0.001,
+      "basis": "x"
+    },
+    {
+      "distance": 5,
+      "p": 0.001,
+      "basis": "z"
+    },
+    {
+      "distance": 5,
+      "p": 0.003,
+      "basis": "x"
+    },
+    {
+      "distance": 5,
+      "p": 0.003,
+      "basis": "z"
+    },
+    {
+      "distance": 5,
+      "p": 0.005,
+      "basis": "x"
+    },
+    {
+      "distance": 5,
+      "p": 0.005,
+      "basis": "z"
+    },
+    {
+      "distance": 5,
+      "p": 0.01,
+      "basis": "x"
+    },
+    {
+      "distance": 5,
+      "p": 0.01,
+      "basis": "z"
+    },
+    {
+      "distance": 7,
+      "p": 0.001,
+      "basis": "x"
+    },
+    {
+      "distance": 7,
+      "p": 0.001,
+      "basis": "z"
+    },
+    {
+      "distance": 7,
+      "p": 0.003,
+      "basis": "x"
+    },
+    {
+      "distance": 7,
+      "p": 0.003,
+      "basis": "z"
+    },
+    {
+      "distance": 7,
+      "p": 0.005,
+      "basis": "x"
+    },
+    {
+      "distance": 7,
+      "p": 0.005,
+      "basis": "z"
+    },
+    {
+      "distance": 7,
+      "p": 0.01,
+      "basis": "x"
+    },
+    {
+      "distance": 7,
+      "p": 0.01,
+      "basis": "z"
+    }
+  ],
+  "splits": {
+    "train": [
+      6734780749144115419,
+      7552553750924122809,
+      8982153317800341735,
+      9022956175711443771,
+      7675304422730104716,
+      5106144906956302747,
+      8192827867149504664,
+      8422491821498350368,
+      5880285559711677756,
+      8825650731485640006,
+      5379444397314197576,
+      5145502575667394208,
+      6722400334582780228,
+      8818889553156653842,
+      8857629212139294089,
+      6609010357135638022,
+      6503692318628925397,
+      9073797476989644366,
+      6545081455890772241,
+      4868769357309572337,
+      9059366249043844810,
+      8340236051468507654,
+      7055602550550326842,
+      5932592213502441751
+    ],
+    "validation": [
+      11346466767571503323,
+      12164239769351510713,
+      13593839336227729639,
+      13634642194138831675,
+      12286990441157492620,
+      9717830925383690651,
+      12804513885576892568,
+      13034177839925738272,
+      10491971578139065660,
+      13437336749913027910,
+      9991130415741585480,
+      9757188594094782112,
+      11334086353010168132,
+      13430575571584041746,
+      13469315230566681993,
+      11220696375563025926,
+      11115378337056313301,
+      13685483495417032270,
+      11156767474318160145,
+      9480455375736960241,
+      13671052267471232714,
+      12951922069895895558,
+      11667288568977714746,
+      10544278231929829655
+    ],
+    "final_test": [
+      15958152785998891227,
+      16775925787778898617,
+      18205525354655117543,
+      18246328212566219579,
+      16898676459584880524,
+      14329516943811078555,
+      17416199904004280472,
+      17645863858353126176,
+      15103657596566453564,
+      18049022768340415814,
+      14602816434168973384,
+      14368874612522170016,
+      15945772371437556036,
+      18042261590011429650,
+      18081001248994069897,
+      15832382393990413830,
+      15727064355483701205,
+      18297169513844420174,
+      15768453492745548049,
+      14092141394164348145,
+      18282738285898620618,
+      17563608088323283462,
+      16278974587405102650,
+      15155964250357217559
+    ]
+  },
+  "selection": "validation LER and median batch microseconds per shot",
+  "uncertainty": "per-scenario Wilson 95%; fixed-grid aggregate Hoeffding 95%",
+  "validation_release": "after the proposal budget closes",
+  "final_test_sampled": false
+}

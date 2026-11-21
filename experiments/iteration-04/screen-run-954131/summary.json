@@ -1,0 +1,44 @@
+{
+  "shots": 240000,
+  "scenario_count": 24,
+  "detector_events": 2579147,
+  "shots_with_events": 187099,
+  "observable_flips": 46383,
+  "methods": {
+    "native": {
+      "failures": 5411,
+      "ler": 0.022545833333333334,
+      "batch_us_per_shot": 14.65914666672082
+    },
+    "bath_clock": {
+      "failures": 5362,
+      "ler": 0.022341666666666666,
+      "batch_us_per_shot": 14.742371250031283
+    },
+    "frozen": {
+      "failures": 4660,
+      "ler": 0.019416666666666665,
+      "batch_us_per_shot": 380.1645820831861
+    }
+  },
+  "paired": {
+    "native": {
+      "recovered": 1597,
+      "lost": 846,
+      "ler_difference": -0.003129166666666667,
+      "approximate_95_ci": [
+        -0.003532308985151654,
+        -0.0027260243481816797
+      ]
+    },
+    "bath_clock": {
+      "recovered": 1520,
+      "lost": 818,
+      "ler_difference": -0.002925,
+      "approximate_95_ci": [
+        -0.003319406140796727,
+        -0.002530593859203273
+      ]
+    }
+  }
+}
