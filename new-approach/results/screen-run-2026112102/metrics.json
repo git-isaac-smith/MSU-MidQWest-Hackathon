@@ -1,0 +1,186 @@
+{
+  "configuration": {
+    "distance": 5,
+    "p_data": 0.008,
+    "p_readout": 0.04,
+    "seed": 2026112102,
+    "pretrain_shots": 8000,
+    "train_shots": 16000,
+    "validation_shots": 4000,
+    "test_shots": 10000,
+    "pretrain_epochs": 8,
+    "epochs": 24,
+    "batch_size": 128,
+    "temporal_cutoff": 0.2,
+    "spatial_cutoff": 0.48
+  },
+  "noise_model": "Independent data X before each round and independent ancilla readout flips just before MR. Other operations ideal.",
+  "rounds": 5,
+  "active_z_checks": 12,
+  "seeds": {
+    "pretrain": 14338091815294662850,
+    "train": 14119052964366390907,
+    "validation": 8513272984641459653,
+    "test": 15739721379604419588,
+    "initialization": 1531014037932957781,
+    "pretrain_order": 17406759617772631263,
+    "train_order": 9442720241554687982
+  },
+  "target": "Final odd X-fault parity per physical data site",
+  "passband": {
+    "temporal": 0.2,
+    "spatial": 0.48
+  },
+  "round_weights": [
+    0.06666667014360428,
+    0.13333334028720856,
+    0.20000000298023224,
+    0.2666666805744171,
+    0.3333333432674408
+  ],
+  "transform": "Zero-pad spatial axes to twice their size. Even-reflect five rounds to ten. Retain DC and joint passband.",
+  "cnn_channels": "Five raw or inverse-FFT check fields, their time-weighted sum and the fixed check mask",
+  "pretrain_lr": 0.003,
+  "finetune_lr": 0.002,
+  "epoch_losses": {
+    "pretrain": [
+      0.9318470358848572,
+      0.47573328018188477,
+      0.3946458101272583,
+      0.3593471944332123,
+      0.33543792366981506,
+      0.3090336322784424,
+      0.2856754958629608,
+      0.26583290100097656
+    ],
+    "raw": [
+      0.3741759657859802,
+      0.35561394691467285,
+      0.34638288617134094,
+      0.3418954014778137,
+      0.33656045794487,
+      0.33271631598472595,
+      0.331193208694458,
+      0.3288802206516266,
+      0.3261498212814331,
+      0.3244808614253998,
+      0.3231133818626404,
+      0.32281094789505005,
+      0.3208833336830139,
+      0.3201879560947418,
+      0.31912147998809814,
+      0.3180015981197357,
+      0.31788763403892517,
+      0.31662529706954956,
+      0.31572362780570984,
+      0.31537461280822754,
+      0.31534817814826965,
+      0.3142127990722656,
+      0.3135567605495453,
+      0.3131445646286011
+    ],
+    "fft": [
+      0.38813942670822144,
+      0.36497366428375244,
+      0.35345324873924255,
+      0.3475540578365326,
+      0.34053266048431396,
+      0.33618319034576416,
+      0.33414751291275024,
+      0.33212992548942566,
+      0.32940202951431274,
+      0.3279421925544739,
+      0.326995313167572,
+      0.32671067118644714,
+      0.32493913173675537,
+      0.3241209387779236,
+      0.3230164647102356,
+      0.3226158320903778,
+      0.3222331702709198,
+      0.32092711329460144,
+      0.3203742504119873,
+      0.32015568017959595,
+      0.3202720582485199,
+      0.3189941346645355,
+      0.3185243308544159,
+      0.3182002007961273
+    ]
+  },
+  "threshold_objective": "Maximum pooled positive-site F1 on validation",
+  "thresholds": {
+    "raw": 0.3568573296070099,
+    "fft": 0.27348512411117554
+  },
+  "validation": {
+    "raw": {
+      "fp": 1299,
+      "fn": 1125,
+      "tp": 2745,
+      "tn": 94831,
+      "shots": 4000,
+      "precision": 0.6787833827893175,
+      "recall": 0.7093023255813954,
+      "f1": 0.6937073540561031,
+      "site_error_rate": 0.02424,
+      "exact_set_accuracy": 0.62775
+    },
+    "fft": {
+      "fp": 1541,
+      "fn": 1003,
+      "tp": 2867,
+      "tn": 94589,
+      "shots": 4000,
+      "precision": 0.6504083484573503,
+      "recall": 0.740826873385013,
+      "f1": 0.6926793911572844,
+      "site_error_rate": 0.02544,
+      "exact_set_accuracy": 0.61525
+    }
+  },
+  "test": [
+    {
+      "method": "Raw checks + CNN",
+      "fp": 3151,
+      "fn": 2654,
+      "tp": 6929,
+      "tn": 237266,
+      "shots": 10000,
+      "precision": 0.6874007936507937,
+      "recall": 0.7230512365647501,
+      "f1": 0.7047754666124193,
+      "site_error_rate": 0.02322,
+      "exact_set_accuracy": 0.6359
+    },
+    {
+      "method": "Filtered FFT + CNN",
+      "fp": 3761,
+      "fn": 2359,
+      "tp": 7224,
+      "tn": 236656,
+      "shots": 10000,
+      "precision": 0.6576240327719618,
+      "recall": 0.7538349159970782,
+      "f1": 0.7024504084014003,
+      "site_error_rate": 0.02448,
+      "exact_set_accuracy": 0.6234
+    }
+  ],
+  "paired_site_error_fft_minus_raw": {
+    "difference": 0.00126,
+    "ci95": [
+      0.000949237502811438,
+      0.001570762497188562
+    ]
+  },
+  "fraction_fourier_energy_retained": {
+    "clean_data_checks": 0.6298191570921399,
+    "readout_residual": 0.42704843508810736
+  },
+  "versions": {
+    "stim": "1.16.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  },
+  "python": "3.11.4"
+}

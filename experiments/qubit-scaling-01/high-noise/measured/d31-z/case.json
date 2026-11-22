@@ -1,0 +1,10 @@
+{
+  "distance": 31,
+  "basis": "z",
+  "rounds": 31,
+  "seed": 69852031,
+  "calibration_seed": 69854031,
+  "detectors": 29760,
+  "circuit_sha256": "6410fac4c61cb76009e4af424df462f2121d51b0280db8a543d9352faa8c04a7",
+  "sample_sha256": "09152d2c28e43afddbcbd48e7ee8d7d5bb29ba2f91da4d70a5ff49d1048ac2ff"
+}

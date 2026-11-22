@@ -1,0 +1,1359 @@
+{
+  "format_version": 1,
+  "source": "../result.json",
+  "source_sha256": "5560a04607ffa163fddced12c44f899280ce5cb995f17789148f2298455d6f45",
+  "upstream_commit": "94572516042297d6b6018fe76eb2f2b547e3c46f",
+  "distance": 7,
+  "syndrome_rounds": 7,
+  "basis": "Z",
+  "layout_bath_ids_in_data_qubit_order": [
+    [
+      4007,
+      4043,
+      4030,
+      4015,
+      4047,
+      4001,
+      4026,
+      4045,
+      4020,
+      4045,
+      4030,
+      4014,
+      4004,
+      4035,
+      4039,
+      4011,
+      4003,
+      4031,
+      4044,
+      4048,
+      4028,
+      4019,
+      4021,
+      4027,
+      4040,
+      4034,
+      4041,
+      4028,
+      4047,
+      4030,
+      4045,
+      4028,
+      4020,
+      4045,
+      4023,
+      4035,
+      4020,
+      4028,
+      4042,
+      4039,
+      4015,
+      4018,
+      4012,
+      4003,
+      4015,
+      4035,
+      4009,
+      4009,
+      4019
+    ],
+    [
+      4034,
+      4033,
+      4007,
+      4046,
+      4010,
+      4024,
+      4040,
+      4045,
+      4045,
+      4015,
+      4017,
+      4008,
+      4024,
+      4048,
+      4010,
+      4038,
+      4000,
+      4047,
+      4039,
+      4028,
+      4035,
+      4008,
+      4045,
+      4005,
+      4011,
+      4019,
+      4017,
+      4003,
+      4004,
+      4029,
+      4035,
+      4009,
+      4024,
+      4008,
+      4047,
+      4045,
+      4032,
+      4031,
+      4030,
+      4005,
+      4003,
+      4048,
+      4029,
+      4037,
+      4027,
+      4044,
+      4020,
+      4024,
+      4036
+    ],
+    [
+      4048,
+      4007,
+      4021,
+      4013,
+      4034,
+      4020,
+      4030,
+      4017,
+      4012,
+      4026,
+      4006,
+      4014,
+      4034,
+      4043,
+      4007,
+      4022,
+      4010,
+      4010,
+      4038,
+      4020,
+      4025,
+      4035,
+      4045,
+      4036,
+      4040,
+      4045,
+      4008,
+      4044,
+      4003,
+      4009,
+      4038,
+      4020,
+      4008,
+      4012,
+      4036,
+      4015,
+      4041,
+      4002,
+      4013,
+      4040,
+      4006,
+      4015,
+      4035,
+      4004,
+      4040,
+      4040,
+      4024,
+      4044,
+      4038
+    ],
+    [
+      4021,
+      4040,
+      4036,
+      4042,
+      4018,
+      4006,
+      4039,
+      4009,
+      4045,
+      4012,
+      4001,
+      4035,
+      4021,
+      4025,
+      4048,
+      4009,
+      4035,
+      4001,
+      4018,
+      4024,
+      4035,
+      4023,
+      4013,
+      4024,
+      4005,
+      4033,
+      4007,
+      4032,
+      4034,
+      4016,
+      4018,
+      4010,
+      4044,
+      4018,
+      4023,
+      4017,
+      4000,
+      4046,
+      4027,
+      4026,
+      4034,
+      4029,
+      4040,
+      4000,
+      4027,
+      4045,
+      4019,
+      4029,
+      4008
+    ],
+    [
+      4019,
+      4044,
+      4045,
+      4023,
+      4010,
+      4024,
+      4037,
+      4034,
+      4043,
+      4008,
+      4039,
+      4040,
+      4015,
+      4005,
+      4034,
+      4039,
+      4003,
+      4038,
+      4008,
+      4002,
+      4045,
+      4030,
+      4025,
+      4017,
+      4003,
+      4014,
+      4021,
+      4047,
+      4029,
+      4046,
+      4000,
+      4011,
+      4010,
+      4017,
+      4020,
+      4023,
+      4008,
+      4048,
+      4025,
+      4044,
+      4021,
+      4027,
+      4025,
+      4037,
+      4027,
+      4045,
+      4047,
+      4032,
+      4037
+    ]
+  ],
+  "protocol": {
+    "timed_operation": "ErasureDecoder.decode(detectors)",
+    "timer": "perf_counter_ns wall time",
+    "parallel_workers": 1,
+    "repeats_per_layout": 1,
+    "shots_per_layout_call": 4000,
+    "warmup_shots_per_layout": 64,
+    "aggregation": "Sum five timed layout calls and divide by total shots",
+    "excluded": [
+      "circuit construction",
+      "sampling",
+      "decoder construction",
+      "warmup",
+      "scoring"
+    ],
+    "verification": "Failure counts and detector event totals by outcome match the original per layout and point"
+  },
+  "environment": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "logical_cpus": 24,
+    "versions": {
+      "python": "3.13.3",
+      "numpy": "2.2.6",
+      "scipy": "1.18.1",
+      "stim": "1.16.0",
+      "pymatching": "2.4.0",
+      "pandas": "2.3.3",
+      "qutip": "5.3.1"
+    }
+  },
+  "points": [
+    {
+      "arm": "Clock, frame calibrated",
+      "p_check": 0.001,
+      "shots": 20000,
+      "logical_failures": 3317,
+      "decode_ns": 29348037600,
+      "batch_us_shot": 1467.40188,
+      "batch_us_round": 209.62884,
+      "layout_timings": [
+        {
+          "stim_seed": 94530057721006,
+          "warmup_stim_seed": 376005034431662,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 510,
+          "shots": 4000,
+          "decode_ns": 5848238500,
+          "batch_us_shot": 1462.059625,
+          "layout_seed": 20268112
+        },
+        {
+          "stim_seed": 94530057721007,
+          "warmup_stim_seed": 376005034431663,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 742,
+          "shots": 4000,
+          "decode_ns": 5823721700,
+          "batch_us_shot": 1455.930425,
+          "layout_seed": 20268113
+        },
+        {
+          "stim_seed": 94530057721008,
+          "warmup_stim_seed": 376005034431664,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 551,
+          "shots": 4000,
+          "decode_ns": 5814359900,
+          "batch_us_shot": 1453.589975,
+          "layout_seed": 20268114
+        },
+        {
+          "stim_seed": 94530057721009,
+          "warmup_stim_seed": 376005034431665,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 535,
+          "shots": 4000,
+          "decode_ns": 5717075700,
+          "batch_us_shot": 1429.268925,
+          "layout_seed": 20268115
+        },
+        {
+          "stim_seed": 94530057721010,
+          "warmup_stim_seed": 376005034431666,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 979,
+          "shots": 4000,
+          "decode_ns": 6144641800,
+          "batch_us_shot": 1536.16045,
+          "layout_seed": 20268116
+        }
+      ]
+    },
+    {
+      "arm": "Structured bath, ML then fit, balanced check",
+      "p_check": 0.001,
+      "shots": 20000,
+      "logical_failures": 4,
+      "decode_ns": 18882880900,
+      "batch_us_shot": 944.144045,
+      "batch_us_round": 134.87772071428572,
+      "layout_timings": [
+        {
+          "stim_seed": 94530057721011,
+          "warmup_stim_seed": 376005034431667,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 0,
+          "shots": 4000,
+          "decode_ns": 3686144400,
+          "batch_us_shot": 921.5361,
+          "layout_seed": 20268112
+        },
+        {
+          "stim_seed": 94530057721012,
+          "warmup_stim_seed": 376005034431668,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1,
+          "shots": 4000,
+          "decode_ns": 3680266200,
+          "batch_us_shot": 920.06655,
+          "layout_seed": 20268113
+        },
+        {
+          "stim_seed": 94530057721013,
+          "warmup_stim_seed": 376005034431669,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 0,
+          "shots": 4000,
+          "decode_ns": 3728927200,
+          "batch_us_shot": 932.2318,
+          "layout_seed": 20268114
+        },
+        {
+          "stim_seed": 94530057721014,
+          "warmup_stim_seed": 376005034431670,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1,
+          "shots": 4000,
+          "decode_ns": 3634536900,
+          "batch_us_shot": 908.634225,
+          "layout_seed": 20268115
+        },
+        {
+          "stim_seed": 94530057721015,
+          "warmup_stim_seed": 376005034431671,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 2,
+          "shots": 4000,
+          "decode_ns": 4153006200,
+          "batch_us_shot": 1038.25155,
+          "layout_seed": 20268116
+        }
+      ]
+    },
+    {
+      "arm": "Clock, frame calibrated",
+      "p_check": 0.005,
+      "shots": 20000,
+      "logical_failures": 4446,
+      "decode_ns": 29804264800,
+      "batch_us_shot": 1490.21324,
+      "batch_us_round": 212.8876057142857,
+      "layout_timings": [
+        {
+          "stim_seed": 94530057721016,
+          "warmup_stim_seed": 376005034431672,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 734,
+          "shots": 4000,
+          "decode_ns": 6322600800,
+          "batch_us_shot": 1580.6502,
+          "layout_seed": 20268112
+        },
+        {
+          "stim_seed": 94530057721017,
+          "warmup_stim_seed": 376005034431673,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 985,
+          "shots": 4000,
+          "decode_ns": 5880746500,
+          "batch_us_shot": 1470.186625,
+          "layout_seed": 20268113
+        },
+        {
+          "stim_seed": 94530057721018,
+          "warmup_stim_seed": 376005034431674,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 742,
+          "shots": 4000,
+          "decode_ns": 5762904500,
+          "batch_us_shot": 1440.726125,
+          "layout_seed": 20268114
+        },
+        {
+          "stim_seed": 94530057721019,
+          "warmup_stim_seed": 376005034431675,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 778,
+          "shots": 4000,
+          "decode_ns": 5804604700,
+          "batch_us_shot": 1451.151175,
+          "layout_seed": 20268115
+        },
+        {
+          "stim_seed": 94530057721020,
+          "warmup_stim_seed": 376005034431676,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1207,
+          "shots": 4000,
+          "decode_ns": 6033408300,
+          "batch_us_shot": 1508.352075,
+          "layout_seed": 20268116
+        }
+      ]
+    },
+    {
+      "arm": "Structured bath, ML then fit, balanced check",
+      "p_check": 0.005,
+      "shots": 20000,
+      "logical_failures": 35,
+      "decode_ns": 18842441900,
+      "batch_us_shot": 942.122095,
+      "batch_us_round": 134.58887071428572,
+      "layout_timings": [
+        {
+          "stim_seed": 94530057721021,
+          "warmup_stim_seed": 376005034431677,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 7,
+          "shots": 4000,
+          "decode_ns": 3655585600,
+          "batch_us_shot": 913.8964,
+          "layout_seed": 20268112
+        },
+        {
+          "stim_seed": 94530057721022,
+          "warmup_stim_seed": 376005034431678,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 9,
+          "shots": 4000,
+          "decode_ns": 3664478700,
+          "batch_us_shot": 916.119675,
+          "layout_seed": 20268113
+        },
+        {
+          "stim_seed": 94530057721023,
+          "warmup_stim_seed": 376005034431679,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 8,
+          "shots": 4000,
+          "decode_ns": 4051601700,
+          "batch_us_shot": 1012.900425,
+          "layout_seed": 20268114
+        },
+        {
+          "stim_seed": 94530057721024,
+          "warmup_stim_seed": 376005034431680,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 8,
+          "shots": 4000,
+          "decode_ns": 3594800700,
+          "batch_us_shot": 898.700175,
+          "layout_seed": 20268115
+        },
+        {
+          "stim_seed": 94530057721025,
+          "warmup_stim_seed": 376005034431681,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 3,
+          "shots": 4000,
+          "decode_ns": 3875975200,
+          "batch_us_shot": 968.9938,
+          "layout_seed": 20268116
+        }
+      ]
+    },
+    {
+      "arm": "Clock, frame calibrated",
+      "p_check": 0.01,
+      "shots": 20000,
+      "logical_failures": 5563,
+      "decode_ns": 29828555100,
+      "batch_us_shot": 1491.427755,
+      "batch_us_round": 213.06110785714284,
+      "layout_timings": [
+        {
+          "stim_seed": 94530057721026,
+          "warmup_stim_seed": 376005034431682,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1023,
+          "shots": 4000,
+          "decode_ns": 6121768700,
+          "batch_us_shot": 1530.442175,
+          "layout_seed": 20268112
+        },
+        {
+          "stim_seed": 94530057721027,
+          "warmup_stim_seed": 376005034431683,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1176,
+          "shots": 4000,
+          "decode_ns": 5932073700,
+          "batch_us_shot": 1483.018425,
+          "layout_seed": 20268113
+        },
+        {
+          "stim_seed": 94530057721028,
+          "warmup_stim_seed": 376005034431684,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1001,
+          "shots": 4000,
+          "decode_ns": 5797511900,
+          "batch_us_shot": 1449.377975,
+          "layout_seed": 20268114
+        },
+        {
+          "stim_seed": 94530057721029,
+          "warmup_stim_seed": 376005034431685,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 973,
+          "shots": 4000,
+          "decode_ns": 5839807400,
+          "batch_us_shot": 1459.95185,
+          "layout_seed": 20268115
+        },
+        {
+          "stim_seed": 94530057721030,
+          "warmup_stim_seed": 376005034431686,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1390,
+          "shots": 4000,
+          "decode_ns": 6137393400,
+          "batch_us_shot": 1534.34835,
+          "layout_seed": 20268116
+        }
+      ]
+    },
+    {
+      "arm": "Structured bath, ML then fit, balanced check",
+      "p_check": 0.01,
+      "shots": 20000,
+      "logical_failures": 136,
+      "decode_ns": 19537287500,
+      "batch_us_shot": 976.864375,
+      "batch_us_round": 139.55205357142856,
+      "layout_timings": [
+        {
+          "stim_seed": 94530057721031,
+          "warmup_stim_seed": 376005034431687,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 26,
+          "shots": 4000,
+          "decode_ns": 3734444400,
+          "batch_us_shot": 933.6111,
+          "layout_seed": 20268112
+        },
+        {
+          "stim_seed": 94530057721032,
+          "warmup_stim_seed": 376005034431688,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 33,
+          "shots": 4000,
+          "decode_ns": 4309902100,
+          "batch_us_shot": 1077.475525,
+          "layout_seed": 20268113
+        },
+        {
+          "stim_seed": 94530057721033,
+          "warmup_stim_seed": 376005034431689,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 16,
+          "shots": 4000,
+          "decode_ns": 4012482300,
+          "batch_us_shot": 1003.120575,
+          "layout_seed": 20268114
+        },
+        {
+          "stim_seed": 94530057721034,
+          "warmup_stim_seed": 376005034431690,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 31,
+          "shots": 4000,
+          "decode_ns": 3717740100,
+          "batch_us_shot": 929.435025,
+          "layout_seed": 20268115
+        },
+        {
+          "stim_seed": 94530057721035,
+          "warmup_stim_seed": 376005034431691,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 30,
+          "shots": 4000,
+          "decode_ns": 3762718600,
+          "batch_us_shot": 940.67965,
+          "layout_seed": 20268116
+        }
+      ]
+    },
+    {
+      "arm": "Clock, frame calibrated",
+      "p_check": 0.02,
+      "shots": 20000,
+      "logical_failures": 7437,
+      "decode_ns": 31065757800,
+      "batch_us_shot": 1553.28789,
+      "batch_us_round": 221.89827,
+      "layout_timings": [
+        {
+          "stim_seed": 94530057721036,
+          "warmup_stim_seed": 376005034431692,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1453,
+          "shots": 4000,
+          "decode_ns": 6041271200,
+          "batch_us_shot": 1510.3178,
+          "layout_seed": 20268112
+        },
+        {
+          "stim_seed": 94530057721037,
+          "warmup_stim_seed": 376005034431693,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1524,
+          "shots": 4000,
+          "decode_ns": 5959695000,
+          "batch_us_shot": 1489.92375,
+          "layout_seed": 20268113
+        },
+        {
+          "stim_seed": 94530057721038,
+          "warmup_stim_seed": 376005034431694,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1427,
+          "shots": 4000,
+          "decode_ns": 6259617200,
+          "batch_us_shot": 1564.9043,
+          "layout_seed": 20268114
+        },
+        {
+          "stim_seed": 94530057721039,
+          "warmup_stim_seed": 376005034431695,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1354,
+          "shots": 4000,
+          "decode_ns": 6454077000,
+          "batch_us_shot": 1613.51925,
+          "layout_seed": 20268115
+        },
+        {
+          "stim_seed": 94530057721040,
+          "warmup_stim_seed": 376005034431696,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1679,
+          "shots": 4000,
+          "decode_ns": 6351097400,
+          "batch_us_shot": 1587.77435,
+          "layout_seed": 20268116
+        }
+      ]
+    },
+    {
+      "arm": "Structured bath, ML then fit, balanced check",
+      "p_check": 0.02,
+      "shots": 20000,
+      "logical_failures": 656,
+      "decode_ns": 18739196300,
+      "batch_us_shot": 936.959815,
+      "batch_us_round": 133.85140214285715,
+      "layout_timings": [
+        {
+          "stim_seed": 94530057721041,
+          "warmup_stim_seed": 376005034431697,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 125,
+          "shots": 4000,
+          "decode_ns": 3809477400,
+          "batch_us_shot": 952.36935,
+          "layout_seed": 20268112
+        },
+        {
+          "stim_seed": 94530057721042,
+          "warmup_stim_seed": 376005034431698,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 126,
+          "shots": 4000,
+          "decode_ns": 3788803400,
+          "batch_us_shot": 947.20085,
+          "layout_seed": 20268113
+        },
+        {
+          "stim_seed": 94530057721043,
+          "warmup_stim_seed": 376005034431699,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 151,
+          "shots": 4000,
+          "decode_ns": 3757801600,
+          "batch_us_shot": 939.4504,
+          "layout_seed": 20268114
+        },
+        {
+          "stim_seed": 94530057721044,
+          "warmup_stim_seed": 376005034431700,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 117,
+          "shots": 4000,
+          "decode_ns": 3657953500,
+          "batch_us_shot": 914.488375,
+          "layout_seed": 20268115
+        },
+        {
+          "stim_seed": 94530057721045,
+          "warmup_stim_seed": 376005034431701,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 137,
+          "shots": 4000,
+          "decode_ns": 3725160400,
+          "batch_us_shot": 931.2901,
+          "layout_seed": 20268116
+        }
+      ]
+    },
+    {
+      "arm": "Clock, frame calibrated",
+      "p_check": 0.04,
+      "shots": 20000,
+      "logical_failures": 9261,
+      "decode_ns": 30437156200,
+      "batch_us_shot": 1521.85781,
+      "batch_us_round": 217.40825857142858,
+      "layout_timings": [
+        {
+          "stim_seed": 94530057721046,
+          "warmup_stim_seed": 376005034431702,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1903,
+          "shots": 4000,
+          "decode_ns": 6425478400,
+          "batch_us_shot": 1606.3696,
+          "layout_seed": 20268112
+        },
+        {
+          "stim_seed": 94530057721047,
+          "warmup_stim_seed": 376005034431703,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1812,
+          "shots": 4000,
+          "decode_ns": 5921522900,
+          "batch_us_shot": 1480.380725,
+          "layout_seed": 20268113
+        },
+        {
+          "stim_seed": 94530057721048,
+          "warmup_stim_seed": 376005034431704,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1799,
+          "shots": 4000,
+          "decode_ns": 5747046200,
+          "batch_us_shot": 1436.76155,
+          "layout_seed": 20268114
+        },
+        {
+          "stim_seed": 94530057721049,
+          "warmup_stim_seed": 376005034431705,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1800,
+          "shots": 4000,
+          "decode_ns": 5976324700,
+          "batch_us_shot": 1494.081175,
+          "layout_seed": 20268115
+        },
+        {
+          "stim_seed": 94530057721050,
+          "warmup_stim_seed": 376005034431706,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 1947,
+          "shots": 4000,
+          "decode_ns": 6366784000,
+          "batch_us_shot": 1591.696,
+          "layout_seed": 20268116
+        }
+      ]
+    },
+    {
+      "arm": "Structured bath, ML then fit, balanced check",
+      "p_check": 0.04,
+      "shots": 20000,
+      "logical_failures": 3098,
+      "decode_ns": 20192247100,
+      "batch_us_shot": 1009.612355,
+      "batch_us_round": 144.23033642857143,
+      "layout_timings": [
+        {
+          "stim_seed": 94530057721051,
+          "warmup_stim_seed": 376005034431707,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 633,
+          "shots": 4000,
+          "decode_ns": 3742392600,
+          "batch_us_shot": 935.59815,
+          "layout_seed": 20268112
+        },
+        {
+          "stim_seed": 94530057721052,
+          "warmup_stim_seed": 376005034431708,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 596,
+          "shots": 4000,
+          "decode_ns": 3881002900,
+          "batch_us_shot": 970.250725,
+          "layout_seed": 20268113
+        },
+        {
+          "stim_seed": 94530057721053,
+          "warmup_stim_seed": 376005034431709,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 683,
+          "shots": 4000,
+          "decode_ns": 3833298300,
+          "batch_us_shot": 958.324575,
+          "layout_seed": 20268114
+        },
+        {
+          "stim_seed": 94530057721054,
+          "warmup_stim_seed": 376005034431710,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 551,
+          "shots": 4000,
+          "decode_ns": 3840089900,
+          "batch_us_shot": 960.022475,
+          "layout_seed": 20268115
+        },
+        {
+          "stim_seed": 94530057721055,
+          "warmup_stim_seed": 376005034431711,
+          "detector_shape": [
+            4000,
+            679
+          ],
+          "detector_dtype": "bool",
+          "herald_detectors": 343,
+          "observable_shape": [
+            4000,
+            1
+          ],
+          "logical_failures": 635,
+          "shots": 4000,
+          "decode_ns": 4895463400,
+          "batch_us_shot": 1223.86585,
+          "layout_seed": 20268116
+        }
+      ]
+    }
+  ]
+}

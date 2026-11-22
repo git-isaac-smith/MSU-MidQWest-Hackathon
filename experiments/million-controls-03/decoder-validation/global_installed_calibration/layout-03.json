@@ -1,0 +1,10 @@
+{
+  "arm": "global_installed_calibration",
+  "layout_index": 3,
+  "shots": 1024,
+  "prior_exact_circuit_sha256": "b87317a6da3358c91fae5ddbb119c0c900545506bf73f2d3cfb56bbb5170b745",
+  "test_sample_sha256": "081067d35eb414a834495b43729cbe96161d9b13984567b917a0fff5cd72c0df",
+  "decoder_engine_sha256": "f436cab3d6693274115240a6ec096c674063c8ae94e4686f4890b24f0dc396f6",
+  "prediction_mismatches": 0,
+  "prediction_sha256": "e885eec678e3a395938a0d4c9ef162ae3941ff8a669a88ac5b6276bf95c2982f"
+}

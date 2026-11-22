@@ -1,0 +1,29 @@
+{
+  "primary_comparator": "accuracy",
+  "secondary_comparators": [
+    "balanced",
+    "mwpm"
+  ],
+  "candidate": "All-shot maximum posterior logical parity, ties within 1e-12 use MWPM",
+  "physical": [
+    5,
+    0.008,
+    0.04
+  ],
+  "rounds": 5,
+  "policy_sha256": "71fe41c3a12030d584d8fe760da86df0375451ca9673063258cca7cd1511f0ff",
+  "seeds": [
+    82174101,
+    82174102,
+    82174103
+  ],
+  "shots_per_seed": 500000,
+  "sampling_batch": 4096,
+  "timing_seed": 82174111,
+  "versions": {
+    "stim": "1.16.0",
+    "pymatching": "2.4.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  }
+}

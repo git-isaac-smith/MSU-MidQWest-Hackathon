@@ -1,0 +1,86 @@
+{
+  "model": "provisional simple_uniform, rotated Z memory, p=.005, rounds=distance",
+  "methods": [
+    "ordinary",
+    "activity",
+    "correlated",
+    "learned",
+    "learned_rescue",
+    "gap2",
+    "disagreement_rescue",
+    "belief"
+  ],
+  "distances": [
+    5,
+    7
+  ],
+  "activity_calibration_shots": 8192,
+  "activity_fraction": 0.06,
+  "learned_fraction": 0.052,
+  "learned_temporal": true,
+  "learned_parity_distances": [
+    5
+  ],
+  "gap_cutoff": 2.0,
+  "belief_iterations": 12,
+  "training_shots_per_seed": 400000,
+  "test_shots_per_seed": 100000,
+  "test_seeds_per_distance": 3,
+  "training_seeds": {
+    "5": [
+      91500500,
+      91500501,
+      91500502
+    ],
+    "7": [
+      91500700,
+      91500701,
+      91500702
+    ]
+  },
+  "test_seeds": {
+    "5": [
+      91600500,
+      91600501,
+      91600502
+    ],
+    "7": [
+      91600700,
+      91600701,
+      91600702
+    ]
+  },
+  "activity_seeds": {
+    "5": 91700005,
+    "7": 91700007
+  },
+  "random_control_seed_offset": 1000000,
+  "timing_seed_base": 91900000,
+  "primary_accuracy": "learned vs activity and disagreement_rescue vs correlated at d5,d7; two-sided exact McNemar, Bonferroni alpha .0125 for four comparisons",
+  "other_comparisons": "descriptive; random_control routes exactly the same number of records per seed as learned, uniformly without replacement",
+  "scoring": "reuse identical detector-only branch outputs for scoring; independently verify assembled decisions against deployed decoders on the first 256 records of each seed",
+  "timing": "independent fresh paired records; warmed, interleaved randomized single-process calls; separate persistent-process IPC scaling includes transfers",
+  "packages": {
+    "stim": "1.16.0",
+    "numpy": "2.4.6",
+    "pymatching": "2.4.0",
+    "scipy": "1.17.1",
+    "stabilizer-qec": "2.1.0"
+  },
+  "host": "Windows-10-10.0.26300-SP0",
+  "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+  "python": "3.11.4",
+  "source_sha256": {
+    "compute_campaign": "4c1f61179839eef198c1381b270b8171582a010ff3dbcf4cedab88e1230158f1",
+    "learned_fault_router": "bdc9c086bbe5a135144ffc66910ad66f1aec4568d142cad23232eceedf31f761",
+    "projected_router": "36239fcdb5f82d334af6c5eaf551265c5b76591330c4c9dc3dcfdb9ec2f4bf55",
+    "capped_gap": "b5073b73f91567382aade01db842d15f93096d5a33164b32e27e6dd0ab9f119c",
+    "css_routed": "30d4f976f310507b9fd4f4f5af268d479d275ea0bdd3bc0ed4186dcfeda8a7ff",
+    "batch_workers": "ac4def58f39c614a2067b1d9e4c62406f03f2e271ffad6838cdd90de3a76b3b2",
+    "circuits": "489d71d19e1f4560e05d904c44c6a8c4a97393da6d960ae7d71db58aac222408",
+    "stats": "d96e4c4ec6c66f15c359772687d2e34d7b2263ae92027e6f8b02a47cbce2942e",
+    "fast_hybrid": "a5fbf0a3e0593fb97475e4bb1fa7cb1822a6c7e4b5ae96630ec07568723a0ccc",
+    "disagreement_rescue": "ddef417ec9610ff76fb23c854079d44578fdc8c9baf06039f164129c8c5469ff"
+  },
+  "smoke": false
+}

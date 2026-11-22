@@ -1,0 +1,37 @@
+{
+  "budgets": [
+    1000,
+    10000
+  ],
+  "replicates_per_bath": 16,
+  "bath_count": 49,
+  "root_seed": 2566112202,
+  "seeds": "SeedSequence([root_seed, bath_id, shots_per_time_per_observable, replicate])",
+  "grid_step": 0.06,
+  "results": {
+    "1000": {
+      "records": 784,
+      "exact_grid": 155,
+      "within_one_step": 377,
+      "mae": 0.27734693877551025,
+      "median_abs_error": 0.11999999999999922,
+      "max_abs_error": 7.139999999999999,
+      "mean_true_erasure": 0.0821977483142324,
+      "mean_excess_erasure": 0.004915942781424898,
+      "mean_true_conditional_z_with_estimated_frame": 0.004075467612902255,
+      "records_with_clipping": 63
+    },
+    "10000": {
+      "records": 784,
+      "exact_grid": 310,
+      "within_one_step": 589,
+      "mae": 0.13545918367346937,
+      "median_abs_error": 0.05999999999999872,
+      "max_abs_error": 5.699999999999999,
+      "mean_true_erasure": 0.07838458293497064,
+      "mean_excess_erasure": 0.0011027774021631217,
+      "mean_true_conditional_z_with_estimated_frame": 0.0036292201128586975,
+      "records_with_clipping": 0
+    }
+  }
+}

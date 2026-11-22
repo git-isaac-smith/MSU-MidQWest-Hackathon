@@ -1,0 +1,4 @@
+{
+  "status": "resource_limit",
+  "reason": "Worker exceeded 180 s including setup and scoring"
+}

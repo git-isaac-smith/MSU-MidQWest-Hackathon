@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Higher-noise decoder stress test</title>
+<style>
+:root { color-scheme: light; --ink: #182628; --muted: #4a5f62; --line: #dce6e3; --accent: #00624f; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f8f6; color: var(--ink); font: 1rem/1.55 system-ui,sans-serif; }
+main { max-width: 1150px; margin: auto; padding: clamp(1rem,5vw,4rem); }
+h1 { font-size: clamp(2rem,5vw,3.4rem); line-height: 1.1; letter-spacing: -.035em; margin: .25em 0; }
+h2 { font-size: 1.35rem; margin: 2rem 0 .35rem; }
+p { max-width: 82ch; margin: .65rem 0; }
+a { color: var(--accent); text-underline-offset: .18em; }
+.data { overflow: auto; border: 1px solid var(--line); border-radius: .7rem; margin-top: 1.5rem; background: white; }
+table { border-collapse: collapse; min-width: 53rem; width: 100%; font-variant-numeric: tabular-nums; }
+caption { text-align: left; padding: .9rem 1rem; color: var(--muted); }
+thead { background: #e6f2ed; }
+th,td { text-align: right; padding: .55rem .75rem; border-top: 1px solid var(--line); }
+th:nth-child(2), td:first-child { text-align: left; }
+td small { color: var(--muted); white-space: nowrap; }
+tr.section td, tr.section th { border-top: 2px solid #86ad9f; }
+@media print { main { max-width: none; padding: 0; } .data { overflow: visible; } table { min-width: 0; } th,td { padding: .3rem; } }
+</style>
+</head>
+<body><main>
+<h1>Higher-noise decoder stress test</h1>
+<p>Rotated Z memory at distances 7, 15 and 31, with rounds equal to distance and a fixed parameter of 1% in the provisional circuit-level noise model. Six decoders receive the same 2,048 detector records at each distance. The observable stays with the evaluator.</p>
+<p>At distance 31, ordinary matching failed on 801 of 2048 shots. The equal-axis and bath-clock correlated variants failed on 445 and 438 shots, respectively. The bath-clock versus equal-axis comparison had 179 recoveries and 172 regressions.</p>
+<div class="data" role="region" aria-label="Accuracy and runtime by code distance" tabindex="0">
+<table>
+<caption>Logical error, warm batch time, and paired recoveries / regressions against two references.</caption>
+<thead><tr><th scope="col">Code</th><th scope="col">Method</th><th scope="col">Logical error</th><th scope="col">95% Wilson</th><th scope="col">µs/shot</th><th scope="col">vs ordinary</th><th scope="col">vs equal-axis</th></tr></thead><tbody>
+<tr class="section"><td>d7</td><th scope="row">Ordinary MWPM</th><td>11.621% <small>238/2048</small></td><td>10.30–13.08%</td><td>29.29</td><td>—</td><td>76 / 108</td></tr>
+<tr class=""><td>d7</td><th scope="row">Native correlated MWPM</th><td>9.912% <small>203/2048</small></td><td>8.69–11.28%</td><td>87.69</td><td>108 / 73</td><td>7 / 4</td></tr>
+<tr class=""><td>d7</td><th scope="row">Equal-axis correlated MWPM</th><td>10.059% <small>206/2048</small></td><td>8.83–11.44%</td><td>75.21</td><td>108 / 76</td><td>—</td></tr>
+<tr class=""><td>d7</td><th scope="row">Bath-clock correlated MWPM</th><td>9.668% <small>198/2048</small></td><td>8.46–11.02%</td><td>80.47</td><td>103 / 63</td><td>38 / 30</td></tr>
+<tr class=""><td>d7</td><th scope="row">Library weighted Union-Find</th><td>12.451% <small>255/2048</small></td><td>11.09–13.95%</td><td>59.60</td><td>43 / 60</td><td>80 / 129</td></tr>
+<tr class=""><td>d7</td><th scope="row">CSS activity routing</th><td>11.426% <small>234/2048</small></td><td>10.12–12.88%</td><td>23.17</td><td>11 / 7</td><td>70 / 98</td></tr>
+<tr class="section"><td>d15</td><th scope="row">Ordinary MWPM</th><td>18.555% <small>380/2048</small></td><td>16.93–20.30%</td><td>523.19</td><td>—</td><td>96 / 239</td></tr>
+<tr class=""><td>d15</td><th scope="row">Native correlated MWPM</th><td>11.670% <small>239/2048</small></td><td>10.35–13.13%</td><td>1,342.11</td><td>239 / 98</td><td>3 / 5</td></tr>
+<tr class=""><td>d15</td><th scope="row">Equal-axis correlated MWPM</th><td>11.572% <small>237/2048</small></td><td>10.26–13.03%</td><td>1,343.23</td><td>239 / 96</td><td>—</td></tr>
+<tr class=""><td>d15</td><th scope="row">Bath-clock correlated MWPM</th><td>12.109% <small>248/2048</small></td><td>10.77–13.59%</td><td>1,347.12</td><td>238 / 106</td><td>53 / 64</td></tr>
+<tr class=""><td>d15</td><th scope="row">Library weighted Union-Find</th><td>22.656% <small>464/2048</small></td><td>20.90–24.52%</td><td>917.74</td><td>125 / 209</td><td>98 / 325</td></tr>
+<tr class=""><td>d15</td><th scope="row">CSS activity routing</th><td>17.920% <small>367/2048</small></td><td>16.32–19.64%</td><td>373.70</td><td>27 / 14</td><td>82 / 212</td></tr>
+<tr class="section"><td>d31</td><th scope="row">Ordinary MWPM</th><td>39.111% <small>801/2048</small></td><td>37.02–41.24%</td><td>10,296.88</td><td>—</td><td>231 / 587</td></tr>
+<tr class=""><td>d31</td><th scope="row">Native correlated MWPM</th><td>21.680% <small>444/2048</small></td><td>19.95–23.52%</td><td>26,365.62</td><td>587 / 230</td><td>1 / 0</td></tr>
+<tr class=""><td>d31</td><th scope="row">Equal-axis correlated MWPM</th><td>21.729% <small>445/2048</small></td><td>20.00–23.57%</td><td>27,089.22</td><td>587 / 231</td><td>—</td></tr>
+<tr class=""><td>d31</td><th scope="row">Bath-clock correlated MWPM</th><td>21.387% <small>438/2048</small></td><td>19.67–23.22%</td><td>27,590.53</td><td>584 / 221</td><td>179 / 172</td></tr>
+<tr class=""><td>d31</td><th scope="row">Library weighted Union-Find</th><td>42.383% <small>868/2048</small></td><td>40.26–44.54%</td><td>19,817.47</td><td>404 / 471</td><td>245 / 668</td></tr>
+<tr class=""><td>d31</td><th scope="row">CSS activity routing</th><td>38.086% <small>780/2048</small></td><td>36.01–40.21%</td><td>7,427.83</td><td>42 / 21</td><td>210 / 545</td></tr>
+</tbody></table></div>
+<h2>Protocol</h2>
+<p>Equal-axis and bath-clock matching both compile correlated matchers using the same idle-channel expansion, with uniform or archived bath-derived Pauli weights. CSS routing sends records above the activity cutoff to native correlated matching. The cutoff uses 1,024 separate unlabeled calibration shots and a 6% target fraction.</p>
+<p>Runtime is the median from warm 128-shot calls in separate single-process decoder workers. Runtime includes any required input unpacking. Setup, sampling and scoring occur outside the timer. The main benchmark was also active on the host.</p>
+<p><a href="README.md">Methods and replay</a> · <a href="measured/metrics.csv">All results and paired intervals</a> · <a href="measured/protocol.json">Frozen protocol</a></p>
+</main></body></html>

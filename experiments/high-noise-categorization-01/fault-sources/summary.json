@@ -1,0 +1,113 @@
+{
+  "noise_model": "provisional simple_uniform",
+  "distance": 7,
+  "basis": "z",
+  "rounds": 7,
+  "seed": 724096830,
+  "decoder": "Native correlated matching compiled once per level from the all-noise circuit",
+  "families": {
+    "gate": "after_clifford_depolarization",
+    "round_start_data": "before_round_data_depolarization",
+    "readout": "before_measure_flip_probability",
+    "reset": "after_reset_flip_probability"
+  },
+  "shots_per_case": 20000,
+  "stim": "1.16.0",
+  "pymatching": "2.4.0",
+  "numpy": "2.4.6",
+  "cases": [
+    {
+      "p": 0.005,
+      "shots": 20000,
+      "full_failures": 116,
+      "full_wilson95": [
+        0.004838326799496794,
+        0.006951481638357017
+      ],
+      "direct_check_failures": 128,
+      "direct_check_wilson95": [
+        0.005385667761260223,
+        0.007603910233326264
+      ],
+      "direct_check_seed": 724096834,
+      "seeds": {
+        "gate": 724096830,
+        "round_start_data": 724096831,
+        "readout": 724096832,
+        "reset": 724096833
+      },
+      "verified_joint_signatures": 5471,
+      "max_abs_log_weight_difference": 4.163336342344337e-17,
+      "circuit_sha256": "9358c1990989cb0f21b7f1fae86e8c9b5dcb78d42580bce1e65bec9a90096a2d",
+      "failed_shots_rescued_by_n_removals": [
+        0,
+        17,
+        55,
+        33,
+        11
+      ]
+    },
+    {
+      "p": 0.01,
+      "shots": 20000,
+      "full_failures": 1627,
+      "full_wilson95": [
+        0.07764123554843602,
+        0.0852195562413404
+      ],
+      "direct_check_failures": 1625,
+      "direct_check_wilson95": [
+        0.07754337692599828,
+        0.08511745327098935
+      ],
+      "direct_check_seed": 724096934,
+      "seeds": {
+        "gate": 724096930,
+        "round_start_data": 724096931,
+        "readout": 724096932,
+        "reset": 724096933
+      },
+      "verified_joint_signatures": 5471,
+      "max_abs_log_weight_difference": 9.71445146547012e-17,
+      "circuit_sha256": "a30a6f40e2a87f64362a8e84ace59e0f26154a3a64fb3925753e2c0e227a2823",
+      "failed_shots_rescued_by_n_removals": [
+        0,
+        259,
+        663,
+        562,
+        143
+      ]
+    },
+    {
+      "p": 0.02,
+      "shots": 20000,
+      "full_failures": 7953,
+      "full_wilson95": [
+        0.3908874928225106,
+        0.40445181695817406
+      ],
+      "direct_check_failures": 8019,
+      "direct_check_wilson95": [
+        0.3941774581106038,
+        0.4077605842321105
+      ],
+      "direct_check_seed": 724097034,
+      "seeds": {
+        "gate": 724097030,
+        "round_start_data": 724097031,
+        "readout": 724097032,
+        "reset": 724097033
+      },
+      "verified_joint_signatures": 5471,
+      "max_abs_log_weight_difference": 1.3877787807814457e-16,
+      "circuit_sha256": "74216424a60d3db16e08555cade1d2cbd252d555eaaf9c18be9febd01c5cf85e",
+      "failed_shots_rescued_by_n_removals": [
+        24,
+        1639,
+        3225,
+        2357,
+        708
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "baseline_source": "https://github.com/quantumlib/Stim/blob/main/doc/getting_started.ipynb",
+  "model_run": "screen-run-2026112102",
+  "distance": 5,
+  "rounds": 5,
+  "noise_model": "Independent data X before each round and independent ancilla readout flips just before MR. Other operations ideal.",
+  "p_data": 0.008,
+  "p_readout": 0.04,
+  "fft_threshold": 0.27348512411117554,
+  "fft_checkpoint_sha256": "4ed72ead56da465233da0837fd42a6a9cfc19c7239ccc93c620a1c1cb8f4ac04",
+  "site_test_seed": 15739721379604419588,
+  "logical_stim_seed": 2026112103,
+  "logical_sample_batch_size": 2048,
+  "logical_detectors": 72,
+  "versions": {
+    "stim": "1.16.0",
+    "pymatching": "2.4.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "logical_protocol": "Fresh Stim logical memory shots. Matching decodes the detector error model. FFT predicts five-round physical-site calls and corrects their residual ideal final check syndrome with unit-weight spatial matching. Both see the same public checks.",
+  "site_protocol": "Original labeled five-round test shots. Both methods see only the five noisy check grids. MWPM tracks one minimum-weight fault history back to data sites. FFT uses its saved validation threshold.",
+  "rows": [
+    {
+      "metric": "logical_shot",
+      "method": "PyMatching (MWPM)",
+      "errors": 425,
+      "total": 100000,
+      "error_percent": 0.425
+    },
+    {
+      "metric": "logical_shot",
+      "method": "FFT + CNN + final matching",
+      "errors": 2023,
+      "total": 100000,
+      "error_percent": 2.023
+    },
+    {
+      "metric": "physical_site",
+      "method": "Site-tracking MWPM",
+      "errors": 4833,
+      "total": 250000,
+      "error_percent": 1.9332
+    },
+    {
+      "metric": "physical_site",
+      "method": "FFT + CNN",
+      "errors": 6120,
+      "total": 250000,
+      "error_percent": 2.448
+    },
+    {
+      "metric": "logical_shot_without_terminal_input",
+      "method": "FFT + CNN alone",
+      "errors": 14832,
+      "total": 100000,
+      "error_percent": 14.832
+    }
+  ],
+  "logical_wilson95_percent": {
+    "PyMatching (MWPM)": [
+      0.38654041808927353,
+      0.46726824202333517
+    ],
+    "FFT + CNN + final matching": [
+      1.9375665897231789,
+      2.112119302081615
+    ]
+  },
+  "logical_paired_fft_minus_mwpm": {
+    "recovered": 129,
+    "lost": 1727,
+    "ler_difference": 0.01598,
+    "approximate_95_ci": [
+      0.01514143094091526,
+      0.016818569059084743
+    ]
+  },
+  "site_paired_fft_minus_mwpm": {
+    "difference": 0.005148000000000001,
+    "ci95": [
+      0.004530391310693424,
+      0.005765608689306577
+    ]
+  },
+  "paired_difference_units": "Fractions. Multiply by 100 for percentage points."
+}

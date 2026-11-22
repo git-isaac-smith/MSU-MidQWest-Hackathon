@@ -1,0 +1,20 @@
+{
+  "fingerprint": "d0344b59d7c849eb51bee1899d72093e6dc1cec747c9ec09951e4c74dfb09417",
+  "stim_seed": 94530057721049,
+  "shots": 4000,
+  "detector_counts_by_outcome": {
+    "failed": {
+      "shots": 1800,
+      "herald_detector_events": 189336,
+      "syndrome_detector_events": 231598
+    },
+    "succeeded": {
+      "shots": 2200,
+      "herald_detector_events": 229718,
+      "syndrome_detector_events": 282235
+    }
+  },
+  "detectors_sha256": "4a2ab18dde2e93250aa8542324f170be63c325e0190ececff1d1c8558e552dd3",
+  "predictions_sha256": "533b164c23ba4693706fd70fb47e42840ebdc9cef254dc27351ec8d64d57b2cd",
+  "decode_ns_under_campaign_load": 26891899900
+}

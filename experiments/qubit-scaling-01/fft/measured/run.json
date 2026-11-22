@@ -1,0 +1,54 @@
+{
+  "noise": "Five-round rotated Z memory with independent per-round data X and check readout faults and ideal terminal data readout",
+  "p_data": 0.008,
+  "p_readout": 0.04,
+  "rounds": 5,
+  "batch_size": 64,
+  "cases": [
+    {
+      "distance": 5,
+      "shots": 4096,
+      "seed": 92701105,
+      "circuit_sha256": "d6b94425624f06e44abf0d63d599bd9b374409492ec8a4a8d20cc8049be6717d"
+    },
+    {
+      "distance": 9,
+      "shots": 1024,
+      "seed": 92701109,
+      "circuit_sha256": "0b25793113d53564ecee69c1486df2013c98a20336a95e93e1a7ebcfbb2ae1ac"
+    },
+    {
+      "distance": 17,
+      "shots": 1024,
+      "seed": 92701117,
+      "circuit_sha256": "e781640383aa233d090d13da3647a53399a2e487d65de9113e4796fcb41660cd"
+    },
+    {
+      "distance": 33,
+      "shots": 1024,
+      "seed": 92701133,
+      "circuit_sha256": "5f0d3e1999ce4cdbc7b9cd5425170dafcaaa6cb39005b0670b5b9852f312e61d"
+    }
+  ],
+  "versions": {
+    "numpy": "2.4.6",
+    "stim": "1.16.0",
+    "pymatching": "2.4.0",
+    "scipy": "1.17.1"
+  },
+  "source_sha256": "0bc1f9116ad91c02b69075dddbd69bf0202485f6ddca851641c4094e7db70c59",
+  "artifact_sha256": {
+    "new-approach/results/screen-run-2026112102/metrics.json": "6601c00676303a105fdcb78d6c0f0a7c5b63509f24ff22287d511152eccaaf41",
+    "new-approach/results/screen-run-2026112102/raw-cnn.npz": "c11b9c0972432b4947cb228462b254b57e29dfb6c423fafeb1843fe9853826e7",
+    "new-approach/results/screen-run-2026112102/fft-cnn.npz": "4ed72ead56da465233da0837fd42a6a9cfc19c7239ccc93c620a1c1cb8f4ac04",
+    "new-approach/results/hybrid-01/policy.json": "71fe41c3a12030d584d8fe760da86df0375451ca9673063258cca7cd1511f0ff",
+    "new-approach/results/hybrid-01/site-cnn.npz": "4ed72ead56da465233da0837fd42a6a9cfc19c7239ccc93c620a1c1cb8f4ac04",
+    "new-approach/results/hybrid-01/logical-cnn.npz": "7f38bf57e5fa6b3466990669917b06292de1aabf507a36d5b6c008299dc0fe40",
+    "new-approach/results/hybrid-01/raw-cnn.npz": "81f43118107f5d305233682fa8d0562a681a4350b367e02e87e06aa23f5ace45",
+    "new-approach/results/list-matching-01/policy.json": "82f8da6ef9553805c999b53db93e3ae447c13465018048f9b0600efe65402fe5",
+    "build/native_posterior.dll": "2a38fe81e84df001d94bd0feabb49d19771edb7f8e88868e29a5106c0fbc225a"
+  },
+  "list_margin_limit": 5.3,
+  "timing": "No runtime timing collected",
+  "detector_archive": "Little-endian packed detector bytes. Truth and named predictions are Boolean vectors."
+}

@@ -1,0 +1,4 @@
+{
+  "status": "resource_limit",
+  "reason": "One dense fault-pair array alone needs 3.39 GiB; worker limit 2.5 GiB."
+}

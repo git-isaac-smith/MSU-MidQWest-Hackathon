@@ -1,0 +1,12 @@
+{
+  "status": "pilot",
+  "reason": "Prespecified paired prefix",
+  "setup_s": 0.41550039997673593,
+  "shots": 128,
+  "batch_size": 128,
+  "batch_ns": [
+    8089810700
+  ],
+  "batch_us_per_shot": 63201.64609375,
+  "prediction_sha256": "7cfb7f4c215437f714deed2e0e05b7ebae12ad675e7f59b300f8c0b4709f027e"
+}

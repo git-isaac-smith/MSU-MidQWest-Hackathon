@@ -1,0 +1,10 @@
+{
+  "arm": "dominant_tone_timing",
+  "layout_index": 1,
+  "shots": 1024,
+  "prior_exact_circuit_sha256": "fb4cbcf83c8759371971363903b5e762ac3cc3dbc11503caec2fcc38d797d922",
+  "test_sample_sha256": "a6da58332b0641f6c64e4a67c9bd480dadf35487ceee671c4a7543d7c7d49537",
+  "decoder_engine_sha256": "f436cab3d6693274115240a6ec096c674063c8ae94e4686f4890b24f0dc396f6",
+  "prediction_mismatches": 0,
+  "prediction_sha256": "3621e74f995667b9d6aa79aaf177c0aa674321403152ba3e93e25edaab4b85f3"
+}

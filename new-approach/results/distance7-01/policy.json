@@ -1,0 +1,34 @@
+{
+  "protocol_sha256": "b789b003534eb8c7f3fc2368288ace8927db687a2c102b2be6a7658fabd2e83a",
+  "development_sha256": "d25ab22055861449cbf6cf3a7c007367cc14949da090044426dbc24bc9ea28e4",
+  "radius": 2,
+  "cutoff": 1.0,
+  "shots": 150000,
+  "development": [
+    {
+      "cutoff": 0.5,
+      "errors": 305
+    },
+    {
+      "cutoff": 0.6,
+      "errors": 280
+    },
+    {
+      "cutoff": 0.7,
+      "errors": 262
+    },
+    {
+      "cutoff": 0.8,
+      "errors": 244
+    },
+    {
+      "cutoff": 0.9,
+      "errors": 222
+    },
+    {
+      "cutoff": 1.0,
+      "errors": 190
+    }
+  ],
+  "routed": 1979
+}

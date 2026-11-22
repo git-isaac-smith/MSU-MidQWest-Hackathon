@@ -1,0 +1,568 @@
+{
+  "fingerprint": "cbb3126f9ceef5f444df76c87ccabd9ea51ccfd6ff737686b7c8446ad1191be5",
+  "id": "individual-p0.001-layout03",
+  "arm_id": "individual",
+  "arm": "Structured bath, ML then fit, balanced check",
+  "p_check": 0.001,
+  "layout_index": 3,
+  "layout_seed": 20268114,
+  "bath_ids_in_data_qubit_order": [
+    4048,
+    4007,
+    4021,
+    4013,
+    4034,
+    4020,
+    4030,
+    4017,
+    4012,
+    4026,
+    4006,
+    4014,
+    4034,
+    4043,
+    4007,
+    4022,
+    4010,
+    4010,
+    4038,
+    4020,
+    4025,
+    4035,
+    4045,
+    4036,
+    4040,
+    4045,
+    4008,
+    4044,
+    4003,
+    4009,
+    4038,
+    4020,
+    4008,
+    4012,
+    4036,
+    4015,
+    4041,
+    4002,
+    4013,
+    4040,
+    4006,
+    4015,
+    4035,
+    4004,
+    4040,
+    4040,
+    4024,
+    4044,
+    4038
+  ],
+  "physical_circuit_sha256": "6573a18cba9156b7b2c3bb6f018b10103d91615015cdb7cc3df0e92aeda685f1",
+  "prior_circuit_sha256": "a0f7ade4efcca02414c7cfd62feb10a801c6634d6e7a6dfc477e651858b978f9",
+  "physical_circuit_stim_text_sha256": "57a18b77d9a3c4b37367de65825f04db90b46ee91857e59c896fbe4f6f21d6d5",
+  "prior_circuit_stim_text_sha256": "57a18b77d9a3c4b37367de65825f04db90b46ee91857e59c896fbe4f6f21d6d5",
+  "herald_mask_sha256": "97d77b1b21fe43afd3374db8cca2382ac350123971325c02bb3d2c13ff8a11c9",
+  "shots": 200000,
+  "logical_failures": 20,
+  "logical_error_rate": 0.0001,
+  "wilson_95": [
+    6.473852755123931e-05,
+    0.00015446455625413226
+  ],
+  "detector_counts_by_outcome": {
+    "failed": {
+      "shots": 20,
+      "herald_detector_events": 590,
+      "syndrome_detector_events": 892
+    },
+    "succeeded": {
+      "shots": 199980,
+      "herald_detector_events": 5355120,
+      "syndrome_detector_events": 8275532
+    }
+  },
+  "original_seed_control": {
+    "fingerprint": "c43df1afd45259052af4f98b9142f8b8055a8a379cf66598018c67186bf37b27",
+    "stim_seed": 94530057721013,
+    "shots": 4000,
+    "detector_counts_by_outcome": {
+      "failed": {
+        "shots": 0,
+        "herald_detector_events": 0,
+        "syndrome_detector_events": 0
+      },
+      "succeeded": {
+        "shots": 4000,
+        "herald_detector_events": 106931,
+        "syndrome_detector_events": 165515
+      }
+    },
+    "detectors_sha256": "3a7ce50076a86a5336c1af6bf270febba1d77fc9a057da6cd9a8992c2ea7625f",
+    "predictions_sha256": "8bc925e1b70e7dd642f01877705421e676dba7235753bace49b11f6eef2354cf",
+    "decode_ns_under_campaign_load": 10350299600,
+    "matching_prediction_bits": 4000
+  },
+  "fresh_upstream_prediction_audit_shots": 128,
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "stim_seed": 628692449101200,
+      "shots": 10000,
+      "logical_failures": 2,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 2,
+          "herald_detector_events": 56,
+          "syndrome_detector_events": 81
+        },
+        "succeeded": {
+          "shots": 9998,
+          "herald_detector_events": 267583,
+          "syndrome_detector_events": 413221
+        }
+      },
+      "detectors_sha256": "c862837b2f1246f53b87d1cf71e30508c995d0db52b091ee71f09a421f2f1f19",
+      "observables_sha256": "8b661f4588582f771d115763fc2bb2da14fe91461255a12049f6997e195c9051",
+      "predictions_sha256": "ba4c701121b154ed806baa2c429e1c5107decfc190ab161097070951d394a84f",
+      "sample_ns_under_campaign_load": 37392500,
+      "decode_ns_under_campaign_load": 317322200
+    },
+    {
+      "chunk_index": 1,
+      "stim_seed": 628692449101201,
+      "shots": 10000,
+      "logical_failures": 1,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 1,
+          "herald_detector_events": 29,
+          "syndrome_detector_events": 38
+        },
+        "succeeded": {
+          "shots": 9999,
+          "herald_detector_events": 267570,
+          "syndrome_detector_events": 414421
+        }
+      },
+      "detectors_sha256": "f221d72ba624f05aabdb762403f0b1746a0550161a71146fda267d8196b28c2d",
+      "observables_sha256": "fb1cb83439700d90898c0d687cfdf46994886212e99351e8df59d76c6d0fba8b",
+      "predictions_sha256": "a29553e4377855e67d7b67cbb2c031830025c5cba3e2b257c905d3d93c97e9c6",
+      "sample_ns_under_campaign_load": 41872500,
+      "decode_ns_under_campaign_load": 356424400
+    },
+    {
+      "chunk_index": 2,
+      "stim_seed": 628692449101202,
+      "shots": 10000,
+      "logical_failures": 0,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 0,
+          "herald_detector_events": 0,
+          "syndrome_detector_events": 0
+        },
+        "succeeded": {
+          "shots": 10000,
+          "herald_detector_events": 268204,
+          "syndrome_detector_events": 415373
+        }
+      },
+      "detectors_sha256": "0b5629b497ea4337a63988ecae2cfa01d261db44fac2e25b6d4db9a31c46d7e7",
+      "observables_sha256": "2623718a2ae181eb37edd5a6bbc0be730651ba17bb1f3e0134934ba10df3e611",
+      "predictions_sha256": "2623718a2ae181eb37edd5a6bbc0be730651ba17bb1f3e0134934ba10df3e611",
+      "sample_ns_under_campaign_load": 54224900,
+      "decode_ns_under_campaign_load": 416834700
+    },
+    {
+      "chunk_index": 3,
+      "stim_seed": 628692449101203,
+      "shots": 10000,
+      "logical_failures": 0,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 0,
+          "herald_detector_events": 0,
+          "syndrome_detector_events": 0
+        },
+        "succeeded": {
+          "shots": 10000,
+          "herald_detector_events": 268188,
+          "syndrome_detector_events": 414272
+        }
+      },
+      "detectors_sha256": "ceedd2a619ee86b10740efa0b7e40453e8d7509a982a7c27162971998d8f43b8",
+      "observables_sha256": "4a5612297017b74b2529c28985cf0fe160587a770f4436f5470f2f54a4dffc29",
+      "predictions_sha256": "4a5612297017b74b2529c28985cf0fe160587a770f4436f5470f2f54a4dffc29",
+      "sample_ns_under_campaign_load": 39572400,
+      "decode_ns_under_campaign_load": 286239800
+    },
+    {
+      "chunk_index": 4,
+      "stim_seed": 628692449101204,
+      "shots": 10000,
+      "logical_failures": 2,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 2,
+          "herald_detector_events": 62,
+          "syndrome_detector_events": 100
+        },
+        "succeeded": {
+          "shots": 9998,
+          "herald_detector_events": 267857,
+          "syndrome_detector_events": 413420
+        }
+      },
+      "detectors_sha256": "bf628a1c0d59d3284de4f3580d1dcee27bfcb52881390b200773932a8bec52b5",
+      "observables_sha256": "6b74d1bbdfb766d97f526db40841ba0fb4a2a201ed5952a8161597a4f346a04d",
+      "predictions_sha256": "094e672151d40a232db58b7b25c63619316fade70739a75c2644f086ad3ac9bb",
+      "sample_ns_under_campaign_load": 45840100,
+      "decode_ns_under_campaign_load": 303563200
+    },
+    {
+      "chunk_index": 5,
+      "stim_seed": 628692449101205,
+      "shots": 10000,
+      "logical_failures": 1,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 1,
+          "herald_detector_events": 29,
+          "syndrome_detector_events": 52
+        },
+        "succeeded": {
+          "shots": 9999,
+          "herald_detector_events": 267264,
+          "syndrome_detector_events": 413879
+        }
+      },
+      "detectors_sha256": "f4e0d45e8b7dd7895f17a8748c77c1ed6603f8645023fc18e57a99aa110aad43",
+      "observables_sha256": "4eff08c82de4b4e8a452a6a131f34de0a25dfb33e54cdcbb82dc8aa017a854c6",
+      "predictions_sha256": "a28d71bcc3e4592adf230d6d94cf76069f07843681acf20ebaa19841c68cb39d",
+      "sample_ns_under_campaign_load": 43900900,
+      "decode_ns_under_campaign_load": 291802100
+    },
+    {
+      "chunk_index": 6,
+      "stim_seed": 628692449101206,
+      "shots": 10000,
+      "logical_failures": 1,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 1,
+          "herald_detector_events": 40,
+          "syndrome_detector_events": 59
+        },
+        "succeeded": {
+          "shots": 9999,
+          "herald_detector_events": 267311,
+          "syndrome_detector_events": 413631
+        }
+      },
+      "detectors_sha256": "cd5e85892afc40d0261a95ee871fa62fe4620333ed144647ca340a18d22b48a9",
+      "observables_sha256": "2e2af14e80821d6826384c2b51e2146db5969156ff21ba0a4d1bee28beb0c08d",
+      "predictions_sha256": "c2b6b5f07805bfa82c782c28703208d5f85099abaf7694b8bea960e124b4e776",
+      "sample_ns_under_campaign_load": 36307100,
+      "decode_ns_under_campaign_load": 290432500
+    },
+    {
+      "chunk_index": 7,
+      "stim_seed": 628692449101207,
+      "shots": 10000,
+      "logical_failures": 1,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 1,
+          "herald_detector_events": 22,
+          "syndrome_detector_events": 31
+        },
+        "succeeded": {
+          "shots": 9999,
+          "herald_detector_events": 267110,
+          "syndrome_detector_events": 413519
+        }
+      },
+      "detectors_sha256": "01d95c523222869118b5ae9fd78b890d0351280504b38961b814523bae6cf7b5",
+      "observables_sha256": "face1466eda70b16ea6112d7bc86139af22de3b6408707a8a62c171a63986c60",
+      "predictions_sha256": "bd73665101177f28ac528b881f97fb6580b0c0aefe83f3ecc834b6f67e19e4e3",
+      "sample_ns_under_campaign_load": 44877500,
+      "decode_ns_under_campaign_load": 302215600
+    },
+    {
+      "chunk_index": 8,
+      "stim_seed": 628692449101208,
+      "shots": 10000,
+      "logical_failures": 3,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 3,
+          "herald_detector_events": 85,
+          "syndrome_detector_events": 135
+        },
+        "succeeded": {
+          "shots": 9997,
+          "herald_detector_events": 268024,
+          "syndrome_detector_events": 413876
+        }
+      },
+      "detectors_sha256": "b950f169a77596dab36f22759c25b848f446cb33f533fcb74edd783f885d8fff",
+      "observables_sha256": "ca502c7e5f2945efc46402515d0de38e9690595cc6c415e942b216f642e971e4",
+      "predictions_sha256": "7a5ee85cf4091fd15db1dd914bdfc00c1ee50cbc28f1fbe04e58765a85ee1f47",
+      "sample_ns_under_campaign_load": 41689400,
+      "decode_ns_under_campaign_load": 294272000
+    },
+    {
+      "chunk_index": 9,
+      "stim_seed": 628692449101209,
+      "shots": 10000,
+      "logical_failures": 3,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 3,
+          "herald_detector_events": 84,
+          "syndrome_detector_events": 119
+        },
+        "succeeded": {
+          "shots": 9997,
+          "herald_detector_events": 267929,
+          "syndrome_detector_events": 413764
+        }
+      },
+      "detectors_sha256": "b17962fa7bb5622b0bbbf68e94b8649322b2bde8d83597adb2a6cc26475c1a3c",
+      "observables_sha256": "07ab3c863a390e782c85acab533033c728ca9aea5e863f0958f12e292c6b9746",
+      "predictions_sha256": "beec8f10d466cc67f8c81496e78f3326f7065baee26a4809596fa8c2b9ef6869",
+      "sample_ns_under_campaign_load": 45607800,
+      "decode_ns_under_campaign_load": 312362700
+    },
+    {
+      "chunk_index": 10,
+      "stim_seed": 628692449101210,
+      "shots": 10000,
+      "logical_failures": 1,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 1,
+          "herald_detector_events": 28,
+          "syndrome_detector_events": 39
+        },
+        "succeeded": {
+          "shots": 9999,
+          "herald_detector_events": 268205,
+          "syndrome_detector_events": 413612
+        }
+      },
+      "detectors_sha256": "c770778154980aedfa6505f5865675a757b7024bf3b3f0530a28d33e56b6ce4c",
+      "observables_sha256": "5ac99faa4a26f30caca6e115e253b50a3f433ccac4981789a3d4b304bbebe432",
+      "predictions_sha256": "463fe79d8cc83d61fd90e7a2617f8ebc05f77bdb5528c6fb25fcfb12a554dea2",
+      "sample_ns_under_campaign_load": 50714900,
+      "decode_ns_under_campaign_load": 316182100
+    },
+    {
+      "chunk_index": 11,
+      "stim_seed": 628692449101211,
+      "shots": 10000,
+      "logical_failures": 0,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 0,
+          "herald_detector_events": 0,
+          "syndrome_detector_events": 0
+        },
+        "succeeded": {
+          "shots": 10000,
+          "herald_detector_events": 267089,
+          "syndrome_detector_events": 413276
+        }
+      },
+      "detectors_sha256": "360af86eceada475ef16647377d0591de21691b612a8d15fdfe6ad0d1f5c64e3",
+      "observables_sha256": "8bb44a8aff6d10b8335fb11a55fd3866d5014416cce9b5985525b1659d68a787",
+      "predictions_sha256": "8bb44a8aff6d10b8335fb11a55fd3866d5014416cce9b5985525b1659d68a787",
+      "sample_ns_under_campaign_load": 47892200,
+      "decode_ns_under_campaign_load": 327348900
+    },
+    {
+      "chunk_index": 12,
+      "stim_seed": 628692449101212,
+      "shots": 10000,
+      "logical_failures": 1,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 1,
+          "herald_detector_events": 28,
+          "syndrome_detector_events": 42
+        },
+        "succeeded": {
+          "shots": 9999,
+          "herald_detector_events": 267102,
+          "syndrome_detector_events": 412869
+        }
+      },
+      "detectors_sha256": "18893d0b783f277982f3ffdc2f6158a9adf4c7c9ebb3ac5dddbdfaca4cce231f",
+      "observables_sha256": "d6360c80915fca52b5a5f4e7ec307c2d07c09d5bb936cb1c23592fadfa86bdfb",
+      "predictions_sha256": "45779e8bdf71e1be4bb94136525b3d1a5d6d1c741a9a339ed2fcd5353e1518c6",
+      "sample_ns_under_campaign_load": 40028600,
+      "decode_ns_under_campaign_load": 304854600
+    },
+    {
+      "chunk_index": 13,
+      "stim_seed": 628692449101213,
+      "shots": 10000,
+      "logical_failures": 0,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 0,
+          "herald_detector_events": 0,
+          "syndrome_detector_events": 0
+        },
+        "succeeded": {
+          "shots": 10000,
+          "herald_detector_events": 267732,
+          "syndrome_detector_events": 413235
+        }
+      },
+      "detectors_sha256": "c42217f150e654aad540981fb225e50269ea091bf73c6fea61eb64c9c97aba88",
+      "observables_sha256": "3d64ff845a070bd588a0a0eed93f5ab0ff7de3d98eb180b93dbb95db0c0a5924",
+      "predictions_sha256": "3d64ff845a070bd588a0a0eed93f5ab0ff7de3d98eb180b93dbb95db0c0a5924",
+      "sample_ns_under_campaign_load": 51319000,
+      "decode_ns_under_campaign_load": 295842200
+    },
+    {
+      "chunk_index": 14,
+      "stim_seed": 628692449101214,
+      "shots": 10000,
+      "logical_failures": 0,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 0,
+          "herald_detector_events": 0,
+          "syndrome_detector_events": 0
+        },
+        "succeeded": {
+          "shots": 10000,
+          "herald_detector_events": 268362,
+          "syndrome_detector_events": 414122
+        }
+      },
+      "detectors_sha256": "c9b1f56b64abd13536c2aaff286206629629f710a30deec669b4ebc93f215caf",
+      "observables_sha256": "6bce203577304929cf99379de4896cd882bde0362fde9b8f5f185f46472ecf43",
+      "predictions_sha256": "6bce203577304929cf99379de4896cd882bde0362fde9b8f5f185f46472ecf43",
+      "sample_ns_under_campaign_load": 38179100,
+      "decode_ns_under_campaign_load": 301936900
+    },
+    {
+      "chunk_index": 15,
+      "stim_seed": 628692449101215,
+      "shots": 10000,
+      "logical_failures": 1,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 1,
+          "herald_detector_events": 30,
+          "syndrome_detector_events": 40
+        },
+        "succeeded": {
+          "shots": 9999,
+          "herald_detector_events": 267761,
+          "syndrome_detector_events": 413648
+        }
+      },
+      "detectors_sha256": "c832a0a2576ddc55585d019b9b2ce6634da7b7380cc29c292c2b116f6b09f794",
+      "observables_sha256": "dec73ab2811ce8c715976d4d558c96062425362f1d6988e8ac8cd5d6a59c3729",
+      "predictions_sha256": "38a63d4d566bc252bbf361f0c01718ae4f96b66a26cd504fbebf3a02d2cff642",
+      "sample_ns_under_campaign_load": 56317400,
+      "decode_ns_under_campaign_load": 376574500
+    },
+    {
+      "chunk_index": 16,
+      "stim_seed": 628692449101216,
+      "shots": 10000,
+      "logical_failures": 2,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 2,
+          "herald_detector_events": 69,
+          "syndrome_detector_events": 108
+        },
+        "succeeded": {
+          "shots": 9998,
+          "herald_detector_events": 267069,
+          "syndrome_detector_events": 411995
+        }
+      },
+      "detectors_sha256": "4fd2caad7db9540914e8fa94d8703f260efce72b52771c527b6f1902ea820d49",
+      "observables_sha256": "47d3b0388a4902a8970aac3826273877b513806f0a271737f83b5a4576bb3302",
+      "predictions_sha256": "4ede47ed10a3cd10197eaf3e6f6efee1c0960857520a0ba1165e07cd863d1fe1",
+      "sample_ns_under_campaign_load": 64902700,
+      "decode_ns_under_campaign_load": 392619000
+    },
+    {
+      "chunk_index": 17,
+      "stim_seed": 628692449101217,
+      "shots": 10000,
+      "logical_failures": 1,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 1,
+          "herald_detector_events": 28,
+          "syndrome_detector_events": 48
+        },
+        "succeeded": {
+          "shots": 9999,
+          "herald_detector_events": 268230,
+          "syndrome_detector_events": 414339
+        }
+      },
+      "detectors_sha256": "011f422da7835ab31b26f954ba02417e9dc5086f10073217a7eee9f6099a9664",
+      "observables_sha256": "8adfd084c4a5fd67e9af26b9994fecc65fa82181393b1df6a94bc5d721af1426",
+      "predictions_sha256": "311f029feb477d0cd489bfe9c2e15876a7e468fcd9068c5c54b9816ec246d511",
+      "sample_ns_under_campaign_load": 42566400,
+      "decode_ns_under_campaign_load": 304595300
+    },
+    {
+      "chunk_index": 18,
+      "stim_seed": 628692449101218,
+      "shots": 10000,
+      "logical_failures": 0,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 0,
+          "herald_detector_events": 0,
+          "syndrome_detector_events": 0
+        },
+        "succeeded": {
+          "shots": 10000,
+          "herald_detector_events": 268198,
+          "syndrome_detector_events": 413872
+        }
+      },
+      "detectors_sha256": "4bd1aa17dabb8f23ddbabb8a17bc9ec92929c398fc8cdbc3b07ecb4f9bac035e",
+      "observables_sha256": "5b755c05374edca6781ed4b6d5e09c2396d3b61e1e6af8fc0681f0ed4f240e3f",
+      "predictions_sha256": "5b755c05374edca6781ed4b6d5e09c2396d3b61e1e6af8fc0681f0ed4f240e3f",
+      "sample_ns_under_campaign_load": 65868800,
+      "decode_ns_under_campaign_load": 312206200
+    },
+    {
+      "chunk_index": 19,
+      "stim_seed": 628692449101219,
+      "shots": 10000,
+      "logical_failures": 0,
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 0,
+          "herald_detector_events": 0,
+          "syndrome_detector_events": 0
+        },
+        "succeeded": {
+          "shots": 10000,
+          "herald_detector_events": 268332,
+          "syndrome_detector_events": 415188
+        }
+      },
+      "detectors_sha256": "a7abc4a89bf058a617d5de9ab1a713de11b03973fdde3454884b484f549bf195",
+      "observables_sha256": "cda0dd57f1979396b012607a7e992dd7cc532a0ca5979d7078f9c0f509026acb",
+      "predictions_sha256": "cda0dd57f1979396b012607a7e992dd7cc532a0ca5979d7078f9c0f509026acb",
+      "sample_ns_under_campaign_load": 38932500,
+      "decode_ns_under_campaign_load": 391319900
+    }
+  ]
+}

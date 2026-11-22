@@ -15,6 +15,8 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=8,<10"]
 hypergraph = ["stabilizer-qec==2.1.0"]
+scaling = ["psutil>=5.9,<8", "numba>=0.61,<1"]
+reports = ["reportlab>=4,<5"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

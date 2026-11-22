@@ -1,0 +1,118 @@
+{
+  "pooled": {
+    "shots": 3000000,
+    "methods": {
+      "policy": {
+        "failures": 67772,
+        "ler": 0.022590666666666665,
+        "batch_us_per_shot": 17.044800066666667
+      },
+      "equal": {
+        "failures": 68407,
+        "ler": 0.022802333333333334,
+        "batch_us_per_shot": 17.834494666666664
+      },
+      "bath": {
+        "failures": 67795,
+        "ler": 0.022598333333333335,
+        "batch_us_per_shot": 16.9910056
+      }
+    },
+    "policy_vs": {
+      "equal": {
+        "recovered": 4595,
+        "lost": 3960,
+        "ler_difference": -0.00021166666666666667,
+        "approximate_95_ci": [
+          -0.00027209272068491456,
+          -0.00015124061264841878
+        ]
+      },
+      "bath": {
+        "recovered": 3262,
+        "lost": 3239,
+        "ler_difference": -7.666666666666667e-06,
+        "approximate_95_ci": [
+          -6.034397736456908e-05,
+          4.501064403123575e-05
+        ]
+      }
+    }
+  },
+  "by_basis": {
+    "x": {
+      "shots": 1500000,
+      "methods": {
+        "policy": {
+          "failures": 35241,
+          "ler": 0.023494,
+          "batch_us_per_shot": 17.170202600000003
+        },
+        "equal": {
+          "failures": 35876,
+          "ler": 0.023917333333333332,
+          "batch_us_per_shot": 18.7495918
+        },
+        "bath": {
+          "failures": 35241,
+          "ler": 0.023494,
+          "batch_us_per_shot": 17.170202600000003
+        }
+      },
+      "policy_vs": {
+        "equal": {
+          "recovered": 4595,
+          "lost": 3960,
+          "ler_difference": -0.00042333333333333334,
+          "approximate_95_ci": [
+            -0.0005441854413698291,
+            -0.00030248122529683756
+          ]
+        },
+        "bath": {
+          "recovered": 0,
+          "lost": 0,
+          "ler_difference": 0.0,
+          "approximate_95_ci": null
+        }
+      }
+    },
+    "z": {
+      "shots": 1500000,
+      "methods": {
+        "policy": {
+          "failures": 32531,
+          "ler": 0.021687333333333333,
+          "batch_us_per_shot": 16.919397533333335
+        },
+        "equal": {
+          "failures": 32531,
+          "ler": 0.021687333333333333,
+          "batch_us_per_shot": 16.919397533333335
+        },
+        "bath": {
+          "failures": 32554,
+          "ler": 0.021702666666666665,
+          "batch_us_per_shot": 16.8118086
+        }
+      },
+      "policy_vs": {
+        "equal": {
+          "recovered": 0,
+          "lost": 0,
+          "ler_difference": 0.0,
+          "approximate_95_ci": null
+        },
+        "bath": {
+          "recovered": 3262,
+          "lost": 3239,
+          "ler_difference": -1.5333333333333334e-05,
+          "approximate_95_ci": [
+            -0.00012068795472913816,
+            9.00212880624715e-05
+          ]
+        }
+      }
+    }
+  }
+}

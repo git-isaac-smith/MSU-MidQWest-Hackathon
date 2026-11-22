@@ -1,0 +1,27 @@
+{
+  "backend": "native",
+  "full_map_setup_seconds": 0.04281590000027791,
+  "timing_protocol": "Median of three passes over different fresh batches after a separate warm-up.",
+  "timings": {
+    "mwpm": {
+      "shots": 16384,
+      "seconds": 0.03140160001930781,
+      "batch_size": 4096
+    },
+    "balanced": {
+      "shots": 16384,
+      "seconds": 0.5253208999929484,
+      "batch_size": 4096
+    },
+    "accuracy": {
+      "shots": 16384,
+      "seconds": 1.0995007999881636,
+      "batch_size": 4096
+    },
+    "full_map": {
+      "shots": 16384,
+      "seconds": 0.18029350001597777,
+      "batch_size": 4096
+    }
+  }
+}

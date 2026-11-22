@@ -1,0 +1,80 @@
+{
+  "upstream_commit": "94572516042297d6b6018fe76eb2f2b547e3c46f",
+  "baths": 49,
+  "reference": "Structured bath, ML then fit, balanced check",
+  "grid_step": 0.06,
+  "calibration_points": 5000,
+  "calibration_dt": 0.30006001200240046,
+  "calibration_duration": 1500.0,
+  "fft": {
+    "exact_grid": 49,
+    "within_one_step": 49,
+    "mae": 0.0,
+    "max_error": 0.0,
+    "time_range": [
+      6.36,
+      15.0
+    ]
+  },
+  "single_tone": {
+    "exact_grid": 4,
+    "within_one_step": 5,
+    "mae": 2.3020408163265302,
+    "max_error": 6.779999999999999,
+    "time_range": [
+      6.24,
+      15.0
+    ]
+  },
+  "exact_model": {
+    "exact_grid": 49,
+    "within_one_step": 49,
+    "mae": 0.0,
+    "max_error": 0.0,
+    "time_range": [
+      6.36,
+      15.0
+    ]
+  },
+  "fft_matches_exact_model": 49,
+  "max_occupancy_identity_error": 5.106637697774308e-08,
+  "max_frame_phase_error_rad": 6.717174372283807e-09,
+  "max_channel_errors": {
+    "erasure": 8.772895132569403e-09,
+    "conditional_z": 1.8101858068053645e-09
+  },
+  "ranges": {
+    "fit_time": [
+      6.36,
+      15.0
+    ],
+    "tone_frequency": [
+      0.0006665333333333335,
+      0.4299140000000001
+    ],
+    "tone_amplitude": [
+      0.07851634238084924,
+      0.24350188450764423
+    ],
+    "fft_return_magnitude": [
+      0.7174628799424069,
+      0.9943771703299704
+    ],
+    "fft_erasure": [
+      0.005607021563280523,
+      0.24262350795237375
+    ],
+    "fft_conditional_z": [
+      7.94862146650228e-06,
+      0.026349914820639496
+    ]
+  },
+  "python": "3.13.3",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "qutip": "5.3.1",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.3"
+  }
+}

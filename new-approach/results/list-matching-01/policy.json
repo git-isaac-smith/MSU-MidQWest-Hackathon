@@ -1,0 +1,38 @@
+{
+  "protocol_sha256": "d40c59c0c5b011f65635c0cc0207dcf321c55d055572d46acab5e2c04c56c46a",
+  "development_sha256": "9d3a5d7ea31205826e2fd63f220760740f3f6d15240affb551ba68fb42fb6925",
+  "list_matching": {
+    "label": "Matching with alternative corrections",
+    "members": 49,
+    "seed": 84310500
+  },
+  "cutoff": 0.5,
+  "shots": 500000,
+  "development": [
+    {
+      "cutoff": 0.5,
+      "errors": 591
+    },
+    {
+      "cutoff": 0.6,
+      "errors": 597
+    },
+    {
+      "cutoff": 0.7,
+      "errors": 601
+    },
+    {
+      "cutoff": 0.8,
+      "errors": 607
+    },
+    {
+      "cutoff": 0.9,
+      "errors": 606
+    },
+    {
+      "cutoff": 1.0,
+      "errors": 606
+    }
+  ],
+  "routed": 6696
+}

@@ -1,0 +1,46 @@
+{
+  "distances": [
+    3,
+    5,
+    7
+  ],
+  "xi": [
+    1.0,
+    2.0,
+    4.0
+  ],
+  "density": 0.001,
+  "background_p": 0.005,
+  "basis": "Z",
+  "rounds": "distance",
+  "exposures": [
+    "none",
+    "poisson",
+    "one",
+    "independent"
+  ],
+  "shots_per_seed": 25000,
+  "seed_count": 4,
+  "batch_size": 1024,
+  "root_seed": 93710000,
+  "seed_scheme": "NumPy SeedSequence([root_seed,distance,seed_index]).spawn(4) in order: Stim background, Poisson, one burst, independent.",
+  "kernel": "0.5 exp(-Euclidean center-to-site distance / xi), in data-qubit spacings",
+  "density_units": "expected burst cores per data qubit per round",
+  "injection": "X flips before first H of extraction round; conditional site draws independent; uniform on-patch data-site cores and uniform rounds; overlapping X flips XOR",
+  "controls": "no bursts; exactly one core per shot; independent site-round X flips with same marginal odd-flip probabilities as the Poisson model at each d and xi",
+  "decoder": "ordinary PyMatching compiled only from provisional background simple_uniform DEM; decoder input is packed detectors only",
+  "pairing": "Within each seed/case all conditions reuse Stim background detectors and observable. Within an exposure all xi reuse centers and uniform draws. Distances use independent seeds.",
+  "timing": "Inference only, warm decoder, same batch sizes; timing is descriptive.",
+  "artifacts": "seeds-*.npz store failures in little-endian order, keyed by exposure and xi, and counts of Poisson cores per shot; see replication.csv for seed-index keys.",
+  "versions": {
+    "stim": "1.16.0",
+    "pymatching": "2.4.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "source_sha256": {
+    "burst_samples.py": "e208050908ec3cc1b1d28a7eea9667bbb4c95d4f348c403b1f5f24cf1c8d3943",
+    "burst_sweep.py": "299d924db7a1b5773570d38ac6108e6ad80e3325a1d996ff8de5a3dc9f002a52",
+    "circuits.py": "489d71d19e1f4560e05d904c44c6a8c4a97393da6d960ae7d71db58aac222408"
+  }
+}

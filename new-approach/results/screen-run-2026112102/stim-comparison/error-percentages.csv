@@ -1,0 +1,6 @@
+metric,method,errors,total,error_percent
+logical_shot,PyMatching (MWPM),425,100000,0.425
+logical_shot,FFT + CNN + final matching,2023,100000,2.023
+physical_site,Site-tracking MWPM,4833,250000,1.9332
+physical_site,FFT + CNN,6120,250000,2.448
+logical_shot_without_terminal_input,FFT + CNN alone,14832,100000,14.832

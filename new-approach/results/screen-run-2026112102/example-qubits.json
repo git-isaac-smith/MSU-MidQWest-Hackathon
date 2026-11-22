@@ -1,0 +1,38 @@
+{
+  "test_shot_zero_based": 1,
+  "selection_rule": "First test shot with any FFT CNN selection, else shot zero. Independent of truth.",
+  "injected_final_odd_parity": [
+    {
+      "stim_id": 47,
+      "row": 4,
+      "column": 1,
+      "stim_xy": [
+        3,
+        9
+      ],
+      "cnn_score": 0.48554569482803345
+    }
+  ],
+  "fft_cnn_selected": [
+    {
+      "stim_id": 47,
+      "row": 4,
+      "column": 1,
+      "stim_xy": [
+        3,
+        9
+      ],
+      "cnn_score": 0.48554569482803345
+    },
+    {
+      "stim_id": 49,
+      "row": 4,
+      "column": 2,
+      "stim_xy": [
+        5,
+        9
+      ],
+      "cnn_score": 0.5360427498817444
+    }
+  ]
+}

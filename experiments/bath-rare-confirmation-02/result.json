@@ -1,0 +1,1012 @@
+{
+  "format_version": 1,
+  "upstream_repository": "https://github.com/sakidja/RQL_Quantum_bath",
+  "upstream_commit": "94572516042297d6b6018fe76eb2f2b547e3c46f",
+  "upstream_source": "part1/dual_rail_structured_bath.py",
+  "upstream_table_directory": "part1/results_v3_final8_one_gamma_sys_0.0",
+  "attachment": "one",
+  "gamma_sys": 0.0,
+  "clock_period": 6.0,
+  "distance": 7,
+  "basis": "Z",
+  "syndrome_rounds": 7,
+  "p_measurement_flip": 0.001,
+  "p_reset_flip": 0.001,
+  "arm": "Structured bath, ML then fit, balanced check",
+  "mean_check_time": 11.1734693877551,
+  "mean_physical_bath_erasure_probability": 0.07728180553280842,
+  "max_abs_true_channel_reconstruction_delta": 0.0,
+  "p_check": 0.001,
+  "shots": 500000,
+  "logical_failures": 74,
+  "logical_error_rate": 0.000148,
+  "wilson_95": [
+    0.00011790443165179398,
+    0.0001857761528366743
+  ],
+  "interval_scope": "Monte Carlo precision conditional on the five fixed layouts",
+  "shots_per_layout": 100000,
+  "chunk_shots": 5000,
+  "stim_seed_rule": "371398201762000 + 1000 * zero-based layout index + zero-based chunk index",
+  "parallel_accuracy_workers": 5,
+  "layouts": [
+    {
+      "layout_index": 1,
+      "layout_seed": 20268112,
+      "bath_ids_in_data_qubit_order": [
+        4007,
+        4043,
+        4030,
+        4015,
+        4047,
+        4001,
+        4026,
+        4045,
+        4020,
+        4045,
+        4030,
+        4014,
+        4004,
+        4035,
+        4039,
+        4011,
+        4003,
+        4031,
+        4044,
+        4048,
+        4028,
+        4019,
+        4021,
+        4027,
+        4040,
+        4034,
+        4041,
+        4028,
+        4047,
+        4030,
+        4045,
+        4028,
+        4020,
+        4045,
+        4023,
+        4035,
+        4020,
+        4028,
+        4042,
+        4039,
+        4015,
+        4018,
+        4012,
+        4003,
+        4015,
+        4035,
+        4009,
+        4009,
+        4019
+      ],
+      "shots": 100000,
+      "logical_failures": 6,
+      "logical_error_rate": 6e-05,
+      "wilson_95": [
+        2.7498819066428715e-05,
+        0.00013090968394310096
+      ],
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 6,
+          "herald_detector_events": 158,
+          "syndrome_detector_events": 238
+        },
+        "succeeded": {
+          "shots": 99994,
+          "herald_detector_events": 2481091,
+          "syndrome_detector_events": 3747654
+        }
+      },
+      "original_seed_control": {
+        "stim_seed": 94530057721011,
+        "failed": {
+          "shots": 0,
+          "herald_detector_events": 0,
+          "syndrome_detector_events": 0
+        },
+        "succeeded": {
+          "shots": 4000,
+          "herald_detector_events": 99513,
+          "syndrome_detector_events": 150424
+        }
+      },
+      "chunks": [
+        {
+          "stim_seed": 371398201762000,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201762001,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201762002,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201762003,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201762004,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201762005,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201762006,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201762007,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201762008,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201762009,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201762010,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201762011,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201762012,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201762013,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201762014,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201762015,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201762016,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201762017,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201762018,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201762019,
+          "shots": 5000,
+          "logical_failures": 0
+        }
+      ]
+    },
+    {
+      "layout_index": 2,
+      "layout_seed": 20268113,
+      "bath_ids_in_data_qubit_order": [
+        4034,
+        4033,
+        4007,
+        4046,
+        4010,
+        4024,
+        4040,
+        4045,
+        4045,
+        4015,
+        4017,
+        4008,
+        4024,
+        4048,
+        4010,
+        4038,
+        4000,
+        4047,
+        4039,
+        4028,
+        4035,
+        4008,
+        4045,
+        4005,
+        4011,
+        4019,
+        4017,
+        4003,
+        4004,
+        4029,
+        4035,
+        4009,
+        4024,
+        4008,
+        4047,
+        4045,
+        4032,
+        4031,
+        4030,
+        4005,
+        4003,
+        4048,
+        4029,
+        4037,
+        4027,
+        4044,
+        4020,
+        4024,
+        4036
+      ],
+      "shots": 100000,
+      "logical_failures": 21,
+      "logical_error_rate": 0.00021,
+      "wilson_95": [
+        0.00013736362891997593,
+        0.00032103335015577886
+      ],
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 21,
+          "herald_detector_events": 601,
+          "syndrome_detector_events": 951
+        },
+        "succeeded": {
+          "shots": 99979,
+          "herald_detector_events": 2436284,
+          "syndrome_detector_events": 3976454
+        }
+      },
+      "original_seed_control": {
+        "stim_seed": 94530057721012,
+        "failed": {
+          "shots": 1,
+          "herald_detector_events": 36,
+          "syndrome_detector_events": 52
+        },
+        "succeeded": {
+          "shots": 3999,
+          "herald_detector_events": 98137,
+          "syndrome_detector_events": 159931
+        }
+      },
+      "chunks": [
+        {
+          "stim_seed": 371398201763000,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201763001,
+          "shots": 5000,
+          "logical_failures": 2
+        },
+        {
+          "stim_seed": 371398201763002,
+          "shots": 5000,
+          "logical_failures": 2
+        },
+        {
+          "stim_seed": 371398201763003,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201763004,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201763005,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201763006,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201763007,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201763008,
+          "shots": 5000,
+          "logical_failures": 2
+        },
+        {
+          "stim_seed": 371398201763009,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201763010,
+          "shots": 5000,
+          "logical_failures": 2
+        },
+        {
+          "stim_seed": 371398201763011,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201763012,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201763013,
+          "shots": 5000,
+          "logical_failures": 3
+        },
+        {
+          "stim_seed": 371398201763014,
+          "shots": 5000,
+          "logical_failures": 2
+        },
+        {
+          "stim_seed": 371398201763015,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201763016,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201763017,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201763018,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201763019,
+          "shots": 5000,
+          "logical_failures": 0
+        }
+      ]
+    },
+    {
+      "layout_index": 3,
+      "layout_seed": 20268114,
+      "bath_ids_in_data_qubit_order": [
+        4048,
+        4007,
+        4021,
+        4013,
+        4034,
+        4020,
+        4030,
+        4017,
+        4012,
+        4026,
+        4006,
+        4014,
+        4034,
+        4043,
+        4007,
+        4022,
+        4010,
+        4010,
+        4038,
+        4020,
+        4025,
+        4035,
+        4045,
+        4036,
+        4040,
+        4045,
+        4008,
+        4044,
+        4003,
+        4009,
+        4038,
+        4020,
+        4008,
+        4012,
+        4036,
+        4015,
+        4041,
+        4002,
+        4013,
+        4040,
+        4006,
+        4015,
+        4035,
+        4004,
+        4040,
+        4040,
+        4024,
+        4044,
+        4038
+      ],
+      "shots": 100000,
+      "logical_failures": 15,
+      "logical_error_rate": 0.00015,
+      "wilson_95": [
+        9.090792686456511e-05,
+        0.0002474936617846996
+      ],
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 15,
+          "herald_detector_events": 458,
+          "syndrome_detector_events": 625
+        },
+        "succeeded": {
+          "shots": 99985,
+          "herald_detector_events": 2676415,
+          "syndrome_detector_events": 4137169
+        }
+      },
+      "original_seed_control": {
+        "stim_seed": 94530057721013,
+        "failed": {
+          "shots": 0,
+          "herald_detector_events": 0,
+          "syndrome_detector_events": 0
+        },
+        "succeeded": {
+          "shots": 4000,
+          "herald_detector_events": 106931,
+          "syndrome_detector_events": 165515
+        }
+      },
+      "chunks": [
+        {
+          "stim_seed": 371398201764000,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201764001,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201764002,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201764003,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201764004,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201764005,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201764006,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201764007,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201764008,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201764009,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201764010,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201764011,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201764012,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201764013,
+          "shots": 5000,
+          "logical_failures": 4
+        },
+        {
+          "stim_seed": 371398201764014,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201764015,
+          "shots": 5000,
+          "logical_failures": 3
+        },
+        {
+          "stim_seed": 371398201764016,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201764017,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201764018,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201764019,
+          "shots": 5000,
+          "logical_failures": 0
+        }
+      ]
+    },
+    {
+      "layout_index": 4,
+      "layout_seed": 20268115,
+      "bath_ids_in_data_qubit_order": [
+        4021,
+        4040,
+        4036,
+        4042,
+        4018,
+        4006,
+        4039,
+        4009,
+        4045,
+        4012,
+        4001,
+        4035,
+        4021,
+        4025,
+        4048,
+        4009,
+        4035,
+        4001,
+        4018,
+        4024,
+        4035,
+        4023,
+        4013,
+        4024,
+        4005,
+        4033,
+        4007,
+        4032,
+        4034,
+        4016,
+        4018,
+        4010,
+        4044,
+        4018,
+        4023,
+        4017,
+        4000,
+        4046,
+        4027,
+        4026,
+        4034,
+        4029,
+        4040,
+        4000,
+        4027,
+        4045,
+        4019,
+        4029,
+        4008
+      ],
+      "shots": 100000,
+      "logical_failures": 6,
+      "logical_error_rate": 6e-05,
+      "wilson_95": [
+        2.7498819066428715e-05,
+        0.00013090968394310096
+      ],
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 6,
+          "herald_detector_events": 153,
+          "syndrome_detector_events": 232
+        },
+        "succeeded": {
+          "shots": 99994,
+          "herald_detector_events": 2231317,
+          "syndrome_detector_events": 3522634
+        }
+      },
+      "original_seed_control": {
+        "stim_seed": 94530057721014,
+        "failed": {
+          "shots": 1,
+          "herald_detector_events": 18,
+          "syndrome_detector_events": 31
+        },
+        "succeeded": {
+          "shots": 3999,
+          "herald_detector_events": 89414,
+          "syndrome_detector_events": 141287
+        }
+      },
+      "chunks": [
+        {
+          "stim_seed": 371398201765000,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201765001,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201765002,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201765003,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201765004,
+          "shots": 5000,
+          "logical_failures": 2
+        },
+        {
+          "stim_seed": 371398201765005,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201765006,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201765007,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201765008,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201765009,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201765010,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201765011,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201765012,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201765013,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201765014,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201765015,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201765016,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201765017,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201765018,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201765019,
+          "shots": 5000,
+          "logical_failures": 0
+        }
+      ]
+    },
+    {
+      "layout_index": 5,
+      "layout_seed": 20268116,
+      "bath_ids_in_data_qubit_order": [
+        4019,
+        4044,
+        4045,
+        4023,
+        4010,
+        4024,
+        4037,
+        4034,
+        4043,
+        4008,
+        4039,
+        4040,
+        4015,
+        4005,
+        4034,
+        4039,
+        4003,
+        4038,
+        4008,
+        4002,
+        4045,
+        4030,
+        4025,
+        4017,
+        4003,
+        4014,
+        4021,
+        4047,
+        4029,
+        4046,
+        4000,
+        4011,
+        4010,
+        4017,
+        4020,
+        4023,
+        4008,
+        4048,
+        4025,
+        4044,
+        4021,
+        4027,
+        4025,
+        4037,
+        4027,
+        4045,
+        4047,
+        4032,
+        4037
+      ],
+      "shots": 100000,
+      "logical_failures": 26,
+      "logical_error_rate": 0.00026,
+      "wilson_95": [
+        0.00017744529959271756,
+        0.0003809478381717789
+      ],
+      "detector_counts_by_outcome": {
+        "failed": {
+          "shots": 26,
+          "herald_detector_events": 783,
+          "syndrome_detector_events": 1144
+        },
+        "succeeded": {
+          "shots": 99974,
+          "herald_detector_events": 2692814,
+          "syndrome_detector_events": 4150571
+        }
+      },
+      "original_seed_control": {
+        "stim_seed": 94530057721015,
+        "failed": {
+          "shots": 2,
+          "herald_detector_events": 69,
+          "syndrome_detector_events": 112
+        },
+        "succeeded": {
+          "shots": 3998,
+          "herald_detector_events": 108022,
+          "syndrome_detector_events": 166952
+        }
+      },
+      "chunks": [
+        {
+          "stim_seed": 371398201766000,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201766001,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201766002,
+          "shots": 5000,
+          "logical_failures": 2
+        },
+        {
+          "stim_seed": 371398201766003,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201766004,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201766005,
+          "shots": 5000,
+          "logical_failures": 5
+        },
+        {
+          "stim_seed": 371398201766006,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201766007,
+          "shots": 5000,
+          "logical_failures": 2
+        },
+        {
+          "stim_seed": 371398201766008,
+          "shots": 5000,
+          "logical_failures": 2
+        },
+        {
+          "stim_seed": 371398201766009,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201766010,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201766011,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201766012,
+          "shots": 5000,
+          "logical_failures": 0
+        },
+        {
+          "stim_seed": 371398201766013,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201766014,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201766015,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201766016,
+          "shots": 5000,
+          "logical_failures": 2
+        },
+        {
+          "stim_seed": 371398201766017,
+          "shots": 5000,
+          "logical_failures": 2
+        },
+        {
+          "stim_seed": 371398201766018,
+          "shots": 5000,
+          "logical_failures": 1
+        },
+        {
+          "stim_seed": 371398201766019,
+          "shots": 5000,
+          "logical_failures": 2
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "logical_cpus": 24,
+    "versions": {
+      "python": "3.13.3",
+      "numpy": "2.2.6",
+      "scipy": "1.18.1",
+      "stim": "1.16.0",
+      "pymatching": "2.4.0",
+      "pandas": "2.3.3",
+      "qutip": "5.3.1"
+    }
+  },
+  "original_stress_control": {
+    "path": "../bath-background-stress-01/result.json",
+    "sha256": "5560a04607ffa163fddced12c44f899280ce5cb995f17789148f2298455d6f45",
+    "shots": 20000,
+    "logical_failures": 4,
+    "logical_error_rate": 0.0002,
+    "wilson_95": [
+      7.777875605022847e-05,
+      0.0005141804856319552
+    ],
+    "verification": "Matched logical failures and detector event totals by layout and logical outcome"
+  },
+  "independent_serial_timing": {
+    "path": "../bath-background-stress-01/timing/result.json",
+    "sha256": "99886cb5308b4a23d8b4d475e61efe3941483dd0700f158b34a5c714ece82798",
+    "shots": 20000,
+    "logical_failures": 4,
+    "batch_us_shot": 944.144045,
+    "batch_us_round": 134.87772071428572
+  }
+}

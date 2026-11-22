@@ -1,0 +1,14 @@
+{
+  "distance": 31,
+  "basis": "z",
+  "p": 0.005,
+  "rounds": 31,
+  "data_qubits": 961,
+  "physical_qubits": 1921,
+  "detectors": 29760,
+  "seed": 17156580068762647445,
+  "training_seed": 7933208031907871637,
+  "folder": "d31-z",
+  "circuit_sha256": "404f937d7b5a4777a65d68d71e826749b8072014b9df259133bcb67e149ee737",
+  "sample_sha256": "7e7244bca11b7d2cbd617ef59581720e8e29d844cb4c7f1aa9ad84f4c8747ee0"
+}

@@ -6,3 +6,34 @@ build/
 dist/
 /results/
 .bascd.lock
+
+# Local workspaces, tool output, and presentation drafts
+/tmp/
+/.chart-data-*/
+/output/presentations/Selective Correlated Matching - MidQWest 2026*.pptx
+~$*
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+node_modules/
+.idea/
+.vscode/*
+!.vscode/launch.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Experiment summaries, checkpoints and replay inputs stay versioned.
+*.log
+*.err
+*.py[cod]
+*.obj
+*.dll
+*.pyd
+*.dylib
+*.so
+*.exe

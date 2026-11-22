@@ -1,0 +1,8 @@
+# Keep archived detector bits, model weights and published artifacts byte-exact.
+*.b8 binary
+*.npy binary
+*.npz binary
+*.png binary
+*.zip binary
+*.pptx binary
+*.pdf binary

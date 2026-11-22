@@ -1,0 +1,267 @@
+{
+  "format_version": 1,
+  "command": [
+    "python",
+    "experiments/bath-basis-policy-01/run.py",
+    "experiments/bath-basis-policy-01/confirmation"
+  ],
+  "root_seed": 562491030,
+  "shots_per_scenario": 125000,
+  "timing_repeats": 1,
+  "rounds": "distance",
+  "environment": {
+    "python": "3.11.4",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "cpu": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "versions": {
+      "bascd": "0.1.0",
+      "numpy": "2.4.6",
+      "stim": "1.16.0",
+      "pymatching": "2.4.0",
+      "scipy": "1.17.1",
+      "matplotlib": "3.11.2",
+      "jsonschema": "4.26.0",
+      "filelock": "3.32.7"
+    },
+    "source_sha256": {
+      "__init__.py": "9235e7c0985999fadf9ef28b62ccee567e3e65e6f826aa8a91902f1462bf65d1",
+      "__main__.py": "9b5d207d459ace9cbb231c2a80a4786e06afb74097448a22d373c02880bcfc06",
+      "accuracy_campaign.py": "a8bf75afe9defc58372a85833c6459bd43143d4d14e8057f5f67e291ac93d809",
+      "accuracy_decoders.py": "968b1e5d857422af5c65ff2e59908cf243d04c02b0053f9fc3aa007c70476c8e",
+      "adaptive.py": "cd7861e13297a33ea01ec151980f529181c5f9dfb975c147f253099eb749f04c",
+      "adaptive_experiment.py": "6fcd97b97e2feee021cc908b3c843e100ec22bd0ea3bca674e55620246228baf",
+      "ambiguity_dispatch.py": "7ffb4885d4afe41ffe52afc90f8f53f5069d87ad857255ee80423e5e66e23617",
+      "batch_workers.py": "ac4def58f39c614a2067b1d9e4c62406f03f2e271ffad6838cdd90de3a76b3b2",
+      "bath.py": "32d9b52c97b9fa85b0689c950f679944845cfb8b279d7bf6f62c4784eeb757b2",
+      "bath_erasure.py": "3dbc9fd67b3275618b6cf6566639d980f39ece2b33dd3d60ea66d9ac52727f2b",
+      "bath_initialize.py": "2a88622c216ce5d5419d31de843a8094ad4e72e19ed3a26b46f2620dcac4057c",
+      "bath_prior.py": "01573bb02c4baa010d20a91bd4073af2b329258b2ea9ef489b2478e02a3e8294",
+      "bath_transfer.py": "221d4647037b4d61929121ec072605d5e8111699d997ae0554631b172f3f117c",
+      "benchmark.py": "302218eb9fb855143d2edb81f95e7e4359b411360b3929f70904ab761fe88b08",
+      "burst_report.py": "7c34f599e6ae41fbfa991db419f51d6f02ac3a1a645914f1f70271770c0d2f9a",
+      "burst_samples.py": "e208050908ec3cc1b1d28a7eea9667bbb4c95d4f348c403b1f5f24cf1c8d3943",
+      "burst_sweep.py": "299d924db7a1b5773570d38ac6108e6ad80e3325a1d996ff8de5a3dc9f002a52",
+      "capped_gap.py": "b5073b73f91567382aade01db842d15f93096d5a33164b32e27e6dd0ab9f119c",
+      "challenge_variants.py": "841ded5f3be530d555684f172f14f3098d42c4ffbeacf1b9f70d8ded1ac851e3",
+      "circuit_frontier.py": "b0fc0c450d73ad7d9623f57559a200e463e80b569c5350ed81282dbc1984e1d9",
+      "circuit_frontier_report.py": "6a30da7cbf1c93c6bdb8be253e814eef76c30aafb7d8bcd99b93271bfe4282f0",
+      "circuits.py": "489d71d19e1f4560e05d904c44c6a8c4a97393da6d960ae7d71db58aac222408",
+      "compute_campaign.py": "4c1f61179839eef198c1381b270b8171582a010ff3dbcf4cedab88e1230158f1",
+      "compute_replay.py": "5c61dcecdd2da6d9b04f85da3f8f652a6c95b4d5bc94feaf2a46a6fc6f747ad8",
+      "compute_report.py": "404a2a7e4eee3710f771a6e83d99308946414b40c1ef03f15260991e809744ab",
+      "css_routed.py": "30d4f976f310507b9fd4f4f5af268d479d275ea0bdd3bc0ed4186dcfeda8a7ff",
+      "decode_accuracy.py": "be6e798d72e6c58cc88559feff11cbdf9a82472822df0b72b372e58fb6dd3656",
+      "decoders.py": "944512dfef26b8c387df85a249347d0d741fe1e26fd601fcadce826bdd5c47cf",
+      "disagreement_rescue.py": "ddef417ec9610ff76fb23c854079d44578fdc8c9baf06039f164129c8c5469ff",
+      "ensemble.py": "519b44f01176afb736f94857cae5d71bc96986a0f6bc22a91b6d75c7ac8eefdd",
+      "exact_small.py": "2f6d7df28dd36df2cd68b607a9e64442947793856d99d87348847f0f9b41af90",
+      "experiment.py": "ec7b4ed03c194a64a5727c912dc96c117d5b5d14d6ba0ba10aeb4ca92d400053",
+      "fast_hybrid.py": "a5fbf0a3e0593fb97475e4bb1fa7cb1822a6c7e4b5ae96630ec07568723a0ccc",
+      "frontier_audit.py": "58d72aeffdd64fa3d1ea3954e8526501b6539a51c61bb66240bb4cbb8cdc3867",
+      "frontier_timing.py": "2e494e4dc470e89ad0be96e6961a9fa78f9676a049eb8fbb314086d81ce846c0",
+      "hypergraph.py": "2d4d619bba2fd5b851855d63dec68f87fadf215461010c06836ae4c40a325e66",
+      "learned_fault_router.py": "bdc9c086bbe5a135144ffc66910ad66f1aec4568d142cad23232eceedf31f761",
+      "logical_gap_route.py": "cfdbe1f43abc8c74a48a14224a0e5b0d33423644bfc7d587338544bc85fa62a9",
+      "measure.py": "c817d33d1d675b403295374504c458784d786818319f5ccd24fbc62795ec84ba",
+      "portable_lookup.py": "4d6b6717b2a4894d9281a141da5e3b0fd5cb6d0cd1172cafd1b6e825e3cfe34b",
+      "projected_router.py": "36239fcdb5f82d334af6c5eaf551265c5b76591330c4c9dc3dcfdb9ec2f4bf55",
+      "records.py": "d1d605054fca606691ae2f65026287049f5eb594cf9ea2f5a326ee62fa29a2bc",
+      "scalar_routing.py": "ab2ddf90e17d185a21b3b9eca8ac3d297e027ee338b94fa7236842abe848a984",
+      "scale_methods.py": "cb9465ed2c1c83df5849a2777d9379ca58f046e537a9b34c4280ed930d811f1f",
+      "scale_report.py": "45eac8480413de6a58a40e7dd4cf8acb90f1d3adf68730853f7c49721a660b5c",
+      "scale_study.py": "20f5fb7217a787c86bfb069bc978a2627fd284f8225352a3a5745ab7ad85b41e",
+      "schemas/feedback.json": "7efa915b809bab5e5a0b2de851ec3373672e3f48fb6d12abe44bd758448ea6d1",
+      "schemas/proposal.json": "2d4f92c011739579a30eab2f9cfaffde3bfe387fe0f4fb5a301d37c8eee0c1f1",
+      "search.py": "cf34230e645e95d9767f6ba13956e7212719dd2120b3cc028ef0f3868b9f1e91",
+      "specialist_search.py": "0f513f5710ba01778edc49f9ec23576470522fb11808636204d49a3048eb97c7",
+      "spectral_diagnostics.py": "9d432bd17ad61ba33ce6eecef41e8198287dbb8b2f40950988fa249e54370ddc",
+      "stats.py": "d96e4c4ec6c66f15c359772687d2e34d7b2263ae92027e6f8b02a47cbce2942e",
+      "stim_samples.py": "b5be91dc6628fa04e32cf1270a3fa65bb75fa98b79e1c5ed829bffdce5205faf",
+      "sweep.py": "ceb950caed692ad18298d86f25fc3471c19f819ebc8f5eec007abfca140095fe",
+      "temporal_filter.py": "1dee688ac7d157e6ce785397642cf27e5c13e56a5e86d69696dfff3e79b6edd4",
+      "union_find.py": "ac791b801c33bd0ab06449879f7b0ee024d8fc8bf954ad6aa8044d4df9044bfe",
+      "unique_batch.py": "2b735097ce6942a7b8f5551fb2e7e90ab0f75e0b46be3e41079babe4550679af"
+    }
+  },
+  "noise": {
+    "name": "simple_uniform",
+    "status": "provisional",
+    "generator": "Stim rotated memory",
+    "after_clifford_depolarization": "p",
+    "after_reset_flip_probability": "p",
+    "before_measure_flip_probability": "p",
+    "before_round_data_depolarization": "p"
+  },
+  "scenarios": [
+    {
+      "distance": 3,
+      "p": 0.001,
+      "basis": "x",
+      "seed": 15767602785357795975
+    },
+    {
+      "distance": 3,
+      "p": 0.001,
+      "basis": "z",
+      "seed": 14625588756500817821
+    },
+    {
+      "distance": 3,
+      "p": 0.003,
+      "basis": "x",
+      "seed": 15580420207979892271
+    },
+    {
+      "distance": 3,
+      "p": 0.003,
+      "basis": "z",
+      "seed": 13887397482001557934
+    },
+    {
+      "distance": 3,
+      "p": 0.005,
+      "basis": "x",
+      "seed": 15641604913284564829
+    },
+    {
+      "distance": 3,
+      "p": 0.005,
+      "basis": "z",
+      "seed": 15484743978667053526
+    },
+    {
+      "distance": 3,
+      "p": 0.01,
+      "basis": "x",
+      "seed": 14766588750377305223
+    },
+    {
+      "distance": 3,
+      "p": 0.01,
+      "basis": "z",
+      "seed": 16708538426539563347
+    },
+    {
+      "distance": 5,
+      "p": 0.001,
+      "basis": "x",
+      "seed": 15012752433466178680
+    },
+    {
+      "distance": 5,
+      "p": 0.001,
+      "basis": "z",
+      "seed": 16975944494702025464
+    },
+    {
+      "distance": 5,
+      "p": 0.003,
+      "basis": "x",
+      "seed": 14076800616332999096
+    },
+    {
+      "distance": 5,
+      "p": 0.003,
+      "basis": "z",
+      "seed": 15458559503500869561
+    },
+    {
+      "distance": 5,
+      "p": 0.005,
+      "basis": "x",
+      "seed": 17032682884136066004
+    },
+    {
+      "distance": 5,
+      "p": 0.005,
+      "basis": "z",
+      "seed": 17886812027769835433
+    },
+    {
+      "distance": 5,
+      "p": 0.01,
+      "basis": "x",
+      "seed": 15105694964881464075
+    },
+    {
+      "distance": 5,
+      "p": 0.01,
+      "basis": "z",
+      "seed": 14601579066301587791
+    },
+    {
+      "distance": 7,
+      "p": 0.001,
+      "basis": "x",
+      "seed": 18095151520153530524
+    },
+    {
+      "distance": 7,
+      "p": 0.001,
+      "basis": "z",
+      "seed": 14334984598376009545
+    },
+    {
+      "distance": 7,
+      "p": 0.003,
+      "basis": "x",
+      "seed": 16087248667349145516
+    },
+    {
+      "distance": 7,
+      "p": 0.003,
+      "basis": "z",
+      "seed": 15512840861469058906
+    },
+    {
+      "distance": 7,
+      "p": 0.005,
+      "basis": "x",
+      "seed": 17112131948721513994
+    },
+    {
+      "distance": 7,
+      "p": 0.005,
+      "basis": "z",
+      "seed": 15422450797150338821
+    },
+    {
+      "distance": 7,
+      "p": 0.01,
+      "basis": "x",
+      "seed": 18232298172116642525
+    },
+    {
+      "distance": 7,
+      "p": 0.01,
+      "basis": "z",
+      "seed": 14313041247455277320
+    }
+  ],
+  "split": "final_test",
+  "frozen_basis_policy": {
+    "x": "bath",
+    "z": "equal"
+  },
+  "primary": "policy vs always equal",
+  "secondary": "policy vs always bath",
+  "profile": "experiments\\iteration-03\\bath-calibration\\bath-profile.json",
+  "profile_sha256": "e649d17ea6be5823bafb39fc6fb31474ee294880760e6aa70ecf7801cb487589",
+  "runner_sha256": "e4bc6151b19ff26e221e1d233f6b8d76ab23923373da99dffec9fcf80c7dce3e",
+  "calibration_source": "exact synthetic traces",
+  "bath_clock_time": 4.0,
+  "prior_ratios": {
+    "equal": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "bath": [
+      0.792138232947568,
+      0.03966576123041556,
+      0.16819600582201646
+    ]
+  },
+  "timing": "One warm full batch per hypothesis and scenario; alternate hypothesis order. Basis policy selects its graph at setup, so its timing uses that hypothesis.",
+  "interval": "Candidate minus reference, approximate paired 95% interval stratified by scenario."
+}

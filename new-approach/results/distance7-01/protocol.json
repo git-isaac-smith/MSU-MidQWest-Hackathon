@@ -1,0 +1,46 @@
+{
+  "physical": [
+    7,
+    0.008,
+    0.04
+  ],
+  "rounds": 5,
+  "radius": 2,
+  "margin_limit": 5.3,
+  "cutoffs": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "tie_tolerance": 1e-12,
+  "development_seed": 83274100,
+  "final_seeds": [
+    83274101,
+    83274102,
+    83274103
+  ],
+  "shots_per_seed": 150000,
+  "sample_batch_size": 8192,
+  "approximation": "At most radius independent readout faults in each of rounds one through four. Data transitions sum over all independent data faults. The final data readout is ideal.",
+  "routing": "Query on absolute constrained matching cost margin <= 5.3. Override MWPM if the alternative parity probability strictly exceeds the cutoff and the posterior is outside the tie tolerance. A cutoff of one bypasses querying.",
+  "selection": "Minimize development errors over fixed cutoffs. For equal errors choose the largest cutoff.",
+  "comparisons": {
+    "primary": "selected versus mwpm",
+    "secondary": "aggressive versus mwpm"
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "pymatching": "2.4.0",
+    "scipy": "1.17.1",
+    "stim": "1.16.0"
+  },
+  "source_sha256": {
+    "local_readout_posterior.py": "0293bded113675f756e4753bfc8e2bdd9e5cae76f38cf56f9ee8e7111f270cfe",
+    "logical_reference.py": "6791cafb771f339f42d2ddb274c3e38f0cb38ea0ef18bf439920219621b5ba89",
+    "matching_confidence.py": "833e997e7a5d0a313daa0463945756403c7961b6ccba6003a29968003e081fac",
+    "stim_data.py": "2ccbabcaec0e826e83af2d2cd23e44e7bfd1213a702692414a04624e2a4917ad"
+  }
+}

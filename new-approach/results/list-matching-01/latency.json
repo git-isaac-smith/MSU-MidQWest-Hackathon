@@ -1,0 +1,50 @@
+{
+  "method": "One in-memory wall-clock call on each fresh shot after a separate 512-shot warm-up. Excludes model construction, file I/O, and Stim sampling. All single-shot decisions were compared with predictions for the same records in a batch.",
+  "distance5_backend": "native",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+  "measurements": [
+    {
+      "distance": 5,
+      "seed": 84994151,
+      "shots": 4096,
+      "timings": {
+        "mwpm": {
+          "median_us": 8.3,
+          "p95_us": 12.5,
+          "p99_us": 20.6,
+          "p99_9_us": 86.77250000000295,
+          "mean_us": 9.1249267578125
+        },
+        "candidate": {
+          "median_us": 43.2,
+          "p95_us": 126.10000000000001,
+          "p99_us": 166.71500000000003,
+          "p99_9_us": 268.67200000000156,
+          "mean_us": 60.1211669921875
+        }
+      }
+    },
+    {
+      "distance": 7,
+      "seed": 84994171,
+      "shots": 4096,
+      "timings": {
+        "mwpm": {
+          "median_us": 10.3,
+          "p95_us": 16.9,
+          "p99_us": 29.1,
+          "p99_9_us": 142.78700000000356,
+          "mean_us": 11.654296875
+        },
+        "candidate": {
+          "median_us": 105.7,
+          "p95_us": 197.85000000000002,
+          "p99_us": 3516.385000000002,
+          "p99_9_us": 4901.495000000052,
+          "mean_us": 165.338134765625
+        }
+      }
+    }
+  ]
+}

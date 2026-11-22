@@ -1,0 +1,19 @@
+{
+  "status": "pilot",
+  "reason": "Fixed-size follow-up after a time limit",
+  "setup_s": 5.088729500013869,
+  "shots": 16,
+  "batch_size": 16,
+  "batch_ns": [
+    5416597300
+  ],
+  "batch_us_per_shot": 338537.33125,
+  "prediction_sha256": "34b193fd78899c51a19a7ccb689b500ae03fc8a8b158b680eea94bc9b398c8da",
+  "original_attempt": {
+    "status": "resource_limit",
+    "reason": "Worker exceeded 180 s including setup and scoring"
+  },
+  "fail_count": 0,
+  "recovered": 0,
+  "lost": 0
+}

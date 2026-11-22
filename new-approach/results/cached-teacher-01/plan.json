@@ -1,0 +1,40 @@
+{
+  "physical": [
+    5,
+    0.008,
+    0.04
+  ],
+  "reverse": true,
+  "table_bits": 21,
+  "study_sha256": "01a0f8f0b6ab4d85b2bfff7202614e05b8ca603887de8b73c545d6f20826e76f",
+  "route_cost": 26.47,
+  "native_sha256": "2a38fe81e84df001d94bd0feabb49d19771edb7f8e88868e29a5106c0fbc225a",
+  "route_pilot_sha256": "d8098288374d9c4b68599bbb0357010630352bc220a593b1d45f6e1ded35f01a",
+  "hashes": {
+    "plan.json": "3b2889dea169640e3a144d65d1e6cbd218849199bbcc074ff3a05568cc3a01f6",
+    "benchmark.stim": "d6b94425624f06e44abf0d63d599bd9b374409492ec8a4a8d20cc8049be6717d",
+    "sample-82174101.npz": "e7d6d488afdca688930deb982ce82a63f484f9a6160de5dadc9f2168b27a6ef8",
+    "posterior-82174101.npz": "1922f72cc0fbbfe3507ce4f3f0c45f1d83657984ec38e255b69f693a22ffdb5c",
+    "sample-82174102.npz": "e55381e7ab8f287c4c917155176ce0a63c2842de6f8c1f1ccfb41e252d662825",
+    "posterior-82174102.npz": "972122151086c6a521e1891ce45fbbe18c7370f1ce1baaa4301557e2e093f7b0",
+    "sample-82174103.npz": "0ede9a52042022ff5e9d094aebc257c0f65653e88c24b2d0ddadaf8a776c76b2",
+    "posterior-82174103.npz": "a4152fe52915d3d24af1d46a5dd852324f8753fbf964e3ef136c45363f506c5a"
+  },
+  "seeds": [
+    84598000,
+    84598001,
+    84598002
+  ],
+  "shots_per_seed": 500000,
+  "timing_seed": 84598010,
+  "timing_shots": 446464,
+  "timing_passes": 9,
+  "batch": 4096,
+  "pilot_sha256": "8047d55a9dd8fa279b142c87577b29a5c54f2fda1771af474066ece41e8bbc79",
+  "versions": {
+    "stim": "1.16.0",
+    "numpy": "2.4.6",
+    "pymatching": "2.4.0",
+    "scipy": "1.17.1"
+  }
+}

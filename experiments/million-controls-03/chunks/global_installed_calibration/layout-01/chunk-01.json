@@ -1,0 +1,21 @@
+{
+  "arm": "global_installed_calibration",
+  "layout_index": 1,
+  "chunk_index": 1,
+  "shots": 10000,
+  "stim_seed": 5840260694677423188,
+  "physical_exact_circuit_sha256": "724e158540656b593cb71d9ae807002329c6c3db97c6c465300de232f6a8932d",
+  "prior_exact_circuit_sha256": "ad301751474d754dac86df534cfbb6f5b1a0fb1d8d9179fc9149d43c9c95432a",
+  "versions": {
+    "stim": "1.16.0",
+    "pymatching": "2.4.0",
+    "numpy": "2.2.6"
+  },
+  "decoder_engine_sha256": "f436cab3d6693274115240a6ec096c674063c8ae94e4686f4890b24f0dc396f6",
+  "logical_errors": 833,
+  "sample_sha256": "8869699086b71df905606aaaa7633fad9cbb429dc19cc6bb4111f3232592042d",
+  "observable_sha256": "945fb9b46a30c16bced270d42bf674dc9706ca45fdcab32dcf00049312cce18d",
+  "prediction_sha256": "397d5d140ca0e6a6827eb2ac4e40446cdde9f1bbd13d86c0fbdee29b32fd42b4",
+  "failure_mask_sha256": "9ce4dc328a38fefcb7fd1110752e8f7a575484aa3328d556d6fe71b6bced568a",
+  "elapsed_seconds": 1.6710056000156328
+}

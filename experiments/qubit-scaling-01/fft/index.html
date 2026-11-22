@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Five-round decoder scaling</title>
+<style>
+:root { color-scheme: light; --ink: #182628; --muted: #4a5f62; --line: #dce6e3; --accent: #00624f; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f8f6; color: var(--ink); font: 1rem/1.55 system-ui,sans-serif; }
+main { max-width: 1150px; margin: auto; padding: clamp(1rem,5vw,4rem); }
+h1 { font-size: clamp(2rem,5vw,3.4rem); line-height: 1.1; letter-spacing: -.035em; margin: .25em 0; }
+h2 { font-size: 1.35rem; margin: 2rem 0 .35rem; }
+p { max-width: 82ch; margin: .65rem 0; }
+a { color: var(--accent); text-underline-offset: .18em; }
+.data { overflow: auto; border: 1px solid var(--line); border-radius: .7rem; margin-top: 1.5rem; background: white; }
+table { border-collapse: collapse; min-width: 46rem; width: 100%; font-variant-numeric: tabular-nums; }
+caption { text-align: left; padding: .9rem 1rem; color: var(--muted); }
+thead { background: #e6f2ed; }
+th,td { text-align: right; padding: .55rem .85rem; border-top: 1px solid var(--line); white-space: nowrap; }
+th:first-child { text-align: left; }
+td span, small, .unavailable { color: var(--muted); }
+th small { display: block; font-weight: 500; }
+@media print { main { max-width: none; padding: 0; } .data { overflow: visible; } table { min-width: 0; } th,td { padding: .3rem; } }
+</style>
+</head>
+<body><main>
+<h1>Five-round decoder scaling</h1>
+<p>Frozen FFT and raw-check site CNNs, matching, and posterior inference on fresh rotated Z-memory records. Data-qubit counts grew from 25 to 1,089. The model used five rounds throughout, with 0.8% independent data X faults, 4% check readout flips, and ideal terminal data readout.</p>
+<div class="data" role="region" aria-label="Accuracy and runtime by distance" tabindex="0">
+<table>
+<caption>Logical error and failures, with median warm inference time beneath each result.</caption>
+<thead><tr><th scope="col">Decoder</th><th scope="col">d5<small>25 data qubits</small></th><th scope="col">d9<small>81 data qubits</small></th><th scope="col">d17<small>289 data qubits</small></th><th scope="col">d33<small>1,089 data qubits</small></th></tr></thead><tbody>
+<tr><th scope="row">Ordinary MWPM</th><td><strong>0.317%</strong> <small>13/4,096</small><br><span>2.84 ?s/shot</span></td><td><strong>0.098%</strong> <small>1/1,024</small><br><span>6.77 ?s/shot</span></td><td><strong>0.000%</strong> <small>0/1,024</small><br><span>21.85 ?s/shot</span></td><td><strong>0.000%</strong> <small>0/1,024</small><br><span>88.67 ?s/shot</span></td></tr>
+<tr><th scope="row">Raw site CNN, parity</th><td><strong>14.502%</strong> <small>594/4,096</small><br><span>12.48 ?s/shot</span></td><td><strong>24.609%</strong> <small>252/1,024</small><br><span>43.00 ?s/shot</span></td><td><strong>36.914%</strong> <small>378/1,024</small><br><span>141.05 ?s/shot</span></td><td><strong>45.215%</strong> <small>463/1,024</small><br><span>547.46 ?s/shot</span></td></tr>
+<tr><th scope="row">Raw site CNN with terminal matching</th><td><strong>1.685%</strong> <small>69/4,096</small><br><span>12.88 ?s/shot</span></td><td><strong>0.586%</strong> <small>6/1,024</small><br><span>47.00 ?s/shot</span></td><td><strong>0.000%</strong> <small>0/1,024</small><br><span>168.20 ?s/shot</span></td><td><strong>0.000%</strong> <small>0/1,024</small><br><span>877.55 ?s/shot</span></td></tr>
+<tr><th scope="row">FFT site CNN, parity</th><td><strong>14.917%</strong> <small>611/4,096</small><br><span>43.21 ?s/shot</span></td><td><strong>25.781%</strong> <small>264/1,024</small><br><span>138.75 ?s/shot</span></td><td><strong>36.230%</strong> <small>371/1,024</small><br><span>476.06 ?s/shot</span></td><td><strong>45.117%</strong> <small>462/1,024</small><br><span>1,796.84 ?s/shot</span></td></tr>
+<tr><th scope="row">FFT site CNN with terminal matching</th><td><strong>1.807%</strong> <small>74/4,096</small><br><span>39.44 ?s/shot</span></td><td><strong>0.488%</strong> <small>5/1,024</small><br><span>137.64 ?s/shot</span></td><td><strong>0.098%</strong> <small>1/1,024</small><br><span>512.15 ?s/shot</span></td><td><strong>0.000%</strong> <small>0/1,024</small><br><span>2,142.61 ?s/shot</span></td></tr>
+<tr><th scope="row">Matching with alternative corrections</th><td><strong>0.293%</strong> <small>12/4,096</small><br><span>138.47 ?s/shot</span></td><td><strong>0.098%</strong> <small>1/1,024</small><br><span>85.23 ?s/shot</span></td><td><strong>0.000%</strong> <small>0/1,024</small><br><span>379.41 ?s/shot</span></td><td><strong>0.000%</strong> <small>0/1,024</small><br><span>4,000.77 ?s/shot</span></td></tr>
+<tr><th scope="row">Raw logical CNN override</th><td><strong>0.317%</strong> <small>13/4,096</small><br><span>33.09 ?s/shot</span></td><td class="unavailable" aria-label="Unavailable at this distance">?</td><td class="unavailable" aria-label="Unavailable at this distance">?</td><td class="unavailable" aria-label="Unavailable at this distance">?</td></tr>
+<tr><th scope="row">FFT logical CNN override</th><td><strong>0.317%</strong> <small>13/4,096</small><br><span>37.04 ?s/shot</span></td><td class="unavailable" aria-label="Unavailable at this distance">?</td><td class="unavailable" aria-label="Unavailable at this distance">?</td><td class="unavailable" aria-label="Unavailable at this distance">?</td></tr>
+<tr><th scope="row">Margin-routed posterior</th><td><strong>0.293%</strong> <small>12/4,096</small><br><span>20.70 ?s/shot</span></td><td class="unavailable" aria-label="Unavailable at this distance">?</td><td class="unavailable" aria-label="Unavailable at this distance">?</td><td class="unavailable" aria-label="Unavailable at this distance">?</td></tr>
+<tr><th scope="row">Balanced FFT logical hybrid</th><td><strong>0.293%</strong> <small>12/4,096</small><br><span>34.76 ?s/shot</span></td><td class="unavailable" aria-label="Unavailable at this distance">?</td><td class="unavailable" aria-label="Unavailable at this distance">?</td><td class="unavailable" aria-label="Unavailable at this distance">?</td></tr>
+<tr><th scope="row">Posterior on all shortlisted shots</th><td><strong>0.293%</strong> <small>12/4,096</small><br><span>101.15 ?s/shot</span></td><td class="unavailable" aria-label="Unavailable at this distance">?</td><td class="unavailable" aria-label="Unavailable at this distance">?</td><td class="unavailable" aria-label="Unavailable at this distance">?</td></tr>
+<tr><th scope="row">Exact posterior on all shots</th><td><strong>0.293%</strong> <small>12/4,096</small><br><span>28.26 ?s/shot</span></td><td class="unavailable" aria-label="Unavailable at this distance">?</td><td class="unavailable" aria-label="Unavailable at this distance">?</td><td class="unavailable" aria-label="Unavailable at this distance">?</td></tr>
+</tbody></table></div>
+<h2>What transferred to larger grids</h2>
+<p>The site CNN weights and thresholds were frozen at d5. The direct FFT site parity error rose from 14.92% to 45.12%. Terminal spatial matching cut the observed error markedly. Zero failures on 1,024 shots have a 95% Wilson upper bound of 0.374%. The logical CNN and exact posterior paths in this experiment use the d5 configuration.</p>
+<p>The frozen d7 list recipe routed 209, 3, 0 and 0 shots to its 49-match search at d5, d9, d17 and d33. Each large-distance call still evaluated the gap probe.</p>
+<h2>Timing protocol</h2>
+<p>Intel Core i7-13700HX, one process, BLAS and OpenMP thread limits of one. We interleaved all decoders over the same five distinct 64-record chunks after one warm-up chunk. Time includes inference from unpacked detector bits and excludes setup, Stim generation, unpacking and scoring. Accuracy uses the full held-out archive. Every timed output matched the corresponding archived prediction. Small batches, the trigger frequency and host load affect runtime. These results are for the controlled prototype circuits.</p>
+<p><a href="README.md">Methods, archive references and replay</a> ? <a href="measured/accuracy.csv">Accuracy CSV</a> ? <a href="measured/timing.csv">Timing CSV</a> ? <a href="measured/run.json">Run manifest</a></p>
+</main></body></html>

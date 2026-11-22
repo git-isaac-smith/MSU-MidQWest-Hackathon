@@ -1,0 +1,464 @@
+{
+  "description": "Paired fixed-circuit rotated memory at increasing active qubit counts",
+  "distances": [
+    3,
+    5,
+    7,
+    15,
+    31
+  ],
+  "bases": [
+    "x",
+    "z"
+  ],
+  "p": 0.005,
+  "rounds": "distance",
+  "seed": 76241329,
+  "shots_target": 10000,
+  "noise_model": "simple_uniform (provisional)",
+  "cases": [
+    {
+      "distance": 3,
+      "basis": "z",
+      "p": 0.005,
+      "rounds": 3,
+      "data_qubits": 9,
+      "physical_qubits": 17,
+      "detectors": 24,
+      "seed": 17091045135789581356,
+      "training_seed": 7867673098934805548,
+      "folder": "d3-z",
+      "circuit_sha256": "0670b3c37962732e37e0765b2c3f564fd0bd4ae3dea45dd8cea08b65ef495f91",
+      "sample_sha256": "122fef35ae9180b03b5670262c00d1a65912bc8661b35a83ea2feb794d23b162"
+    },
+    {
+      "distance": 3,
+      "basis": "x",
+      "p": 0.005,
+      "rounds": 3,
+      "data_qubits": 9,
+      "physical_qubits": 17,
+      "detectors": 24,
+      "seed": 16585254122945413052,
+      "training_seed": 7361882086090637244,
+      "folder": "d3-x",
+      "circuit_sha256": "895d2f27caf82f0928533c072b5a55330304ebb0d0dbb8a03252205419a8b8f7",
+      "sample_sha256": "f6f3b1751cdce3d4c2960997f8bad4582540003b621961dbec7fe11c0c0b806d"
+    },
+    {
+      "distance": 5,
+      "basis": "z",
+      "p": 0.005,
+      "rounds": 5,
+      "data_qubits": 25,
+      "physical_qubits": 49,
+      "detectors": 120,
+      "seed": 18087302285276433992,
+      "training_seed": 8863930248421658184,
+      "folder": "d5-z",
+      "circuit_sha256": "25c753d013b1e496d894ff07f15ac5c1602d3d12624da0bf1588652acce47e5f",
+      "sample_sha256": "a7e94260cff429577492eb07f64c1bdd11a76d3c02dfe4120cacbde82351b5c4"
+    },
+    {
+      "distance": 5,
+      "basis": "x",
+      "p": 0.005,
+      "rounds": 5,
+      "data_qubits": 25,
+      "physical_qubits": 49,
+      "detectors": 120,
+      "seed": 16709290474571980834,
+      "training_seed": 7485918437717205026,
+      "folder": "d5-x",
+      "circuit_sha256": "bd5f4b3be41b86ae40d1eb86a33a7436d86c3da48331b2c0e764922f8dfefbe5",
+      "sample_sha256": "3a752b3eb81c8cefc6717198a594d315527211390e1dc581e7592ddb1ed9e4e6"
+    },
+    {
+      "distance": 7,
+      "basis": "z",
+      "p": 0.005,
+      "rounds": 7,
+      "data_qubits": 49,
+      "physical_qubits": 97,
+      "detectors": 336,
+      "seed": 16574297178173282833,
+      "training_seed": 7350925141318507025,
+      "folder": "d7-z",
+      "circuit_sha256": "9358c1990989cb0f21b7f1fae86e8c9b5dcb78d42580bce1e65bec9a90096a2d",
+      "sample_sha256": "568d8c4800767ab1ddcba90503d8aa7d1f6a2b20c1b18f0841b8e8d28fbcaf9b"
+    },
+    {
+      "distance": 7,
+      "basis": "x",
+      "p": 0.005,
+      "rounds": 7,
+      "data_qubits": 49,
+      "physical_qubits": 97,
+      "detectors": 336,
+      "seed": 17696100523550620797,
+      "training_seed": 8472728486695844989,
+      "folder": "d7-x",
+      "circuit_sha256": "8459284cbec4f6ba57fa0ec5f0d6256456c440aa0c6ca6068256bb7a1cbabe67",
+      "sample_sha256": "43ecc01b56b241412b14886dff3a1cf1facb0aa2c2f09deee3735d08c593c575"
+    },
+    {
+      "distance": 15,
+      "basis": "z",
+      "p": 0.005,
+      "rounds": 15,
+      "data_qubits": 225,
+      "physical_qubits": 449,
+      "detectors": 3360,
+      "seed": 14525395866912010973,
+      "training_seed": 5302023830057235165,
+      "folder": "d15-z",
+      "circuit_sha256": "c6d2b8e38dfd4b6108d0a29b8820999e02c1604956548be71ebb7fc0e61b09f7",
+      "sample_sha256": "aad35806ebee09bb365f4831380d22fc86183569193a525c944c2eaf41262ff9"
+    },
+    {
+      "distance": 15,
+      "basis": "x",
+      "p": 0.005,
+      "rounds": 15,
+      "data_qubits": 225,
+      "physical_qubits": 449,
+      "detectors": 3360,
+      "seed": 15150236981055583056,
+      "training_seed": 5926864944200807248,
+      "folder": "d15-x",
+      "circuit_sha256": "6d7822afd2c42fa1f52756bebbfc0387a0ba28511ad6ad70740b89d2511907a2",
+      "sample_sha256": "1ede34a80073d54999b05f230da13ba2e9b1ae098b147f2317442ad4e023a0bb"
+    },
+    {
+      "distance": 31,
+      "basis": "z",
+      "p": 0.005,
+      "rounds": 31,
+      "data_qubits": 961,
+      "physical_qubits": 1921,
+      "detectors": 29760,
+      "seed": 17156580068762647445,
+      "training_seed": 7933208031907871637,
+      "folder": "d31-z",
+      "circuit_sha256": "404f937d7b5a4777a65d68d71e826749b8072014b9df259133bcb67e149ee737",
+      "sample_sha256": "7e7244bca11b7d2cbd617ef59581720e8e29d844cb4c7f1aa9ad84f4c8747ee0"
+    },
+    {
+      "distance": 31,
+      "basis": "x",
+      "p": 0.005,
+      "rounds": 31,
+      "data_qubits": 961,
+      "physical_qubits": 1921,
+      "detectors": 29760,
+      "seed": 17666636799045905008,
+      "training_seed": 8443264762191129200,
+      "folder": "d31-x",
+      "circuit_sha256": "fc8268979ea06a8a900d14d4b25cddbd59c3766cb11efdf5da7fa054cf43b48d",
+      "sample_sha256": "a62bc5bf6cfcbfd3c7e55beb947725f7b0dfb47dc8c5301bcacc16102de39cfc"
+    }
+  ],
+  "method_labels": {
+    "mwpm": "Ordinary MWPM",
+    "correlated": "Correlated MWPM",
+    "expanded_corr": "Equal-axis correlated MWPM",
+    "clock_corr": "Bath clock \u00b7 correlated MWPM",
+    "selected_corr": "Bath selected-time prior \u00b7 correlated MWPM",
+    "expanded_ord": "Equal-axis ordinary MWPM",
+    "clock_ord": "Bath clock \u00b7 ordinary MWPM",
+    "selected_ord": "Bath selected-time prior \u00b7 ordinary MWPM",
+    "weighted": "Temporal-weight MWPM",
+    "union_find": "Weighted Union-Find",
+    "union_find_handwritten": "Team Union-Find",
+    "projected_ordinary": "Projected ordinary MWPM",
+    "css_routed": "Activity routing",
+    "capped_gap": "Capped logical-gap routing",
+    "logical_gap": "Logical-gap routing",
+    "exact_small": "Exact posterior",
+    "portable": "Portable posterior lookup",
+    "fast_hybrid": "Posterior cache + matching",
+    "temporal_lowpass": "Temporal low-pass + matching",
+    "local_peel": "Local-pair predecoder",
+    "belief": "Belief matching",
+    "bath_belief": "Bath-weighted belief matching",
+    "ensemble3": "Three-member bath ensemble",
+    "ensemble5": "Five-member bath ensemble",
+    "ensemble3_jitter": "Jittered matching ensemble",
+    "hypergraph_search": "Bounded hypergraph search",
+    "search_belief": "Search with belief fallback",
+    "dispute": "Belief / ensemble with search referee",
+    "belief_pair": "Two belief decoders with search referee",
+    "disagreement_rescue": "Matching disagreement rescue",
+    "ambiguity_dispatch": "Coincidence routing",
+    "adaptive_count": "Calibrated count routing",
+    "adaptive_time": "Calibrated space-time routing",
+    "learned": "Learned routing",
+    "learned_rescue": "Learned routing with rescue"
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "stim": "1.16.0",
+    "pymatching": "2.4.0",
+    "stabilizer-qec": "2.1.0",
+    "psutil": "7.2.2",
+    "numba": "0.68.1",
+    "llvmlite": "0.50.0"
+  },
+  "bath_profile_sha256": "e649d17ea6be5823bafb39fc6fb31474ee294880760e6aa70ecf7801cb487589",
+  "recipe_sha256": "bb93772f361c4cd515c8973aee3599e6ca4cd9884b2eefb6b2aa634d8d6853c6",
+  "planned_prefixes": {
+    "mwpm": [
+      10000,
+      10000,
+      10000,
+      10000,
+      10000
+    ],
+    "correlated": [
+      10000,
+      10000,
+      10000,
+      10000,
+      10000
+    ],
+    "expanded_corr": [
+      10000,
+      10000,
+      10000,
+      10000,
+      10000
+    ],
+    "clock_corr": [
+      10000,
+      10000,
+      10000,
+      10000,
+      10000
+    ],
+    "selected_corr": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "expanded_ord": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "clock_ord": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "selected_ord": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "weighted": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "union_find": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "union_find_handwritten": [
+      10000,
+      10000,
+      10000,
+      2048,
+      128
+    ],
+    "projected_ordinary": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "css_routed": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "capped_gap": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "logical_gap": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "exact_small": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "portable": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "fast_hybrid": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "temporal_lowpass": [
+      10000,
+      10000,
+      10000,
+      2048,
+      128
+    ],
+    "local_peel": [
+      10000,
+      10000,
+      10000,
+      2048,
+      128
+    ],
+    "belief": [
+      4096,
+      4096,
+      2048,
+      128,
+      16
+    ],
+    "bath_belief": [
+      4096,
+      4096,
+      2048,
+      128,
+      16
+    ],
+    "ensemble3": [
+      10000,
+      10000,
+      10000,
+      2048,
+      128
+    ],
+    "ensemble5": [
+      10000,
+      10000,
+      10000,
+      2048,
+      128
+    ],
+    "ensemble3_jitter": [
+      10000,
+      10000,
+      10000,
+      2048,
+      128
+    ],
+    "hypergraph_search": [
+      4096,
+      4096,
+      2048,
+      128,
+      16
+    ],
+    "search_belief": [
+      4096,
+      4096,
+      2048,
+      128,
+      16
+    ],
+    "dispute": [
+      4096,
+      4096,
+      2048,
+      128,
+      16
+    ],
+    "belief_pair": [
+      4096,
+      4096,
+      2048,
+      128,
+      16
+    ],
+    "disagreement_rescue": [
+      10000,
+      10000,
+      10000,
+      10000,
+      128
+    ],
+    "ambiguity_dispatch": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "adaptive_count": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "adaptive_time": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "learned": [
+      10000,
+      10000,
+      10000,
+      10000,
+      1024
+    ],
+    "learned_rescue": [
+      10000,
+      10000,
+      10000,
+      10000,
+      128
+    ]
+  },
+  "resource_limits": "One sequential decoder at a time. A worker is stopped above 2.5 GiB RSS or after 180 s per method (480 s for the four full-budget distance-31 references).",
+  "timing": "Median wall time per shot over full-sized, warmed inference calls on unpacked boolean detector input. Standard batch 128; fixed 16-shot pilots use batch 16. File IO, sampling, evaluating predictions and setup excluded. Required input packing included.",
+  "calibration": "Learned routing loads a matching archived Z policy at distances 5/7 and otherwise trains on 4096 independent records (1024 at d31). Count and space-time routing train on the same independent calibration prefix at cap 50%. Single-thread belief and search; ordinary weighted matching uses temporal scale 0.75 and boundary scale 1.",
+  "host": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "python": "3.11.4"
+  }
+}

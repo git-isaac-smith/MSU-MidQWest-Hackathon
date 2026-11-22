@@ -1,0 +1,4 @@
+{
+  "status": "unsupported",
+  "reason": "Exact table supports 24 detector bits; this circuit has 336."
+}

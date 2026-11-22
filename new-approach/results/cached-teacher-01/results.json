@@ -1,0 +1,109 @@
+{
+  "accuracy": {
+    "shots": 1500000,
+    "error_rates": {
+      "mwpm": {
+        "errors": 6483,
+        "ler": 0.004322,
+        "wilson95": [
+          0.0042182824230177106,
+          0.004428256405980851
+        ]
+      },
+      "cached_teacher": {
+        "errors": 6460,
+        "ler": 0.004306666666666667,
+        "wilson95": [
+          0.004203134693122127,
+          0.004412737547746058
+        ]
+      }
+    },
+    "hit_rate": 0.6491273333333333,
+    "recovered": 133,
+    "lost": 110,
+    "ler_difference": -1.5333333333333334e-05,
+    "paired_ci95": [
+      -3.570224261570008e-05,
+      5.035575949033412e-06
+    ],
+    "paired_ci_method": "Stratified paired normal approximation",
+    "mcnemar_p": 0.1580148331032721,
+    "routed_rate": 0.024696666666666665
+  },
+  "per_seed": [
+    {
+      "seed": 84598000,
+      "shots": 500000,
+      "hits": 324518,
+      "routed": 12341,
+      "mwpm_errors": 2232,
+      "cached_teacher_errors": 2214,
+      "recovered": 48,
+      "lost": 30
+    },
+    {
+      "seed": 84598001,
+      "shots": 500000,
+      "hits": 324400,
+      "routed": 12383,
+      "mwpm_errors": 2147,
+      "cached_teacher_errors": 2146,
+      "recovered": 42,
+      "lost": 41
+    },
+    {
+      "seed": 84598002,
+      "shots": 500000,
+      "hits": 324773,
+      "routed": 12321,
+      "mwpm_errors": 2104,
+      "cached_teacher_errors": 2100,
+      "recovered": 43,
+      "lost": 39
+    }
+  ],
+  "timing": {
+    "shots_per_pass": 49152,
+    "batch_size": 4096,
+    "seconds": {
+      "mwpm": [
+        0.09237800000119023,
+        0.0913754999928642,
+        0.09484510001493618,
+        0.09001909999642521,
+        0.09080360000371002,
+        0.09003190000657924,
+        0.09158340000431053,
+        0.09146460000192747,
+        0.0960299999860581
+      ],
+      "cached_teacher": [
+        0.13444140000501648,
+        0.11892889998853207,
+        0.11675469999318011,
+        0.10632880000048317,
+        0.10501070000464097,
+        0.09984800001257099,
+        0.10326100001111627,
+        0.09792840000591241,
+        0.09964249999029562
+      ]
+    },
+    "independent_timing_batches": true,
+    "median_seconds": {
+      "mwpm": 0.09146460000192747,
+      "cached_teacher": 0.10501070000464097
+    },
+    "speedup": 0.8710026692316609,
+    "median_paired_speedup_ci95": [
+      0.7683203998496182,
+      0.9339946327766543
+    ]
+  },
+  "archive_load_seconds": 0.23415830000885762,
+  "setup_seconds": 0.4405164999770932,
+  "cache_bytes": 16777216,
+  "unique_teacher_keys": 599609,
+  "retained_teacher_keys": 521902
+}

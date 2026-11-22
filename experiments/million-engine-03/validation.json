@@ -1,0 +1,74 @@
+[
+  {
+    "arm": "Clock, frame calibrated",
+    "layout": 1,
+    "p_check": 0.001,
+    "seed": 745038923100,
+    "physical_shots": 1024,
+    "altered_shots": 128,
+    "mismatches": 0,
+    "physical_failures": 130,
+    "author_s": 5.2076731999986805,
+    "accelerated_s": 0.4426005000132136
+  },
+  {
+    "arm": "Clock, frame calibrated",
+    "layout": 3,
+    "p_check": 0.01,
+    "seed": 745038923101,
+    "physical_shots": 1024,
+    "altered_shots": 128,
+    "mismatches": 0,
+    "physical_failures": 245,
+    "author_s": 5.274993499973789,
+    "accelerated_s": 0.2225060000200756
+  },
+  {
+    "arm": "Clock, frame calibrated",
+    "layout": 5,
+    "p_check": 0.04,
+    "seed": 745038923102,
+    "physical_shots": 1024,
+    "altered_shots": 128,
+    "mismatches": 0,
+    "physical_failures": 500,
+    "author_s": 6.279261400050018,
+    "accelerated_s": 0.3197637999546714
+  },
+  {
+    "arm": "Structured bath, ML then fit, balanced check",
+    "layout": 2,
+    "p_check": 0.001,
+    "seed": 745038923110,
+    "physical_shots": 1024,
+    "altered_shots": 128,
+    "mismatches": 0,
+    "physical_failures": 1,
+    "author_s": 2.3075532999937423,
+    "accelerated_s": 0.05483149999054149
+  },
+  {
+    "arm": "Structured bath, ML then fit, balanced check",
+    "layout": 4,
+    "p_check": 0.01,
+    "seed": 745038923111,
+    "physical_shots": 1024,
+    "altered_shots": 128,
+    "mismatches": 0,
+    "physical_failures": 4,
+    "author_s": 1.6513446000171825,
+    "accelerated_s": 0.0453039999702014
+  },
+  {
+    "arm": "Structured bath, ML then fit, balanced check",
+    "layout": 1,
+    "p_check": 0.04,
+    "seed": 745038923112,
+    "physical_shots": 1024,
+    "altered_shots": 128,
+    "mismatches": 0,
+    "physical_failures": 153,
+    "author_s": 1.5896073000039905,
+    "accelerated_s": 0.05873689998406917
+  }
+]

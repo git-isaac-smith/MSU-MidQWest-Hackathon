@@ -1,0 +1,50 @@
+{
+  "p": 0.01,
+  "model": "provisional simple_uniform",
+  "cases": [
+    {
+      "distance": 7,
+      "basis": "z",
+      "rounds": 7,
+      "seed": 69852007,
+      "calibration_seed": 69854007
+    },
+    {
+      "distance": 15,
+      "basis": "z",
+      "rounds": 15,
+      "seed": 69852015,
+      "calibration_seed": 69854015
+    },
+    {
+      "distance": 31,
+      "basis": "z",
+      "rounds": 31,
+      "seed": 69852031,
+      "calibration_seed": 69854031
+    }
+  ],
+  "shots": 2048,
+  "batch_shots": 128,
+  "methods": [
+    "mwpm",
+    "correlated",
+    "expanded_corr",
+    "clock_corr",
+    "union_find",
+    "css_routed"
+  ],
+  "css_calibration_shots": 1024,
+  "css_fraction": 0.06,
+  "profile_sha256": "e649d17ea6be5823bafb39fc6fb31474ee294880760e6aa70ecf7801cb487589",
+  "method_rss_limit_bytes": 1610612736,
+  "method_timeout_seconds": 240,
+  "versions": {
+    "numpy": "2.4.6",
+    "stim": "1.16.0",
+    "pymatching": "2.4.0",
+    "stabilizer-qec": "2.1.0",
+    "scipy": "1.17.1"
+  },
+  "timing": "One worker per method, shared host; setup, sample generation, scoring excluded. Median of distinct warm full-sized batch calls, with required unpacking included."
+}

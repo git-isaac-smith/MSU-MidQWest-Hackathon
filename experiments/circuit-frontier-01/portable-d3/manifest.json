@@ -1,0 +1,16 @@
+{
+  "format": "bascd-packed-posterior-v1",
+  "detector_bits": 24,
+  "record_bytes": 3,
+  "observable_bits": 1,
+  "index_byte_order": "little",
+  "decision_bit_order": "little",
+  "table_bytes": 2097152,
+  "table_sha256": "dd0fe668a64a87f78be4e17e365f244d7b45352cbdefeba78bee9d6b76692cf5",
+  "circuit_sha256": "30920f820545d33855c912688251afd53b51154498e1dd5231542cb1fd66a258",
+  "model": "Undecomposed Stim detector error model",
+  "estimated_optimal_ler": 0.014442668619773558,
+  "ml_excess_ler_bound": 3.270490328141681e-08,
+  "uncertain_syndromes": 4687424,
+  "manifest_sha256": "ccbab32db3dfbe8c5e1673745d90a66df93fd4bd85aa5486ce7915a79683d99b"
+}

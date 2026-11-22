@@ -1,0 +1,116 @@
+[
+  {
+    "threshold": 29.55,
+    "archive_seed": 82174103,
+    "archive_shots": 500000,
+    "archived_fold_hit_rate": 0.62797,
+    "archived_fold_routed": 5033,
+    "model_expected_recoveries": 9.571157776776719,
+    "timing": {
+      "shots_per_pass": 36864,
+      "batch_size": 4096,
+      "seconds": {
+        "mwpm": [
+          0.06689539999933913,
+          0.06678289998671971,
+          0.06745939998654649,
+          0.0669214999943506,
+          0.06755879998672754
+        ],
+        "cached_teacher": [
+          0.07703369998489507,
+          0.049370599997928366,
+          0.04980879998765886,
+          0.04896980000194162,
+          0.048815000016475096
+        ]
+      },
+      "independent_timing_batches": false,
+      "median_seconds": {
+        "mwpm": 0.0669214999943506,
+        "cached_teacher": 0.049370599997928366
+      },
+      "speedup": 1.3554929451365525,
+      "median_paired_speedup_ci95": [
+        0.8683913665377118,
+        1.383976236073469
+      ]
+    }
+  },
+  {
+    "threshold": 26.47,
+    "archive_seed": 82174103,
+    "archive_shots": 500000,
+    "archived_fold_hit_rate": 0.62797,
+    "archived_fold_routed": 12532,
+    "model_expected_recoveries": 15.279411058279466,
+    "timing": {
+      "shots_per_pass": 36864,
+      "batch_size": 4096,
+      "seconds": {
+        "mwpm": [
+          0.06831830000737682,
+          0.0679367000120692,
+          0.06883480001124553,
+          0.0680006000038702,
+          0.06715180000173859
+        ],
+        "cached_teacher": [
+          0.10911650001071393,
+          0.05852670001331717,
+          0.05757370000355877,
+          0.05759420001413673,
+          0.05836060000001453
+        ]
+      },
+      "independent_timing_batches": false,
+      "median_seconds": {
+        "mwpm": 0.0680006000038702,
+        "cached_teacher": 0.05836060000001453
+      },
+      "speedup": 1.16517993310304,
+      "median_paired_speedup_ci95": [
+        0.626104209726932,
+        1.1955945163675548
+      ]
+    }
+  },
+  {
+    "threshold": 23.88,
+    "archive_seed": 82174103,
+    "archive_shots": 500000,
+    "archived_fold_hit_rate": 0.62797,
+    "archived_fold_routed": 25530,
+    "model_expected_recoveries": 19.351383610468595,
+    "timing": {
+      "shots_per_pass": 36864,
+      "batch_size": 4096,
+      "seconds": {
+        "mwpm": [
+          0.06736829999135807,
+          0.06804769998416305,
+          0.06762370001524687,
+          0.06739559999550693,
+          0.06778660000418313
+        ],
+        "cached_teacher": [
+          0.14731890000985004,
+          0.08182880000094883,
+          0.081460799992783,
+          0.08078200000454672,
+          0.08100829998147674
+        ]
+      },
+      "independent_timing_batches": false,
+      "median_seconds": {
+        "mwpm": 0.06762370001524687,
+        "cached_teacher": 0.081460799992783
+      },
+      "speedup": 0.8301379316338408,
+      "median_paired_speedup_ci95": [
+        0.4572957033133813,
+        0.8367858604573004
+      ]
+    }
+  }
+]

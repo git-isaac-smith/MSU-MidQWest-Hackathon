@@ -1,0 +1,1 @@
+{"groups": {"grid": {"jobs_complete": 30, "jobs_target": 30, "scored_job_shots": 30000000}, "fault": {"jobs_complete": 3, "jobs_target": 3, "scored_job_shots": 3000000}, "pooled": {"jobs_complete": 24, "jobs_target": 24, "scored_job_shots": 1000000}, "large": {"jobs_complete": 6, "jobs_target": 34, "scored_job_shots": 14382976}}, "large_paired_hashes": 3784, "replays": []}

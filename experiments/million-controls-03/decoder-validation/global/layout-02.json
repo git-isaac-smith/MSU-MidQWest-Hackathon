@@ -1,0 +1,10 @@
+{
+  "arm": "global",
+  "layout_index": 2,
+  "shots": 1024,
+  "prior_exact_circuit_sha256": "f14cd5fa3e47b90a97cd2bd50b97657e5086ab1562a7cd3b76ab147a43abb28b",
+  "test_sample_sha256": "b732b282fb758a55fe494c56a99eb410c26b63a061c43e71f8ac393abf0edcf0",
+  "decoder_engine_sha256": "f436cab3d6693274115240a6ec096c674063c8ae94e4686f4890b24f0dc396f6",
+  "prediction_mismatches": 0,
+  "prediction_sha256": "dc749736162f0f0c7d7f232d6ff2d56e9defe6d0fb4d1ed12e26b1073394d652"
+}

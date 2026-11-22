@@ -1,0 +1,51 @@
+{
+  "physical": [
+    5,
+    0.008,
+    0.04
+  ],
+  "rounds": 5,
+  "passband": {
+    "temporal": 0.2,
+    "spatial": 0.48
+  },
+  "site_threshold": 0.27348512411117554,
+  "gap_limit": 5.3,
+  "override_threshold": 0.475,
+  "raw_override_threshold": 0.5,
+  "cnn_route_at": -0.27682214975357056,
+  "gap_route_at": -1.5358292360444175,
+  "target_exact_fraction": 0.005,
+  "train_shots": 2400000,
+  "train_hard": 58824,
+  "train_seed": 70731101,
+  "validation_shots": 300000,
+  "validation_hard": 16220,
+  "validation_seed": 70731102,
+  "test_seeds": [
+    70839111,
+    70839112,
+    70839113
+  ],
+  "test_per_seed": 500000,
+  "sampling_batch": 4096,
+  "epochs_per_network": 40,
+  "batch_size_train": 512,
+  "learning_rate": 0.001,
+  "init_seed": 77031,
+  "shuffle_seed": 119073,
+  "weights_sha256": {
+    "site-cnn.npz": "4ed72ead56da465233da0837fd42a6a9cfc19c7239ccc93c620a1c1cb8f4ac04",
+    "logical-cnn.npz": "7f38bf57e5fa6b3466990669917b06292de1aabf507a36d5b6c008299dc0fe40",
+    "raw-cnn.npz": "81f43118107f5d305233682fa8d0562a681a4350b367e02e87e06aa23f5ace45"
+  },
+  "versions": {
+    "stim": "1.16.0",
+    "pymatching": "2.4.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "input": "Public Z detection events from the included Stim circuit. The sampled logical observable is for external scoring only.",
+  "primary": "balanced",
+  "ablation": "raw_learned removes FFT fields, FFT site scores and FFT completion disagreement"
+}

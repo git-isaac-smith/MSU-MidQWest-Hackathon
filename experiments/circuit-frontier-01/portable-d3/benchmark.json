@@ -1,0 +1,80 @@
+{
+  "environment": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "python": "3.11.4",
+    "packages": {
+      "numpy": "2.4.6",
+      "stim": "1.16.0",
+      "pymatching": "2.4.0",
+      "scipy": "1.17.1"
+    }
+  },
+  "protocol": {
+    "score_seed": 89503101,
+    "warmup_seed": 89503102,
+    "single_seed": 89503103,
+    "batch_seed": 89503104,
+    "scalar_records": 20000,
+    "warmup_records": 1024,
+    "batch_repeats": 11,
+    "batch_records": 8192,
+    "scalar_interface": "three input bytes to one integer bit; conversion included",
+    "batch_interface": "packed uint8 detector rows to one uint8 prediction column",
+    "timing_scope": "CPU Python call timings, including timer overhead and excluding shot sampling"
+  },
+  "setup_seconds": {
+    "exact_dem_and_compile": 2.4617822,
+    "pack_table": 0.0022081,
+    "mwpm_dem_and_compile": 0.001986
+  },
+  "score": {
+    "shots": 150000,
+    "exact_reference_disagreements": 0,
+    "lookup_errors": 2233,
+    "mwpm_errors": 2606,
+    "lookup_wilson95": [
+      0.014286135872557433,
+      0.015512044063039495
+    ],
+    "mwpm_wilson95": [
+      0.016724377591010083,
+      0.018047008315480558
+    ],
+    "fixed": 724,
+    "added": 351,
+    "paired_exact_p": 2.0147354594279376e-30
+  },
+  "scalar_microseconds_per_shot": {
+    "portable_lookup": {
+      "median": 0.5,
+      "p95": 1.0,
+      "p99": 3.3
+    },
+    "mwpm_packed_one_row": {
+      "median": 4.9,
+      "p95": 9.8,
+      "p99": 23.70099999999984
+    },
+    "mwpm_unpacked_scalar": {
+      "median": 7.3,
+      "p95": 14.0,
+      "p99": 35.80099999999984
+    }
+  },
+  "best_mwpm_scalar": "mwpm_packed_one_row",
+  "scalar_median_speedup": 9.8,
+  "batch_microseconds_per_shot": {
+    "portable_lookup": {
+      "median": 0.014697265625,
+      "p95": 0.0219482421875,
+      "p99": 0.025600585937500003
+    },
+    "mwpm_packed_batch": {
+      "median": 0.39674072265625,
+      "p95": 0.428411865234375,
+      "p99": 0.431385498046875
+    }
+  },
+  "batch_median_speedup": 26.994186046511626
+}

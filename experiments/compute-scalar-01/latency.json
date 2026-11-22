@@ -1,0 +1,128 @@
+{
+  "clock": "time.perf_counter_ns",
+  "timing_scope": "one synchronous bytes-to-int call from a completed detector record",
+  "host": "Windows-10-10.0.26300-SP0",
+  "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+  "python": "3.11.4",
+  "packages": {
+    "numpy": "2.4.6",
+    "pymatching": "2.4.0",
+    "stim": "1.16.0"
+  },
+  "cases": [
+    {
+      "distance": 5,
+      "warmup_seed": 9270500,
+      "seeds": [
+        9270501,
+        9270502,
+        9270503
+      ],
+      "shots_per_seed": 1024,
+      "learned_outputs_match_batch": true,
+      "learned_route_matches_batch": true,
+      "routed_to_correlated": 171,
+      "latency_microseconds": {
+        "ordinary": {
+          "p50": 8.2,
+          "p95": 15.7,
+          "p99": 24.728999999999996
+        },
+        "correlated": {
+          "p50": 14.4,
+          "p95": 31.7,
+          "p99": 48.257999999999996
+        },
+        "learned_batch_single": {
+          "p50": 61.150000000000006,
+          "p95": 99.84499999999998,
+          "p99": 170.7959999999999
+        },
+        "learned_scalar": {
+          "p50": 11.45,
+          "p95": 30.6,
+          "p99": 49.072999999999865
+        }
+      },
+      "median_per_seed_microseconds": {
+        "ordinary": [
+          8.2,
+          8.1,
+          8.3
+        ],
+        "correlated": [
+          14.1,
+          14.5,
+          14.6
+        ],
+        "learned_batch_single": [
+          60.95,
+          62.3,
+          53.3
+        ],
+        "learned_scalar": [
+          11.3,
+          11.6,
+          11.4
+        ]
+      }
+    },
+    {
+      "distance": 7,
+      "warmup_seed": 9270700,
+      "seeds": [
+        9270701,
+        9270702,
+        9270703
+      ],
+      "shots_per_seed": 1024,
+      "learned_outputs_match_batch": true,
+      "learned_route_matches_batch": true,
+      "routed_to_correlated": 169,
+      "latency_microseconds": {
+        "ordinary": {
+          "p50": 17.1,
+          "p95": 36.34499999999998,
+          "p99": 57.482999999999905
+        },
+        "correlated": {
+          "p50": 39.2,
+          "p95": 81.98999999999997,
+          "p99": 126.22799999999988
+        },
+        "learned_batch_single": {
+          "p50": 46.7,
+          "p95": 139.58999999999995,
+          "p99": 221.61899999999997
+        },
+        "learned_scalar": {
+          "p50": 14.2,
+          "p95": 71,
+          "p99": 120.06699999999992
+        }
+      },
+      "median_per_seed_microseconds": {
+        "ordinary": [
+          16.7,
+          16.5,
+          18.5
+        ],
+        "correlated": [
+          38.05,
+          38.05,
+          41.85
+        ],
+        "learned_batch_single": [
+          45.55,
+          45.3,
+          52.75
+        ],
+        "learned_scalar": [
+          13.9,
+          13.85,
+          15.6
+        ]
+      }
+    }
+  ]
+}

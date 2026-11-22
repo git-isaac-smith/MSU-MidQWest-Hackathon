@@ -1,5 +1,34 @@
-How # MSU-MidQWest-Hackathon
+# MSU-MidQWest-Hackathon
 Repository for Missouri State University's Quantum Bears MidQWest Hackathon Project - Northrop Grumman Track
+
+## Quick start
+
+Install Git and Python 3.11, then clone the repository.
+
+```sh
+git clone https://github.com/git-isaac-smith/MSU-MidQWest-Hackathon.git
+cd MSU-MidQWest-Hackathon
+```
+
+**Windows PowerShell**
+
+```powershell
+py -3.11 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -e .
+.\.venv\Scripts\python.exe -m bascd.demo
+```
+
+**macOS and Linux**
+
+```sh
+python3.11 -m venv .venv
+./.venv/bin/python -m pip install -e .
+./.venv/bin/python -m bascd.demo
+```
+
+The demo compares ordinary minimum-weight perfect matching (MWPM), correlated matching, and selective correlated matching on the same 10,000 Stim syndromes from a distance-7 Z memory with seven rounds and `p=0.005`. It prints logical failures, error rates, batch decoding time per shot, and paired recoveries and regressions against ordinary MWPM. The selective decoder calibrates its activity cutoff on a separate unlabeled sample.
+
+[Presentation deck](output/presentations/MidQWest%202026%20-%20Selective%20Correlated%20Matching%20%28presentation%20cut%29.pptx) · [Circuit-level benchmark](Circuit%20decoder%20speed%20and%20accuracy.md) · [Earlier FFT/CNN experiments](new-approach/README.md)
 
 ## Challenge and submission
 
@@ -7,7 +36,26 @@ The organizer brief asks teams to implement and explain one or more decoder meth
 
 The supplied brief does not specify exact noise channels, an input format, or a scoring formula. The current sweep uses provisional `simple_uniform` noise. The [Iteration 03 plan](Iteration%2002.md#iteration-03--structured-quantum-bath-decoder) covers the team's bath-aware decoder proposal, parallel scaling, and submission.
 
+The four Quantum Bears modules motivate a test of bath-derived matching weights on fixed Stim records and a separate simulation of measured erasure flags. The [bath confirmation study](experiments/bath-confirmation-01/README.md) explains what information each decoder receives and which comparison to show the judges.
+
+## Decoder scaling
+
+The [logical error and decoder runtime page](experiments/qubit-scaling-01/index.html) compares the circuit-level decoders on both memory bases through distance 31. It links to the five-round FFT/CNN comparison and the single-round heralded bath experiment. Each workload reports its own paired logical failures, shot count and batch inference time.
+
+To reproduce the fixed-circuit study in a new directory, install the optional benchmark backends and run the following commands from the repository root.
+
+```sh
+python -m pip install -e ".[hypergraph,scaling]"
+python -m bascd.scale_study prepare --out results/my-scaling
+python -m bascd.scale_study run --out results/my-scaling
+python -m bascd.scale_report results/my-scaling
+```
+
 ## Run the distance-based hybrid decoder
+
+The new compute study trains a detector-only routing policy and tests belief matching as a referee when two matchers disagree. It includes frozen distance-5 and distance-7 models, paired accuracy tests, single-shot latency, and throughput with 1, 2, 4 and 8 worker processes. [Results, replay and deployment](experiments/compute-frontier-02/README.md)
+
+The circuit-level speed and accuracy study compares ordinary and correlated PyMatching, weighted Union-Find, posterior lookup, selective correlated matching and two temporal prefilters. It includes paired held-out tests, offline batch time per round, single-record latency, finite-distance crossings and stress cases. [Benchmark results and deployment](Circuit%20decoder%20speed%20and%20accuracy.md)
 
 The distance-based hybrid decoder uses a logical posterior lookup at distance 3. At distances 5 and 7, the decoder runs belief matching and a five-member bath-initialized matching ensemble. A bounded search resolves disagreements. The team locked the decoding rule for each distance before sampling the final test. The decoder accepts detector events alone. [Held-out results, installation, and replay](Iteration%2004.md) · [Saved decoder policy](experiments/iteration-04/accuracy/frozen-policy.json)
 

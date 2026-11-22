@@ -1,0 +1,53 @@
+{
+  "upstream_commit": "94572516042297d6b6018fe76eb2f2b547e3c46f",
+  "baths": 49,
+  "hold": "one additional fitted return interval per bath",
+  "grid_intervals": 256,
+  "numpy": "2.2.6",
+  "scipy": "1.18.1",
+  "weighting": "equal bath weights, probabilities conditional on initial pass",
+  "initial_state": "maximally mixed encoded input or normalized Choi for entanglement fidelity",
+  "check": "full Lindblad comparison on first bath at every pulse count; all catch rates match upstream",
+  "release_after_128": [
+    {
+      "second_interval_pulses": 0,
+      "mean_peak_loss": 0.38400945399422337
+    },
+    {
+      "second_interval_pulses": 128,
+      "mean_peak_loss": 0.002790027219086481
+    }
+  ],
+  "summary": [
+    {
+      "pulses": 0,
+      "final_loss_given_catch": 0.0656507111089445,
+      "peak_loss_given_catch": 0.3822248839441923,
+      "conditional_entanglement_infidelity": 0.013335022618599424
+    },
+    {
+      "pulses": 2,
+      "final_loss_given_catch": 0.3434884190215544,
+      "peak_loss_given_catch": 0.44180087509847304,
+      "conditional_entanglement_infidelity": 0.18249250271954434
+    },
+    {
+      "pulses": 8,
+      "final_loss_given_catch": 0.2338777179551833,
+      "peak_loss_given_catch": 0.3362718973023822,
+      "conditional_entanglement_infidelity": 0.08599972154087211
+    },
+    {
+      "pulses": 32,
+      "final_loss_given_catch": 0.02409719913876267,
+      "peak_loss_given_catch": 0.04495801334544731,
+      "conditional_entanglement_infidelity": 0.00565691432644408
+    },
+    {
+      "pulses": 128,
+      "final_loss_given_catch": 0.0015337551815857913,
+      "peak_loss_given_catch": 0.0029839646367688746,
+      "conditional_entanglement_infidelity": 0.003647742845890928
+    }
+  ]
+}

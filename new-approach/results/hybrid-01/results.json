@@ -1,0 +1,589 @@
+{
+  "rows": [
+    {
+      "mode": "mwpm",
+      "label": "PyMatching (MWPM)",
+      "errors": 6555,
+      "total": 1500000,
+      "error_percent": 0.437,
+      "wilson95_percent": [
+        0.42657035492142165,
+        0.44768350339316093
+      ],
+      "exact_queries": 0,
+      "exact_route_percent": 0.0,
+      "per_seed": [
+        {
+          "seed": 70839111,
+          "errors": 2084,
+          "total": 500000,
+          "error_percent": 0.4168,
+          "wilson95_percent": [
+            0.3993194743847012,
+            0.43504240704581953
+          ],
+          "exact_queries": 0,
+          "exact_route_percent": 0.0
+        },
+        {
+          "seed": 70839112,
+          "errors": 2207,
+          "total": 500000,
+          "error_percent": 0.4414,
+          "wilson95_percent": [
+            0.42340224608260585,
+            0.4601592573512711
+          ],
+          "exact_queries": 0,
+          "exact_route_percent": 0.0
+        },
+        {
+          "seed": 70839113,
+          "errors": 2264,
+          "total": 500000,
+          "error_percent": 0.4528,
+          "wilson95_percent": [
+            0.43456750901708857,
+            0.4717938192476119
+          ],
+          "exact_queries": 0,
+          "exact_route_percent": 0.0
+        }
+      ]
+    },
+    {
+      "mode": "raw_learned",
+      "label": "Raw checks + CNN",
+      "errors": 6537,
+      "total": 1500000,
+      "error_percent": 0.4358,
+      "wilson95_percent": [
+        0.42538479645479793,
+        0.44646906800610303
+      ],
+      "exact_queries": 0,
+      "exact_route_percent": 0.0,
+      "per_seed": [
+        {
+          "seed": 70839111,
+          "errors": 2089,
+          "total": 500000,
+          "error_percent": 0.4178,
+          "wilson95_percent": [
+            0.4002981522818587,
+            0.43606371378294473
+          ],
+          "exact_queries": 0,
+          "exact_route_percent": 0.0
+        },
+        {
+          "seed": 70839112,
+          "errors": 2190,
+          "total": 500000,
+          "error_percent": 0.438,
+          "wilson95_percent": [
+            0.42007284816994234,
+            0.45668870750737317
+          ],
+          "exact_queries": 0,
+          "exact_route_percent": 0.0
+        },
+        {
+          "seed": 70839113,
+          "errors": 2258,
+          "total": 500000,
+          "error_percent": 0.4516,
+          "wilson95_percent": [
+            0.43339207616471637,
+            0.47056927053884484
+          ],
+          "exact_queries": 0,
+          "exact_route_percent": 0.0
+        }
+      ]
+    },
+    {
+      "mode": "learned",
+      "label": "FFT features + CNN",
+      "errors": 6545,
+      "total": 1500000,
+      "error_percent": 0.43633333333333335,
+      "wilson95_percent": [
+        0.4259117088458386,
+        0.44700881955003213
+      ],
+      "exact_queries": 0,
+      "exact_route_percent": 0.0,
+      "per_seed": [
+        {
+          "seed": 70839111,
+          "errors": 2099,
+          "total": 500000,
+          "error_percent": 0.4198,
+          "wilson95_percent": [
+            0.4022555853946238,
+            0.4381062499387452
+          ],
+          "exact_queries": 0,
+          "exact_route_percent": 0.0
+        },
+        {
+          "seed": 70839112,
+          "errors": 2189,
+          "total": 500000,
+          "error_percent": 0.4378,
+          "wilson95_percent": [
+            0.4198770098595794,
+            0.4564845488908795
+          ],
+          "exact_queries": 0,
+          "exact_route_percent": 0.0
+        },
+        {
+          "seed": 70839113,
+          "errors": 2257,
+          "total": 500000,
+          "error_percent": 0.4514,
+          "wilson95_percent": [
+            0.4331961739021871,
+            0.4703651758745173
+          ],
+          "exact_queries": 0,
+          "exact_route_percent": 0.0
+        }
+      ]
+    },
+    {
+      "mode": "margin_only",
+      "label": "Matching margin + exact",
+      "errors": 6475,
+      "total": 1500000,
+      "error_percent": 0.43166666666666664,
+      "wilson95_percent": [
+        0.4213013609527633,
+        0.4422858580121232
+      ],
+      "exact_queries": 7876,
+      "exact_route_percent": 0.5250666666666667,
+      "per_seed": [
+        {
+          "seed": 70839111,
+          "errors": 2076,
+          "total": 500000,
+          "error_percent": 0.4152,
+          "wilson95_percent": [
+            0.3977536436515016,
+            0.43340826236416663
+          ],
+          "exact_queries": 2548,
+          "exact_route_percent": 0.5096
+        },
+        {
+          "seed": 70839112,
+          "errors": 2186,
+          "total": 500000,
+          "error_percent": 0.4372,
+          "wilson95_percent": [
+            0.41928950070638465,
+            0.45587206726350454
+          ],
+          "exact_queries": 2630,
+          "exact_route_percent": 0.526
+        },
+        {
+          "seed": 70839113,
+          "errors": 2213,
+          "total": 500000,
+          "error_percent": 0.4426,
+          "wilson95_percent": [
+            0.4245773934710948,
+            0.46138409152392146
+          ],
+          "exact_queries": 2698,
+          "exact_route_percent": 0.5396
+        }
+      ]
+    },
+    {
+      "mode": "balanced",
+      "label": "Balanced FFT hybrid",
+      "errors": 6471,
+      "total": 1500000,
+      "error_percent": 0.4314,
+      "wilson95_percent": [
+        0.42103792179194655,
+        0.4420159652054551
+      ],
+      "exact_queries": 7883,
+      "exact_route_percent": 0.5255333333333333,
+      "per_seed": [
+        {
+          "seed": 70839111,
+          "errors": 2077,
+          "total": 500000,
+          "error_percent": 0.4154,
+          "wilson95_percent": [
+            0.3979493688546947,
+            0.43361253408783
+          ],
+          "exact_queries": 2542,
+          "exact_route_percent": 0.5084
+        },
+        {
+          "seed": 70839112,
+          "errors": 2182,
+          "total": 500000,
+          "error_percent": 0.4364,
+          "wilson95_percent": [
+            0.4185061686751126,
+            0.45505541158735024
+          ],
+          "exact_queries": 2628,
+          "exact_route_percent": 0.5256
+        },
+        {
+          "seed": 70839113,
+          "errors": 2212,
+          "total": 500000,
+          "error_percent": 0.4424,
+          "wilson95_percent": [
+            0.42438153320177097,
+            0.4611799548663887
+          ],
+          "exact_queries": 2713,
+          "exact_route_percent": 0.5426
+        }
+      ]
+    },
+    {
+      "mode": "accuracy",
+      "label": "Exact on ambiguous shots",
+      "errors": 6461,
+      "total": 1500000,
+      "error_percent": 0.43073333333333336,
+      "wilson95_percent": [
+        0.42037932831230174,
+        0.4413412287663879
+      ],
+      "exact_queries": 81354,
+      "exact_route_percent": 5.4236,
+      "per_seed": [
+        {
+          "seed": 70839111,
+          "errors": 2073,
+          "total": 500000,
+          "error_percent": 0.4146,
+          "wilson95_percent": [
+            0.3971664742957311,
+            0.4327954409393676
+          ],
+          "exact_queries": 27094,
+          "exact_route_percent": 5.4188
+        },
+        {
+          "seed": 70839112,
+          "errors": 2180,
+          "total": 500000,
+          "error_percent": 0.436,
+          "wilson95_percent": [
+            0.4181145084597792,
+            0.4546470779489707
+          ],
+          "exact_queries": 27020,
+          "exact_route_percent": 5.404
+        },
+        {
+          "seed": 70839113,
+          "errors": 2208,
+          "total": 500000,
+          "error_percent": 0.4416,
+          "wilson95_percent": [
+            0.4235981016073086,
+            0.46036339875342475
+          ],
+          "exact_queries": 27240,
+          "exact_route_percent": 5.448
+        }
+      ]
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "candidate": "raw_learned",
+      "reference": "mwpm",
+      "total": 1500000,
+      "gains": 84,
+      "losses": 66,
+      "difference_percentage_points": -0.0012,
+      "paired_ci95_percentage_points": [
+        -0.0028003311648349214,
+        0.00040033116483492124
+      ],
+      "paired_ci_method": "Stratified paired normal approximation",
+      "mcnemar_two_sided_p": 0.16490698265644316,
+      "per_seed": [
+        {
+          "seed": 70839111,
+          "total": 500000,
+          "gains": 20,
+          "losses": 25
+        },
+        {
+          "seed": 70839112,
+          "total": 500000,
+          "gains": 29,
+          "losses": 12
+        },
+        {
+          "seed": 70839113,
+          "total": 500000,
+          "gains": 35,
+          "losses": 29
+        }
+      ]
+    },
+    {
+      "candidate": "learned",
+      "reference": "mwpm",
+      "total": 1500000,
+      "gains": 107,
+      "losses": 97,
+      "difference_percentage_points": -0.0006666666666666666,
+      "paired_ci95_percentage_points": [
+        -0.002532956358140868,
+        0.0011996230248075346
+      ],
+      "paired_ci_method": "Stratified paired normal approximation",
+      "mcnemar_two_sided_p": 0.5287148701164905,
+      "per_seed": [
+        {
+          "seed": 70839111,
+          "total": 500000,
+          "gains": 23,
+          "losses": 38
+        },
+        {
+          "seed": 70839112,
+          "total": 500000,
+          "gains": 41,
+          "losses": 23
+        },
+        {
+          "seed": 70839113,
+          "total": 500000,
+          "gains": 43,
+          "losses": 36
+        }
+      ]
+    },
+    {
+      "candidate": "margin_only",
+      "reference": "mwpm",
+      "total": 1500000,
+      "gains": 274,
+      "losses": 194,
+      "difference_percentage_points": -0.005333333333333333,
+      "paired_ci95_percentage_points": [
+        -0.008160069599518822,
+        -0.0025065970671478443
+      ],
+      "paired_ci_method": "Stratified paired normal approximation",
+      "mcnemar_two_sided_p": 0.00025233259504152833,
+      "per_seed": [
+        {
+          "seed": 70839111,
+          "total": 500000,
+          "gains": 78,
+          "losses": 70
+        },
+        {
+          "seed": 70839112,
+          "total": 500000,
+          "gains": 89,
+          "losses": 68
+        },
+        {
+          "seed": 70839113,
+          "total": 500000,
+          "gains": 107,
+          "losses": 56
+        }
+      ]
+    },
+    {
+      "candidate": "balanced",
+      "reference": "mwpm",
+      "total": 1500000,
+      "gains": 291,
+      "losses": 207,
+      "difference_percentage_points": -0.0056,
+      "paired_ci95_percentage_points": [
+        -0.00851592918092615,
+        -0.0026840708190738506
+      ],
+      "paired_ci_method": "Stratified paired normal approximation",
+      "mcnemar_two_sided_p": 0.00019347517296939708,
+      "per_seed": [
+        {
+          "seed": 70839111,
+          "total": 500000,
+          "gains": 81,
+          "losses": 74
+        },
+        {
+          "seed": 70839112,
+          "total": 500000,
+          "gains": 95,
+          "losses": 70
+        },
+        {
+          "seed": 70839113,
+          "total": 500000,
+          "gains": 115,
+          "losses": 63
+        }
+      ]
+    },
+    {
+      "candidate": "accuracy",
+      "reference": "mwpm",
+      "total": 1500000,
+      "gains": 305,
+      "losses": 211,
+      "difference_percentage_points": -0.006266666666666667,
+      "paired_ci95_percentage_points": [
+        -0.00923482280155556,
+        -0.0032985105317777743
+      ],
+      "paired_ci_method": "Stratified paired normal approximation",
+      "mcnemar_two_sided_p": 4.049408001725355e-05,
+      "per_seed": [
+        {
+          "seed": 70839111,
+          "total": 500000,
+          "gains": 87,
+          "losses": 76
+        },
+        {
+          "seed": 70839112,
+          "total": 500000,
+          "gains": 98,
+          "losses": 71
+        },
+        {
+          "seed": 70839113,
+          "total": 500000,
+          "gains": 120,
+          "losses": 64
+        }
+      ]
+    },
+    {
+      "candidate": "balanced",
+      "reference": "margin_only",
+      "total": 1500000,
+      "gains": 22,
+      "losses": 18,
+      "difference_percentage_points": -0.0002666666666666667,
+      "paired_ci95_percentage_points": [
+        -0.001093075683049496,
+        0.0005597423497161628
+      ],
+      "paired_ci_method": "Stratified paired normal approximation",
+      "mcnemar_two_sided_p": 0.6358280026288412,
+      "per_seed": [
+        {
+          "seed": 70839111,
+          "total": 500000,
+          "gains": 7,
+          "losses": 8
+        },
+        {
+          "seed": 70839112,
+          "total": 500000,
+          "gains": 6,
+          "losses": 2
+        },
+        {
+          "seed": 70839113,
+          "total": 500000,
+          "gains": 9,
+          "losses": 8
+        }
+      ]
+    },
+    {
+      "candidate": "learned",
+      "reference": "raw_learned",
+      "total": 1500000,
+      "gains": 99,
+      "losses": 107,
+      "difference_percentage_points": 0.0005333333333333334,
+      "paired_ci95_percentage_points": [
+        -0.001342087092484596,
+        0.0024087537591512627
+      ],
+      "paired_ci_method": "Stratified paired normal approximation",
+      "mcnemar_two_sided_p": 0.6258605795002062,
+      "per_seed": [
+        {
+          "seed": 70839111,
+          "total": 500000,
+          "gains": 27,
+          "losses": 37
+        },
+        {
+          "seed": 70839112,
+          "total": 500000,
+          "gains": 34,
+          "losses": 33
+        },
+        {
+          "seed": 70839113,
+          "total": 500000,
+          "gains": 38,
+          "losses": 37
+        }
+      ]
+    }
+  ],
+  "timings": {
+    "mwpm": {
+      "shots": 32768,
+      "seconds": 0.0633218000002671,
+      "batch_size": 4096,
+      "shots_per_second": 517483.71018925204
+    },
+    "learned": {
+      "shots": 32768,
+      "seconds": 0.7839489000034519,
+      "batch_size": 4096,
+      "shots_per_second": 41798.64274298454
+    },
+    "margin_only": {
+      "shots": 32768,
+      "seconds": 0.8286187000048812,
+      "batch_size": 4096,
+      "shots_per_second": 39545.330077401064
+    },
+    "balanced": {
+      "shots": 32768,
+      "seconds": 1.0008024999988265,
+      "batch_size": 4096,
+      "shots_per_second": 32741.724765913776
+    },
+    "accuracy": {
+      "shots": 32768,
+      "seconds": 2.1723100999952294,
+      "batch_size": 4096,
+      "shots_per_second": 15084.402544586963
+    }
+  },
+  "metric_definitions": {
+    "error_percent": "100 times wrong final logical bits divided by shots.",
+    "wilson95_percent": "Marginal 95% Wilson score interval in percent.",
+    "exact_route_percent": "100 times shots evaluated by the exact solver divided by shots.",
+    "paired_comparisons": "Gains count reference errors fixed by the candidate. Losses count new errors. A negative percentage-point difference favors the candidate.",
+    "mcnemar_two_sided_p": "Exact two-sided binomial test on discordant pairs, without a multiple-comparison adjustment."
+  }
+}

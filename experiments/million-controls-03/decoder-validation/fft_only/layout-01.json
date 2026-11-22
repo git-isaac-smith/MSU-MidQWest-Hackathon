@@ -1,0 +1,10 @@
+{
+  "arm": "fft_only",
+  "layout_index": 1,
+  "shots": 1024,
+  "prior_exact_circuit_sha256": "2faf75b8d1ed6577c50aa3b56457ec82fafa47abfda845661054efe65665c759",
+  "test_sample_sha256": "0c0f727e2bb23b1c8bcd138bc6aa7b37b1b327f114f29ab25996e2cb253b1fc0",
+  "decoder_engine_sha256": "f436cab3d6693274115240a6ec096c674063c8ae94e4686f4890b24f0dc396f6",
+  "prediction_mismatches": 0,
+  "prediction_sha256": "389637bc675c639fd01b0c193f6be00ae1fa7ee9353b40d342434e87dc1c44ac"
+}

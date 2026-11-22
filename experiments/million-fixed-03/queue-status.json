@@ -1,0 +1,8 @@
+{
+    "status":  "stopped_at_user_request",
+    "updated":  "2026-11-22T17:22:15.9144302+00:00",
+    "workers":  [
+
+                ],
+    "remaining_decoder_evaluations":  19617024
+}

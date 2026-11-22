@@ -1,0 +1,42 @@
+method,scope,reason
+mwpm,Fixed-circuit study,Ordinary MWPM
+correlated,Fixed-circuit study,Correlated MWPM
+expanded_corr,Fixed-circuit study,Equal-axis correlated MWPM
+clock_corr,Fixed-circuit study,Bath clock · correlated MWPM
+selected_corr,Fixed-circuit study,Bath selected-time prior · correlated MWPM
+expanded_ord,Fixed-circuit study,Equal-axis ordinary MWPM
+clock_ord,Fixed-circuit study,Bath clock · ordinary MWPM
+selected_ord,Fixed-circuit study,Bath selected-time prior · ordinary MWPM
+weighted,Fixed-circuit study,Temporal-weight MWPM
+union_find,Fixed-circuit study,Weighted Union-Find
+union_find_handwritten,Fixed-circuit study,Team Union-Find
+projected_ordinary,Fixed-circuit study,Projected ordinary MWPM
+css_routed,Fixed-circuit study,Activity routing
+capped_gap,Fixed-circuit study,Capped logical-gap routing
+logical_gap,Fixed-circuit study,Logical-gap routing
+exact_small,Fixed-circuit study,Exact posterior
+portable,Fixed-circuit study,Portable posterior lookup
+fast_hybrid,Fixed-circuit study,Posterior cache + matching
+temporal_lowpass,Fixed-circuit study,Temporal low-pass + matching
+local_peel,Fixed-circuit study,Local-pair predecoder
+belief,Fixed-circuit study,Belief matching
+bath_belief,Fixed-circuit study,Bath-weighted belief matching
+ensemble3,Fixed-circuit study,Three-member bath ensemble
+ensemble5,Fixed-circuit study,Five-member bath ensemble
+ensemble3_jitter,Fixed-circuit study,Jittered matching ensemble
+hypergraph_search,Fixed-circuit study,Bounded hypergraph search
+search_belief,Fixed-circuit study,Search with belief fallback
+dispute,Fixed-circuit study,Belief / ensemble with search referee
+belief_pair,Fixed-circuit study,Two belief decoders with search referee
+disagreement_rescue,Fixed-circuit study,Matching disagreement rescue
+ambiguity_dispatch,Fixed-circuit study,Coincidence routing
+adaptive_count,Fixed-circuit study,Calibrated count routing
+adaptive_time,Fixed-circuit study,Calibrated space-time routing
+learned,Fixed-circuit study,Learned routing
+learned_rescue,Fixed-circuit study,Learned routing with rescue
+FFT / CNN / five-round posterior,Separate model,See the five-round FFT study. These decoders use raw data/readout fault histories and a different noise model.
+Location-aware bath erasure,Separate model,See the bath erasure scaling study. Compares public site flags hidden and visible on the same shots in an ideal single-opportunity Z memory. The fixed circuit supplies no flags.
+Iteration 04 distance policy,Constituent methods tested,Exact posterior at d3 and belief/ensemble dispute at d5/7. Larger dispute rows recompile the same recipe for the new circuit.
+Random / AI configuration search,Offline selection,Search proposes decoder settings; it has no separate inference algorithm. Weighted MWPM is included.
+Single-record / worker-pool / unique-row wrappers,Alternative execution modes,"This page times serial batch inference. These wrappers change scheduling, caching or call format."
+Spatial bursts and spectral diagnostics,Noise model / analysis,These generate or characterize different shots; they do not predict the logical observable.

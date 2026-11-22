@@ -1,0 +1,8 @@
+{
+  "distance": 5,
+  "circuit_sha256": "97a883aefc976558f9e23e5a4e5aef18d420e494511bb0b31a033df9d64d0f3c",
+  "policy_sha256": "a91f1bfdd9cc94df1adb730bd840edfec4161ddbf25bf0806f387e788b694867",
+  "training_seconds": 15.56699409999419,
+  "learned_strict_cutoff": 0.017621081322431564,
+  "policy_bytes": 134936
+}

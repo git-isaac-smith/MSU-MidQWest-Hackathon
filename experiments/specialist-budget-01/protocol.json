@@ -1,0 +1,75 @@
+{
+  "model": "Provisional simple_uniform circuit noise, rotated Z memory, d=7, rounds=7, p=.005",
+  "source_sha256": "0f513f5710ba01778edc49f9ec23576470522fb11808636204d49a3048eb97c7",
+  "circuit_sha256": "b04c57aab3cd51aa3564fb16293af12de17f549e50564ecb5d14ccd69f5e8e57",
+  "host": "Windows-10-10.0.26300-SP0",
+  "packages": {
+    "stim": "1.16.0",
+    "pymatching": "2.4.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "stabilizer-qec": "2.1.0"
+  },
+  "budgets": {
+    "product-4": {
+      "bp_method": "product_sum",
+      "max_bp_iters": 4,
+      "ms_scaling_factor": 1.0
+    },
+    "product-8": {
+      "bp_method": "product_sum",
+      "max_bp_iters": 8,
+      "ms_scaling_factor": 1.0
+    },
+    "product-12": {
+      "bp_method": "product_sum",
+      "max_bp_iters": 12,
+      "ms_scaling_factor": 1.0
+    },
+    "minimum-4-08": {
+      "bp_method": "minimum_sum",
+      "max_bp_iters": 4,
+      "ms_scaling_factor": 0.8
+    },
+    "minimum-8-08": {
+      "bp_method": "minimum_sum",
+      "max_bp_iters": 8,
+      "ms_scaling_factor": 0.8
+    },
+    "minimum-12-08": {
+      "bp_method": "minimum_sum",
+      "max_bp_iters": 12,
+      "ms_scaling_factor": 0.8
+    },
+    "minimum-8-10": {
+      "bp_method": "minimum_sum",
+      "max_bp_iters": 8,
+      "ms_scaling_factor": 1.0
+    }
+  },
+  "default": "product-12",
+  "development": {
+    "seeds": [
+      92400100,
+      92400101
+    ],
+    "shots_per_seed": 30000,
+    "timing_seed": 92400200,
+    "batch_size": 2048,
+    "timing_repetitions": 7
+  },
+  "confirmation": {
+    "seeds": [
+      92500100,
+      92500101,
+      92500102
+    ],
+    "shots_per_seed": 60000,
+    "timing_seed": 92500200,
+    "batch_size": 8192,
+    "timing_repetitions": 9
+  },
+  "selection_rule": "Among budgets with positive net recovery versus correlated and at least half the default hybrid's net recovery, choose the fastest median development batch time. Break ties by fewer failures then name. If none qualify, choose by fewest failures, then lowest median batch time, then name.",
+  "primary": "Selected budget versus full correlated matching, exact two-sided McNemar at .05. All other paired comparisons and timing are descriptive.",
+  "specialist": "One logical component ordinary vote and full correlated vote. Only disagreements receive a single-thread belief-matching vote, accepted whether or not BP converges."
+}

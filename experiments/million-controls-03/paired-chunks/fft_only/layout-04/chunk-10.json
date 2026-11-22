@@ -1,0 +1,31 @@
+{
+  "arm": "fft_only",
+  "layout_index": 4,
+  "chunk_index": 10,
+  "shots": 10000,
+  "stim_seed": 628692449101410,
+  "physical_exact_circuit_sha256": "612475402128786955ed872fd0d2506f61726cb2e4a0c09cab6d0b72aa1975d7",
+  "prior_exact_circuit_sha256": "d83092208a33766fa2ddc604549d47810f77a2d770b2ea725757d7adddd4d547",
+  "versions": {
+    "stim": "1.16.0",
+    "pymatching": "2.4.0",
+    "numpy": "2.2.6"
+  },
+  "decoder_engine_sha256": "f436cab3d6693274115240a6ec096c674063c8ae94e4686f4890b24f0dc396f6",
+  "paired_detectors_sha256": "a5919f23ff886061280cccde8c4a81301b776b41ba38c5e24fc2206a31c5c8a4",
+  "paired_observables_sha256": "4ebc14c38952cbe059d0717f02d75a13ddc1d78ed96ba28a6321a051474f802e",
+  "paired_fitted_predictions_sha256": "58503c63ce6b35d56e4b435755a0df45cd684dd9de7341162b9dbf5be8bba380",
+  "logical_errors": 1,
+  "sample_sha256": "a68f16d13dabec909e61b0141075f88cc8d8080c6d69dd903e98e36c2be7d1b2",
+  "observable_sha256": "2ca6437d00c67a4e74d967c1deac046f796258fa883a3e0cb3e918523f3c93da",
+  "prediction_sha256": "a2acdc8f0467a6eccad4fb9a54d5d9796f34e4ba866a4d541ef27b7cc192d99a",
+  "failure_mask_sha256": "d484544277e2f2eae0ac618041a50044f5b2635733f5f912b30ea5b3e089d099",
+  "elapsed_seconds": 0.49184959998819977,
+  "fft_predictions_sha256": "58503c63ce6b35d56e4b435755a0df45cd684dd9de7341162b9dbf5be8bba380",
+  "paired_errors": {
+    "both_fail": 1,
+    "fft_only_fails": 0,
+    "fitted_only_fails": 0,
+    "neither_fails": 9999
+  }
+}

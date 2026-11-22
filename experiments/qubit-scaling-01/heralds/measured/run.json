@@ -1,0 +1,84 @@
+{
+  "cases": [
+    {
+      "distance": 3,
+      "clock": "clock",
+      "shots": 4096,
+      "seed": 68904030,
+      "archive": "d3-clock.npz"
+    },
+    {
+      "distance": 3,
+      "clock": "selected",
+      "shots": 4096,
+      "seed": 68904031,
+      "archive": "d3-selected.npz"
+    },
+    {
+      "distance": 5,
+      "clock": "clock",
+      "shots": 4096,
+      "seed": 68904050,
+      "archive": "d5-clock.npz"
+    },
+    {
+      "distance": 5,
+      "clock": "selected",
+      "shots": 4096,
+      "seed": 68904051,
+      "archive": "d5-selected.npz"
+    },
+    {
+      "distance": 7,
+      "clock": "clock",
+      "shots": 4096,
+      "seed": 68904070,
+      "archive": "d7-clock.npz"
+    },
+    {
+      "distance": 7,
+      "clock": "selected",
+      "shots": 4096,
+      "seed": 68904071,
+      "archive": "d7-selected.npz"
+    },
+    {
+      "distance": 15,
+      "clock": "clock",
+      "shots": 2048,
+      "seed": 68904150,
+      "archive": "d15-clock.npz"
+    },
+    {
+      "distance": 15,
+      "clock": "selected",
+      "shots": 2048,
+      "seed": 68904151,
+      "archive": "d15-selected.npz"
+    },
+    {
+      "distance": 31,
+      "clock": "clock",
+      "shots": 1024,
+      "seed": 68904310,
+      "archive": "d31-clock.npz"
+    },
+    {
+      "distance": 31,
+      "clock": "selected",
+      "shots": 1024,
+      "seed": 68904311,
+      "archive": "d31-selected.npz"
+    }
+  ],
+  "versions": {
+    "numpy": "2.4.6",
+    "pymatching": "2.4.0",
+    "stim": "1.16.0"
+  },
+  "profile_sha256": "e649d17ea6be5823bafb39fc6fb31474ee294880760e6aa70ecf7801cb487589",
+  "batch_shots": 128,
+  "timing": "Median inference time per shot using the same interleaved chunks. Setup, sampling and scoring excluded.",
+  "archive": "All arrays are little-endian packed along axis 1. True logical parity is evaluator-only.",
+  "graph_verify": "Detecting regions at tick zero matched one possible X_ERROR per site at d3 and d5."
+}

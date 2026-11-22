@@ -1,0 +1,348 @@
+{
+  "rows": [
+    {
+      "mode": "mwpm",
+      "label": "PyMatching (MWPM)",
+      "errors": 6475,
+      "total": 1500000,
+      "error_percent": 0.43166666666666664,
+      "wilson95_percent": [
+        0.4213013609527633,
+        0.4422858580121232
+      ],
+      "expected_error_percent": 0.429932571450303,
+      "expected_excess_vs_full_map_percentage_points": 0.004964345107485978,
+      "per_seed": [
+        {
+          "seed": 82174101,
+          "errors": 2186,
+          "total": 500000,
+          "error_percent": 0.4372,
+          "wilson95_percent": [
+            0.41928950070638465,
+            0.45587206726350454
+          ],
+          "expected_error_percent": 0.4227100624544425,
+          "expected_excess_vs_full_map_percentage_points": 0.004822066173111758
+        },
+        {
+          "seed": 82174102,
+          "errors": 2090,
+          "total": 500000,
+          "error_percent": 0.418,
+          "wilson95_percent": [
+            0.40049389096065546,
+            0.43626797203100454
+          ],
+          "expected_error_percent": 0.4277197121508638,
+          "expected_excess_vs_full_map_percentage_points": 0.00487477859836265
+        },
+        {
+          "seed": 82174103,
+          "errors": 2199,
+          "total": 500000,
+          "error_percent": 0.4398,
+          "wilson95_percent": [
+            0.42183543616970887,
+            0.4585260918493155
+          ],
+          "expected_error_percent": 0.43936793974560273,
+          "expected_excess_vs_full_map_percentage_points": 0.005196190550983525
+        }
+      ]
+    },
+    {
+      "mode": "balanced",
+      "label": "Balanced FFT hybrid",
+      "errors": 6383,
+      "total": 1500000,
+      "error_percent": 0.4255333333333333,
+      "wilson95_percent": [
+        0.4152425175426311,
+        0.43607806617010486
+      ],
+      "expected_error_percent": 0.425233568081665,
+      "expected_excess_vs_full_map_percentage_points": 0.0002653417388480102,
+      "per_seed": [
+        {
+          "seed": 82174101,
+          "errors": 2169,
+          "total": 500000,
+          "error_percent": 0.4338,
+          "wilson95_percent": [
+            0.41596044666464643,
+            0.45240117354868126
+          ],
+          "expected_error_percent": 0.4181217034977662,
+          "expected_excess_vs_full_map_percentage_points": 0.00023370721643534641
+        },
+        {
+          "seed": 82174102,
+          "errors": 2068,
+          "total": 500000,
+          "error_percent": 0.4136,
+          "wilson95_percent": [
+            0.39618787959390017,
+            0.4317740510069157
+          ],
+          "expected_error_percent": 0.4230445733646533,
+          "expected_excess_vs_full_map_percentage_points": 0.00019963981215220615
+        },
+        {
+          "seed": 82174103,
+          "errors": 2146,
+          "total": 500000,
+          "error_percent": 0.4292,
+          "wilson95_percent": [
+            0.4114568818822357,
+            0.44770480901339127
+          ],
+          "expected_error_percent": 0.43453442738257575,
+          "expected_excess_vs_full_map_percentage_points": 0.0003626781879564779
+        }
+      ]
+    },
+    {
+      "mode": "accuracy",
+      "label": "Exact on ambiguous shots",
+      "errors": 6394,
+      "total": 1500000,
+      "error_percent": 0.4262666666666667,
+      "wilson95_percent": [
+        0.4159669159871181,
+        0.43682033063620107
+      ],
+      "expected_error_percent": 0.4249682263428171,
+      "expected_excess_vs_full_map_percentage_points": 0.0,
+      "per_seed": [
+        {
+          "seed": 82174101,
+          "errors": 2170,
+          "total": 500000,
+          "error_percent": 0.434,
+          "wilson95_percent": [
+            0.4161562655984763,
+            0.452605351541708
+          ],
+          "expected_error_percent": 0.4178879962813307,
+          "expected_excess_vs_full_map_percentage_points": 0.0
+        },
+        {
+          "seed": 82174102,
+          "errors": 2073,
+          "total": 500000,
+          "error_percent": 0.4146,
+          "wilson95_percent": [
+            0.3971664742957311,
+            0.4327954409393676
+          ],
+          "expected_error_percent": 0.4228449335525011,
+          "expected_excess_vs_full_map_percentage_points": 0.0
+        },
+        {
+          "seed": 82174103,
+          "errors": 2151,
+          "total": 500000,
+          "error_percent": 0.4302,
+          "wilson95_percent": [
+            0.41243587337570203,
+            0.4487258021542078
+          ],
+          "expected_error_percent": 0.4341717491946192,
+          "expected_excess_vs_full_map_percentage_points": 0.0
+        }
+      ]
+    },
+    {
+      "mode": "full_map",
+      "label": "Full posterior MAP",
+      "errors": 6394,
+      "total": 1500000,
+      "error_percent": 0.4262666666666667,
+      "wilson95_percent": [
+        0.4159669159871181,
+        0.43682033063620107
+      ],
+      "expected_error_percent": 0.4249682263428171,
+      "expected_excess_vs_full_map_percentage_points": 0.0,
+      "per_seed": [
+        {
+          "seed": 82174101,
+          "errors": 2170,
+          "total": 500000,
+          "error_percent": 0.434,
+          "wilson95_percent": [
+            0.4161562655984763,
+            0.452605351541708
+          ],
+          "expected_error_percent": 0.4178879962813307,
+          "expected_excess_vs_full_map_percentage_points": 0.0
+        },
+        {
+          "seed": 82174102,
+          "errors": 2073,
+          "total": 500000,
+          "error_percent": 0.4146,
+          "wilson95_percent": [
+            0.3971664742957311,
+            0.4327954409393676
+          ],
+          "expected_error_percent": 0.4228449335525011,
+          "expected_excess_vs_full_map_percentage_points": 0.0
+        },
+        {
+          "seed": 82174103,
+          "errors": 2151,
+          "total": 500000,
+          "error_percent": 0.4302,
+          "wilson95_percent": [
+            0.41243587337570203,
+            0.4487258021542078
+          ],
+          "expected_error_percent": 0.4341717491946192,
+          "expected_excess_vs_full_map_percentage_points": 0.0
+        }
+      ]
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "candidate": "full_map",
+      "reference": "mwpm",
+      "total": 1500000,
+      "gains": 302,
+      "losses": 221,
+      "difference_percentage_points": -0.0054,
+      "paired_ci95_percentage_points": [
+        -0.008388227961586047,
+        -0.0024117720384139534
+      ],
+      "paired_ci_method": "Stratified paired normal approximation",
+      "mcnemar_two_sided_p": 0.0004575129764765613,
+      "per_seed": [
+        {
+          "seed": 82174101,
+          "total": 500000,
+          "gains": 93,
+          "losses": 77
+        },
+        {
+          "seed": 82174102,
+          "total": 500000,
+          "gains": 92,
+          "losses": 75
+        },
+        {
+          "seed": 82174103,
+          "total": 500000,
+          "gains": 117,
+          "losses": 69
+        }
+      ]
+    },
+    {
+      "candidate": "full_map",
+      "reference": "balanced",
+      "total": 1500000,
+      "gains": 14,
+      "losses": 25,
+      "difference_percentage_points": 0.0007333333333333333,
+      "paired_ci95_percentage_points": [
+        -8.26794873759048e-05,
+        0.0015493461540425713
+      ],
+      "paired_ci_method": "Stratified paired normal approximation",
+      "mcnemar_two_sided_p": 0.10812902140605732,
+      "per_seed": [
+        {
+          "seed": 82174101,
+          "total": 500000,
+          "gains": 7,
+          "losses": 8
+        },
+        {
+          "seed": 82174102,
+          "total": 500000,
+          "gains": 3,
+          "losses": 8
+        },
+        {
+          "seed": 82174103,
+          "total": 500000,
+          "gains": 4,
+          "losses": 9
+        }
+      ]
+    },
+    {
+      "candidate": "full_map",
+      "reference": "accuracy",
+      "total": 1500000,
+      "gains": 0,
+      "losses": 0,
+      "difference_percentage_points": 0.0,
+      "paired_ci95_percentage_points": [
+        -0.0001997152854723576,
+        0.0001997152854723576
+      ],
+      "paired_ci_method": "Exact one-sided 95% Clopper-Pearson upper bound on discordance",
+      "mcnemar_two_sided_p": 1.0,
+      "per_seed": [
+        {
+          "seed": 82174101,
+          "total": 500000,
+          "gains": 0,
+          "losses": 0
+        },
+        {
+          "seed": 82174102,
+          "total": 500000,
+          "gains": 0,
+          "losses": 0
+        },
+        {
+          "seed": 82174103,
+          "total": 500000,
+          "gains": 0,
+          "losses": 0
+        }
+      ]
+    }
+  ],
+  "timings": {
+    "mwpm": {
+      "shots": 16384,
+      "seconds": 0.03140160001930781,
+      "batch_size": 4096,
+      "shots_per_second": 521756.85283316835
+    },
+    "balanced": {
+      "shots": 16384,
+      "seconds": 0.5253208999929484,
+      "batch_size": 4096,
+      "shots_per_second": 31188.555414832972
+    },
+    "accuracy": {
+      "shots": 16384,
+      "seconds": 1.0995007999881636,
+      "batch_size": 4096,
+      "shots_per_second": 14901.30793918147
+    },
+    "full_map": {
+      "shots": 16384,
+      "seconds": 0.18029350001597777,
+      "batch_size": 4096,
+      "shots_per_second": 90874.04703191205
+    }
+  },
+  "metric_definitions": {
+    "error_percent": "100 times wrong final logical bits divided by shots.",
+    "wilson95_percent": "Marginal 95% Wilson score interval in percent.",
+    "expected_error_percent": "Mean conditional error probability of the decoder's choices under the exact posterior for the evaluated detector records, expressed as a percent.",
+    "expected_excess_vs_full_map_percentage_points": "Mean absolute posterior margin |2p\u22121| across all shots, expressed in percentage points. Agreement with full MAP or a numerical tie contributes zero. The tie convention changes the result by at most 2e-10 percentage points.",
+    "map_tie": "Use MWPM when the posterior is within 1e-12 of 0.5.",
+    "conditional_metrics": "Model-based calculations conditional on detector records. Observed error counts and paired intervals use the separately sampled logical truth.",
+    "paired_comparisons": "Gains count baseline errors fixed by full MAP. Losses count new errors. A negative percentage-point difference favors full MAP.",
+    "mcnemar_two_sided_p": "Exact two-sided binomial test on discordant pairs for each comparison."
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "policy_sha256": "82f8da6ef9553805c999b53db93e3ae447c13465018048f9b0600efe65402fe5",
+  "archives_sha256": {
+    "decisions-84374101.npz": "08dcbd648e63debbc551bafb5bd5120b553da84c77060226480a408c33e861af",
+    "decisions-84374102.npz": "1306bc058d5d3846be49b2045969250b4b4809b40e7b7d1f33423f58ba118858",
+    "decisions-84374103.npz": "1a00eb350371699bd3ed43b29f011a1c7e7d684945fed2eddb5d26a6b5cc1da8"
+  },
+  "rows": [
+    {
+      "mode": "mwpm",
+      "shots": 1500000,
+      "errors": 1796,
+      "queried": 0,
+      "gains": 0,
+      "losses": 0,
+      "error_percent": 0.11973333333333333,
+      "wilson95_percent": [
+        0.11432547176441465,
+        0.12539667823511985
+      ],
+      "query_percent": 0.0,
+      "per_seed": [
+        {
+          "seed": 84374101,
+          "shots": 500000,
+          "errors": 570,
+          "queried": 0,
+          "gains": 0,
+          "losses": 0,
+          "error_percent": 0.114,
+          "wilson95_percent": [
+            0.10502209005231597,
+            0.12374444411738174
+          ],
+          "query_percent": 0.0
+        },
+        {
+          "seed": 84374102,
+          "shots": 500000,
+          "errors": 613,
+          "queried": 0,
+          "gains": 0,
+          "losses": 0,
+          "error_percent": 0.1226,
+          "wilson95_percent": [
+            0.11327633692405016,
+            0.13269006510047937
+          ],
+          "query_percent": 0.0
+        },
+        {
+          "seed": 84374103,
+          "shots": 500000,
+          "errors": 613,
+          "queried": 0,
+          "gains": 0,
+          "losses": 0,
+          "error_percent": 0.1226,
+          "wilson95_percent": [
+            0.11327633692405016,
+            0.13269006510047937
+          ],
+          "query_percent": 0.0
+        }
+      ]
+    },
+    {
+      "mode": "aggressive",
+      "shots": 1500000,
+      "errors": 1717,
+      "queried": 19894,
+      "gains": 190,
+      "losses": 111,
+      "error_percent": 0.11446666666666666,
+      "wilson95_percent": [
+        0.1091817247078884,
+        0.12000711893382122
+      ],
+      "query_percent": 1.3262666666666667,
+      "difference_pp": -0.005266666666666667,
+      "paired95_pp": [
+        -0.007533630605129321,
+        -0.0029997027282040126
+      ],
+      "paired95_method": "Stratified paired normal approximation",
+      "mcnemar_p": 6.173460081186399e-06,
+      "per_seed": [
+        {
+          "seed": 84374101,
+          "shots": 500000,
+          "errors": 563,
+          "queried": 6647,
+          "gains": 52,
+          "losses": 45,
+          "error_percent": 0.1126,
+          "wilson95_percent": [
+            0.10367959680679777,
+            0.12228695887490408
+          ],
+          "query_percent": 1.3294,
+          "difference_pp": -0.0014
+        },
+        {
+          "seed": 84374102,
+          "shots": 500000,
+          "errors": 572,
+          "queried": 6701,
+          "gains": 70,
+          "losses": 29,
+          "error_percent": 0.1144,
+          "wilson95_percent": [
+            0.10540572459470572,
+            0.1241608034287051
+          ],
+          "query_percent": 1.3402,
+          "difference_pp": -0.0082
+        },
+        {
+          "seed": 84374103,
+          "shots": 500000,
+          "errors": 582,
+          "queried": 6546,
+          "gains": 68,
+          "losses": 37,
+          "error_percent": 0.1164,
+          "wilson95_percent": [
+            0.10732432380990066,
+            0.1262421734820757
+          ],
+          "query_percent": 1.3092,
+          "difference_pp": -0.0062
+        }
+      ]
+    },
+    {
+      "mode": "selected",
+      "shots": 1500000,
+      "errors": 1717,
+      "queried": 19894,
+      "gains": 190,
+      "losses": 111,
+      "error_percent": 0.11446666666666666,
+      "wilson95_percent": [
+        0.1091817247078884,
+        0.12000711893382122
+      ],
+      "query_percent": 1.3262666666666667,
+      "difference_pp": -0.005266666666666667,
+      "paired95_pp": [
+        -0.007533630605129321,
+        -0.0029997027282040126
+      ],
+      "paired95_method": "Stratified paired normal approximation",
+      "mcnemar_p": 6.173460081186399e-06,
+      "per_seed": [
+        {
+          "seed": 84374101,
+          "shots": 500000,
+          "errors": 563,
+          "queried": 6647,
+          "gains": 52,
+          "losses": 45,
+          "error_percent": 0.1126,
+          "wilson95_percent": [
+            0.10367959680679777,
+            0.12228695887490408
+          ],
+          "query_percent": 1.3294,
+          "difference_pp": -0.0014
+        },
+        {
+          "seed": 84374102,
+          "shots": 500000,
+          "errors": 572,
+          "queried": 6701,
+          "gains": 70,
+          "losses": 29,
+          "error_percent": 0.1144,
+          "wilson95_percent": [
+            0.10540572459470572,
+            0.1241608034287051
+          ],
+          "query_percent": 1.3402,
+          "difference_pp": -0.0082
+        },
+        {
+          "seed": 84374103,
+          "shots": 500000,
+          "errors": 582,
+          "queried": 6546,
+          "gains": 68,
+          "losses": 37,
+          "error_percent": 0.1164,
+          "wilson95_percent": [
+            0.10732432380990066,
+            0.1262421734820757
+          ],
+          "query_percent": 1.3092,
+          "difference_pp": -0.0062
+        }
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "seed": 84374101,
+      "setup_seconds": 0.12100149999605492,
+      "mwpm_seconds": 1.913298999890685,
+      "margin_seconds": 17.91367230002652,
+      "posterior_seconds": 17.74002520009526
+    },
+    {
+      "seed": 84374102,
+      "setup_seconds": 0.12100149999605492,
+      "mwpm_seconds": 1.937519400002202,
+      "margin_seconds": 18.397535200085258,
+      "posterior_seconds": 18.444370399898617
+    },
+    {
+      "seed": 84374103,
+      "setup_seconds": 0.12100149999605492,
+      "mwpm_seconds": 2.057834700011881,
+      "margin_seconds": 19.32936750011868,
+      "posterior_seconds": 18.603416700148955
+    }
+  ]
+}

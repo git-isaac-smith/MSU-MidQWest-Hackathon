@@ -1,0 +1,1186 @@
+{
+  "upstream_repository": "https://github.com/sakidja/RQL_Quantum_bath",
+  "upstream_commit": "94572516042297d6b6018fe76eb2f2b547e3c46f",
+  "upstream_source": "part1/dual_rail_structured_bath.py",
+  "upstream_table_directory": "part1/results_v3_final8_one_gamma_sys_0.0",
+  "attachment": "one",
+  "gamma_sys": 0.0,
+  "clock_period": 6.0,
+  "distance": 7,
+  "basis": "Z",
+  "syndrome_rounds": 7,
+  "native_p_check": 0.001,
+  "p_measurement_flip": 0.001,
+  "p_reset_flip": 0.001,
+  "shots_per_layout": 4000,
+  "layout_seeds": [
+    20268112,
+    20268113,
+    20268114,
+    20268115,
+    20268116
+  ],
+  "layout_bath_ids_in_data_qubit_order": [
+    [
+      4007,
+      4043,
+      4030,
+      4015,
+      4047,
+      4001,
+      4026,
+      4045,
+      4020,
+      4045,
+      4030,
+      4014,
+      4004,
+      4035,
+      4039,
+      4011,
+      4003,
+      4031,
+      4044,
+      4048,
+      4028,
+      4019,
+      4021,
+      4027,
+      4040,
+      4034,
+      4041,
+      4028,
+      4047,
+      4030,
+      4045,
+      4028,
+      4020,
+      4045,
+      4023,
+      4035,
+      4020,
+      4028,
+      4042,
+      4039,
+      4015,
+      4018,
+      4012,
+      4003,
+      4015,
+      4035,
+      4009,
+      4009,
+      4019
+    ],
+    [
+      4034,
+      4033,
+      4007,
+      4046,
+      4010,
+      4024,
+      4040,
+      4045,
+      4045,
+      4015,
+      4017,
+      4008,
+      4024,
+      4048,
+      4010,
+      4038,
+      4000,
+      4047,
+      4039,
+      4028,
+      4035,
+      4008,
+      4045,
+      4005,
+      4011,
+      4019,
+      4017,
+      4003,
+      4004,
+      4029,
+      4035,
+      4009,
+      4024,
+      4008,
+      4047,
+      4045,
+      4032,
+      4031,
+      4030,
+      4005,
+      4003,
+      4048,
+      4029,
+      4037,
+      4027,
+      4044,
+      4020,
+      4024,
+      4036
+    ],
+    [
+      4048,
+      4007,
+      4021,
+      4013,
+      4034,
+      4020,
+      4030,
+      4017,
+      4012,
+      4026,
+      4006,
+      4014,
+      4034,
+      4043,
+      4007,
+      4022,
+      4010,
+      4010,
+      4038,
+      4020,
+      4025,
+      4035,
+      4045,
+      4036,
+      4040,
+      4045,
+      4008,
+      4044,
+      4003,
+      4009,
+      4038,
+      4020,
+      4008,
+      4012,
+      4036,
+      4015,
+      4041,
+      4002,
+      4013,
+      4040,
+      4006,
+      4015,
+      4035,
+      4004,
+      4040,
+      4040,
+      4024,
+      4044,
+      4038
+    ],
+    [
+      4021,
+      4040,
+      4036,
+      4042,
+      4018,
+      4006,
+      4039,
+      4009,
+      4045,
+      4012,
+      4001,
+      4035,
+      4021,
+      4025,
+      4048,
+      4009,
+      4035,
+      4001,
+      4018,
+      4024,
+      4035,
+      4023,
+      4013,
+      4024,
+      4005,
+      4033,
+      4007,
+      4032,
+      4034,
+      4016,
+      4018,
+      4010,
+      4044,
+      4018,
+      4023,
+      4017,
+      4000,
+      4046,
+      4027,
+      4026,
+      4034,
+      4029,
+      4040,
+      4000,
+      4027,
+      4045,
+      4019,
+      4029,
+      4008
+    ],
+    [
+      4019,
+      4044,
+      4045,
+      4023,
+      4010,
+      4024,
+      4037,
+      4034,
+      4043,
+      4008,
+      4039,
+      4040,
+      4015,
+      4005,
+      4034,
+      4039,
+      4003,
+      4038,
+      4008,
+      4002,
+      4045,
+      4030,
+      4025,
+      4017,
+      4003,
+      4014,
+      4021,
+      4047,
+      4029,
+      4046,
+      4000,
+      4011,
+      4010,
+      4017,
+      4020,
+      4023,
+      4008,
+      4048,
+      4025,
+      4044,
+      4021,
+      4027,
+      4025,
+      4037,
+      4027,
+      4045,
+      4047,
+      4032,
+      4037
+    ]
+  ],
+  "stim_base_seed": 94530057721006,
+  "versions": {
+    "python": "3.13.3",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "stim": "1.16.0",
+    "pymatching": "2.4.0",
+    "pandas": "2.3.3",
+    "qutip": "5.3.1"
+  },
+  "arms": [
+    {
+      "arm": "Clock, frame calibrated",
+      "mean_check_time": 6.0,
+      "mean_physical_bath_erasure_probability": 0.31618540164135545,
+      "max_abs_true_channel_reconstruction_delta": 0.0
+    },
+    {
+      "arm": "Structured bath, ML then fit, balanced check",
+      "mean_check_time": 11.1734693877551,
+      "mean_physical_bath_erasure_probability": 0.07728180553280842,
+      "max_abs_true_channel_reconstruction_delta": 0.0
+    }
+  ],
+  "points": [
+    {
+      "arm": "Clock, frame calibrated",
+      "p_check": 0.001,
+      "shots": 20000,
+      "logical_failures": 3317,
+      "logical_error_rate": 0.16585,
+      "wilson_95": [
+        0.16075945148840892,
+        0.17106888620788574
+      ],
+      "detector_means_by_outcome": {
+        "failed": {
+          "mean_herald_detector_events_per_shot": 111.63943322279168,
+          "mean_syndrome_detector_events_per_shot": 122.72083207717817
+        },
+        "succeeded": {
+          "mean_herald_detector_events_per_shot": 106.81394233651022,
+          "mean_syndrome_detector_events_per_shot": 120.9652340706108
+        }
+      },
+      "layout_counts": [
+        {
+          "stim_seed": 94530057721006,
+          "failed": {
+            "shots": 510,
+            "herald_detector_events": 56273,
+            "syndrome_detector_events": 62692
+          },
+          "succeeded": {
+            "shots": 3490,
+            "herald_detector_events": 373028,
+            "syndrome_detector_events": 426866
+          }
+        },
+        {
+          "stim_seed": 94530057721007,
+          "failed": {
+            "shots": 742,
+            "herald_detector_events": 80956,
+            "syndrome_detector_events": 89836
+          },
+          "succeeded": {
+            "shots": 3258,
+            "herald_detector_events": 343623,
+            "syndrome_detector_events": 389326
+          }
+        },
+        {
+          "stim_seed": 94530057721008,
+          "failed": {
+            "shots": 551,
+            "herald_detector_events": 59081,
+            "syndrome_detector_events": 66544
+          },
+          "succeeded": {
+            "shots": 3449,
+            "herald_detector_events": 354838,
+            "syndrome_detector_events": 409674
+          }
+        },
+        {
+          "stim_seed": 94530057721009,
+          "failed": {
+            "shots": 535,
+            "herald_detector_events": 57559,
+            "syndrome_detector_events": 64780
+          },
+          "succeeded": {
+            "shots": 3465,
+            "herald_detector_events": 361069,
+            "syndrome_detector_events": 415135
+          }
+        },
+        {
+          "stim_seed": 94530057721010,
+          "failed": {
+            "shots": 979,
+            "herald_detector_events": 116439,
+            "syndrome_detector_events": 123213
+          },
+          "succeeded": {
+            "shots": 3021,
+            "herald_detector_events": 349419,
+            "syndrome_detector_events": 377062
+          }
+        }
+      ]
+    },
+    {
+      "arm": "Structured bath, ML then fit, balanced check",
+      "p_check": 0.001,
+      "shots": 20000,
+      "logical_failures": 4,
+      "logical_error_rate": 0.0002,
+      "wilson_95": [
+        7.777875605022847e-05,
+        0.0005141804856319552
+      ],
+      "detector_means_by_outcome": {
+        "failed": {
+          "mean_herald_detector_events_per_shot": 30.75,
+          "mean_syndrome_detector_events_per_shot": 48.75
+        },
+        "succeeded": {
+          "mean_herald_detector_events_per_shot": 25.105871174234846,
+          "mean_syndrome_detector_events_per_shot": 39.21329265853171
+        }
+      },
+      "layout_counts": [
+        {
+          "stim_seed": 94530057721011,
+          "failed": {
+            "shots": 0,
+            "herald_detector_events": 0,
+            "syndrome_detector_events": 0
+          },
+          "succeeded": {
+            "shots": 4000,
+            "herald_detector_events": 99513,
+            "syndrome_detector_events": 150424
+          }
+        },
+        {
+          "stim_seed": 94530057721012,
+          "failed": {
+            "shots": 1,
+            "herald_detector_events": 36,
+            "syndrome_detector_events": 52
+          },
+          "succeeded": {
+            "shots": 3999,
+            "herald_detector_events": 98137,
+            "syndrome_detector_events": 159931
+          }
+        },
+        {
+          "stim_seed": 94530057721013,
+          "failed": {
+            "shots": 0,
+            "herald_detector_events": 0,
+            "syndrome_detector_events": 0
+          },
+          "succeeded": {
+            "shots": 4000,
+            "herald_detector_events": 106931,
+            "syndrome_detector_events": 165515
+          }
+        },
+        {
+          "stim_seed": 94530057721014,
+          "failed": {
+            "shots": 1,
+            "herald_detector_events": 18,
+            "syndrome_detector_events": 31
+          },
+          "succeeded": {
+            "shots": 3999,
+            "herald_detector_events": 89414,
+            "syndrome_detector_events": 141287
+          }
+        },
+        {
+          "stim_seed": 94530057721015,
+          "failed": {
+            "shots": 2,
+            "herald_detector_events": 69,
+            "syndrome_detector_events": 112
+          },
+          "succeeded": {
+            "shots": 3998,
+            "herald_detector_events": 108022,
+            "syndrome_detector_events": 166952
+          }
+        }
+      ]
+    },
+    {
+      "arm": "Clock, frame calibrated",
+      "p_check": 0.005,
+      "shots": 20000,
+      "logical_failures": 4446,
+      "logical_error_rate": 0.2223,
+      "wilson_95": [
+        0.21659116235159376,
+        0.22811549447396673
+      ],
+      "detector_means_by_outcome": {
+        "failed": {
+          "mean_herald_detector_events_per_shot": 110.47548358074674,
+          "mean_syndrome_detector_events_per_shot": 122.93454790823212
+        },
+        "succeeded": {
+          "mean_herald_detector_events_per_shot": 106.77157001414427,
+          "mean_syndrome_detector_events_per_shot": 121.83856242767133
+        }
+      },
+      "layout_counts": [
+        {
+          "stim_seed": 94530057721016,
+          "failed": {
+            "shots": 734,
+            "herald_detector_events": 80419,
+            "syndrome_detector_events": 91485
+          },
+          "succeeded": {
+            "shots": 3266,
+            "herald_detector_events": 348709,
+            "syndrome_detector_events": 402328
+          }
+        },
+        {
+          "stim_seed": 94530057721017,
+          "failed": {
+            "shots": 985,
+            "herald_detector_events": 106513,
+            "syndrome_detector_events": 119364
+          },
+          "succeeded": {
+            "shots": 3015,
+            "herald_detector_events": 317947,
+            "syndrome_detector_events": 363600
+          }
+        },
+        {
+          "stim_seed": 94530057721018,
+          "failed": {
+            "shots": 742,
+            "herald_detector_events": 78216,
+            "syndrome_detector_events": 89357
+          },
+          "succeeded": {
+            "shots": 3258,
+            "herald_detector_events": 334254,
+            "syndrome_detector_events": 389456
+          }
+        },
+        {
+          "stim_seed": 94530057721019,
+          "failed": {
+            "shots": 778,
+            "herald_detector_events": 83136,
+            "syndrome_detector_events": 93878
+          },
+          "succeeded": {
+            "shots": 3222,
+            "herald_detector_events": 337077,
+            "syndrome_detector_events": 388988
+          }
+        },
+        {
+          "stim_seed": 94530057721020,
+          "failed": {
+            "shots": 1207,
+            "herald_detector_events": 142890,
+            "syndrome_detector_events": 152483
+          },
+          "succeeded": {
+            "shots": 2793,
+            "herald_detector_events": 322738,
+            "syndrome_detector_events": 350705
+          }
+        }
+      ]
+    },
+    {
+      "arm": "Structured bath, ML then fit, balanced check",
+      "p_check": 0.005,
+      "shots": 20000,
+      "logical_failures": 35,
+      "logical_error_rate": 0.00175,
+      "wilson_95": [
+        0.0012586299858426053,
+        0.0024327339440656536
+      ],
+      "detector_means_by_outcome": {
+        "failed": {
+          "mean_herald_detector_events_per_shot": 25.257142857142856,
+          "mean_syndrome_detector_events_per_shot": 43.08571428571429
+        },
+        "succeeded": {
+          "mean_herald_detector_events_per_shot": 25.11885800150263,
+          "mean_syndrome_detector_events_per_shot": 42.42609566741798
+        }
+      },
+      "layout_counts": [
+        {
+          "stim_seed": 94530057721021,
+          "failed": {
+            "shots": 7,
+            "herald_detector_events": 167,
+            "syndrome_detector_events": 298
+          },
+          "succeeded": {
+            "shots": 3993,
+            "herald_detector_events": 99665,
+            "syndrome_detector_events": 163473
+          }
+        },
+        {
+          "stim_seed": 94530057721022,
+          "failed": {
+            "shots": 9,
+            "herald_detector_events": 231,
+            "syndrome_detector_events": 399
+          },
+          "succeeded": {
+            "shots": 3991,
+            "herald_detector_events": 97366,
+            "syndrome_detector_events": 171695
+          }
+        },
+        {
+          "stim_seed": 94530057721023,
+          "failed": {
+            "shots": 8,
+            "herald_detector_events": 244,
+            "syndrome_detector_events": 386
+          },
+          "succeeded": {
+            "shots": 3992,
+            "herald_detector_events": 107159,
+            "syndrome_detector_events": 177867
+          }
+        },
+        {
+          "stim_seed": 94530057721024,
+          "failed": {
+            "shots": 8,
+            "herald_detector_events": 160,
+            "syndrome_detector_events": 301
+          },
+          "succeeded": {
+            "shots": 3992,
+            "herald_detector_events": 89156,
+            "syndrome_detector_events": 154137
+          }
+        },
+        {
+          "stim_seed": 94530057721025,
+          "failed": {
+            "shots": 3,
+            "herald_detector_events": 82,
+            "syndrome_detector_events": 124
+          },
+          "succeeded": {
+            "shots": 3997,
+            "herald_detector_events": 108152,
+            "syndrome_detector_events": 179865
+          }
+        }
+      ]
+    },
+    {
+      "arm": "Clock, frame calibrated",
+      "p_check": 0.01,
+      "shots": 20000,
+      "logical_failures": 5563,
+      "logical_error_rate": 0.27815,
+      "wilson_95": [
+        0.27198298893162326,
+        0.2844022174664704
+      ],
+      "detector_means_by_outcome": {
+        "failed": {
+          "mean_herald_detector_events_per_shot": 109.86230451195398,
+          "mean_syndrome_detector_events_per_shot": 124.00772964227934
+        },
+        "succeeded": {
+          "mean_herald_detector_events_per_shot": 106.64930387199557,
+          "mean_syndrome_detector_events_per_shot": 122.9005333518044
+        }
+      },
+      "layout_counts": [
+        {
+          "stim_seed": 94530057721026,
+          "failed": {
+            "shots": 1023,
+            "herald_detector_events": 111898,
+            "syndrome_detector_events": 127775
+          },
+          "succeeded": {
+            "shots": 2977,
+            "herald_detector_events": 317927,
+            "syndrome_detector_events": 370075
+          }
+        },
+        {
+          "stim_seed": 94530057721027,
+          "failed": {
+            "shots": 1176,
+            "herald_detector_events": 126227,
+            "syndrome_detector_events": 143401
+          },
+          "succeeded": {
+            "shots": 2824,
+            "herald_detector_events": 296684,
+            "syndrome_detector_events": 342454
+          }
+        },
+        {
+          "stim_seed": 94530057721028,
+          "failed": {
+            "shots": 1001,
+            "herald_detector_events": 104849,
+            "syndrome_detector_events": 122333
+          },
+          "succeeded": {
+            "shots": 2999,
+            "herald_detector_events": 307500,
+            "syndrome_detector_events": 362408
+          }
+        },
+        {
+          "stim_seed": 94530057721029,
+          "failed": {
+            "shots": 973,
+            "herald_detector_events": 104277,
+            "syndrome_detector_events": 119763
+          },
+          "succeeded": {
+            "shots": 3027,
+            "herald_detector_events": 315144,
+            "syndrome_detector_events": 368716
+          }
+        },
+        {
+          "stim_seed": 94530057721030,
+          "failed": {
+            "shots": 1390,
+            "herald_detector_events": 163913,
+            "syndrome_detector_events": 176583
+          },
+          "succeeded": {
+            "shots": 2610,
+            "herald_detector_events": 302441,
+            "syndrome_detector_events": 330662
+          }
+        }
+      ]
+    },
+    {
+      "arm": "Structured bath, ML then fit, balanced check",
+      "p_check": 0.01,
+      "shots": 20000,
+      "logical_failures": 136,
+      "logical_error_rate": 0.0068,
+      "wilson_95": [
+        0.00575193668791944,
+        0.008037487677822162
+      ],
+      "detector_means_by_outcome": {
+        "failed": {
+          "mean_herald_detector_events_per_shot": 26.691176470588236,
+          "mean_syndrome_detector_events_per_shot": 49.294117647058826
+        },
+        "succeeded": {
+          "mean_herald_detector_events_per_shot": 24.929671768022555,
+          "mean_syndrome_detector_events_per_shot": 46.07229158276279
+        }
+      },
+      "layout_counts": [
+        {
+          "stim_seed": 94530057721031,
+          "failed": {
+            "shots": 26,
+            "herald_detector_events": 758,
+            "syndrome_detector_events": 1357
+          },
+          "succeeded": {
+            "shots": 3974,
+            "herald_detector_events": 97547,
+            "syndrome_detector_events": 176945
+          }
+        },
+        {
+          "stim_seed": 94530057721032,
+          "failed": {
+            "shots": 33,
+            "herald_detector_events": 852,
+            "syndrome_detector_events": 1652
+          },
+          "succeeded": {
+            "shots": 3967,
+            "herald_detector_events": 96357,
+            "syndrome_detector_events": 185320
+          }
+        },
+        {
+          "stim_seed": 94530057721033,
+          "failed": {
+            "shots": 16,
+            "herald_detector_events": 467,
+            "syndrome_detector_events": 815
+          },
+          "succeeded": {
+            "shots": 3984,
+            "herald_detector_events": 106483,
+            "syndrome_detector_events": 192003
+          }
+        },
+        {
+          "stim_seed": 94530057721034,
+          "failed": {
+            "shots": 31,
+            "herald_detector_events": 683,
+            "syndrome_detector_events": 1375
+          },
+          "succeeded": {
+            "shots": 3969,
+            "herald_detector_events": 88472,
+            "syndrome_detector_events": 169248
+          }
+        },
+        {
+          "stim_seed": 94530057721035,
+          "failed": {
+            "shots": 30,
+            "herald_detector_events": 870,
+            "syndrome_detector_events": 1505
+          },
+          "succeeded": {
+            "shots": 3970,
+            "herald_detector_events": 106344,
+            "syndrome_detector_events": 191664
+          }
+        }
+      ]
+    },
+    {
+      "arm": "Clock, frame calibrated",
+      "p_check": 0.02,
+      "shots": 20000,
+      "logical_failures": 7437,
+      "logical_error_rate": 0.37185,
+      "wilson_95": [
+        0.36517715300780484,
+        0.37857206583337477
+      ],
+      "detector_means_by_outcome": {
+        "failed": {
+          "mean_herald_detector_events_per_shot": 108.81955089417777,
+          "mean_syndrome_detector_events_per_shot": 125.87683205593653
+        },
+        "succeeded": {
+          "mean_herald_detector_events_per_shot": 106.77537212449256,
+          "mean_syndrome_detector_events_per_shot": 125.05189843190321
+        }
+      },
+      "layout_counts": [
+        {
+          "stim_seed": 94530057721036,
+          "failed": {
+            "shots": 1453,
+            "herald_detector_events": 157762,
+            "syndrome_detector_events": 184655
+          },
+          "succeeded": {
+            "shots": 2547,
+            "herald_detector_events": 272197,
+            "syndrome_detector_events": 322001
+          }
+        },
+        {
+          "stim_seed": 94530057721037,
+          "failed": {
+            "shots": 1524,
+            "herald_detector_events": 162955,
+            "syndrome_detector_events": 189862
+          },
+          "succeeded": {
+            "shots": 2476,
+            "herald_detector_events": 260171,
+            "syndrome_detector_events": 306165
+          }
+        },
+        {
+          "stim_seed": 94530057721038,
+          "failed": {
+            "shots": 1427,
+            "herald_detector_events": 149039,
+            "syndrome_detector_events": 176810
+          },
+          "succeeded": {
+            "shots": 2573,
+            "herald_detector_events": 264046,
+            "syndrome_detector_events": 317113
+          }
+        },
+        {
+          "stim_seed": 94530057721039,
+          "failed": {
+            "shots": 1354,
+            "herald_detector_events": 143306,
+            "syndrome_detector_events": 169085
+          },
+          "succeeded": {
+            "shots": 2646,
+            "herald_detector_events": 276032,
+            "syndrome_detector_events": 327623
+          }
+        },
+        {
+          "stim_seed": 94530057721040,
+          "failed": {
+            "shots": 1679,
+            "herald_detector_events": 196229,
+            "syndrome_detector_events": 215734
+          },
+          "succeeded": {
+            "shots": 2321,
+            "herald_detector_events": 268973,
+            "syndrome_detector_events": 298125
+          }
+        }
+      ]
+    },
+    {
+      "arm": "Structured bath, ML then fit, balanced check",
+      "p_check": 0.02,
+      "shots": 20000,
+      "logical_failures": 656,
+      "logical_error_rate": 0.0328,
+      "wilson_95": [
+        0.030419854448985074,
+        0.035359584041839094
+      ],
+      "detector_means_by_outcome": {
+        "failed": {
+          "mean_herald_detector_events_per_shot": 26.265243902439025,
+          "mean_syndrome_detector_events_per_shot": 56.577743902439025
+        },
+        "succeeded": {
+          "mean_herald_detector_events_per_shot": 24.99788047973532,
+          "mean_syndrome_detector_events_per_shot": 53.58007650951199
+        }
+      },
+      "layout_counts": [
+        {
+          "stim_seed": 94530057721041,
+          "failed": {
+            "shots": 125,
+            "herald_detector_events": 3131,
+            "syndrome_detector_events": 6764
+          },
+          "succeeded": {
+            "shots": 3875,
+            "herald_detector_events": 95816,
+            "syndrome_detector_events": 202433
+          }
+        },
+        {
+          "stim_seed": 94530057721042,
+          "failed": {
+            "shots": 126,
+            "herald_detector_events": 3213,
+            "syndrome_detector_events": 7250
+          },
+          "succeeded": {
+            "shots": 3874,
+            "herald_detector_events": 94012,
+            "syndrome_detector_events": 209458
+          }
+        },
+        {
+          "stim_seed": 94530057721043,
+          "failed": {
+            "shots": 151,
+            "herald_detector_events": 4254,
+            "syndrome_detector_events": 8788
+          },
+          "succeeded": {
+            "shots": 3849,
+            "herald_detector_events": 102756,
+            "syndrome_detector_events": 213706
+          }
+        },
+        {
+          "stim_seed": 94530057721044,
+          "failed": {
+            "shots": 117,
+            "herald_detector_events": 2707,
+            "syndrome_detector_events": 6196
+          },
+          "succeeded": {
+            "shots": 3883,
+            "herald_detector_events": 87178,
+            "syndrome_detector_events": 195982
+          }
+        },
+        {
+          "stim_seed": 94530057721045,
+          "failed": {
+            "shots": 137,
+            "herald_detector_events": 3925,
+            "syndrome_detector_events": 8117
+          },
+          "succeeded": {
+            "shots": 3863,
+            "herald_detector_events": 103797,
+            "syndrome_detector_events": 214874
+          }
+        }
+      ]
+    },
+    {
+      "arm": "Clock, frame calibrated",
+      "p_check": 0.04,
+      "shots": 20000,
+      "logical_failures": 9261,
+      "logical_error_rate": 0.46305,
+      "wilson_95": [
+        0.45614718422284817,
+        0.46996700724169804
+      ],
+      "detector_means_by_outcome": {
+        "failed": {
+          "mean_herald_detector_events_per_shot": 107.97160133894828,
+          "mean_syndrome_detector_events_per_shot": 129.46269301371342
+        },
+        "succeeded": {
+          "mean_herald_detector_events_per_shot": 107.06062016947574,
+          "mean_syndrome_detector_events_per_shot": 128.86032219014805
+        }
+      },
+      "layout_counts": [
+        {
+          "stim_seed": 94530057721046,
+          "failed": {
+            "shots": 1903,
+            "herald_detector_events": 204806,
+            "syndrome_detector_events": 248199
+          },
+          "succeeded": {
+            "shots": 2097,
+            "herald_detector_events": 223932,
+            "syndrome_detector_events": 272667
+          }
+        },
+        {
+          "stim_seed": 94530057721047,
+          "failed": {
+            "shots": 1812,
+            "herald_detector_events": 192545,
+            "syndrome_detector_events": 231716
+          },
+          "succeeded": {
+            "shots": 2188,
+            "herald_detector_events": 231088,
+            "syndrome_detector_events": 278917
+          }
+        },
+        {
+          "stim_seed": 94530057721048,
+          "failed": {
+            "shots": 1799,
+            "herald_detector_events": 186404,
+            "syndrome_detector_events": 230495
+          },
+          "succeeded": {
+            "shots": 2201,
+            "herald_detector_events": 226674,
+            "syndrome_detector_events": 279532
+          }
+        },
+        {
+          "stim_seed": 94530057721049,
+          "failed": {
+            "shots": 1800,
+            "herald_detector_events": 189336,
+            "syndrome_detector_events": 231598
+          },
+          "succeeded": {
+            "shots": 2200,
+            "herald_detector_events": 229718,
+            "syndrome_detector_events": 282235
+          }
+        },
+        {
+          "stim_seed": 94530057721050,
+          "failed": {
+            "shots": 1947,
+            "herald_detector_events": 226834,
+            "syndrome_detector_events": 256946
+          },
+          "succeeded": {
+            "shots": 2053,
+            "herald_detector_events": 238312,
+            "syndrome_detector_events": 270480
+          }
+        }
+      ]
+    },
+    {
+      "arm": "Structured bath, ML then fit, balanced check",
+      "p_check": 0.04,
+      "shots": 20000,
+      "logical_failures": 3098,
+      "logical_error_rate": 0.1549,
+      "wilson_95": [
+        0.14995198585426434,
+        0.15998055743165907
+      ],
+      "detector_means_by_outcome": {
+        "failed": {
+          "mean_herald_detector_events_per_shot": 25.705616526791477,
+          "mean_syndrome_detector_events_per_shot": 69.38573273079406
+        },
+        "succeeded": {
+          "mean_herald_detector_events_per_shot": 24.91373801916933,
+          "mean_syndrome_detector_events_per_shot": 67.13365282215122
+        }
+      },
+      "layout_counts": [
+        {
+          "stim_seed": 94530057721051,
+          "failed": {
+            "shots": 633,
+            "herald_detector_events": 16116,
+            "syndrome_detector_events": 42953
+          },
+          "succeeded": {
+            "shots": 3367,
+            "herald_detector_events": 83079,
+            "syndrome_detector_events": 222835
+          }
+        },
+        {
+          "stim_seed": 94530057721052,
+          "failed": {
+            "shots": 596,
+            "herald_detector_events": 14934,
+            "syndrome_detector_events": 41792
+          },
+          "succeeded": {
+            "shots": 3404,
+            "herald_detector_events": 82670,
+            "syndrome_detector_events": 229766
+          }
+        },
+        {
+          "stim_seed": 94530057721053,
+          "failed": {
+            "shots": 683,
+            "herald_detector_events": 18620,
+            "syndrome_detector_events": 48408
+          },
+          "succeeded": {
+            "shots": 3317,
+            "herald_detector_events": 88548,
+            "syndrome_detector_events": 228578
+          }
+        },
+        {
+          "stim_seed": 94530057721054,
+          "failed": {
+            "shots": 551,
+            "herald_detector_events": 12634,
+            "syndrome_detector_events": 36757
+          },
+          "succeeded": {
+            "shots": 3449,
+            "herald_detector_events": 76542,
+            "syndrome_detector_events": 221913
+          }
+        },
+        {
+          "stim_seed": 94530057721055,
+          "failed": {
+            "shots": 635,
+            "herald_detector_events": 17332,
+            "syndrome_detector_events": 45047
+          },
+          "succeeded": {
+            "shots": 3365,
+            "herald_detector_events": 90253,
+            "syndrome_detector_events": 231601
+          }
+        }
+      ]
+    }
+  ]
+}

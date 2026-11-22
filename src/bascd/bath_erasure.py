@@ -67,31 +67,24 @@ class ZMemory:
 
     @classmethod
     def rotated(cls, distance):
-        if distance not in (3, 5):
-            raise ValueError("this control supports rotated memory distance 3 or 5")
+        if distance < 3 or distance % 2 != 1:
+            raise ValueError("expected an odd rotated memory distance of at least three")
         circuit = stim.Circuit.generated("surface_code:rotated_memory_z", distance=distance, rounds=1)
-        reset_index = next(i for i, instruction in enumerate(circuit) if instruction.name == "R")
         final_measurement = next(instruction for instruction in circuit if instruction.name == "M")
         sites = tuple(target.value for target in final_measurement.targets_copy())
         checks = np.zeros((circuit.num_detectors, len(sites)), dtype=np.uint8)
         logical_z = np.zeros(len(sites), dtype=np.uint8)
-        for index, site in enumerate(sites):
-            fault = stim.Circuit()
-            fault.append("X_ERROR", [site], 0.125)
-            injected = circuit[:reset_index + 1] + fault + circuit[reset_index + 1:]
-            mechanisms = [
-                instruction for instruction in injected.detector_error_model()
-                if instruction.type == "error"
-            ]
-            if len(mechanisms) != 1:
-                raise ValueError("expected one mechanism for an injected data fault")
-            for target in mechanisms[0].targets_copy():
-                if target.is_relative_detector_id():
-                    checks[target.val, index] = 1
-                elif target.is_logical_observable_id() and target.val == 0:
-                    logical_z[index] = 1
-                else:
-                    raise ValueError("unexpected target in single-site fault map")
+        site_indices = {site: index for index, site in enumerate(sites)}
+        # The first tick immediately follows preparation, where the bath acts.
+        # At this tick a data X fault anticommutes with each Y or Z it touches.
+        for target, regions in circuit.detecting_regions(ticks=[0]).items():
+            support = [site_indices[site] for site in regions[0].pauli_indices("YZ") if site in site_indices]
+            if target.is_relative_detector_id():
+                checks[target.val, support] = 1
+            elif target.is_logical_observable_id() and target.val == 0:
+                logical_z[support] = 1
+            else:
+                raise ValueError("unexpected target in single-site fault map")
         # Final comparison detectors are identically zero for noise before the
         # ideal round. Only retain the detector coordinates that carry syndrome.
         checks = checks[np.any(checks, axis=1)]
@@ -258,7 +251,7 @@ def main(argv=None):
     parser.add_argument("--output", required=True, type=Path, help="Path for the control result JSON")
     parser.add_argument("--shots", type=int, default=20_000, help="Number of paired shots per clock")
     parser.add_argument("--seed", type=int, default=31, help="Fixed-clock seed, incremented for the selected clock")
-    parser.add_argument("--distance", type=int, choices=(3, 5), default=3)
+    parser.add_argument("--distance", type=int, default=3, help="Odd rotated memory distance of at least three")
     args = parser.parse_args(argv)
     if args.output.exists():
         parser.error(f"output already exists: {args.output}")
