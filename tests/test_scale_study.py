@@ -1,4 +1,5 @@
 import csv
+from pathlib import Path
 
 import numpy as np
 import pytest
@@ -6,6 +7,14 @@ import stim
 
 from bascd import scale_study
 from bascd.scale_methods import _find_root, _growth_and_peel, _handwritten_graph
+
+
+def test_installed_scaling_finds_checkout_from_nested_directory(tmp_path, monkeypatch):
+    root = Path(__file__).resolve().parents[1]
+    installed_module = tmp_path / "site-packages" / "bascd" / "scale_study.py"
+    monkeypatch.setattr(scale_study, "__file__", str(installed_module))
+    monkeypatch.chdir(root / "tests")
+    assert scale_study.checkout_root() == root
 
 
 def test_prepare_records_replay_the_fixed_circuit(tmp_path, monkeypatch):
@@ -81,6 +90,9 @@ def test_worker_and_collect_score_only_the_paired_prefix(tmp_path, monkeypatch):
     assert scale_study.load(case / "correlated.json")["status"] == "pilot"
     assert len(scale_study.load(case / "correlated.json")["batch_ns"]) == 1
     scale_study.collect(tmp_path)
+    hashes = scale_study.load(tmp_path / "implementation.json")["project_sha256"]
+    assert "src/bascd/scale_study.py" in hashes
+    assert "experiments/compute-frontier-02/d5/policy.npz" in hashes
     with (tmp_path / "metrics.csv").open(encoding="utf-8", newline="") as file:
         rows = {row["method"]: row for row in csv.DictReader(file)}
     assert (rows["mwpm"]["shots"], rows["mwpm"]["failures"]) == ("131", "5")

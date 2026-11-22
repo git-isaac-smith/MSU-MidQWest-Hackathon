@@ -20,9 +20,9 @@ from .circuits import memory_circuit
 from .measure import Scenario
 from .stats import wilson95
 
-ROOT = Path(__file__).resolve().parents[2]
-PROFILE = ROOT / "experiments/iteration-03/bath-calibration/bath-profile.json"
-RECIPE = ROOT / "experiments/iteration-04/accuracy/frozen-policy.json"
+PROFILE = Path("experiments/iteration-03/bath-calibration/bath-profile.json")
+RECIPE = Path("experiments/iteration-04/accuracy/frozen-policy.json")
+POLICIES = Path("experiments/compute-frontier-02")
 P = .005
 ROOT_SEED = 76241329
 SHOTS = 10000
@@ -53,6 +53,15 @@ PRIMARY = {"mwpm", "correlated", "expanded_corr", "clock_corr"}
 CASE_FIELDS = ["distance", "basis", "p", "data_qubits", "physical_qubits", "rounds"]
 METRIC_FIELDS = CASE_FIELDS + ["method", "shots", "failures", "ler_pct", "ci_low_pct", "ci_high_pct",
     "batch_us_per_shot", "setup_s", "batch_size", "recovered", "lost", "status", "reason", "planned_shots"]
+
+
+def checkout_root():
+    source_root = Path(__file__).resolve().parents[2]
+    cwd = Path.cwd()
+    for candidate in (source_root, cwd, *cwd.parents):
+        if (candidate / "src/bascd/scale_study.py").is_file():
+            return candidate
+    raise FileNotFoundError("Scaling study data is in the repository checkout. Run from inside a clone.")
 
 
 def planned_shots(name, distance):
@@ -98,6 +107,9 @@ def write_csv(path, rows, fields):
 def prepare(out):
     if (out / "protocol.json").exists():
         raise FileExistsError("Choose an output directory without a scaling protocol")
+    root = checkout_root()
+    bath_profile_sha256 = digest((root / PROFILE).read_bytes())
+    recipe_sha256 = digest((root / RECIPE).read_bytes())
     out.mkdir(parents=True, exist_ok=True)
     cases = []
     for distance in DISTANCES:
@@ -123,7 +135,7 @@ def prepare(out):
          distances=DISTANCES, bases=["x","z"], p=P, rounds="distance", seed=ROOT_SEED, shots_target=SHOTS,
          noise_model="simple_uniform (provisional)", cases=cases, method_labels=LABELS,
          versions={p: version(p) for p in ("numpy","stim","pymatching","stabilizer-qec","psutil","numba","llvmlite")},
-         bath_profile_sha256=digest(PROFILE.read_bytes()), recipe_sha256=digest(RECIPE.read_bytes()),
+         bath_profile_sha256=bath_profile_sha256, recipe_sha256=recipe_sha256,
          planned_prefixes={name:[planned_shots(name,d) for d in DISTANCES] for name in LABELS},
          resource_limits="One sequential decoder at a time. A worker is stopped above 2.5 GiB RSS or after 180 s per method (480 s for the four full-budget distance-31 references).",
          timing="Median wall time per shot over full-sized, warmed inference calls on unpacked boolean detector input. Standard batch 128; fixed 16-shot pilots use batch 16. File IO, sampling, evaluating predictions and setup excluded. Required input packing included.",
@@ -172,7 +184,7 @@ def make_decoder(name, circuit, meta, folder):
     if name.endswith(("_ord","_corr")):
         channel, kind = name.split("_")
         expand = channel == "expanded"
-        prior = BathPrior("clock",(1/3,)*3) if expand else load_bath_prior(PROFILE,channel=channel)
+        prior = BathPrior("clock",(1/3,)*3) if expand else load_bath_prior(checkout_root() / PROFILE,channel=channel)
         dem = bath_prior_dem(circuit, **params, prior=prior, expand_isotropic=expand)
         return compile_decoder(dem,DecoderSpec("mwpm" if kind=="ord" else "correlated_mwpm")).decode_batch
     if name == "fast_hybrid":
@@ -189,9 +201,9 @@ def make_decoder(name, circuit, meta, folder):
         return AdaptiveDecoder(model,policy).decode_batch
     if name in {"learned","learned_rescue"}:
         from .compute_campaign import SpecialistCascade
-        archived = ROOT / f"experiments/compute-frontier-02/d{d}/policy.npz"
         local = folder / "trained-policy.npz"
         if basis == "z" and d in (5,7):
+            archived = checkout_root() / POLICIES / f"d{d}/policy.npz"
             policy = LearnedFaultRouter.load(archived)
         elif local.exists():
             policy = LearnedFaultRouter.load(local)
@@ -202,7 +214,7 @@ def make_decoder(name, circuit, meta, folder):
             raise ValueError("Learned policy belongs to a different circuit")
         dec = SpecialistCascade(circuit,model,policy,rescue=name=="learned_rescue")
         return lambda x: dec.decode_batch(np.packbits(x,axis=1,bitorder="little"))
-    recipe = load(RECIPE)["recipe"]
+    recipe = load(checkout_root() / RECIPE)["recipe"]
     recipe["belief"]["threads"] = 1
     recipe["search"]["threads"] = 1
     return compile_candidate(circuit, params, recipe, name).decode_batch
@@ -343,6 +355,7 @@ def supervise(folder,methods):
 
 
 def collect(out):
+    root = checkout_root()
     rows=[]
     protocol=load(out/"protocol.json")
     total=protocol.get("shots_target", SHOTS)
@@ -382,13 +395,17 @@ def collect(out):
                             recovered=int((base&~errors).sum()),lost=int((errors&~base).sum()))
             rows.append(item)
     write_csv(out/"metrics.csv",rows,METRIC_FIELDS)
-    package=Path(__file__).parent
-    files=sorted(package.glob("*.py"))+[PROFILE,RECIPE]
-    archived=[ROOT/f"experiments/compute-frontier-02/d{d}/policy.npz" for d in (5,7)]
+    package = Path(__file__).resolve().parent
+    project_hashes = {
+        f"src/bascd/{path.name}": digest(path.read_bytes())
+        for path in sorted(package.glob("*.py"))
+    }
+    for asset in (PROFILE, RECIPE, POLICIES / "d5/policy.npz", POLICIES / "d7/policy.npz"):
+        project_hashes[asset.as_posix()] = digest((root / asset).read_bytes())
     save(out/"implementation.json",dict(
         python=platform.python_version(), platform=platform.platform(), processor=platform.processor(),
         versions={p:version(p) for p in ("numpy","stim","pymatching","stabilizer-qec","numba","llvmlite","psutil")},
-        project_sha256={p.relative_to(ROOT).as_posix():digest(p.read_bytes()) for p in files+archived},
+        project_sha256=project_hashes,
         fitted_policy_sha256={p.relative_to(out).as_posix():digest(p.read_bytes()) for p in out.glob("d*-*/trained-policy.npz")},
     ))
 

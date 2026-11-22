@@ -42,7 +42,7 @@ The four Quantum Bears modules motivate a test of bath-derived matching weights 
 
 The [logical error and decoder runtime page](experiments/qubit-scaling-01/index.html) compares the circuit-level decoders on both memory bases through distance 31. It links to the five-round FFT/CNN comparison and the single-round heralded bath experiment. Each workload reports its own paired logical failures, shot count and batch inference time.
 
-To reproduce the fixed-circuit study in a new directory, install the optional benchmark backends and run the following commands from the repository root.
+The scaling study uses calibration files and frozen policies from the repository checkout. To reproduce it in a new output directory, install the optional benchmark backends and run these commands from the repository root.
 
 ```sh
 python -m pip install -e ".[hypergraph,scaling]"
