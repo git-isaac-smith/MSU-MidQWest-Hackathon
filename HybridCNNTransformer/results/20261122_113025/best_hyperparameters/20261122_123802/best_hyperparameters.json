@@ -1,0 +1,684 @@
+{
+  "meta": {
+    "args": {
+      "results": [
+        "results/20261122_113025"
+      ],
+      "metric": "ratio",
+      "sigma": 2.0,
+      "exclude_groups": [
+        "ablation",
+        "steps",
+        "shots"
+      ],
+      "d": null,
+      "out_dir": "results/20261122_113025/best_hyperparameters"
+    },
+    "sweeps": [
+      "20261122_113025"
+    ]
+  },
+  "results": {
+    "20261122_113025": {
+      "cnn_baseline": {
+        "3": {
+          "baseline": {
+            "n": 0,
+            "mean": null,
+            "noise": null
+          },
+          "groups": [
+            {
+              "group": "ablation",
+              "best_name": "ablation/no_mask_aware_conv",
+              "best_params": {
+                "mask_aware_conv": false
+              },
+              "score": 0.85,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 2,
+              "combined": false,
+              "excluded": true
+            },
+            {
+              "group": "boundary_clip",
+              "best_name": "boundary_clip/5",
+              "best_params": {
+                "boundary_clip": 5
+              },
+              "score": 0.9333333333333333,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 2,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "dilations",
+              "best_name": "dilations/1-2-1",
+              "best_params": {
+                "dilations": [
+                  1,
+                  2,
+                  1
+                ]
+              },
+              "score": 0.95,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 3,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "grad_clip",
+              "best_name": "grad_clip/5",
+              "best_params": {
+                "grad_clip": 5.0
+              },
+              "score": 1.0666666666666667,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 2,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "lr",
+              "best_name": "lr/4e-3",
+              "best_params": {
+                "lr": 0.004
+              },
+              "score": 0.9833333333333333,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 4,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "shots",
+              "best_name": "shots/b1024",
+              "best_params": {
+                "batch_size": 1024
+              },
+              "score": 0.9,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 4,
+              "combined": false,
+              "excluded": true
+            },
+            {
+              "group": "weight_decay",
+              "best_name": "weight_decay/0",
+              "best_params": {
+                "weight_decay": 0.0
+              },
+              "score": 0.9666666666666667,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 2,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "width",
+              "best_name": "width/96",
+              "best_params": {
+                "width": 96
+              },
+              "score": 0.85,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 3,
+              "combined": false,
+              "excluded": false
+            }
+          ],
+          "overrides": {},
+          "best_single": {
+            "name": "ablation/no_mask_aware_conv",
+            "params": {
+              "mask_aware_conv": false
+            },
+            "score": 0.85
+          },
+          "distance_runs": [],
+          "config": {
+            "path": "configs\\cnn_d3.yaml",
+            "ok": true,
+            "message": "builds OK",
+            "values": {
+              "model": "cnn_baseline",
+              "use_boundary_channels": true,
+              "use_boundary_tokens": true,
+              "mask_aware_conv": true,
+              "width": 64,
+              "stem_layers": 2,
+              "attn_layers": 3,
+              "heads": 4,
+              "mlp_ratio": 2,
+              "n_fourier": 6,
+              "boundary_clip": 3,
+              "rel_clip": 4,
+              "bias_hidden": 32,
+              "dilations": [
+                1,
+                2,
+                4,
+                1
+              ],
+              "p": 0.005,
+              "d_set": [
+                3
+              ],
+              "batch_size": 256,
+              "steps": 20000,
+              "lr": 0.001,
+              "weight_decay": 0.01,
+              "warmup_steps": 500,
+              "min_lr_frac": 0.02,
+              "grad_clip": 1.0,
+              "bf16": true,
+              "channels_last": true,
+              "compile": false,
+              "seed": 0,
+              "log_every": 100,
+              "val_every": 1000,
+              "val_shots": 8192,
+              "out_dir": "runs/best_cnn_d3",
+              "device": "auto"
+            }
+          }
+        },
+        "5": {
+          "baseline": {
+            "n": 0,
+            "mean": null,
+            "noise": null
+          },
+          "groups": [
+            {
+              "group": "ablation",
+              "best_name": "ablation/no_boundary_channels",
+              "best_params": {
+                "use_boundary_channels": false
+              },
+              "score": 2.6551724137931036,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 2,
+              "combined": false,
+              "excluded": true
+            },
+            {
+              "group": "boundary_clip",
+              "best_name": "boundary_clip/5",
+              "best_params": {
+                "boundary_clip": 5
+              },
+              "score": 3.2241379310344827,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 2,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "dilations",
+              "best_name": "dilations/1-1-1-1",
+              "best_params": {
+                "dilations": [
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "score": 3.1724137931034484,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 3,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "grad_clip",
+              "best_name": "grad_clip/0.5",
+              "best_params": {
+                "grad_clip": 0.5
+              },
+              "score": 3.4827586206896552,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 2,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "lr",
+              "best_name": "lr/2e-3",
+              "best_params": {
+                "lr": 0.002
+              },
+              "score": 3.1379310344827585,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 4,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "shots",
+              "best_name": "shots/b512",
+              "best_params": {
+                "batch_size": 512
+              },
+              "score": 2.793103448275862,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 4,
+              "combined": false,
+              "excluded": true
+            },
+            {
+              "group": "weight_decay",
+              "best_name": "weight_decay/0",
+              "best_params": {
+                "weight_decay": 0.0
+              },
+              "score": 3.396551724137931,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 2,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "width",
+              "best_name": "width/128",
+              "best_params": {
+                "width": 128
+              },
+              "score": 2.5517241379310347,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 3,
+              "combined": false,
+              "excluded": false
+            }
+          ],
+          "overrides": {},
+          "best_single": {
+            "name": "width/128",
+            "params": {
+              "width": 128
+            },
+            "score": 2.5517241379310347
+          },
+          "distance_runs": [],
+          "config": {
+            "path": "configs\\cnn_d5.yaml",
+            "ok": true,
+            "message": "builds OK",
+            "values": {
+              "model": "cnn_baseline",
+              "use_boundary_channels": true,
+              "use_boundary_tokens": true,
+              "mask_aware_conv": true,
+              "width": 64,
+              "stem_layers": 2,
+              "attn_layers": 3,
+              "heads": 4,
+              "mlp_ratio": 2,
+              "n_fourier": 6,
+              "boundary_clip": 3,
+              "rel_clip": 4,
+              "bias_hidden": 32,
+              "dilations": [
+                1,
+                2,
+                4,
+                1
+              ],
+              "p": 0.005,
+              "d_set": [
+                5
+              ],
+              "batch_size": 256,
+              "steps": 20000,
+              "lr": 0.001,
+              "weight_decay": 0.01,
+              "warmup_steps": 500,
+              "min_lr_frac": 0.02,
+              "grad_clip": 1.0,
+              "bf16": true,
+              "channels_last": true,
+              "compile": false,
+              "seed": 0,
+              "log_every": 100,
+              "val_every": 1000,
+              "val_shots": 8192,
+              "out_dir": "runs/best_cnn_d5",
+              "device": "auto"
+            }
+          }
+        }
+      },
+      "hybrid": {
+        "3": {
+          "baseline": {
+            "n": 0,
+            "mean": null,
+            "noise": null
+          },
+          "groups": [
+            {
+              "group": "ablation",
+              "best_name": "ablation/no_boundary_channels",
+              "best_params": {
+                "use_boundary_channels": false
+              },
+              "score": 0.9666666666666667,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 3,
+              "combined": false,
+              "excluded": true
+            },
+            {
+              "group": "boundary_clip",
+              "best_name": "boundary_clip/2",
+              "best_params": {
+                "boundary_clip": 2
+              },
+              "score": 0.9833333333333333,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 2,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "grad_clip",
+              "best_name": "grad_clip/5",
+              "best_params": {
+                "grad_clip": 5.0
+              },
+              "score": 0.9666666666666667,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 2,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "lr",
+              "best_name": "lr/3e-4",
+              "best_params": {
+                "lr": 0.0003
+              },
+              "score": 1.0166666666666666,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 4,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "shots",
+              "best_name": "shots/b1024",
+              "best_params": {
+                "batch_size": 1024
+              },
+              "score": 0.95,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 4,
+              "combined": false,
+              "excluded": true
+            },
+            {
+              "group": "weight_decay",
+              "best_name": "weight_decay/0.1",
+              "best_params": {
+                "weight_decay": 0.1
+              },
+              "score": 0.95,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 2,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "width",
+              "best_name": "width/96",
+              "best_params": {
+                "width": 96
+              },
+              "score": 0.95,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 3,
+              "combined": false,
+              "excluded": false
+            }
+          ],
+          "overrides": {},
+          "best_single": {
+            "name": "shots/b1024",
+            "params": {
+              "batch_size": 1024
+            },
+            "score": 0.95
+          },
+          "distance_runs": [],
+          "config": {
+            "path": "configs\\hybrid_d3.yaml",
+            "ok": true,
+            "message": "builds OK",
+            "values": {
+              "model": "hybrid",
+              "use_boundary_channels": true,
+              "use_boundary_tokens": true,
+              "mask_aware_conv": true,
+              "width": 64,
+              "stem_layers": 2,
+              "attn_layers": 3,
+              "heads": 4,
+              "mlp_ratio": 2,
+              "n_fourier": 6,
+              "boundary_clip": 3,
+              "rel_clip": 4,
+              "bias_hidden": 32,
+              "dilations": [
+                1,
+                2,
+                4,
+                1
+              ],
+              "p": 0.005,
+              "d_set": [
+                3
+              ],
+              "batch_size": 256,
+              "steps": 20000,
+              "lr": 0.001,
+              "weight_decay": 0.01,
+              "warmup_steps": 500,
+              "min_lr_frac": 0.02,
+              "grad_clip": 1.0,
+              "bf16": true,
+              "channels_last": true,
+              "compile": false,
+              "seed": 0,
+              "log_every": 100,
+              "val_every": 1000,
+              "val_shots": 8192,
+              "out_dir": "runs/best_hybrid_d3",
+              "device": "auto"
+            }
+          }
+        },
+        "5": {
+          "baseline": {
+            "n": 0,
+            "mean": null,
+            "noise": null
+          },
+          "groups": [
+            {
+              "group": "ablation",
+              "best_name": "ablation/no_boundary_channels",
+              "best_params": {
+                "use_boundary_channels": false
+              },
+              "score": 1.7758620689655173,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 3,
+              "combined": false,
+              "excluded": true
+            },
+            {
+              "group": "boundary_clip",
+              "best_name": "boundary_clip/5",
+              "best_params": {
+                "boundary_clip": 5
+              },
+              "score": 2.0344827586206895,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 2,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "grad_clip",
+              "best_name": "grad_clip/0.5",
+              "best_params": {
+                "grad_clip": 0.5
+              },
+              "score": 2.810344827586207,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 2,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "lr",
+              "best_name": "lr/2e-3",
+              "best_params": {
+                "lr": 0.002
+              },
+              "score": 2.1724137931034484,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 4,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "shots",
+              "best_name": "shots/b1024",
+              "best_params": {
+                "batch_size": 1024
+              },
+              "score": 1.3793103448275863,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 4,
+              "combined": false,
+              "excluded": true
+            },
+            {
+              "group": "weight_decay",
+              "best_name": "weight_decay/0.1",
+              "best_params": {
+                "weight_decay": 0.1
+              },
+              "score": 2.1206896551724137,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 2,
+              "combined": false,
+              "excluded": false
+            },
+            {
+              "group": "width",
+              "best_name": "width/96",
+              "best_params": {
+                "width": 96
+              },
+              "score": 1.896551724137931,
+              "gain": null,
+              "verdict": "no baseline",
+              "n_runs": 3,
+              "combined": false,
+              "excluded": false
+            }
+          ],
+          "overrides": {},
+          "best_single": {
+            "name": "shots/b1024",
+            "params": {
+              "batch_size": 1024
+            },
+            "score": 1.3793103448275863
+          },
+          "distance_runs": [],
+          "config": {
+            "path": "configs\\hybrid_d5.yaml",
+            "ok": true,
+            "message": "builds OK",
+            "values": {
+              "model": "hybrid",
+              "use_boundary_channels": true,
+              "use_boundary_tokens": true,
+              "mask_aware_conv": true,
+              "width": 64,
+              "stem_layers": 2,
+              "attn_layers": 3,
+              "heads": 4,
+              "mlp_ratio": 2,
+              "n_fourier": 6,
+              "boundary_clip": 3,
+              "rel_clip": 4,
+              "bias_hidden": 32,
+              "dilations": [
+                1,
+                2,
+                4,
+                1
+              ],
+              "p": 0.005,
+              "d_set": [
+                5
+              ],
+              "batch_size": 256,
+              "steps": 20000,
+              "lr": 0.001,
+              "weight_decay": 0.01,
+              "warmup_steps": 500,
+              "min_lr_frac": 0.02,
+              "grad_clip": 1.0,
+              "bf16": true,
+              "channels_last": true,
+              "compile": false,
+              "seed": 0,
+              "log_every": 100,
+              "val_every": 1000,
+              "val_shots": 8192,
+              "out_dir": "runs/best_hybrid_d5",
+              "device": "auto"
+            }
+          }
+        }
+      }
+    }
+  }
+}

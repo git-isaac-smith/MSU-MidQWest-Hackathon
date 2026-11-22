@@ -1,0 +1,27 @@
+# Plain dense 3D CNN baseline: dilated residual masked convs -> masked mean+max pooling -> logit.
+model: cnn_baseline
+use_boundary_channels: true
+mask_aware_conv: true
+width: 96
+dilations: [1, 2, 4, 1] # receptive field 1 + 2*(1 + 8) = 19 >= max d (checked at build time)
+boundary_clip: 3
+
+p: 0.005
+d_set: [3, 5, 7]
+
+batch_size: 256
+steps: 20000
+lr: 0.001
+weight_decay: 0.01
+warmup_steps: 500
+min_lr_frac: 0.02
+grad_clip: 1.0
+bf16: true
+channels_last: true
+compile: false
+seed: 0
+log_every: 100
+val_every: 1000
+val_shots: 8192
+out_dir: runs/cnn_baseline
+device: auto

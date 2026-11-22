@@ -1,0 +1,36 @@
+model: cnn_baseline
+use_boundary_channels: true
+use_boundary_tokens: true
+mask_aware_conv: true
+width: 96
+stem_layers: 2
+attn_layers: 3
+heads: 4
+mlp_ratio: 2
+n_fourier: 6
+boundary_clip: 5
+rel_clip: 4
+bias_hidden: 32
+dilations:
+- 1
+- 2
+- 1
+p: 0.005
+d_set:
+- 3
+batch_size: 256
+steps: 20000
+lr: 0.004
+weight_decay: 0.0
+warmup_steps: 500
+min_lr_frac: 0.02
+grad_clip: 1.0
+bf16: true
+channels_last: true
+compile: false
+seed: 0
+log_every: 100
+val_every: 1000
+val_shots: 8192
+out_dir: runs/best_cnn_d3
+device: auto

@@ -1,0 +1,19 @@
+# d=3 smoke test: small hybrid, trained long enough to clearly beat the trivial "never flip" decoder.
+model: hybrid
+width: 32
+stem_layers: 2
+attn_layers: 2
+heads: 4
+bias_hidden: 16
+p: 0.005
+d_set: [3]
+batch_size: 256
+steps: 1500
+lr: 0.002
+warmup_steps: 100
+log_every: 100
+val_every: 500
+val_shots: 4096
+bf16: false
+channels_last: false
+out_dir: runs/smoke_d3

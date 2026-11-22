@@ -1,0 +1,42 @@
+{
+  "model": "hybrid",
+  "use_boundary_channels": true,
+  "use_boundary_tokens": true,
+  "mask_aware_conv": true,
+  "width": 96,
+  "stem_layers": 2,
+  "attn_layers": 3,
+  "heads": 4,
+  "mlp_ratio": 2,
+  "n_fourier": 6,
+  "boundary_clip": 3,
+  "rel_clip": 4,
+  "bias_hidden": 32,
+  "dilations": [
+    1,
+    2,
+    4,
+    1
+  ],
+  "p": 0.005,
+  "d_set": [
+    3,
+    5
+  ],
+  "batch_size": 256,
+  "steps": 2000,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "warmup_steps": 200,
+  "min_lr_frac": 0.02,
+  "grad_clip": 1.0,
+  "bf16": true,
+  "channels_last": true,
+  "compile": false,
+  "seed": 0,
+  "log_every": 100,
+  "val_every": 250,
+  "val_shots": 4096,
+  "out_dir": "experiments/20261122_113025/hybrid__width-96",
+  "device": "cuda:0"
+}

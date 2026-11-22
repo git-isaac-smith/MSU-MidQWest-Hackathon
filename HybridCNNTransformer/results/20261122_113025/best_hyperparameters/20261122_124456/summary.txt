@@ -1,0 +1,57 @@
+=== sweep 20261122_113025 | cnn_baseline | d=3 | score = final val LER / MWPM LER (lower is better) ===
+baseline: 1.0667 over 3 run(s), noise std 0.0167
+  group           best value                        score     gain  verdict
+  ablation        mask_aware_conv=false            0.8500  +0.2167  better  (not combined)
+  boundary_clip   boundary_clip=5                  0.9333  +0.1333  better  <- combined
+  dilations       dilations=[1, 2, 1]              0.9500  +0.1167  better  <- combined
+  grad_clip       grad_clip=5.0                    1.0667  +0.0000  within noise
+  lr              lr=0.004                         0.9833  +0.0833  better  <- combined
+  shots           batch_size=1024                  0.9000  +0.1667  better  (not combined)
+  weight_decay    weight_decay=0.0                 0.9667  +0.1000  better  <- combined
+  width           width=96                         0.8500  +0.2167  better  <- combined
+best single run: ablation/no_mask_aware_conv mask_aware_conv=false -> 0.8500
+combined (untested as a whole): boundary_clip=5, dilations=[1, 2, 1], lr=0.004, weight_decay=0.0, width=96
+config: configs\cnn_d3.yaml (builds OK)
+
+=== sweep 20261122_113025 | cnn_baseline | d=5 | score = final val LER / MWPM LER (lower is better) ===
+baseline: 3.5690 over 3 run(s), noise std 0.3221
+  group           best value                        score     gain  verdict
+  ablation        use_boundary_channels=false      2.6552  +0.9138  better  (not combined)
+  boundary_clip   boundary_clip=5                  3.2241  +0.3448  within noise
+  dilations       dilations=[1, 1, 1, 1]           3.1724  +0.3966  within noise
+  grad_clip       grad_clip=0.5                    3.4828  +0.0862  within noise
+  lr              lr=0.002                         3.1379  +0.4310  within noise
+  shots           batch_size=512                   2.7931  +0.7759  better  (not combined)
+  weight_decay    weight_decay=0.0                 3.3966  +0.1724  within noise
+  width           width=128                        2.5517  +1.0172  better  <- combined
+best single run: width/128 width=128 -> 2.5517
+combined (untested as a whole): width=128
+config: configs\cnn_d5.yaml (builds OK)
+
+=== sweep 20261122_113025 | hybrid | d=3 | score = final val LER / MWPM LER (lower is better) ===
+baseline: 0.9667 over 3 run(s), noise std 0.0167
+  group           best value                        score     gain  verdict
+  ablation        use_boundary_channels=false      0.9667  +0.0000  within noise  (not combined)
+  boundary_clip   boundary_clip=2                  0.9833  -0.0167  within noise
+  grad_clip       grad_clip=5.0                    0.9667  +0.0000  within noise
+  lr              lr=0.0003                        1.0167  -0.0500  worse
+  shots           batch_size=1024                  0.9500  +0.0167  within noise  (not combined)
+  weight_decay    weight_decay=0.1                 0.9500  +0.0167  within noise
+  width           width=96                         0.9500  +0.0167  within noise
+best single run: seed/2 seed=2 -> 0.9500
+combined (untested as a whole): (none: no group beat the baseline by more than the noise)
+config: configs\hybrid_d3.yaml (builds OK)
+
+=== sweep 20261122_113025 | hybrid | d=5 | score = final val LER / MWPM LER (lower is better) ===
+baseline: 2.4080 over 3 run(s), noise std 0.3450
+  group           best value                        score     gain  verdict
+  ablation        use_boundary_channels=false      1.7759  +0.6322  within noise  (not combined)
+  boundary_clip   boundary_clip=5                  2.0345  +0.3736  within noise
+  grad_clip       grad_clip=0.5                    2.8103  -0.4023  within noise
+  lr              lr=0.002                         2.1724  +0.2356  within noise
+  shots           batch_size=1024                  1.3793  +1.0287  better  (not combined)
+  weight_decay    weight_decay=0.1                 2.1207  +0.2874  within noise
+  width           width=96                         1.8966  +0.5115  within noise
+best single run: shots/b1024 batch_size=1024 -> 1.3793
+combined (untested as a whole): (none: no group beat the baseline by more than the noise)
+config: configs\hybrid_d5.yaml (builds OK)
